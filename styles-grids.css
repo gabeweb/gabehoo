@@ -1,0 +1,139 @@
+/* grid system */
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, auto) minmax(0, auto);
+  /* grid-template-rows: 1fr 1fr 1fr 1fr; */
+  gap: 20px;
+  /* grid-auto-flow: row; */
+  width: 100%;
+  max-width: 1020px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.container > * {
+  min-width: 0px;
+}
+
+.header {
+  /*align-self: center;*/
+  grid-area: 1 / 1 / 2 / 4;
+}
+
+/*.header-center {
+  justify-self: center;
+  align-self: center;
+  grid-area: 1 / 2 / 2 / 3;
+}
+
+.header-left {
+  justify-self: center;
+  align-self: center;
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-right {
+  justify-self: center;
+  align-self: center;
+  grid-area: 1 / 3 / 2 / 4;
+}*/
+
+.header {
+  gap: 20px;
+  display: flex;
+  flex: 3;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header > div {
+  width: 100%;
+  text-align: center;
+}
+
+.header-left {
+  order: -2;
+}
+
+.sub-header {
+  justify-self: center;
+  align-self: center;
+  grid-area: 2 / 1 / 3 / 4;
+  gap: 20px;
+}
+
+.main-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /*grid-template-rows: 1fr 1fr 1fr;*/
+  gap: 20px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "main-content-top main-content-top"
+    "main-content-middle-left main-content-middle-right"
+    "main-content-bottom main-content-bottom";
+  grid-area: 3 / 1 / 3 / 3;
+}
+
+.main-content-top {
+  grid-area: main-content-top;
+}
+
+.main-content-middle-left {
+  grid-area: main-content-middle-left;
+}
+
+.main-content-middle-right {
+  grid-area: main-content-middle-right;
+}
+
+.main-content-bottom {
+  grid-area: main-content-bottom;
+}
+
+/*.sidebar {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "sidebox-container";
+  grid-area: 3 / 3 / 4 / 4;
+}*/
+
+/*.sidebox-container {
+  grid-area: sidebox-container;
+}*/
+
+.sidebox-container {
+  gap: 20px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.footer {
+  /*justify-self: center;*/
+  text-align: center;
+  /*align-self: center;*/
+  grid-area: 4 / 1 / 4 / 4;
+}
+
+@media only screen and (max-width: 1024px) {
+  .container,
+  .header,
+  .sub-header,
+  .main-row,
+  .sidebar,
+  .sidebox-container,
+  .footer {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  div#main-content-top-content ul,
+  .sub-header ul {
+    column-count: 2 !important;
+  }
+}

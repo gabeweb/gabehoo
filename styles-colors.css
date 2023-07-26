@@ -1,0 +1,93 @@
+:root {
+  /* Elementary colors */
+
+  --bg-color: var(--background-color);
+  --fg-color: var(--text-color);
+
+  --text-color: var(--ctp-mocha-text-rgb);
+  --text-color-alt: var(--background-color);
+
+  --background-color: var(--ctp-mocha-crust-rgb);
+  --background-color-alt: var(--text-color);
+
+  --link-color: var(--accent-color);
+
+  --accent-color: var(--ctp-mocha-blue-rgb);
+
+  --section-bg-color: var(--ctp-mocha-surface0-rgb);
+  /*--section-color: ;*/
+  /* just for reference */
+  --section-border-color: var(--ctp-mocha-surface0-rgb);
+
+  --article-bg-color: var(--ctp-mocha-surface1-rgb);
+  /*--article-color: ;*/
+  --article-border-color: var(--ctp-mocha-surface1-rgb);
+
+  --main-content-bg-color: var(--ctp-mocha-yellow-rgb);
+  --main-content-fg-color: var(--ctp-mocha-mantle-rgb);
+  --main-content-border-color: var(--ctp-mocha-peach-rgb);
+
+  --aside-left-bg-color: var(--ctp-mocha-surface1-rgb);
+  /*--aside-left-fg-color: ;*/
+  --aside-left-border-color: var(--ctp-mocha-overlay1-rgb);
+
+  --aside-right-bg-color: var(--ctp-mocha-surface1-rgb);
+  /*--aside-right-fg-color: ;*/
+  --aside-right-border-color: var(--ctp-mocha-overlay1-rgb);
+
+  /*--header-bg-color: ;*/
+  --header-fg-color: var(--red);
+  --header-border-color: var(--blue);
+
+  --searcher-bg-color: var(--ctp-mocha-base-rgb);
+  /*--searcher-fg-color: ;*/
+  --searcher-border-color: var(--ctp-mocha-surface1-rgb);
+
+  --border-color-common: var(--ctp-mocha-overlay0-rgb);
+
+  --footer-bg-color: ;
+  /*--footer-fg-color: ;*/
+  --footer-border-color: var(--ctp-mocha-surface1-rgb);
+
+  /* basic colors */
+
+  --red: var(--ctp-mocha-red-rgb);
+  --orange: var(--ctp-mocha-peach-rgb);
+  --yellow: var(--ctp-mocha-yellow-rgb);
+  --green: var(--ctp-mocha-green-rgb);
+  --blue: var(--ctp-mocha-sky-rgb);
+  --indigo: var(--ctp-mocha-blue-rgb);
+  --violet: var(--ctp-mocha-lavender-rgb);
+  --lavender: var(--ctp-mocha-lavender-rgb);
+  --black: var(--ctp-mocha-surface0-rgb);
+  --white: var(--ctp-mocha-text-rgb);
+
+  /* Catppuccin Mocha Palette */
+
+  --ctp-mocha-rosewater-rgb: rgb(245, 224, 220);
+  --ctp-mocha-flamingo-rgb: rgb(242, 205, 205);
+  --ctp-mocha-pink-rgb: rgb(245, 194, 231);
+  --ctp-mocha-mauve-rgb: rgb(203, 166, 247);
+  --ctp-mocha-red-rgb: rgb(243, 139, 168);
+  --ctp-mocha-maroon-rgb: rgb(235, 160, 172);
+  --ctp-mocha-peach-rgb: rgb(250, 179, 135);
+  --ctp-mocha-yellow-rgb: rgb(249, 226, 175);
+  --ctp-mocha-green-rgb: rgb(166, 227, 161);
+  --ctp-mocha-teal-rgb: rgb(148, 226, 213);
+  --ctp-mocha-sky-rgb: rgb(137, 220, 235);
+  --ctp-mocha-sapphire-rgb: rgb(116, 199, 236);
+  --ctp-mocha-blue-rgb: rgb(137, 180, 250);
+  --ctp-mocha-lavender-rgb: rgb(180, 190, 254);
+  --ctp-mocha-text-rgb: rgb(205, 214, 244);
+  --ctp-mocha-subtext1-rgb: rgb(186, 194, 222);
+  --ctp-mocha-subtext0-rgb: rgb(166, 173, 200);
+  --ctp-mocha-overlay2-rgb: rgb(147, 153, 178);
+  --ctp-mocha-overlay1-rgb: rgb(127, 132, 156);
+  --ctp-mocha-overlay0-rgb: rgb(108, 112, 134);
+  --ctp-mocha-surface2-rgb: rgb(88, 91, 112);
+  --ctp-mocha-surface1-rgb: rgb(69, 71, 90);
+  --ctp-mocha-surface0-rgb: rgb(49, 50, 68);
+  --ctp-mocha-base-rgb: rgb(30, 30, 46);
+  --ctp-mocha-mantle-rgb: rgb(24, 24, 37);
+  --ctp-mocha-crust-rgb: rgb(17, 17, 27);
+}
