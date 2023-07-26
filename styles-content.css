@@ -313,11 +313,10 @@ div#sidebox-header-00 {
 
 div#sidebox-content-00 {
   display: flex;
-  align-items: center;
+  align-content: center;
   overflow: hidden;
   position: relative;
-  text-align: left;
-  padding: 8px;
+  height: 64px;
 }
 
 div.sidebox-01 {
@@ -457,6 +456,7 @@ span#time-date {
   padding: 0px;
   padding-left: 20px;
   overflow: hidden;
+  align-items: center;
 }
 
 #search-favicon {
@@ -470,21 +470,16 @@ span#time-date {
   /*filter: invert(0.4);*/
 }
 
-/* COOL FAVICON SEARCH ENGINE */
-#search-favicon::before {
-  content: var(--faviconSearch);
-  display: inline;
-  /*filter: invert(var(--invert)) grayscale(100%) saturate(1);*/
-}
-
 #search-favicon {
   width: 32px;
   height: 32px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  display: inline-block;
+  display: block;
   margin: 5px 6px 5px -10px;
   position: relative;
+  background-image: var(--faviconSearch);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 #searchInput {
@@ -579,13 +574,20 @@ div#nowPlaying-container {
 }
 
 .playing-info {
-  /*margin-left: 44px;*/
+  margin-left: 44px;
+  align-content: center;
 }
 
 #playingInfo p.playing-now,
 #playingInfo .playing-not {
-  font-size: 1em;
+  font-size: 1.2em;
   text-transform: uppercase;
+  animation: scroll-left 30s linear infinite;
+  -webkit-animation: scroll-left 30s linear infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  display: block;
+  position: relative;
 }
 
 span.info-connector {
@@ -598,12 +600,11 @@ span.info-connector {
 #playingInfo p.playing-not {
   white-space: nowrap;
   overflow: hidden;
-  display: inline-flex;
+  display: block;
   text-transform: lowercase;
   color: var(--green);
-  padding: 0 0.5em;
-  margin: 0 0.75em;
   font-weight: bold;
+  text-align: center !important;
 }
 
 .playing-not a {
@@ -638,10 +639,10 @@ span.info-connector {
   align-items: flex-end;
   display: flex;
   justify-content: space-between;
-  width: 30px;
+  width: 40px;
   height: 24px;
-  position: relative;
-  bottom: 3px;
+  position: absolute;
+  bottom: 4px;
 }
 
 .bars .bar {
@@ -692,3 +693,49 @@ span.info-connector {
 }
 
 /* END EQUALIZER */
+
+/* animations */
+
+@-webkit-keyframes blink {
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
+}
+
+@keyframes blink {
+  0% {
+    filter: opacity(0);
+  }
+
+  100% {
+    filter: opacity(1);
+  }
+}
+
+/* media queries */
+
+@media only screen and (max-width: 1024px) {
+  .container,
+  .header,
+  .sub-header,
+  .main-row,
+  .sidebar,
+  .sidebox-container,
+  .footer {
+    display: inline-flex;
+    flex-direction: column;
+  }
+
+  div#main-content-top-content ul,
+  .sub-header ul {
+    column-count: 2 !important;
+  }
+
+  #search-container {
+    width: 80%;
+  }
+}
