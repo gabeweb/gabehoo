@@ -115,25 +115,7 @@
 
 .footer {
   /*justify-self: center;*/
-  text-align: center;
+  /*text-align: center;*/
   /*align-self: center;*/
   grid-area: 4 / 1 / 4 / 4;
-}
-
-@media only screen and (max-width: 1024px) {
-  .container,
-  .header,
-  .sub-header,
-  .main-row,
-  .sidebar,
-  .sidebox-container,
-  .footer {
-    display: inline-flex;
-    flex-direction: column;
-  }
-
-  div#main-content-top-content ul,
-  .sub-header ul {
-    column-count: 2 !important;
-  }
 }
