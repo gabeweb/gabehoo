@@ -207,105 +207,105 @@ section#section-01 h4 {
 }
 
 section#section-02 {
-  border-color: var(--indigo);
-}
-
-section#section-02 h3 {
-  background-color: var(--indigo);
-}
-
-section#section-02 h4 {
-  border-bottom-color: var(--indigo);
-}
-
-section#section-02 h4 span {
-  background-color: var(--indigo);
-  border-bottom-color: var(--indigo);
-}
-
-section#section-03 {
-  border-color: var(--blue);
-}
-
-section#section-03 h3 {
-  background-color: var(--blue);
-}
-
-section#section-03 h4 {
-  border-bottom-color: var(--blue);
-}
-
-section#section-03 h4 span {
-  background-color: var(--blue);
-  border-bottom-color: var(--blue);
-}
-
-section#section-04 {
-  border-color: var(--green);
-}
-
-section#section-04 h3 {
-  background-color: var(--green);
-}
-
-section#section-04 h4 {
-  border-bottom-color: var(--green);
-}
-
-section#section-04 h4 span {
-  background-color: var(--green);
-  border-bottom-color: var(--green);
-}
-
-section#section-05 {
   border-color: var(--yellow);
 }
 
-section#section-05 h3 {
+section#section-02 h3 {
   background-color: var(--yellow);
+}
+
+section#section-02 h4 {
+  border-bottom-color: var(--yellow);
+}
+
+section#section-02 h4 span {
+  background-color: var(--yellow);
+  border-bottom-color: var(--yellow);
+}
+
+section#section-03 {
+  border-color: var(--green);
+}
+
+section#section-03 h3 {
+  background-color: var(--green);
+}
+
+section#section-03 h4 {
+  border-bottom-color: var(--green);
+}
+
+section#section-03 h4 span {
+  background-color: var(--green);
+  border-bottom-color: var(--green);
+}
+
+section#section-04 {
+  border-color: var(--blue);
+}
+
+section#section-04 h3 {
+  background-color: var(--blue);
+}
+
+section#section-04 h4 {
+  border-bottom-color: var(--blue);
+}
+
+section#section-04 h4 span {
+  background-color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+section#section-05 {
+  border-color: var(--indigo);
+}
+
+section#section-05 h3 {
+  background-color: var(--indigo);
 }
 
 section#section-05 h4 {
-  border-bottom-color: var(--yellow);
+  border-bottom-color: var(--indigo);
 }
 
 section#section-05 h4 span {
-  background-color: var(--yellow);
-  border-bottom-color: var(--yellow);
+  background-color: var(--indigo);
+  border-bottom-color: var(--indigo);
 }
 
 section#section-06 {
-  border-color: var(--orange);
+  border-color: var(--violet);
 }
 
 section#section-06 h3 {
-  background-color: var(--orange);
+  background-color: var(--violet);
 }
 
 section#section-06 h4 {
-  border-bottom-color: var(--orange);
+  border-bottom-color: var(--violet);
 }
 
 section#section-06 h4 span {
-  background-color: var(--orange);
-  border-bottom-color: var(--orange);
+  background-color: var(--violet);
+  border-bottom-color: var(--violet);
 }
 
 section#section-07 {
-  border-color: var(--red);
+  border-color: var(--lavender);
 }
 
 section#section-07 h3 {
-  background-color: var(--red);
+  background-color: var(--lavender);
 }
 
 section#section-07 h4 {
-  border-bottom-color: var(--red);
+  border-bottom-color: var(--lavender);
 }
 
 section#section-07 h4 span {
-  background-color: var(--red);
-  border-bottom-color: var(--red);
+  background-color: var(--lavender);
+  border-bottom-color: var(--lavender);
 }
 
 /* the sidebars */
@@ -521,7 +521,7 @@ span#time-date {
   --favicon-presearch: url("asset/icons/favicon-presearch.svg");
   --favicon-yahoo: url("asset/icons/favicon-yahoo.svg");
   --favicon-yandex: url("asset/icons/favicon-yandex.svg");
-  --faviconSearch: var(--favicon-yahoo);
+  --faviconSearch: var(--favicon-duckduckgo);
   /*filter: invert(0.4);*/
 }
 
@@ -774,6 +774,10 @@ span.info-connector {
 /* media queries */
 
 @media only screen and (max-width: 1024px) {
+  body {
+    margin: 20px;
+  }
+
   .container,
   .header,
   .sub-header,
@@ -781,8 +785,20 @@ span.info-connector {
   .sidebar,
   .sidebox-container,
   .footer {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
+  }
+
+  .sidebar {
+    order: 1;
+  }
+
+  .main-row {
+    order: 2;
+  }
+
+  .footer {
+    order: 3;
   }
 
   div#main-content-top-content ul,
