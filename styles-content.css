@@ -18,6 +18,32 @@
 /* basic elements */
 * {
   box-sizing: border-box;
+  scrollbar-color: #00000000 #00000000;
+  /*scrollbar-width: thin;*/
+}
+
+::-webkit-scrollbar {
+  /*width: 0.3em;*/
+}
+
+::-webkit-scrollbar-track {
+  background: #00000000;
+  margin-bottom: 0.75em;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #00000000;
+  border-radius: 1em;
+}
+
+:hover,
+.visible-scrollbar {
+  scrollbar-color: var(--scrollbar) #00000000;
+}
+
+:hover::-webkit-scrollbar-thumb,
+.visible-scrollbar::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar);
 }
 
 body {
@@ -59,8 +85,8 @@ h4 {
   border: 1px dashed var(--header-border-color);
 }*/
 
-.header-center h1 {
-  color: var(--header-fg-color);
+.header-center h2 {
+  font-size: 200%;
 }
 
 div[class="header"] {
@@ -417,6 +443,30 @@ div#sidebox-header-08 {
   background-color: var(--red);
 }
 
+div.sidebox-09 {
+  border-color: var(--lavender);
+}
+
+div#sidebox-header-09 {
+  background-color: var(--lavender);
+}
+
+div.sidebox-10 {
+  border-color: transparent;
+}
+
+#get-firefox {
+  position: relative;
+  padding: 30px;
+}
+
+article#get-firefox img {
+  width: 120px;
+  margin: auto;
+  display: block;
+  position: relative;
+}
+
 /* the footer */
 
 div.footer {
@@ -451,6 +501,20 @@ span#time-date {
   -webkit-animation-direction: linear;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: -0.5s;
+}
+
+/* greeting's time */
+
+.morning {
+  color: var(--orange);
+}
+
+.afternoon {
+  color: var(--yellow);
+}
+
+.evening {
+  color: var(--indigo);
 }
 
 /* Weather */
@@ -592,6 +656,8 @@ button#clear-field img {
 #suggestions {
   background-color: var(--searcher-bg-color);
   width: 100%;
+  max-height: 35vh;
+  overflow: auto;
   position: absolute;
   top: 100%;
   margin: auto;
@@ -603,7 +669,7 @@ button#clear-field img {
 }
 
 #suggestions hr {
-  margin: 0px 0px 15px 0px;
+  margin: -15px 0px 20px 0px;
   opacity: 0.5;
 }
 
@@ -709,6 +775,8 @@ span.info-connector {
   padding: 3px;
   margin-right: 4px;
   background-color: var(--green);
+  appearance: none;
+  border: 0px none;
 }
 
 .bars .bar.bar1 {
@@ -771,6 +839,27 @@ span.info-connector {
   }
 }
 
+/* random quotes */
+
+#quote-container {
+  padding: 30px;
+  margin: 10px;
+}
+
+.quote {
+  text-align: center;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+.author {
+  margin: 10px;
+  text-align: right;
+  font-size: 25px;
+  font-style: italic;
+  font-family: cursive;
+}
+
 /* media queries */
 
 @media only screen and (max-width: 1024px) {
@@ -810,5 +899,10 @@ span.info-connector {
 
   #search-container {
     width: 80%;
+  }
+
+  #suggestions {
+    /*max-height: 143px;*/
+    height: 20vh;
   }
 }

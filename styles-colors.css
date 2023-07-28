@@ -13,6 +13,7 @@
   --link-color: var(--accent-color);
 
   --accent-color: var(--ctp-mocha-blue-rgb);
+  --scrollbar: var(--accent-color);
 
   --section-bg-color: var(--ctp-mocha-surface0-rgb);
   /*--section-color: ;*/
