@@ -862,7 +862,43 @@ span.info-connector {
 
 /* media queries */
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 720px) {
+  body {
+    margin: 20px;
+  }
+
+  .container,
+  .header,
+  .sub-header,
+  .main-row,
+  .sidebar,
+  .sidebox-container,
+  .footer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sidebar {
+    order: 1;
+  }
+
+  .main-row {
+    order: 2;
+  }
+
+  .footer {
+    order: 3;
+  }
+
+  div#main-content-top-content ul,
+  .sub-header ul,
+  div[class*="main-content-middle"] ul,
+  .sidebar ul {
+    column-count: 2 !important;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 1020px) {
   body {
     margin: 20px;
   }
