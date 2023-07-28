@@ -896,6 +896,15 @@ span.info-connector {
   .sidebar ul {
     column-count: 2 !important;
   }
+
+  #search-container {
+    width: 80%;
+  }
+
+  #suggestions {
+    /*max-height: 143px;*/
+    height: 20vh;
+  }
 }
 
 @media only screen and (min-width: 721px) and (max-width: 1020px) {
