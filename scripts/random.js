@@ -65,7 +65,7 @@ const copyPassword = () => {
   setTimeout(() => {
     // after 1500 ms, changing tick icon back to copy
     copyIcon.innerText = "copy";
-    copyIcon.style.color = "var(--green)";
+    copyIcon.style.color = "var(--orange)";
   }, 1500);
 };
 
