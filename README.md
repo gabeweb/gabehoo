@@ -60,9 +60,11 @@ This page is made possible thanks to:
 - [FrankFan](https://github.com/FrankFan) for [jQuery.scrollText.js](href="https://github.com/FrankFan/jQuery.scrollText.js) script.
 - [mmoss](https://github.com/mmoss) for [Last.fm jQuery Plugin](https://github.com/mmoss/jquery-lastfm) (refactored).
 - [OpenWeatherMap](https://openweathermap.org) for weather info.
-- [IBM](https://github.com/IBM) for [IBM Plex](https://github.com/IBM/plex) font and [IBM's Carbon Design System](https://carbondesignsystem.com/guidelines/icons/contribute/) icons.
+- [Google](https://github.com/google) for [Material Design](https://github.com/google/material-design-icons/tree/master) icons.
+- [IBM](https://github.com/IBM) for [IBM Plex](https://github.com/IBM/plex) font and [IBM's Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
 - [IdreesInc](https://github.com/IdreesInc) for [Monocraft](https://github.com/IdreesInc/Monocraft) font.
 - [Catppuccin](https://github.com/catppuccin/catppuccin) color palette.
+- Password Generator is based on [Password Generator by CodingNepal]([https://codingnepalweb.com/demos/random-password-generator-javascript/](https://www.codingnepalweb.com/random-password-generator-javascript/)) but using `crypto.getRandomValues(array)` instead `Math.random()`.
 
 Released under a [GPL-3.0 license](https://github.com/gabeweb/gabehoo/blob/main/LICENSE).
 
