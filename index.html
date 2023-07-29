@@ -90,11 +90,17 @@
               id="clear-field"
               onclick="InputBoxReset('searchInput')"
               type="reset"
+              class="material-icon"
             >
-              <img src="asset/icons/close.svg" alt="Clear" />
+              clear
             </button>
-            <button id="search-button" onclick="search()">
-              <img src="asset/icons/loupe.svg" alt="Go" />
+            <button
+              id="search-button"
+              onclick="search()"
+              style=""
+              class="material-icon"
+            >
+              search
             </button>
           </form>
           <div id="suggestions"></div>
@@ -3024,18 +3030,6 @@
           </div>
 
           <div class="sidebox-09">
-            <div id="sidebox-header-09">
-              <h4>Random Quote</h4>
-            </div>
-            <div id="sidebox-content-09">
-              <article id="quote-container">
-                <h3><span class="quote" id="quote"></span></h3>
-                <p class="autohor" id="author"></p>
-              </article>
-            </div>
-          </div>
-
-          <div class="sidebox-10">
             <article id="get-firefox">
               <a href="https://www.mozilla.org/firefox/all/" target="_blank"
                 ><img
@@ -3046,11 +3040,11 @@
             </article>
           </div>
 
-          <div class="sidebox-11">
-            <div id="sidebox-header-11">
+          <div class="sidebox-10">
+            <div id="sidebox-header-10">
               <h4>Password Generator</h4>
             </div>
-            <div id="sidebox-content-11">
+            <div id="sidebox-content-10">
               <article id="passwordGenerator">
                 <!-- password generator -->
 
@@ -3065,7 +3059,14 @@
                       <label class="title">Password Length</label>
                       <span></span>
                     </div>
-                    <input type="range" min="5" max="128" value="16" step="1" data-ddg-inputtype="credentials.password">
+                    <input
+                      type="range"
+                      min="5"
+                      max="128"
+                      value="16"
+                      step="1"
+                      data-ddg-inputtype="credentials.password"
+                    />
                   </div>
                   <div class="pass-settings">
                     <label class="title">Password Settings</label>
@@ -3094,9 +3095,8 @@
                 <!-- end password generator -->
 
                 <p id="small-print">
-                  Need a strong password? Try the Password Generator
-                  to create complex passwords that will keep your information
-                  safe.
+                  Need a strong password? Try the Password Generator to create
+                  complex passwords that will keep your information safe.
                 </p>
               </article>
             </div>
@@ -3132,15 +3132,6 @@
     <script src="main.js"></script>
     <script src="scripts/suggestions.js"></script>
     <script src="weather/weather.js"></script>
-    <script src="scripts/quotes.js"></script>
     <script src="scripts/random.js"></script>
-
-    <script type="text/javascript">
-      $(function () {
-        $(".vertical-scroll-box").scrollText({
-          duration: 20000,
-        });
-      });
-    </script>
   </body>
 </html>
