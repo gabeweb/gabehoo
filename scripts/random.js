@@ -1,6 +1,6 @@
 // Password Generator code adapted from
 // CodingNepal
-// youtube.com/codingnepal
+// hhttps://www.codingnepalweb.com/random-password-generator-javascript/
 
 const lengthSlider = document.querySelector(".pass-length input"),
   options = document.querySelectorAll(".option input"),
