@@ -3027,26 +3027,80 @@
             <div id="sidebox-header-09">
               <h4>Random Quote</h4>
             </div>
-            <div id="sidebox-conteent-09">
+            <div id="sidebox-content-09">
               <article id="quote-container">
-                <hh3><span class="quote" id="quote"></span></hh3>
+                <h3><span class="quote" id="quote"></span></h3>
                 <p class="autohor" id="author"></p>
               </article>
             </div>
           </div>
 
           <div class="sidebox-10">
-              <article id="get-firefox">
-<a href="https://www.mozilla.org/firefox/all/" target="_blank"><img src="images/get-firefox-button.png" alt="Get Firefox" title="Get Firefox"></a>
+            <article id="get-firefox">
+              <a href="https://www.mozilla.org/firefox/all/" target="_blank"
+                ><img
+                  src="images/get-firefox-button.png"
+                  alt="Get Firefox"
+                  title="Get Firefox"
+              /></a>
+            </article>
+          </div>
+
+          <div class="sidebox-11">
+            <div id="sidebox-header-11">
+              <h4>Password Generator</h4>
+            </div>
+            <div id="sidebox-content-11">
+              <article id="passwordGenerator">
+                <!-- password generator -->
+
+                <div class="wrapper-pwd-gen">
+                  <div class="input-box">
+                    <input type="text" disabled />
+                    <span class="material-icon">copy</span>
+                  </div>
+                  <div class="pass-indicator"></div>
+                  <div class="pass-length">
+                    <div class="details-pwd-gem">
+                      <label class="title">Password Length</label>
+                      <span></span>
+                    </div>
+                    <input type="range" min="5" max="128" value="15" step="1" />
+                  </div>
+                  <div class="pass-settings">
+                    <label class="title">Password Settings</label>
+                    <ul class="options">
+                      <li class="option">
+                        <input type="checkbox" id="lowercase" checked />
+                        <label for="lowercase" title="Lowercase">(a-z)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="uppercase" />
+                        <label for="uppercase" title="Uppercase">(A-Z)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="numbers" />
+                        <label for="numbers" title="Numbers">(0-9)</label>
+                      </li>
+                      <li class="option">
+                        <input type="checkbox" id="symbols" />
+                        <label for="symbols" title="Symbols">(!-$^+)</label>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="generate-btn">Generate Password</button>
+                </div>
+
+                <!-- end password generator -->
+
+                <p id="small-print">
+                  Need a strong password? Try the Password Generator
+                  to create complex passwords that will keep your information
+                  safe.
+                </p>
               </article>
+            </div>
           </div>
-
-          <div>
-            <script type="text/javascript"
-            >console.log(window.navigator.platform);
-            </script>
-          </div>
-
         </div>
       </div>
       <div class="footer">
@@ -3079,6 +3133,7 @@
     <script src="scripts/suggestions.js"></script>
     <script src="weather/weather.js"></script>
     <script src="scripts/quotes.js"></script>
+    <script src="scripts/random.js"></script>
 
     <script type="text/javascript">
       $(function () {
