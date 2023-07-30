@@ -430,6 +430,11 @@ div#sidebox-header-05 {
   background-color: var(--green);
 }
 
+div#sidebox-content-05 {
+  position: relative;
+  padding: 30px 20px 20px 20px;
+}
+
 div.sidebox-06 {
   border-color: var(--yellow);
 }
@@ -481,6 +486,21 @@ div#sidebox-header-10 {
 div#sidebox-content-10 {
   position: relative;
   padding: 30px 20px 10px 20px;
+}
+
+/* speed test */
+
+#speedtest-container {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin: auto;
+  padding: 20px;
+  border: 1px dashed var(--green);
+}
+
+#speedtest-result {
+  font-family: var(--fontBody);
 }
 
 /* password generator  */
@@ -567,6 +587,10 @@ div#sidebox-content-10 {
   background: var(--black);
 }
 
+.details-pwd-gen span {
+  font-weight: bold;
+}
+
 input[type="range"] {
   accent-color: var(--indigo);
 }
@@ -604,7 +628,8 @@ input[type="range"]:focus {
   align-content: center;
 }
 
-.wrapper-pwd-gen .generate-btn {
+.wrapper-pwd-gen .generate-btn,
+.speedtest-button {
   appearance: none;
   width: 100%;
   color: var(--text-color-alt);
@@ -652,12 +677,12 @@ span#time-date {
 #dottime {
   animation-name: blink;
   animation-duration: 1s;
-  animation-direction: linear;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
   animation-delay: -0.5s;
   -webkit-animation-name: blink;
   -webkit-animation-duration: 1s;
-  -webkit-animation-direction: linear;
+  -webkit-animation-timing-function: ease-in;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: -0.5s;
 }
@@ -705,12 +730,80 @@ img#weather-icon {
   font-size: 2em;
 }
 
+.fade-in {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1.5s;
+}
+
 .fade-in-weather {
   opacity: 1;
   animation-name: fadeInWeatherOpacity;
   animation-iteration-count: 1;
   animation-timing-function: ease-in;
   animation-duration: 2s;
+}
+
+.fade-in-faster {
+  opacity: 1;
+  animation-name: fadeInFasterOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+.fade-in-icon {
+  opacity: 1;
+  animation-name: fadeInIconOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 3.5s;
+}
+
+@keyframes fadeInFasterOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInWeatherOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInIconOpacity {
+  0% {
+    opacity: 0;
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.6;
+  }
 }
 
 /* SEARCH REVAMPED */
@@ -986,27 +1079,6 @@ span.info-connector {
   100% {
     filter: opacity(1);
   }
-}
-
-/* random quotes */
-
-#quote-container {
-  padding: 30px;
-  margin: 10px;
-}
-
-.quote {
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-}
-
-.author {
-  margin: 10px;
-  text-align: right;
-  font-size: 25px;
-  font-style: italic;
-  font-family: cursive;
 }
 
 /* media queries */

@@ -37,23 +37,24 @@
   </head>
 
   <body>
-    <div class="container">
+    <div class="container fade-in">
       <div class="header">
         <div class="header-center">
           <h2><span id="greeting"></span></h2>
         </div>
         <div class="header-left">
-          <div id="timestamp-container">
+          <div id="timestamp-container fade-in">
             <span id="date-time"></span><br />
             <span id="time-date"></span>
           </div>
         </div>
         <div class="header-right">
           <a href="https://openweathermap.org/city/3647651" target="_blank">
-            <div id="weather-container" title="">
+            <div class="fade-in-weather" id="weather-container" title="">
               <div id="weather-symbol">
                 <img
                   src=""
+                  class="fade-in-icon"
                   id="weather-icon"
                   data-remote-svg-uri=""
                   data-remote-svg-class="weather-linea"
@@ -1769,6 +1770,71 @@
             </article>
 
             <article>
+              <h4><span>Messengers</span></h4>
+
+              <ul>
+                <li>
+                  <a href="https://beeper.com/" title="Beeper" target="_blank"
+                    >Beeper</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://discord.com/" title="Discord" target="_blank"
+                    >Discord</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://app.element.io/"
+                    title="Element"
+                    target="_blank"
+                    >Element</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://messenger.com"
+                    title="Facebook Messenger"
+                    target="_blank"
+                    >Facebook Messenger</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://messages.google.com"
+                    title="Google Messages"
+                    target="_blank"
+                    >Google Messages</a
+                  >
+                </li>
+
+                <li>
+                  <a href="https://signal.org" title="Signal" target="_blank"
+                    >Signal</a
+                  >
+                </li>
+
+                <li>
+                  <a
+                    href="https://web.telegram.org/"
+                    title="Telegram Web"
+                    target="_blank"
+                    >Telegram Web</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://web.whatsapp.com/"
+                    title="WhatsApp Web"
+                    target="_blank"
+                    >WhatsApp Web</a
+                  >
+                </li>
+              </ul>
+            </article>
+
+            <article>
               <h4><span>Social Entertainment</span></h4>
               <ul>
                 <li>
@@ -2251,6 +2317,16 @@
                 </li>
                 <li>
                   <a
+                    href="https://librespeed.org/"
+                    title="LibreSpeed"
+                    target="_blank"
+                  >
+                    LibreSpeed
+                  </a>
+                </li>
+
+                <li>
+                  <a
                     href="https://openspeedtest.com/"
                     title="OpenSpeedTest"
                     target="_blank"
@@ -2384,79 +2460,10 @@
           </div>
           <div class="sidebox-02">
             <div id="sidebox-header-02">
-              <h4>Messengers</h4>
-            </div>
-
-            <div id="sidebox-content-02">
-              <ul>
-                <li>
-                  <a href="https://beeper.com/" title="Beeper" target="_blank"
-                    >Beeper</a
-                  >
-                </li>
-
-                <li>
-                  <a href="https://discord.com/" title="Discord" target="_blank"
-                    >Discord</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.element.io/"
-                    title="Element"
-                    target="_blank"
-                    >Element</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://messenger.com"
-                    title="Facebook Messenger"
-                    target="_blank"
-                    >Facebook Messenger</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://messages.google.com"
-                    title="Google Messages"
-                    target="_blank"
-                    >Google Messages</a
-                  >
-                </li>
-
-                <li>
-                  <a href="https://signal.org" title="Signal" target="_blank"
-                    >Signal</a
-                  >
-                </li>
-
-                <li>
-                  <a
-                    href="https://web.telegram.org/"
-                    title="Telegram Web"
-                    target="_blank"
-                    >Telegram Web</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://web.whatsapp.com/"
-                    title="WhatsApp Web"
-                    target="_blank"
-                    >WhatsApp Web</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sidebox-03">
-            <div id="sidebox-header-03">
               <h4>Social Networks</h4>
             </div>
 
-            <div id="sidebox-content-03">
+            <div id="sidebox-content-02">
               <ul>
                 <li>
                   <a href="https://500px.com/" title="500px" target="_blank"
@@ -2535,12 +2542,12 @@
             </div>
           </div>
 
-          <div class="sidebox-04">
-            <div id="sidebox-header-04">
+          <div class="sidebox-03">
+            <div id="sidebox-header-03">
               <h4>Storage</h4>
             </div>
 
-            <div id="sidebox-content-04">
+            <div id="sidebox-content-03">
               <ul>
                 <li>
                   <a
@@ -2628,12 +2635,12 @@
             </div>
           </div>
 
-          <div class="sidebox-05">
-            <div id="sidebox-header-05">
+          <div class="sidebox-04">
+            <div id="sidebox-header-04">
               <h4>Shopping</h4>
             </div>
 
-            <div id="sidebox-content-05">
+            <div id="sidebox-content-04">
               <ul>
                 <li>
                   <a
@@ -2694,6 +2701,30 @@
                   >
                 </li>
               </ul>
+            </div>
+          </div>
+
+          <div class="sidebox-05">
+            <div id="sidebox-header-05">
+              <h4>Internet Speed Test</h4>
+            </div>
+
+            <div id="sidebox-content-05">
+              <div id="speedtest-container">
+                <div id="speedtest-presentation">Internet Speed Result</div>
+                <div id="speedtest-result"></div>
+                <br />
+                <button
+                  type="button"
+                  onclick="speedTest()"
+                  class="speedtest-button"
+                >
+                  Speed Test
+                </button>
+              </div>
+                <p id="small-print">
+                  For this simple Internet Speed Test (written in JavaScript) the download of a BMP image with a weight of 10.5 MB hosted on <a href="https://freetestdata.com/image-files/bmp/" target="_blank">Free Test Data</a> is used. For relatively more realistic values over wireless, the code has been altered to simulate a larger image size, so the results shown here are only estimates.
+                </p>
             </div>
           </div>
 
@@ -3032,8 +3063,10 @@
 
           <div class="sidebox-09">
             <article id="get-firefox">
-              <a href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-developer" target="_blank"
-                >
+              <a
+                href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-developer"
+                target="_blank"
+              >
                 <img
                   src="images/get-firefox-button-mono.png"
                   alt="Get Firefox"
@@ -3057,8 +3090,8 @@
                   </div>
                   <div class="pass-indicator"></div>
                   <div class="pass-length">
-                    <div class="details-pwd-gem">
-                      <label class="title">Password Length</label>
+                    <div class="details-pwd-gen">
+                      <label class="title">Password Length:</label>
                       <span></span>
                     </div>
                     <input
@@ -3078,7 +3111,7 @@
                         <label for="lowercase" title="Lowercase">(a-z)</label>
                       </li>
                       <li class="option">
-                        <input type="checkbox" id="uppercase" />
+                        <input type="checkbox" id="uppercase" checked />
                         <label for="uppercase" title="Uppercase">(A-Z)</label>
                       </li>
                       <li class="option">
@@ -3135,5 +3168,6 @@
     <script src="scripts/suggestions.js"></script>
     <script src="weather/weather.js"></script>
     <script src="scripts/random.js"></script>
+    <script src="scripts/speedtest.js"></script>
   </body>
 </html>
