@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "MaterialIcons";
-  src: url("asset/fonts/MaterialIcons/MaterialIconsRound-Regular.otf");
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf");
 }
 
 :root {
@@ -692,9 +692,12 @@ span#time-date {
 }
 
 #weather-icon {
-  filter: invert(1);
   height: 58px;
   display: list-item;
+}
+
+img#weather-icon {
+  filter: invert(1);
 }
 
 #weather-info {
