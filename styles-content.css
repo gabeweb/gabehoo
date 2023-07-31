@@ -509,29 +509,38 @@ div#sidebox-content-10 {
   margin: auto;
 }
 
-.wrapper-pwd-gen .input-box {
+.wrapper-pwd-gen .input-box div {
   position: relative;
 }
 
-.input-box input {
+.input-box div {
   width: 100%;
-  height: 53px;
+  min-height: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
   color: var(--green);
   font-family: var(--fontBody);
   font-weight: bold;
   background-color: transparent;
-  font-size: 1.4em;
+  font-size: 1.2em;
   letter-spacing: 0.2em;
   border: 1px solid var(--green);
-  padding: 0 2.85rem 0 1rem;
+  word-break: break-word;
 }
 
 .input-box span {
   position: absolute;
-  right: 13px;
+  top: 35px;
+  right: 35px;
   cursor: pointer;
-  line-height: 53px;
+  padding: 6px 10px 6px 10px;
   color: var(--orange);
+  background-color: var(--bg-color);
+  border-radius: 25px;
 }
 
 .input-box span:hover {
@@ -630,17 +639,21 @@ input[type="range"]:focus {
 
 .wrapper-pwd-gen .generate-btn,
 .speedtest-button {
-  appearance: none;
-  width: 100%;
+  width: 150px;
   color: var(--text-color-alt);
+  align-items: center;
+  position: relative;
+  display: flex;
   border: none;
   outline: none;
+  text-align: center;
   cursor: pointer;
   background: var(--green);
   font-size: 1.06rem;
   font-weight: bold;
   padding: 0.94rem 0;
   margin: 0.94rem auto;
+  justify-content: center;
 }
 
 /* end password generator */
