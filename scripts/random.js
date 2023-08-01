@@ -36,7 +36,7 @@ const generatePassword = () => {
     let randomChar = staticPassword[randomIndex]; // obtiene el carácter
     randomPassword += randomChar;
   }
-  passwordInput.textContent = randomPassword;
+  passwordInput.innerHTML = randomPassword;
 };
 
 const upadatePassIndicator = () => {
@@ -59,7 +59,7 @@ const updateSlider = () => {
 updateSlider();
 
 const copyPassword = () => {
-  navigator.clipboard.writeText(passwordInput.value); // copying random password
+  navigator.clipboard.writeText(passwordInput.innerHTML); // copying random password
   copyIcon.innerText = "check"; // changing copy icon to tick
   copyIcon.style.color = "var(--indigo)";
   setTimeout(() => {

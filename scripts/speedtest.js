@@ -3,7 +3,7 @@
 
 var imageAddr =
   "https://freetestdata.com/wp-content/uploads/2023/04/10.5-MB-scaled.bmp";
-var downloadSize = 21000000; //bytes
+var downloadSize = 26235156; //bytes
 
 function showMessage(msg) {
   var result = document.getElementById("speedtest-result");
