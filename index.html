@@ -2713,6 +2713,7 @@
               <div id="speedtest-container">
                 <div id="speedtest-presentation">Internet Speed Result</div>
                 <div id="speedtest-result"></div>
+                <div id="resultado"></div>
                 <br />
                 <button
                   type="button"
@@ -2723,15 +2724,12 @@
                 </button>
               </div>
               <p id="small-print">
-                For this simple Internet Speed Test (written in JavaScript) the
-                download of a BMP image with a weight of 13117578 bytes (12.5
-                MB) hosted on
+                This simple JavaScript Internet Speed Test downloads a BMP image weighing 13117578 bytes (12.5 MB) hosted on
                 <a
                   href="https://freetestdata.com/image-files/bmp/"
                   target="_blank"
                   >Free Test Data</a
-                >
-                is used. For relatively more realistic values over wireless, the
+                >. For relatively more realistic values over wireless, the
                 code has been altered to simulate a larger image size (x2), so
                 the results shown here are only estimates.
               </p>
@@ -3091,14 +3089,14 @@
             </div>
             <div id="sidebox-content-10">
               <article id="passwordGenerator">
+                <p>Need a strong password? Try the Password Generator to create complex passwords that will keep your information safe:</p>
                 <!-- password generator -->
 
                 <div class="wrapper-pwd-gen">
-                  <div class="input-box">
+                  <div class="input-box"><span id="copy-icon" class="material-icon" title="Copy to Clipboard"
+                    >copy</span
+                  >
                     <div contenteditable="true"></div>
-                    <span class="material-icon" title="Copy to Clipboard"
-                      >copy</span
-                    >
                   </div>
                   <div class="pass-indicator"></div>
                   <div class="pass-length">
@@ -3143,8 +3141,7 @@
                   <!-- end password generator -->
 
                   <p id="small-print">
-                    Need a strong password? Try the Password Generator to create
-                    complex passwords that will keep your information safe.
+                    <strong>Warning:</strong> This password generator <strong>does not store or transmit</strong> passwords.
                   </p>
                 </div>
               </article>
