@@ -14,7 +14,9 @@ function showMessage(msg) {
 }
 
 function startSpeedDetection() {
-  showMessage("<span id='dottime'>Please wait identifying internet speed</span>");
+  showMessage(
+    "<span id='dottime'>Please wait identifying internet speed</span>"
+  );
   window.setTimeout(getConnectionSpeed, 3000);
 }
 
@@ -31,7 +33,9 @@ function getConnectionSpeed() {
   };
 
   download.onerror = function (err, msg) {
-    showMessage("<span style='color: var(--red)'>Error: Failed to get internet connection</span>");
+    showMessage(
+      "<span style='color: var(--red)'>Error: Failed to get internet connection</span>"
+    );
   };
 
   startTime = new Date().getTime();
@@ -46,9 +50,29 @@ function getConnectionSpeed() {
     var speedMbps = (speedKbps / 1024).toFixed(2);
     showMessage([
       "<h4>Your internet connection speed is:</h4>",
-      "<label class='text-primary'>" + "<span style='color: var(--yellow); font-size: 1.5em;'>" + speedBps + "</span>" + "</label> bps",
-      "<label class='text-primary'>" + "<span style='color: var(--indigo); font-size: 1.5em;'>" + speedKbps + "</span>" + "</label> kbps",
-      "<label class='text-primary'>" + "<span style='color: var(--red); font-size: 1.5em;'>" + speedMbps + "</span>" + "</label> Mbps",
+      "<label class='text-primary'>" +
+        "<span style='color: var(--yellow); font-size: 1.5em;'>" +
+        speedBps +
+        "</span>" +
+        "</label> bps",
+      "<label class='text-primary'>" +
+        "<span style='color: var(--indigo); font-size: 1.5em;'>" +
+        speedKbps +
+        "</span>" +
+        "</label> kbps",
+      "<label class='text-primary'>" +
+        "<span style='color: var(--red); font-size: 1.5em;'>" +
+        speedMbps +
+        "</span>" +
+        "</label> Mbps",
+      "<div id='resultado'></div>",
     ]);
   }
+
+  $(document).ready(function () {
+    $.getJSON("https://hutils.loxal.net/whois", function (data) {
+      console.log(data);
+      $("#resultado").html("<p>Based on your public IP address: " + "<a href='https://hutils.loxal.net/whois' title='loxal' target='_blank' style='text-decoration-line: underline; text-decoration-style: dotted; cursor: help;'>" + data.ip + "</a>" + " at " + data.city + ", " + data.country + "</p>");
+    });
+  });
 }
