@@ -51,20 +51,20 @@ function getConnectionSpeed() {
     showMessage([
       "<h4>Your internet connection speed is:</h4>",
       "<label class='text-primary'>" +
-        "<span style='color: var(--yellow); font-size: 1.5em;'>" +
-        speedBps +
-        "</span>" +
-        "</label> bps",
+      "<span style='color: var(--yellow); font-size: 1.5em;'>" +
+      speedBps +
+      "</span>" +
+      "</label> bps",
       "<label class='text-primary'>" +
-        "<span style='color: var(--indigo); font-size: 1.5em;'>" +
-        speedKbps +
-        "</span>" +
-        "</label> kbps",
+      "<span style='color: var(--indigo); font-size: 1.5em;'>" +
+      speedKbps +
+      "</span>" +
+      "</label> kbps",
       "<label class='text-primary'>" +
-        "<span style='color: var(--red); font-size: 1.5em;'>" +
-        speedMbps +
-        "</span>" +
-        "</label> Mbps",
+      "<span style='color: var(--red); font-size: 1.5em;'>" +
+      speedMbps +
+      "</span>" +
+      "</label> Mbps",
       "<div id='resultado'></div>",
     ]);
   }
@@ -72,7 +72,7 @@ function getConnectionSpeed() {
   $(document).ready(function () {
     $.getJSON("https://hutils.loxal.net/whois", function (data) {
       console.log(data);
-      $("#resultado").html("<p>Based on your public IP address: " + "<a href='https://hutils.loxal.net/whois' title='loxal' target='_blank' style='text-decoration-line: underline; text-decoration-style: dotted; cursor: help;'>" + data.ip + "</a>" + " at " + data.city + ", " + data.country + "</p>");
+      $("#resultado").html("<p>Based on your public IP address: " + "<a href='https://hutils.loxal.net/whois' title='loxal' target='_blank' style='text-decoration-line: underline; text-decoration-style: dotted; cursor: help;'>" + data.ip + "</a>" + " provided by " + "<span style='font-weight: bold;'>" + data.isp + "</span>" + " at " + "<span style='font-weight: bold;'>" + data.city + "</span>" + ", " + "<span style='font-weight: bold;'>" + data.country + "<span></p>");
     });
   });
 }
