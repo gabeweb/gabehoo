@@ -133,9 +133,11 @@ div.sub-header li {
 /* the main */
 
 .main-content-top {
-  border-width: 1px 4px 4px 1px;
+  border-width: 1px;
   border-style: solid;
   border-color: var(--main-content-border-color);
+  box-shadow: 6px 6px var(--bg-color),
+    10px 10px var(--main-content-border-color);
 }
 
 div#main-content-top-content ul {
@@ -186,10 +188,11 @@ div[class*="main-content-middle"] li {
 section {
   /*border: 1px solid;*/
   padding: 8px;
+  /*margin: 10px;*/
 }
 
 section.section {
-  border-width: 1px 4px 4px 1px;
+  border-width: 1px;
   border-style: solid;
 }
 
@@ -208,16 +211,17 @@ section[id*="section-"] h4 {
 }
 
 .section#section-00 {
-  border-color: var(--red);
+  border-color: var(--green);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--green);
 }
 
 section#section-00 h4 span {
-  background-color: var(--red);
-  border-bottom-color: var(--red);
+  background-color: var(--green);
+  border-bottom-color: var(--green);
 }
 
 section#section-00 h4 {
-  border-bottom-color: var(--red);
+  border-bottom-color: var(--green);
 }
 
 .section#section-01 {
@@ -245,6 +249,7 @@ section#section-01 h4 {
 
 section#section-02 {
   border-color: var(--yellow);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--yellow);
 }
 
 section#section-02 h3 {
@@ -262,6 +267,7 @@ section#section-02 h4 span {
 
 section#section-03 {
   border-color: var(--green);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--green);
 }
 
 section#section-03 h3 {
@@ -279,6 +285,7 @@ section#section-03 h4 span {
 
 section#section-04 {
   border-color: var(--blue);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--blue);
 }
 
 section#section-04 h3 {
@@ -296,6 +303,7 @@ section#section-04 h4 span {
 
 section#section-05 {
   border-color: var(--indigo);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--indigo);
 }
 
 section#section-05 h3 {
@@ -313,6 +321,7 @@ section#section-05 h4 span {
 
 section#section-06 {
   border-color: var(--violet);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--violet);
 }
 
 section#section-06 h3 {
@@ -330,6 +339,7 @@ section#section-06 h4 span {
 
 section#section-07 {
   border-color: var(--lavender);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--lavender);
 }
 
 section#section-07 h3 {
@@ -359,7 +369,7 @@ section#section-07 h4 span {
   display: list-item;
   padding: 2px 0px;
   break-inside: avoid;
-  word-wrap: break-word;
+  word-wrap: break-all;
 }
 
 div[class*="sidebox"]:not([class="sidebox-container"]) {
@@ -375,11 +385,12 @@ div[id*="sidebox-header"] {
 }
 
 div.sidebox-00 {
-  border-color: var(--white);
+  border-color: var(--red);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--red);
 }
 
 div#sidebox-header-00 {
-  background-color: var(--white);
+  background-color: var(--red);
 }
 
 div#sidebox-content-00 {
@@ -392,6 +403,7 @@ div#sidebox-content-00 {
 
 div.sidebox-01 {
   border-color: var(--lavender);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--lavender);
 }
 
 div#sidebox-header-01 {
@@ -400,6 +412,7 @@ div#sidebox-header-01 {
 
 div.sidebox-02 {
   border-color: var(--violet);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--violet);
 }
 
 div#sidebox-header-02 {
@@ -408,6 +421,7 @@ div#sidebox-header-02 {
 
 div.sidebox-03 {
   border-color: var(--indigo);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--indigo);
 }
 
 div#sidebox-header-03 {
@@ -416,6 +430,7 @@ div#sidebox-header-03 {
 
 div.sidebox-04 {
   border-color: var(--blue);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--blue);
 }
 
 div#sidebox-header-04 {
@@ -424,6 +439,7 @@ div#sidebox-header-04 {
 
 div.sidebox-05 {
   border-color: var(--green);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--green);
 }
 
 div#sidebox-header-05 {
@@ -437,6 +453,7 @@ div#sidebox-content-05 {
 
 div.sidebox-06 {
   border-color: var(--yellow);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--yellow);
 }
 
 div#sidebox-header-06 {
@@ -445,6 +462,7 @@ div#sidebox-header-06 {
 
 div.sidebox-07 {
   border-color: var(--orange);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--orange);
 }
 
 div#sidebox-header-07 {
@@ -453,6 +471,7 @@ div#sidebox-header-07 {
 
 div.sidebox-08 {
   border-color: var(--red);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--red);
 }
 
 div#sidebox-header-08 {
@@ -477,6 +496,7 @@ article#get-firefox img {
 
 div.sidebox-10 {
   border-color: var(--green);
+  box-shadow: 6px 6px var(--bg-color), 10px 10px var(--green);
 }
 
 div#sidebox-header-10 {
@@ -485,7 +505,7 @@ div#sidebox-header-10 {
 
 div#sidebox-content-10 {
   position: relative;
-  padding: 20px 20px 10px 20px;
+  padding: 10px 20px 10px 20px;
 }
 
 /* speed test */
@@ -517,7 +537,8 @@ div#sidebox-content-10 {
 .input-box div {
   width: 100%;
   min-height: 150px;
-  display: flex;
+  padding: 10px;
+  display: inline-flex;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -530,6 +551,15 @@ div#sidebox-content-10 {
   letter-spacing: 0.2em;
   border: 1px solid var(--green);
   word-break: break-all;
+  background: linear-gradient(to right,
+      var(--red) 0%,
+      var(--orange) 20%,
+      var(--yellow) 40%,
+      var(--green) 60%,
+      var(--blue) 80%,
+      var(--indigo) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .input-box span#copy-icon {
@@ -826,9 +856,8 @@ img#weather-icon {
 #search-container {
   display: block;
   width: 60%;
-  margin: auto;
+  margin: 20px auto;
   position: relative;
-  padding: 0px;
 }
 
 #search {
@@ -905,7 +934,7 @@ button#search-button {
   color: var(--green);
 }
 
-form input:placeholder-shown + button#clear-field {
+form input:placeholder-shown+button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
@@ -1100,7 +1129,7 @@ span.info-connector {
 
 @media only screen and (max-width: 720px) {
   body {
-    margin: 20px;
+    /*margin: 20px;*/
   }
 
   .container,
@@ -1145,7 +1174,7 @@ span.info-connector {
 
 @media only screen and (min-width: 721px) and (max-width: 1020px) {
   body {
-    margin: 20px;
+    /*margin: 20px;*/
   }
 
   .container,
