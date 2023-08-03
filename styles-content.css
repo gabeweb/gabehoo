@@ -132,17 +132,7 @@ div.sub-header li {
 
 /* the main */
 
-.main-content-top {
-  border-width: 9px;
-  border-style: solid;
-  border-color: var(--main-content-border-color);
-	outline-width: 8px;
-	outline-style: solid;
-	outline-color: var(--bg-color);
-  box-shadow: 12px 12px var(--orange);
-}
-
-div#main-content-top-content ul {
+div[class*="main-content-top"] ul {
   list-style-type: none;
   margin: 20px;
   padding: 4px 0px;
@@ -151,7 +141,7 @@ div#main-content-top-content ul {
   column-gap: 20px;
 }
 
-div#main-content-top-content li {
+div[class*="main-content-top"] li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
@@ -201,7 +191,7 @@ section.section {
 	outline-color: var(--bg-color);
 }
 
-section[id*="section-"]:not([id="section-01"]) h3 {
+section[id*="section-"] h3 {
   display: block;
   color: var(--text-color-alt);
   padding: 10px 6px 6px 6px;
@@ -229,12 +219,6 @@ section#section-00 h4 {
   border-bottom-color: var(--green);
 }
 
-.section#section-01 {
-  border-width: 1px 1px 1px 1px;
-  border-style: none;
-  box-shadow: 12px 12px var(--orange);
-}
-
 section[id*="section-"] h4 span {
   color: var(--text-color-alt);
   padding: 4px 10px 0px 8px;
@@ -242,6 +226,15 @@ section[id*="section-"] h4 span {
   line-height: 0.8em;
   border-bottom-style: solid;
   border-bottom-width: 8px;
+}
+
+.section#section-01 {
+  border-color: var(--orange);
+  box-shadow: 12px 12px var(--orange);
+}
+
+section#section-01 h3 {
+  background-color: var(--orange);
 }
 
 section#section-01 h4 span {
@@ -359,6 +352,23 @@ section#section-07 h4 {
 section#section-07 h4 span {
   background-color: var(--lavender);
   border-bottom-color: var(--lavender);
+}
+
+section#section-08 {
+  border: none;
+  box-shadow: none;
+}
+
+#get-firefox {
+  position: relative;
+  padding: 20px;
+}
+
+article#get-firefox img {
+  width: 256px;
+  margin: auto;
+  display: block;
+  position: relative;
 }
 
 /* the sidebars */
@@ -488,31 +498,15 @@ div#sidebox-header-08 {
 }
 
 div.sidebox-09 {
-  border-color: transparent;
-}
-
-#get-firefox {
-  position: relative;
-  padding: 20px;
-}
-
-article#get-firefox img {
-  width: 256px;
-  margin: auto;
-  display: block;
-  position: relative;
-}
-
-div.sidebox-10 {
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
 
-div#sidebox-header-10 {
+div#sidebox-header-09 {
   background-color: var(--green);
 }
 
-div#sidebox-content-10 {
+div#sidebox-content-09 {
   position: relative;
   padding: 10px 20px 10px 20px;
 }
@@ -1164,7 +1158,7 @@ span.info-connector {
     order: 3;
   }
 
-  div#main-content-top-content ul,
+  div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
   .sidebar ul {
@@ -1209,7 +1203,7 @@ span.info-connector {
     order: 3;
   }
 
-  div#main-content-top-content ul,
+  div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
   .sidebar ul {

@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="./favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <!-- GABEhoo! - A simple responsive Startpage
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="./favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- GABEhoo! - A simple responsive Startpage
         Author: gabeweb  (github.con/gabeweb) -->
 
-    <title>GABEhoo!</title>
-    <link rel="stylesheet" href="styles-grids.css" />
-    <link rel="stylesheet" href="styles-colors.css" />
-    <link rel="stylesheet" href="styles-content.css" />
-    <!-- JQUERY REQUIRED FOR LAST.FM SCROBBLER -->
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <title>GABEhoo!</title>
+  <link rel="stylesheet" href="styles-grids.css" />
+  <link rel="stylesheet" href="styles-colors.css" />
+  <link rel="stylesheet" href="styles-content.css" />
+  <!-- JQUERY REQUIRED FOR LAST.FM SCROBBLER -->
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
 
-    <script type="text/javascript" src="scripts/lastfm.jquery.js"></script>
-    <script type="text/javascript">
+  <script type="text/javascript" src="scripts/lastfm.jquery.js"></script>
+  <script type="text/javascript">
       /*<![CDATA[*/ $(document).ready(function () {
         $("#lastBox").lastplayed({
           apikey: "518602081119232574d506e55f6d2892",
@@ -33,3189 +34,1637 @@
             '<p class="playing-not"><span style="animation: blink 1s infinite; animation-direction: alternate; color: var(--green);">//</span> Not scrobbling yet...</p>',
         });
       }); /*]]>*/
-    </script>
-  </head>
+  </script>
+</head>
 
-  <body>
-    <div class="container fade-in">
-      <div class="header">
-        <div class="header-center">
-          <h2><span id="greeting"></span></h2>
-        </div>
-        <div class="header-left">
-          <div id="timestamp-container fade-in">
-            <span id="date-time"></span><br />
-            <span id="time-date"></span>
-          </div>
-        </div>
-        <div class="header-right">
-          <a href="https://openweathermap.org/city/3647651" target="_blank">
-            <div class="fade-in-weather" id="weather-container" title="">
-              <div id="weather-symbol">
-                <img
-                  src=""
-                  class="fade-in-icon"
-                  id="weather-icon"
-                  data-remote-svg-uri=""
-                  data-remote-svg-class="weather-linea"
-                />
-              </div>
-              <div id="weather-info">
-                <span id="weather">Loading ... </span>
-              </div>
-            </div>
-          </a>
+<body>
+  <div class="container fade-in">
+    <div class="header">
+      <div class="header-center">
+        <h2><span id="greeting"></span></h2>
+      </div>
+      <div class="header-left">
+        <div id="timestamp-container fade-in">
+          <span id="date-time"></span><br />
+          <span id="time-date"></span>
         </div>
       </div>
-      <div class="sub-header">
-        <div id="search-container">
-          <form
-            id="searchbar"
-            action="https://duckduckgo.com/?search"
-            autocomplete="off"
-            oninput="suggest()"
-            target="_blank"
-          >
-            <!-- for DuckDuckGo use instead: "https://duckduckgo.com/?search" -->
+      <div class="header-right">
+        <a href="https://openweathermap.org/city/3647651" target="_blank">
+          <div class="fade-in-weather" id="weather-container" title="">
+            <div id="weather-symbol">
+              <img src="" class="fade-in-icon" id="weather-icon" data-remote-svg-uri=""
+                data-remote-svg-class="weather-linea" />
+            </div>
+            <div id="weather-info">
+              <span id="weather">Loading ... </span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="sub-header">
+      <div id="search-container">
+        <form id="searchbar" action="https://duckduckgo.com/?search" autocomplete="off" oninput="suggest()"
+          target="_blank">
+          <!-- for DuckDuckGo use instead: "https://duckduckgo.com/?search" -->
 
-            <span id="search-favicon"></span>
-            <input
-              autofocus
-              id="searchInput"
-              spellcheck="false"
-              name="q"
-              placeholder="Search the web"
-            />
+          <span id="search-favicon"></span>
+          <input autofocus id="searchInput" spellcheck="false" name="q" placeholder="Search the web" />
 
-            <button
-              id="clear-field"
-              onclick="InputBoxReset('searchInput')"
-              type="reset"
-              class="material-icon"
-              title="Clear"
-            >
-              clear
-            </button>
-            <button
-              id="search-button"
-              onclick="search()"
-              class="material-icon"
-              title="Search"
-            >
-              search
-            </button>
-          </form>
-          <div id="suggestions"></div>
-        </div>
+          <button id="clear-field" onclick="InputBoxReset('searchInput')" type="reset" class="material-icon"
+            title="Clear">
+            clear
+          </button>
+          <button id="search-button" onclick="search()" class="material-icon" title="Search">
+            search
+          </button>
+        </form>
+        <div id="suggestions"></div>
+      </div>
 
-        <section class="section" id="section-00">
+      <section class="section" id="section-00">
+        <article>
+          <h4><span>Breaking News</span></h4>
+          <ul>
+            <li>
+              <a href="https://apnews.com/" title="AP News" target="_blank">AP News</a>
+            </li>
+            <li>
+              <a href="https://bbc.com/" title="BBC News" target="_blank">BBC News</a>
+            </li>
+            <li>
+              <a href="https://www.dw.com/en" title="DW" target="_blank">DW</a>
+            </li>
+            <li>
+              <a href="https://forbes.com/" title="Forbes" target="_blank">Forbes</a>
+            </li>
+            <li>
+              <a href="https://insider.com/" title="Insider" target="_blank">Insider</a>
+            </li>
+            <li>
+              <a href="https://newsweek.com/" title="Newsweek" target="_blank">Newsweek</a>
+            </li>
+            <li>
+              <a href="https://npr.org/" title="NPR" target="_blank">NPR</a>
+            </li>
+            <li>
+              <a href="https://qz.com/" title="Quartz" target="_blank">Quartz</a>
+            </li>
+            <li>
+              <a href="https://reuters.com/" title="Reuters" target="_blank">Reuters</a>
+            </li>
+            <li>
+              <a href="https://theguardian.com/" title="The Guardian" target="_blank">The Guardian</a>
+            </li>
+            <li>
+              <a href="https://nytimes.com/" title="The New York Times" target="_blank">The New York Times</a>
+            </li>
+            <li>
+              <a href="https://time.com/" title="TIME" target="_blank">TIME</a>
+            </li>
+            <li>
+              <a href="https://vox.com/" title="Vox" target="_blank">Vox</a>
+            </li>
+          </ul>
+        </article>
+      </section>
+    </div>
+    <div class="main-row">
+      <div class="main-content-top">
+        <section class="section" id="section-01">
+          <h3>Blogroll</h3>
+
           <article>
-            <h4><span>Breaking News</span></h4>
+            <h4><span>Applications</span></h4>
+
             <ul>
               <li>
-                <a href="https://apnews.com/" title="AP News" target="_blank"
-                  >AP News</a
-                >
+                <a href="https://9to5linux.com/" title="9to5Linux" target="_blank">9to5Linux</a>
               </li>
               <li>
-                <a href="https://bbc.com/" title="BBC News" target="_blank"
-                  >BBC News</a
-                >
+                <a href="https://itsfoss.com/" title="It's FOSS" target="_blank">It's FOSS</a>
               </li>
               <li>
-                <a href="https://www.dw.com/en" title="DW" target="_blank"
-                  >DW</a
-                >
+                <a href="https://www.omgubuntu.co.uk/" title="OMG Ubuntu!" target="_blank">OMG Ubuntu!</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Comics</span></h4>
+            <ul>
+              <li>
+                <a href="https://poorlydrawnlines.com/" title="Poorly Drawn Lines" target="_blank">Poorly Drawn
+                  Lines</a>
               </li>
               <li>
-                <a href="https://forbes.com/" title="Forbes" target="_blank"
-                  >Forbes</a
-                >
+                <a href="https://theoatmeal.com/" title="The Oatmeal" target="_blank">The Oatmeal</a>
               </li>
               <li>
-                <a href="https://insider.com/" title="Insider" target="_blank"
-                  >Insider</a
-                >
+                <a href="https://warandpeas.com/" title="War and Peas" target="_blank">War and Peas</a>
               </li>
               <li>
-                <a href="https://newsweek.com/" title="Newsweek" target="_blank"
-                  >Newsweek</a
-                >
+                <a href="https://wronghands1.com/" title="Wrong Hands" target="_blank">Wrong Hands</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Design</span></h4>
+            <ul>
+              <li>
+                <a href="https://1stwebdesigner.com/" title="1st Web Designer" target="_blank">1st Web Designer</a>
               </li>
               <li>
-                <a href="https://npr.org/" title="NPR" target="_blank">NPR</a>
+                <a href="https://abduzeedo.com/" title="Abduzeedo" target="_blank">Abduzeedo</a>
               </li>
               <li>
-                <a href="https://qz.com/" title="Quartz" target="_blank"
-                  >Quartz</a
-                >
+                <a href="https://www.thisiscolossal.com/" title="Colossal" target="_blank">Colossal</a>
               </li>
               <li>
-                <a href="https://reuters.com/" title="Reuters" target="_blank"
-                  >Reuters</a
-                >
+                <a href="https://coolhunting.com/" title="Cool Hunting" target="_blank">Cool Hunting</a>
               </li>
               <li>
-                <a
-                  href="https://theguardian.com/"
-                  title="The Guardian"
-                  target="_blank"
-                  >The Guardian</a
-                >
+                <a href="https://design-milk.com/" title="Design Milk" target="_blank">Design Milk</a>
               </li>
               <li>
-                <a
-                  href="https://nytimes.com/"
-                  title="The New York Times"
-                  target="_blank"
-                  >The New York Times</a
-                >
+                <a href="https://www.designboom.com/" title="designboom" target="_blank">designboom</a>
               </li>
               <li>
-                <a href="https://time.com/" title="TIME" target="_blank"
-                  >TIME</a
-                >
+                <a href="https://designtaxi.com/" title="Design Taxi" target="_blank">Design Taxi</a>
               </li>
               <li>
-                <a href="https://vox.com/" title="Vox" target="_blank">Vox</a>
+                <a href="https://www.dezeen.com/" title="Dezeen" target="_blank">Dezeen</a>
+              </li>
+              <li>
+                <a href="https://www.domusweb.it/en/home.html" title="DOMUS" target="_blank">
+                  DOMUS
+                </a>
+              </li>
+              <li>
+                <a href="https://www.fubiz.net/en/" title="Fubiz" target="_blank">Fubiz</a>
+              </li>
+              <li>
+                <a href="https://hypebeast.com/" title="HYPEBEAST" target="_blank">HYPEBEAST</a>
+              </li>
+              <li>
+                <a href="https://hyperallergic.com/" title="Hyperallergic" target="_blank">Hyperallergic</a>
+              </li>
+              <li>
+                <a href="https://www.itsnicethat.com/" title="It's Nice That" target="_blank">It's Nice That</a>
+              </li>
+              <li>
+                <a href="https://www.smashingmagazine.com/" title="Smashing Magazine" target="_blank">Smashing
+                  Magazine</a>
+              </li>
+              <li>
+                <a href="https://www.ssense.com/" title="SSENSE" target="_blank">SSENSE</a>
+              </li>
+              <li>
+                <a href="https://uncrate.com/" title="Uncrate" target="_blank">Uncrate</a>
+              </li>
+              <li>
+                <a href="https://www.wallpaper.com/" title="Wallpaper™" target="_blank">Wallpaper™</a>
+              </li>
+              <li>
+                <a href="https://www.webdesignerdepot.com/" title="Webdesigner Depot" target="_blank">Webdesigner
+                  Depot</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Entertainment</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.slashfilm.com/" title="/Film" target="_blank">/Film</a>
+              </li>
+              <li>
+                <a href="https://www.complex.com/" title="Complex" target="_blank">Complex</a>
+              </li>
+              <li>
+                <a href="https://www.cracked.com/" title="Cracked" target="_blank">Cracked</a>
+              </li>
+              <li>
+                <a href="https://www.ign.com/" title="IGN" target="_blank">IGN</a>
+              </li>
+              <li>
+                <a href="https://www.pastemagazine.com/" title="Paste Magazine" target="_blank">Paste Magazine</a>
+              </li>
+              <li>
+                <a href="https://pitchfork.com/" title="Pitchfork" target="_blank">Pitchfork</a>
+              </li>
+              <li>
+                <a href="https://www.avclub.com/" title="The A.V. Club" target="_blank">The A.V. Club</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Geek</span></h4>
+
+            <ul>
+              <li>
+                <a href="https://arstechnica.com/" title="Ars Technica" target="_blank">Ars Technica</a>
+              </li>
+              <li>
+                <a href="https://www.atlasobscura.com/" title="Atlas Obscura" target="_blank">Atlas Obscura</a>
+              </li>
+              <li>
+                <a href="https://boingboing.net/" title="Boing Boing" target="_blank">Boing Boing</a>
+              </li>
+              <li>
+                <a href="https://www.engadget.com/" title="Engadget" target="_blank">Engadget</a>
+              </li>
+              <li>
+                <a href="https://www.fastcompany.com/" title="Fast Company" target="_blank">Fast Company</a>
+              </li>
+              <li>
+                <a href="https://www.geeksaresexy.net/" title="Geeks are Sexy" target="_blank">Geeks are Sexy</a>
+              </li>
+              <li>
+                <a href="https://gizmodo.com/" title="Gizmodo" target="_blank">Gizmodo</a>
+              </li>
+              <li>
+                <a href="https://www.gq.com/?us_site=y" title="GQ" target="_blank">GQ</a>
+              </li>
+              <li>
+                <a href="https://hackaday.com/" title="Hackaday" target="_blank">Hackaday</a>
+              </li>
+              <li>
+                <a href="https://hackernoon.com/" title="Hacker Noon" target="_blank">Hacker Noon</a>
+              </li>
+              <li>
+                <a href="https://hashnode.com/community" title="hashnode" target="_blank">hashnode</a>
+              </li>
+              <li>
+                <a href="https://www.hongkiat.com/blog/" title="Hongkiat" target="_blank">Hongkiat</a>
+              </li>
+              <li>
+                <a href="https://www.howtogeek.com/" title="How-To Geek" target="_blank">How-To Geek</a>
+              </li>
+              <li>
+                <a href="https://lifehacker.com/" title="Lifehacker" target="_blank">Lifehacker</a>
+              </li>
+              <li>
+                <a href="https://lithub.com/" title="Literary Hub" target="_blank">Literary Hub</a>
+              </li>
+              <li>
+                <a href="https://www.livescience.com/" title="Live Science" target="_blank">Live Science</a>
+              </li>
+              <li>
+                <a href="https://makezine.com/" title="Make:" target="_blank">Make:</a>
+              </li>
+              <li>
+                <a href="https://mashable.com/" title="Mashable" target="_blank">Mashable</a>
+              </li>
+              <li>
+                <a href="https://www.mentalfloss.com/" title="Mental Floss" target="_blank">Mental Floss</a>
+              </li>
+              <li>
+                <a href="https://www.polygon.com/" title="Polygon" target="_blank">Polygon</a>
+              </li>
+              <li>
+                <a href="https://www.popularmechanics.com/" title="Popular Mechanics" target="_blank">Popular
+                  Mechanics</a>
+              </li>
+              <li>
+                <a href="https://www.popsci.com/" title="Popular Science" target="_blank">Popular Science</a>
+              </li>
+              <li>
+                <a href="https://slate.com/" title="Slate" target="_blank">Slate</a>
+              </li>
+              <li>
+                <a href="https://www.smithsonianmag.com/" title="Smithsonian Magazine" target="_blank">Smithsonian
+                  Magazine</a>
+              </li>
+              <li>
+                <a href="https://spaceexplored.com/" title="Space Explored" target="_blank">Space Explored</a>
+              </li>
+              <li>
+                <a href="https://taskandpurpose.com/" title="Task & Purpose" target="_blank">Task & Purpose</a>
+              </li>
+              <li>
+                <a href="https://www.themanual.com/" title="The Manual" target="_blank">The Manual</a>
+              </li>
+              <li>
+                <a href="https://www.theverge.com/" title="The Verge" target="_blank">The Verge</a>
+              </li>
+              <li>
+                <a href="https://www.wired.com/" title="Wired" target="_blank">Wired</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Motor</span></h4>
+
+            <ul>
+              <li>
+                <a href="https://www.autoexpress.co.uk/" title="Auto Express" target="_blank">Auto Express</a>
+              </li>
+              <li>
+                <a href="https://www.autoblog.com/" title="Autoblog" target="_blank">Autoblog</a>
+              </li>
+              <li>
+                <a href="https://www.autoblog.nl/" title="Autoblog.nl" target="_blank">Autoblog.nl</a>
+              </li>
+              <li>
+                <a href="https://www.autocar.co.uk/" title="Autocar" target="_blank">Autocar</a>
+              </li>
+              <li>
+                <a href="https://www.caranddriver.com/" title="Car and Driver" target="_blank">Car and Driver</a>
+              </li>
+              <li>
+                <a href="https://www.carbodydesign.com/" title="Car Body Design" target="_blank">Car Body Design</a>
+              </li>
+              <li>
+                <a href="https://carbuzz.com/" title="CarBuzz" target="_blank">CarBuzz</a>
+              </li>
+              <li>
+                <a href="https://www.carscoops.com/" title="Carscoops" target="_blank">Carscoops</a>
+              </li>
+              <li>
+                <a href="https://insideevs.com/" title="InsideEVs" target="_blank">InsideEVs</a>
+              </li>
+              <li>
+                <a href="https://electrek.co/" title="Electrek" target="_blank">Electrek</a>
+              </li>
+              <li>
+                <a href="https://jalopnik.com/" title="Jalopnik" target="_blank">Jalopnik</a>
+              </li>
+              <li>
+                <a href="https://www.motorauthority.com/" title="Motor Authority" target="_blank">Motor Authority</a>
+              </li>
+              <li>
+                <a href="https://www.motor1.com/" title="Motor1" target="_blank">Motor1</a>
+              </li>
+              <li>
+                <a href="https://www.thetruthaboutcars.com/" title="The Truth About Cars" target="_blank">The Truth
+                  About Cars</a>
+              </li>
+              <li>
+                <a href="https://www.topspeed.com/" title="Top Speed" target="_blank">Top Speed</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Tech</span></h4>
+
+            <ul>
+              <li>
+                <a href="https://9to5google.com/" title="9to5Google" target="_blank">9to5Google</a>
+              </li>
+              <li>
+                <a href="https://www.androidauthority.com/" title="Android Authority" target="_blank">Android
+                  Authority</a>
+              </li>
+              <li>
+                <a href="https://www.androidcentral.com/" title="Android Central" target="_blank">Android Central</a>
+              </li>
+              <li>
+                <a href="https://www.androidpolice.com/" title="Android Police" target="_blank">Android Police</a>
+              </li>
+              <li>
+                <a href="https://bgr.com/" title="BGR" target="_blank">BGR</a>
+              </li>
+              <li>
+                <a href="https://www.bleepingcomputer.com/" title="Bleeping Computer" target="_blank">Bleeping
+                  Computer</a>
+              </li>
+              <li>
+                <a href="https://www.cnet.com/" title="CNET" target="_blank">CNET</a>
+              </li>
+              <li>
+                <a href="https://computerworld.com" title="Computerworld" target="_blank">Computerworld</a>
+              </li>
+              <li>
+                <a href="https://decrypt.co/" title="Decrypt" target="_blank">Decrypt</a>
+              </li>
+              <li>
+                <a href="https://www.digitaltrends.com/" title="Digital Trends" target="_blank">Digital Trends</a>
+              </li>
+              <li>
+                <a href="https://www.forbes.com/innovation/" title="Forbes Innovation" target="_blank">Forbes
+                  Innovation</a>
+              </li>
+              <li>
+                <a href="https://www.gsmarena.com/" title="GSMArena" target="_blank">GSMArena</a>
+              </li>
+              <li>
+                <a href="https://www.huaweicentral.com/" title="Huawei Central" target="_blank">Huawei Central</a>
+              </li>
+              <li>
+                <a href="https://imore.com" title="iMore" target="_blank">iMore</a>
+              </li>
+              <li>
+                <a href="https://interestingengineering.com/" title="Interesting Engineering"
+                  target="_blank">Interesting Engineering</a>
+              </li>
+              <li>
+                <a href="https://www.laptopmag.com/uk" title="Laptop Mag" target="_blank">Laptop Mag</a>
+              </li>
+              <li>
+                <a href="https://www.macworld.com" title="Macworld" target="_blank">Macworld</a>
+              </li>
+              <li>
+                <a href="https://mspoweruser.com/" title="MSPoweruser" target="_blank">MSPoweruser</a>
+              </li>
+              <li>
+                <a href="https://www.makeuseof.com/" title="MUO" target="_blank">MUO</a>
+              </li>
+              <li>
+                <a href="https://www.neowin.net/" title="Neowin" target="_blank">Neowin</a>
+              </li>
+              <li>
+                <a href="https://www.nextpit.com/" title="NextPit" target="_blank">NextPit</a>
+              </li>
+              <li>
+                <a href="https://www.onmsft.com/" title="On MSFT" target="_blank">On MSFT</a>
+              </li>
+              <li>
+                <a href="https://www.pcmag.com/" title="PCMag" target="_blank">PCMag</a>
+              </li>
+              <li>
+                <a href="https://www.pcworld.com/" title="PCWorld" target="_blank">PCWorld</a>
+              </li>
+              <li>
+                <a href="https://readwrite.com" title="ReadWrite" target="_blank">
+                  ReadWrite
+                </a>
+              </li>
+              <li>
+                <a href="https://techcrunch.com/" title="TechCrunch" target="_blank">TechCrunch</a>
+              </li>
+              <li>
+                <a href="https://www.techradar.com/" title="TechRadar" target="_blank">TechRadar</a>
+              </li>
+              <li>
+                <a href="https://www.techrepublic.com/" title="TechRepublic" target="_blank">TechRepublic</a>
+              </li>
+              <li>
+                <a href="https://www.techspot.com/" title="TechSpot" target="_blank">TechSpot</a>
+              </li>
+              <li>
+                <a href="https://thenextweb.com/" title="TNW" target="_blank">TNW</a>
+              </li>
+              <li>
+                <a href="https://www.tomsguide.com/" title="Tom's Guide" target="_blank">Tom's Guide</a>
+              </li>
+              <li>
+                <a href="https://www.vox.com/technology" title="Vox Technology" target="_blank">Vox Technology</a>
+              </li>
+              <li>
+                <a href="https://www.windowscentral.com/" title="Windows Central" target="_blank">Windows Central</a>
+              </li>
+              <li>
+                <a href="https://www.windowslatest.com/" title="Windows Latest" target="_blank">Windows Latest</a>
+              </li>
+              <li>
+                <a href="https://www.xda-developers.com/" title="XDA" target="_blank">XDA</a>
+              </li>
+              <li>
+                <a href="https://www.zdnet.com/" title="ZDNet" target="_blank">ZDNet</a>
+              </li>
+            </ul>
+          </article>
+          <article>
+            <h4><span>Social Entertainment</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.gaiaonline.com/" title="Gaia Online" target="_blank">Gaia Online</a>
+              </li>
+              <li>
+                <a href="https://www.habbo.es/" title="Habbo" target="_blank">Habbo</a>
+              </li>
+              <li>
+                <a href="https://www.last.fm/" title="Last.fm" target="_blank">Last.fm</a>
+              </li>
+              <li>
+                <a href="https://myanimelist.net/" title="MyAnimeList.net" target="_blank">MyAnimeList</a>
+              </li>
+              <li>
+                <a href="https://myspace.com/" title="Myspace" target="_blank">Myspace</a>
+              </li>
+              <li>
+                <a href="https://trakt.tv/" title="Trakt.tv" target="_blank">Trakt.tv</a>
+              </li>
+              <li>
+                <a href="https://www.tvtime.com/" title="TV Time" target="_blank">TV Time</a>
+              </li>
+              <li>
+                <a href="https://volt.fm/" title="volt.fm" target="_blank">volt.fm</a>
               </li>
             </ul>
           </article>
         </section>
       </div>
-      <div class="main-row">
-        <div class="main-content-top">
-          <div id="main-content-top-header">
-            <h3>Blogroll</h3>
-          </div>
-          <div id="main-content-top-content">
-            <section class="section" id="section-01">
-              <article>
-                <h4><span>Applications</span></h4>
+      <div class="main-content-middle-left">
+        <section class="section" id="section-02">
+          <h3>Productivity</h3>
 
-                <ul>
-                  <li>
-                    <a
-                      href="https://9to5linux.com/"
-                      title="9to5Linux"
-                      target="_blank"
-                      >9to5Linux</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://itsfoss.com/"
-                      title="It's FOSS"
-                      target="_blank"
-                      >It's FOSS</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.omgubuntu.co.uk/"
-                      title="OMG Ubuntu!"
-                      target="_blank"
-                      >OMG Ubuntu!</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Comics</span></h4>
-                <ul>
-                  <li>
-                    <a
-                      href="https://poorlydrawnlines.com/"
-                      title="Poorly Drawn Lines"
-                      target="_blank"
-                      >Poorly Drawn Lines</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://theoatmeal.com/"
-                      title="The Oatmeal"
-                      target="_blank"
-                      >The Oatmeal</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://warandpeas.com/"
-                      title="War and Peas"
-                      target="_blank"
-                      >War and Peas</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://wronghands1.com/"
-                      title="Wrong Hands"
-                      target="_blank"
-                      >Wrong Hands</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Design</span></h4>
-                <ul>
-                  <li>
-                    <a
-                      href="https://1stwebdesigner.com/"
-                      title="1st Web Designer"
-                      target="_blank"
-                      >1st Web Designer</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://abduzeedo.com/"
-                      title="Abduzeedo"
-                      target="_blank"
-                      >Abduzeedo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.thisiscolossal.com/"
-                      title="Colossal"
-                      target="_blank"
-                      >Colossal</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://coolhunting.com/"
-                      title="Cool Hunting"
-                      target="_blank"
-                      >Cool Hunting</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://design-milk.com/"
-                      title="Design Milk"
-                      target="_blank"
-                      >Design Milk</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.designboom.com/"
-                      title="designboom"
-                      target="_blank"
-                      >designboom</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://designtaxi.com/"
-                      title="Design Taxi"
-                      target="_blank"
-                      >Design Taxi</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.dezeen.com/"
-                      title="Dezeen"
-                      target="_blank"
-                      >Dezeen</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.domusweb.it/en/home.html"
-                      title="DOMUS"
-                      target="_blank"
-                    >
-                      DOMUS
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.fubiz.net/en/"
-                      title="Fubiz"
-                      target="_blank"
-                      >Fubiz</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hypebeast.com/"
-                      title="HYPEBEAST"
-                      target="_blank"
-                      >HYPEBEAST</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hyperallergic.com/"
-                      title="Hyperallergic"
-                      target="_blank"
-                      >Hyperallergic</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.itsnicethat.com/"
-                      title="It's Nice That"
-                      target="_blank"
-                      >It's Nice That</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.smashingmagazine.com/"
-                      title="Smashing Magazine"
-                      target="_blank"
-                      >Smashing Magazine</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.ssense.com/"
-                      title="SSENSE"
-                      target="_blank"
-                      >SSENSE</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://uncrate.com/"
-                      title="Uncrate"
-                      target="_blank"
-                      >Uncrate</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.wallpaper.com/"
-                      title="Wallpaper™"
-                      target="_blank"
-                      >Wallpaper™</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.webdesignerdepot.com/"
-                      title="Webdesigner Depot"
-                      target="_blank"
-                      >Webdesigner Depot</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Entertainment</span></h4>
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.slashfilm.com/"
-                      title="/Film"
-                      target="_blank"
-                      >/Film</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.complex.com/"
-                      title="Complex"
-                      target="_blank"
-                      >Complex</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.cracked.com/"
-                      title="Cracked"
-                      target="_blank"
-                      >Cracked</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://www.ign.com/" title="IGN" target="_blank"
-                      >IGN</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.pastemagazine.com/"
-                      title="Paste Magazine"
-                      target="_blank"
-                      >Paste Magazine</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://pitchfork.com/"
-                      title="Pitchfork"
-                      target="_blank"
-                      >Pitchfork</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.avclub.com/"
-                      title="The A.V. Club"
-                      target="_blank"
-                      >The A.V. Club</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Geek</span></h4>
-
-                <ul>
-                  <li>
-                    <a
-                      href="https://arstechnica.com/"
-                      title="Ars Technica"
-                      target="_blank"
-                      >Ars Technica</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.atlasobscura.com/"
-                      title="Atlas Obscura"
-                      target="_blank"
-                      >Atlas Obscura</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://boingboing.net/"
-                      title="Boing Boing"
-                      target="_blank"
-                      >Boing Boing</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.engadget.com/"
-                      title="Engadget"
-                      target="_blank"
-                      >Engadget</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.fastcompany.com/"
-                      title="Fast Company"
-                      target="_blank"
-                      >Fast Company</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.geeksaresexy.net/"
-                      title="Geeks are Sexy"
-                      target="_blank"
-                      >Geeks are Sexy</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://gizmodo.com/"
-                      title="Gizmodo"
-                      target="_blank"
-                      >Gizmodo</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.gq.com/?us_site=y"
-                      title="GQ"
-                      target="_blank"
-                      >GQ</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hackaday.com/"
-                      title="Hackaday"
-                      target="_blank"
-                      >Hackaday</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hackernoon.com/"
-                      title="Hacker Noon"
-                      target="_blank"
-                      >Hacker Noon</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://hashnode.com/community"
-                      title="hashnode"
-                      target="_blank"
-                      >hashnode</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.hongkiat.com/blog/"
-                      title="Hongkiat"
-                      target="_blank"
-                      >Hongkiat</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.howtogeek.com/"
-                      title="How-To Geek"
-                      target="_blank"
-                      >How-To Geek</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://lifehacker.com/"
-                      title="Lifehacker"
-                      target="_blank"
-                      >Lifehacker</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://lithub.com/"
-                      title="Literary Hub"
-                      target="_blank"
-                      >Literary Hub</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.livescience.com/"
-                      title="Live Science"
-                      target="_blank"
-                      >Live Science</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://makezine.com/"
-                      title="Make:"
-                      target="_blank"
-                      >Make:</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://mashable.com/"
-                      title="Mashable"
-                      target="_blank"
-                      >Mashable</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.mentalfloss.com/"
-                      title="Mental Floss"
-                      target="_blank"
-                      >Mental Floss</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.polygon.com/"
-                      title="Polygon"
-                      target="_blank"
-                      >Polygon</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.popularmechanics.com/"
-                      title="Popular Mechanics"
-                      target="_blank"
-                      >Popular Mechanics</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.popsci.com/"
-                      title="Popular Science"
-                      target="_blank"
-                      >Popular Science</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://slate.com/" title="Slate" target="_blank"
-                      >Slate</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.smithsonianmag.com/"
-                      title="Smithsonian Magazine"
-                      target="_blank"
-                      >Smithsonian Magazine</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://spaceexplored.com/"
-                      title="Space Explored"
-                      target="_blank"
-                      >Space Explored</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://taskandpurpose.com/"
-                      title="Task & Purpose"
-                      target="_blank"
-                      >Task & Purpose</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.themanual.com/"
-                      title="The Manual"
-                      target="_blank"
-                      >The Manual</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.theverge.com/"
-                      title="The Verge"
-                      target="_blank"
-                      >The Verge</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.wired.com/"
-                      title="Wired"
-                      target="_blank"
-                      >Wired</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Motor</span></h4>
-
-                <ul>
-                  <li>
-                    <a
-                      href="https://www.autoexpress.co.uk/"
-                      title="Auto Express"
-                      target="_blank"
-                      >Auto Express</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.autoblog.com/"
-                      title="Autoblog"
-                      target="_blank"
-                      >Autoblog</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.autoblog.nl/"
-                      title="Autoblog.nl"
-                      target="_blank"
-                      >Autoblog.nl</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.autocar.co.uk/"
-                      title="Autocar"
-                      target="_blank"
-                      >Autocar</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.caranddriver.com/"
-                      title="Car and Driver"
-                      target="_blank"
-                      >Car and Driver</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.carbodydesign.com/"
-                      title="Car Body Design"
-                      target="_blank"
-                      >Car Body Design</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://carbuzz.com/"
-                      title="CarBuzz"
-                      target="_blank"
-                      >CarBuzz</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.carscoops.com/"
-                      title="Carscoops"
-                      target="_blank"
-                      >Carscoops</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://insideevs.com/"
-                      title="InsideEVs"
-                      target="_blank"
-                      >InsideEVs</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://electrek.co/"
-                      title="Electrek"
-                      target="_blank"
-                      >Electrek</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://jalopnik.com/"
-                      title="Jalopnik"
-                      target="_blank"
-                      >Jalopnik</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.motorauthority.com/"
-                      title="Motor Authority"
-                      target="_blank"
-                      >Motor Authority</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.motor1.com/"
-                      title="Motor1"
-                      target="_blank"
-                      >Motor1</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.thetruthaboutcars.com/"
-                      title="The Truth About Cars"
-                      target="_blank"
-                      >The Truth About Cars</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.topspeed.com/"
-                      title="Top Speed"
-                      target="_blank"
-                      >Top Speed</a
-                    >
-                  </li>
-                </ul>
-              </article>
-
-              <article>
-                <h4><span>Tech</span></h4>
-
-                <ul>
-                  <li>
-                    <a
-                      href="https://9to5google.com/"
-                      title="9to5Google"
-                      target="_blank"
-                      >9to5Google</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.androidauthority.com/"
-                      title="Android Authority"
-                      target="_blank"
-                      >Android Authority</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.androidcentral.com/"
-                      title="Android Central"
-                      target="_blank"
-                      >Android Central</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.androidpolice.com/"
-                      title="Android Police"
-                      target="_blank"
-                      >Android Police</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://bgr.com/" title="BGR" target="_blank"
-                      >BGR</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.bleepingcomputer.com/"
-                      title="Bleeping Computer"
-                      target="_blank"
-                      >Bleeping Computer</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://www.cnet.com/" title="CNET" target="_blank"
-                      >CNET</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://computerworld.com"
-                      title="Computerworld"
-                      target="_blank"
-                      >Computerworld</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://decrypt.co/"
-                      title="Decrypt"
-                      target="_blank"
-                      >Decrypt</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.digitaltrends.com/"
-                      title="Digital Trends"
-                      target="_blank"
-                      >Digital Trends</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.forbes.com/innovation/"
-                      title="Forbes Innovation"
-                      target="_blank"
-                      >Forbes Innovation</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.gsmarena.com/"
-                      title="GSMArena"
-                      target="_blank"
-                      >GSMArena</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.huaweicentral.com/"
-                      title="Huawei Central"
-                      target="_blank"
-                      >Huawei Central</a
-                    >
-                  </li>
-                  <li>
-                    <a href="https://imore.com" title="iMore" target="_blank"
-                      >iMore</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://interestingengineering.com/"
-                      title="Interesting Engineering"
-                      target="_blank"
-                      >Interesting Engineering</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.laptopmag.com/uk"
-                      title="Laptop Mag"
-                      target="_blank"
-                      >Laptop Mag</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.macworld.com"
-                      title="Macworld"
-                      target="_blank"
-                      >Macworld</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://mspoweruser.com/"
-                      title="MSPoweruser"
-                      target="_blank"
-                      >MSPoweruser</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.makeuseof.com/"
-                      title="MUO"
-                      target="_blank"
-                      >MUO</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.neowin.net/"
-                      title="Neowin"
-                      target="_blank"
-                      >Neowin</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.nextpit.com/"
-                      title="NextPit"
-                      target="_blank"
-                      >NextPit</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.onmsft.com/"
-                      title="On MSFT"
-                      target="_blank"
-                      >On MSFT</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.pcmag.com/"
-                      title="PCMag"
-                      target="_blank"
-                      >PCMag</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.pcworld.com/"
-                      title="PCWorld"
-                      target="_blank"
-                      >PCWorld</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://readwrite.com"
-                      title="ReadWrite"
-                      target="_blank"
-                    >
-                      ReadWrite
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://techcrunch.com/"
-                      title="TechCrunch"
-                      target="_blank"
-                      >TechCrunch</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.techradar.com/"
-                      title="TechRadar"
-                      target="_blank"
-                      >TechRadar</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.techrepublic.com/"
-                      title="TechRepublic"
-                      target="_blank"
-                      >TechRepublic</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.techspot.com/"
-                      title="TechSpot"
-                      target="_blank"
-                      >TechSpot</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://thenextweb.com/"
-                      title="TNW"
-                      target="_blank"
-                      >TNW</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.tomsguide.com/"
-                      title="Tom's Guide"
-                      target="_blank"
-                      >Tom's Guide</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.vox.com/technology"
-                      title="Vox Technology"
-                      target="_blank"
-                      >Vox Technology</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.windowscentral.com/"
-                      title="Windows Central"
-                      target="_blank"
-                      >Windows Central</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.windowslatest.com/"
-                      title="Windows Latest"
-                      target="_blank"
-                      >Windows Latest</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.xda-developers.com/"
-                      title="XDA"
-                      target="_blank"
-                      >XDA</a
-                    >
-                  </li>
-                  <li>
-                    <a
-                      href="https://www.zdnet.com/"
-                      title="ZDNet"
-                      target="_blank"
-                      >ZDNet</a
-                    >
-                  </li>
-                </ul>
-              </article>
-            </section>
-          </div>
-        </div>
-        <div class="main-content-middle-left">
-          <section class="section" id="section-02">
-            <h3>Productivity</h3>
-
-            <article>
-              <h4><span>Graphic Editors</span></h4>
-
-              <ul>
-                <li>
-                  <a href="https://www.figma.com/" title="Figma" target="_blank"
-                    >Figma</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://designer.microsoft.com/"
-                    title="Microsoft Designer"
-                    target="_blank"
-                    >Microsoft Designer</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.photopea.com/"
-                    title="Photopea"
-                    target="_blank"
-                    >Photopea</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vectr.com/" title="Vectr" target="_blank"
-                    >Vectr</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Office Suites</span></h4>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://docs.google.com/"
-                    title="Google Docs"
-                    target="_blank"
-                    >Google Docs</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://libreoffice.org"
-                    title="LibreOffice"
-                    target="_blank"
-                    >LibreOffice</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.office.com/"
-                    title="Microsoft Office"
-                    target="_blank"
-                    >Microsoft Office</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Tasks and Notes</span></h4>
-              <ul>
-                <li>
-                  <a href="https://coda.io/" title="Coda" target="_blank"
-                    >Coda</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://keep.google.com/"
-                    title="Google Keep"
-                    target="_blank"
-                    >Google Keep</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://loop.microsoft.com/"
-                    title="Microsoft Loop"
-                    target="_blank"
-                    >Microsoft Loop</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.onenote.com/stickynotes"
-                    title="Microsoft Sticky Notes"
-                    target="_blank"
-                    >Microsoft Sticky Notes</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://to-do.live.com/tasks/"
-                    title="Microsoft To-Do"
-                    target="_blank"
-                    >Microsoft To-Do</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.noteshub.app/"
-                    title="NotesHub"
-                    target="_blank"
-                    >NotesHub</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.notion.so/"
-                    title="Notion"
-                    target="_blank"
-                    >Notion</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Text Editors</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://dillinger.io/"
-                    title="Dillinger"
-                    target="_blank"
-                    >Dillinger</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://pandao.github.io/editor.md/en.html"
-                    title="Editor.md"
-                    target="_blank"
-                    >Editor.md</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://demo.hedgedoc.org/"
-                    title="HedgeDoc"
-                    target="_blank"
-                    >HedgeDoc</a
-                  >
-                </li>
-                <li>
-                  <a href="https://markdit.com/" title="Mardit" target="_blank"
-                    >Mardit</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://stackedit.net/app"
-                    title="StackEdit+"
-                    target="_blank"
-                    >StackEdit+</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vscode.dev/" title="VSCode" target="_blank"
-                    >VSCode</a
-                  >
-                </li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="section" id="section-03">
-            <h3>Media</h3>
-
-            <article>
-              <h4><span>Music Streaming</span></h4>
-              <ul>
-                <li>
-                  <a href="https://3wk.com/" title="3WK.COM" target="_blank"
-                    >3WK.COM</a
-                  >
-                </li>
-                <li>
-                  <a href="https://8tracks.com/" title="8tracks" target="_blank"
-                    >8tracks</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://bandcamp.com/"
-                    title="Bandcamp"
-                    target="_blank"
-                    >Bandcamp</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://freemusicarchive.org/"
-                    title="Free Music Archive"
-                    target="_blank"
-                    >Free Music Archive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://hypem.com/"
-                    title="Hype Machine"
-                    target="_blank"
-                    >Hype Machine</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.jamendo.com/"
-                    title="Jamendo"
-                    target="_blank"
-                    >Jamendo</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.mixcloud.com/"
-                    title="Mixcloud"
-                    target="_blank"
-                    >Mixcloud</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://plaza.one/"
-                    title="Nigthwave Plaza"
-                    target="_blank"
-                    >Nigthwave Plaza</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.pandora.com/"
-                    title="Pandora"
-                    target="_blank"
-                    >Pandora</a
-                  >
-                </li>
-                <li>
-                  <a href="https://somafm.com/" title="SomaFM" target="_blank"
-                    >SomaFM</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://soundcloud.com/stream"
-                    title="SoundCloud"
-                    target="_blank"
-                    >SoundCloud</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.spotify.com/"
-                    title="Spotify"
-                    target="_blank"
-                    >Spotify</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://listen.tidal.com/"
-                    title="TIDAL"
-                    target="_blank"
-                    >TIDAL</a
-                  >
-                </li>
-                <li>
-                  <a href="https://tunein.com/" title="TuneIn" target="_blank"
-                    >TuneIn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://music.youtube.com/"
-                    title="YouTube Music"
-                    target="_blank"
-                    >YouTube Music</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Video Streaming</span></h4>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://www.crunchyroll.com/"
-                    title="Crunchyroll"
-                    target="_blank"
-                    >Crunchyroll</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.dailymotion.com/"
-                    title="Dailymotion"
-                    target="_blank"
-                    >Dailymotion</a
-                  >
-                </li>
-                <li>
-                  <a href="https://pluto.tv/" title="Pluto TV" target="_blank"
-                    >Pluto TV</a
-                  >
-                </li>
-                <li>
-                  <a href="https://roku.com/" title="Roku" target="_blank"
-                    >Roku</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.runtime.tv/"
-                    title="Runtime"
-                    target="_blank"
-                    >Runtime</a
-                  >
-                </li>
-                <li>
-                  <a href="https://tubitv.com/" title="Tubi" target="_blank"
-                    >Tubi</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vimeo.com/" title="Vimeo" target="_blank"
-                    >Vimeo</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vix.com/" title="ViX" target="_blank">ViX</a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.youtube.com/"
-                    title="YouTube"
-                    target="_blank"
-                    >YouTube</a
-                  >
-                </li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="section" id="section-04">
-            <h3>Security</h3>
-
-            <article>
-              <h4><span>Anti-Malware</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.eset.com/us/download/tools-and-utilities/"
-                    title="ESET Tools and Utilities"
-                    target="_blank"
-                    >ESET Tools and Utilities</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.emsisoft.com/en/home/emergency-kit/"
-                    title="Emsisoft Emergency Kit"
-                    target="_blank"
-                    >Emsisoft Emergency Kit</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://support.kaspersky.com/utility"
-                    title="Kaspersky Free Recovery Tools"
-                    target="_blank"
-                    >Kaspersky Free Recovery Tools</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/free-tools/stinger.html"
-                    title="McAfee Stinger"
-                    target="_blank"
-                    >McAfee Stinger</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://support.norton.com/sp/static/external/tools/npe.html"
-                    title="Norton Power Eraser"
-                    target="_blank"
-                    >Norton Power Eraser</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.sophos.com/en-us/free-tools"
-                    title="Sophos Free Tools"
-                    target="_blank"
-                    >Sophos Free Tools</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.trendmicro.com/en_us/forHome/products/free-tools.html"
-                    title="Trend Micro Free Tools"
-                    target="_blank"
-                    >Trend Micro Free Tools</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.virustotal.com/gui/home/upload"
-                    title="VirusTotal"
-                    target="_blank"
-                    >VirusTotal</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>DNS</span></h4>
-            </article>
+          <article>
+            <h4><span>Graphic Editors</span></h4>
 
             <ul>
               <li>
-                <a href="https://1.1.1.1/" title="1.1.1.1" target="_blank"
-                  >1.1.1.1</a
-                >
+                <a href="https://www.figma.com/" title="Figma" target="_blank">Figma</a>
               </li>
               <li>
-                <a
-                  href="https://adguard-dns.io/en/public-dns.html"
-                  title="AdGuard DNS"
-                  target="_blank"
-                  >AdGuard DNS</a
-                >
+                <a href="https://designer.microsoft.com/" title="Microsoft Designer" target="_blank">Microsoft
+                  Designer</a>
               </li>
               <li>
-                <a href="https://www.quad9.net/" title="Quad9" target="_blank"
-                  >Quad9</a
-                >
+                <a href="https://www.photopea.com/" title="Photopea" target="_blank">Photopea</a>
+              </li>
+              <li>
+                <a href="https://vectr.com/" title="Vectr" target="_blank">Vectr</a>
               </li>
             </ul>
+          </article>
 
-            <article>
-              <h4><span>Password Managers</span></h4>
-
-              <ul>
-                <li>
-                  <a
-                    href="https://1password.com/"
-                    title="1Password"
-                    target="_blank"
-                    >1Password</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://bitwarden.com/"
-                    title="Bitwarden"
-                    target="_blank"
-                    >Bitwarden</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://buttercup.pw/"
-                    title="Buttercup"
-                    target="_blank"
-                    >Buttercup</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.dashlane.com/"
-                    title="Dashlane"
-                    target="_blank"
-                    >Dashlane</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.enpass.io/"
-                    title="Enpass"
-                    target="_blank"
-                    >Enpass</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://keepass.info/"
-                    title="KeePass"
-                    target="_blank"
-                    >KeePass</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.keepassdx.com/"
-                    title="KeePassDX"
-                    target="_blank"
-                    >KeePassDX</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://keepassxc.org/"
-                    title="KeePassXC"
-                    target="_blank"
-                    >KeePassXC</a
-                  >
-                </li>
-                <li>
-                  <a href="https://keeweb.info/" title="KeeWeb" target="_blank"
-                    >KeeWeb</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://pwsafe.org/"
-                    title="Password Safe"
-                    target="_blank"
-                    >Password Safe</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Privacy Tools</span></h4>
-            </article>
+          <article>
+            <h4><span>Office Suites</span></h4>
 
             <ul>
               <li>
-                <a
-                  href="https://coveryourtracks.eff.org/"
-                  title="Cover Your Tracks"
-                  target="_blank"
-                  >Cover Your Tracks</a
-                >
+                <a href="https://docs.google.com/" title="Google Docs" target="_blank">Google Docs</a>
               </li>
               <li>
-                <a
-                  href="https://www.glarysoft.com/downloads/?p=free-page"
-                  title="Glarysoft Free Tools"
-                  target="_blank"
-                  >Glarysoft Free Tools</a
-                >
+                <a href="https://libreoffice.org" title="LibreOffice" target="_blank">LibreOffice</a>
               </li>
               <li>
-                <a
-                  href="https://www.security.org/how-secure-is-my-password/"
-                  title="How Secure Is My Password?"
-                  target="_blank"
-                  >How Secure Is My Password?</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://ifconfig.co/"
-                  title="ifconfig.co"
-                  target="_blank"
-                  >ifconfig.co</a
-                >
-              </li>
-              <li>
-                <a href="https://mail.tm/en/" title="mail.tm" target="_blank"
-                  >mail.tm</a
-                >
-              </li>
-              <li>
-                <a href="https://www.myip.com/" title="MyIP.com" target="_blank"
-                  >MyIP.com</a
-                >
-              </li>
-              <li>
-                <a
-                  href="https://lowe.github.io/tryzxcvbn/"
-                  title="zxcvbn"
-                  target="_blank"
-                  >zxcvbn</a
-                >
+                <a href="https://www.office.com/" title="Microsoft Office" target="_blank">Microsoft Office</a>
               </li>
             </ul>
+          </article>
 
-            <article>
-              <h4><span>VPN</span></h4>
-            </article>
+          <article>
+            <h4><span>Tasks and Notes</span></h4>
+            <ul>
+              <li>
+                <a href="https://coda.io/" title="Coda" target="_blank">Coda</a>
+              </li>
+              <li>
+                <a href="https://keep.google.com/" title="Google Keep" target="_blank">Google Keep</a>
+              </li>
+              <li>
+                <a href="https://loop.microsoft.com/" title="Microsoft Loop" target="_blank">Microsoft Loop</a>
+              </li>
+              <li>
+                <a href="https://www.onenote.com/stickynotes" title="Microsoft Sticky Notes" target="_blank">Microsoft
+                  Sticky Notes</a>
+              </li>
+              <li>
+                <a href="https://to-do.live.com/tasks/" title="Microsoft To-Do" target="_blank">Microsoft To-Do</a>
+              </li>
+              <li>
+                <a href="https://www.noteshub.app/" title="NotesHub" target="_blank">NotesHub</a>
+              </li>
+              <li>
+                <a href="https://www.notion.so/" title="Notion" target="_blank">Notion</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Text Editors</span></h4>
+            <ul>
+              <li>
+                <a href="https://dillinger.io/" title="Dillinger" target="_blank">Dillinger</a>
+              </li>
+              <li>
+                <a href="https://pandao.github.io/editor.md/en.html" title="Editor.md" target="_blank">Editor.md</a>
+              </li>
+              <li>
+                <a href="https://demo.hedgedoc.org/" title="HedgeDoc" target="_blank">HedgeDoc</a>
+              </li>
+              <li>
+                <a href="https://markdit.com/" title="Mardit" target="_blank">Mardit</a>
+              </li>
+              <li>
+                <a href="https://stackedit.net/app" title="StackEdit+" target="_blank">StackEdit+</a>
+              </li>
+              <li>
+                <a href="https://vscode.dev/" title="VSCode" target="_blank">VSCode</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="section-03">
+          <h3>Media</h3>
+
+          <article>
+            <h4><span>Music Streaming</span></h4>
+            <ul>
+              <li>
+                <a href="https://3wk.com/" title="3WK.COM" target="_blank">3WK.COM</a>
+              </li>
+              <li>
+                <a href="https://8tracks.com/" title="8tracks" target="_blank">8tracks</a>
+              </li>
+              <li>
+                <a href="https://bandcamp.com/" title="Bandcamp" target="_blank">Bandcamp</a>
+              </li>
+              <li>
+                <a href="https://freemusicarchive.org/" title="Free Music Archive" target="_blank">Free Music
+                  Archive</a>
+              </li>
+              <li>
+                <a href="https://hypem.com/" title="Hype Machine" target="_blank">Hype Machine</a>
+              </li>
+              <li>
+                <a href="https://www.jamendo.com/" title="Jamendo" target="_blank">Jamendo</a>
+              </li>
+              <li>
+                <a href="https://www.mixcloud.com/" title="Mixcloud" target="_blank">Mixcloud</a>
+              </li>
+              <li>
+                <a href="https://plaza.one/" title="Nigthwave Plaza" target="_blank">Nigthwave Plaza</a>
+              </li>
+              <li>
+                <a href="https://www.pandora.com/" title="Pandora" target="_blank">Pandora</a>
+              </li>
+              <li>
+                <a href="https://somafm.com/" title="SomaFM" target="_blank">SomaFM</a>
+              </li>
+              <li>
+                <a href="https://soundcloud.com/stream" title="SoundCloud" target="_blank">SoundCloud</a>
+              </li>
+              <li>
+                <a href="https://www.spotify.com/" title="Spotify" target="_blank">Spotify</a>
+              </li>
+              <li>
+                <a href="https://listen.tidal.com/" title="TIDAL" target="_blank">TIDAL</a>
+              </li>
+              <li>
+                <a href="https://tunein.com/" title="TuneIn" target="_blank">TuneIn</a>
+              </li>
+              <li>
+                <a href="https://music.youtube.com/" title="YouTube Music" target="_blank">YouTube Music</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Video Streaming</span></h4>
 
             <ul>
               <li>
-                <a href="https://browsec.com/" title="Browsec" target="_blank"
-                  >Browsec</a
-                >
+                <a href="https://www.crunchyroll.com/" title="Crunchyroll" target="_blank">Crunchyroll</a>
               </li>
               <li>
-                <a
-                  href="https://protonvpn.com/"
-                  title="ProtonVPN"
-                  target="_blank"
-                  >ProtonVPN</a
-                >
+                <a href="https://www.dailymotion.com/" title="Dailymotion" target="_blank">Dailymotion</a>
               </li>
               <li>
-                <a
-                  href="https://tunnelbear.com/"
-                  title="TunnelBear"
-                  target="_blank"
-                  >TunnelBear</a
-                >
+                <a href="https://pluto.tv/" title="Pluto TV" target="_blank">Pluto TV</a>
               </li>
               <li>
-                <a
-                  href="https://windscribe.com/"
-                  title="Windscribe"
-                  target="_blank"
-                  >Windscribe</a
-                >
+                <a href="https://roku.com/" title="Roku" target="_blank">Roku</a>
+              </li>
+              <li>
+                <a href="https://www.runtime.tv/" title="Runtime" target="_blank">Runtime</a>
+              </li>
+              <li>
+                <a href="https://tubitv.com/" title="Tubi" target="_blank">Tubi</a>
+              </li>
+              <li>
+                <a href="https://vimeo.com/" title="Vimeo" target="_blank">Vimeo</a>
+              </li>
+              <li>
+                <a href="https://vix.com/" title="ViX" target="_blank">ViX</a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/" title="YouTube" target="_blank">YouTube</a>
               </li>
             </ul>
-          </section>
-        </div>
-        <div class="main-content-middle-right">
-          <section class="section" id="section-05">
-            <h3>Social</h3>
+          </article>
+        </section>
 
-            <article>
-              <h4><span>Forums</span></h4>
-              <ul>
-                <li>
-                  <a href="https://dev.to/" title="DEV" target="_blank">DEV</a>
-                </li>
-                <li>
-                  <a href="https://www.quora.com/" title="Quora" target="_blank"
-                    >Quora</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.reddit.com/"
-                    title="Reddit"
-                    target="_blank"
-                    >Reddit</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://stackexchange.com/"
-                    title="Stack Exchange"
-                    target="_blank"
-                    >Stack Exchange</a
-                  >
-                </li>
-              </ul>
-            </article>
+        <section class="section" id="section-04">
+          <h3>Security</h3>
 
-            <article>
-              <h4><span>Messengers</span></h4>
+          <article>
+            <h4><span>Anti-Malware</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.eset.com/us/download/tools-and-utilities/" title="ESET Tools and Utilities"
+                  target="_blank">ESET Tools and Utilities</a>
+              </li>
+              <li>
+                <a href="https://www.emsisoft.com/en/home/emergency-kit/" title="Emsisoft Emergency Kit"
+                  target="_blank">Emsisoft Emergency Kit</a>
+              </li>
+              <li>
+                <a href="https://support.kaspersky.com/utility" title="Kaspersky Free Recovery Tools"
+                  target="_blank">Kaspersky Free Recovery Tools</a>
+              </li>
+              <li>
+                <a href="https://www.mcafee.com/en-us/consumer-corporate/mcafee-labs/free-tools/stinger.html"
+                  title="McAfee Stinger" target="_blank">McAfee Stinger</a>
+              </li>
+              <li>
+                <a href="https://support.norton.com/sp/static/external/tools/npe.html" title="Norton Power Eraser"
+                  target="_blank">Norton Power Eraser</a>
+              </li>
+              <li>
+                <a href="https://www.sophos.com/en-us/free-tools" title="Sophos Free Tools" target="_blank">Sophos Free
+                  Tools</a>
+              </li>
+              <li>
+                <a href="https://www.trendmicro.com/en_us/forHome/products/free-tools.html"
+                  title="Trend Micro Free Tools" target="_blank">Trend Micro Free Tools</a>
+              </li>
+              <li>
+                <a href="https://www.virustotal.com/gui/home/upload" title="VirusTotal" target="_blank">VirusTotal</a>
+              </li>
+            </ul>
+          </article>
 
-              <ul>
-                <li>
-                  <a href="https://beeper.com/" title="Beeper" target="_blank"
-                    >Beeper</a
-                  >
-                </li>
+          <article>
+            <h4><span>DNS</span></h4>
+          </article>
 
-                <li>
-                  <a href="https://discord.com/" title="Discord" target="_blank"
-                    >Discord</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.element.io/"
-                    title="Element"
-                    target="_blank"
-                    >Element</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://messenger.com"
-                    title="Facebook Messenger"
-                    target="_blank"
-                    >Facebook Messenger</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://messages.google.com"
-                    title="Google Messages"
-                    target="_blank"
-                    >Google Messages</a
-                  >
-                </li>
+          <ul>
+            <li>
+              <a href="https://1.1.1.1/" title="1.1.1.1" target="_blank">1.1.1.1</a>
+            </li>
+            <li>
+              <a href="https://adguard-dns.io/en/public-dns.html" title="AdGuard DNS" target="_blank">AdGuard DNS</a>
+            </li>
+            <li>
+              <a href="https://www.quad9.net/" title="Quad9" target="_blank">Quad9</a>
+            </li>
+          </ul>
 
-                <li>
-                  <a href="https://signal.org" title="Signal" target="_blank"
-                    >Signal</a
-                  >
-                </li>
+          <article>
+            <h4><span>Password Managers</span></h4>
 
-                <li>
-                  <a
-                    href="https://web.telegram.org/"
-                    title="Telegram Web"
-                    target="_blank"
-                    >Telegram Web</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://web.whatsapp.com/"
-                    title="WhatsApp Web"
-                    target="_blank"
-                    >WhatsApp Web</a
-                  >
-                </li>
-              </ul>
-            </article>
+            <ul>
+              <li>
+                <a href="https://1password.com/" title="1Password" target="_blank">1Password</a>
+              </li>
+              <li>
+                <a href="https://bitwarden.com/" title="Bitwarden" target="_blank">Bitwarden</a>
+              </li>
+              <li>
+                <a href="https://buttercup.pw/" title="Buttercup" target="_blank">Buttercup</a>
+              </li>
+              <li>
+                <a href="https://www.dashlane.com/" title="Dashlane" target="_blank">Dashlane</a>
+              </li>
+              <li>
+                <a href="https://www.enpass.io/" title="Enpass" target="_blank">Enpass</a>
+              </li>
+              <li>
+                <a href="https://keepass.info/" title="KeePass" target="_blank">KeePass</a>
+              </li>
+              <li>
+                <a href="https://www.keepassdx.com/" title="KeePassDX" target="_blank">KeePassDX</a>
+              </li>
+              <li>
+                <a href="https://keepassxc.org/" title="KeePassXC" target="_blank">KeePassXC</a>
+              </li>
+              <li>
+                <a href="https://keeweb.info/" title="KeeWeb" target="_blank">KeeWeb</a>
+              </li>
+              <li>
+                <a href="https://pwsafe.org/" title="Password Safe" target="_blank">Password Safe</a>
+              </li>
+            </ul>
+          </article>
 
-            <article>
-              <h4><span>Social Entertainment</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.gaiaonline.com/"
-                    title="Gaia Online"
-                    target="_blank"
-                    >Gaia Online</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.habbo.es/" title="Habbo" target="_blank"
-                    >Habbo</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.last.fm/" title="Last.fm" target="_blank"
-                    >Last.fm</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://myanimelist.net/"
-                    title="MyAnimeList.net"
-                    target="_blank"
-                    >MyAnimeList</a
-                  >
-                </li>
-                <li>
-                  <a href="https://myspace.com/" title="Myspace" target="_blank"
-                    >Myspace</a
-                  >
-                </li>
-                <li>
-                  <a href="https://trakt.tv/" title="Trakt.tv" target="_blank"
-                    >Trakt.tv</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.tvtime.com/"
-                    title="TV Time"
-                    target="_blank"
-                    >TV Time</a
-                  >
-                </li>
-                <li>
-                  <a href="https://volt.fm/" title="volt.fm" target="_blank"
-                    >volt.fm</a
-                  >
-                </li>
-              </ul>
-            </article>
-          </section>
+          <article>
+            <h4><span>Privacy Tools</span></h4>
+          </article>
 
-          <section class="section" id="section-06">
-            <h3>Money</h3>
-            <article>
-              <h4><span>Crypto</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.binance.com/"
-                    title="Binance"
-                    target="_blank"
-                    >Binance</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://stake.solblaze.org/"
-                    title="BlazeStake"
-                    target="_blank"
-                    >BlazeStake</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://coinmarketcap.com/"
-                    title="CoinMarketCap"
-                    target="_blank"
-                    >CoinMarketCap</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://dappradar.com/"
-                    title="DappRadar"
-                    target="_blank"
-                    >DappRadar</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://pool.friedger.de/"
-                    title="Friedger Pool"
-                    target="_blank"
-                    >Friedger Pool</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://polygonscan.com/"
-                    title="Polygonscan"
-                    target="_blank"
-                    >Polygonscan</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.stormgain.com/"
-                    title="StormGain"
-                    target="_blank"
-                    >StormGain</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://pool.xverse.app/"
-                    title="Xverse Pool"
-                    target="_blank"
-                    >Xverse Pool</a
-                  >
-                </li>
-              </ul>
-            </article>
+          <ul>
+            <li>
+              <a href="https://coveryourtracks.eff.org/" title="Cover Your Tracks" target="_blank">Cover Your Tracks</a>
+            </li>
+            <li>
+              <a href="https://www.glarysoft.com/downloads/?p=free-page" title="Glarysoft Free Tools"
+                target="_blank">Glarysoft Free Tools</a>
+            </li>
+            <li>
+              <a href="https://www.security.org/how-secure-is-my-password/" title="How Secure Is My Password?"
+                target="_blank">How Secure Is My Password?</a>
+            </li>
+            <li>
+              <a href="https://ifconfig.co/" title="ifconfig.co" target="_blank">ifconfig.co</a>
+            </li>
+            <li>
+              <a href="https://mail.tm/en/" title="mail.tm" target="_blank">mail.tm</a>
+            </li>
+            <li>
+              <a href="https://www.myip.com/" title="MyIP.com" target="_blank">MyIP.com</a>
+            </li>
+            <li>
+              <a href="https://lowe.github.io/tryzxcvbn/" title="zxcvbn" target="_blank">zxcvbn</a>
+            </li>
+          </ul>
 
-            <article>
-              <h4><span>NFT</span></h4>
-              <ul>
-                <li>
-                  <a href="https://boom.money/" title="Boom" target="_blank"
-                    >Boom</a
-                  >
-                </li>
-                <li>
-                  <a href="https://coconft.com/" title="cocoNFT" target="_blank"
-                    >cocoNFT</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://nft.coinbase.com/"
-                    title="Coinbase NFT"
-                    target="_blank"
-                    >Coinbase NFT</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://colorglyph.io/"
-                    title="Colorglyph"
-                    target="_blank"
-                    >Colorglyph</a
-                  >
-                </li>
-                <li>
-                  <a href="https://opensea.io" title="OpenSea" target="_blank"
-                    >OpenSea</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.premint.xyz/"
-                    title="PREMINT"
-                    target="_blank"
-                    >PREMINT</a
-                  >
-                </li>
-                <li>
-                  <a href="https://rarible.com/" title="Rarible" target="_blank"
-                    >Rarible</a
-                  >
-                </li>
-              </ul>
-            </article>
+          <article>
+            <h4><span>VPN</span></h4>
+          </article>
 
-            <article>
-              <h4><span>Wallets</span></h4>
-              <ul>
-                <li>
-                  <a href="https://app.airtm.io/" title="AirTM" target="_blank"
-                    >AirTM</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://bitpay.com/id/home/"
-                    title="BitPay"
-                    target="_blank"
-                    >BitPay</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.blockchain.com/"
-                    title="Blockchain"
-                    target="_blank"
-                    >Blockchain</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.doshi.app/" title="Doshi" target="_blank"
-                    >Doshi</a
-                  >
-                </li>
-                <li>
-                  <a href="https://eternl.io/" title="Eternl" target="_blank"
-                    >Eternl</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.hiro.so/"
-                    title="Hiro Wallet"
-                    target="_blank"
-                    >Hiro Wallet</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://metamask.io/"
-                    title="Metamask"
-                    target="_blank"
-                    >Metamask</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.myetherwallet.com/"
-                    title="My Ether Wallet"
-                    target="_blank"
-                    >My Ether Wallet</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.paypal.com/"
-                    title="PayPal"
-                    target="_blank"
-                    >PayPal</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://raywallet.io/"
-                    title="RayWallet"
-                    target="_blank"
-                    >RayWallet</a
-                  >
-                </li>
-                <li>
-                  <a href="https://phantom.app/" title="Phantom" target="_blank"
-                    >Phantom</a
-                  >
-                </li>
-                <li>
-                  <a href="https://reserve.org/" title="Reserve" target="_blank"
-                    >Reserve</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://wallet.roninchain.com/"
-                    title="Ronin Wallet"
-                    target="_blank"
-                    >Ronin Wallet</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://solflare.com/"
-                    title="Solflare"
-                    target="_blank"
-                    >Solflare</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://yoroi-wallet.com/"
-                    title="Yoroi Wallet"
-                    target="_blank"
-                    >Yoroi Wallet</a
-                  >
-                </li>
-              </ul>
-            </article>
-          </section>
-
-          <section class="section" id="section-07">
-            <h3>Resources</h3>
-
-            <article>
-              <h4><span>Blogs & Websites</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://draft.blogger.com/"
-                    title="Blogger"
-                    target="_blank"
-                    >Blogger</a
-                  >
-                </li>
-                <li>
-                  <a href="https://mmm.page/" title="mmm.page" target="_blank"
-                    >mmm.page</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://neocities.org/"
-                    title="NeoCities"
-                    target="_blank"
-                    >NeoCities</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://unstoppabledomains.com/"
-                    title="Unstoppable Domains"
-                    target="_blank"
-                    >Unstoppable Domains</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://wordpress.com/es/"
-                    title="WordPress"
-                    target="_blank"
-                    >WordPress</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Code & Development</span></h4>
-              <ul>
-                <li>
-                  <a href="https://codepen.io/" title="CodePen" target="_blank"
-                    >CodePen</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.codeproject.com/"
-                    title="CodeProject"
-                    target="_blank"
-                    >CodeProject</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://tympanus.net/codrops/"
-                    title="Codrops"
-                    target="_blank"
-                    >Codrops</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/" title="GitHub" target="_blank"
-                    >GitHub</a
-                  >
-                </li>
-                <li>
-                  <a href="https://gitlab.com/" title="GitLab" target="_blank"
-                    >GitLab</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://developers.google.com/web/"
-                    title="Google Developers"
-                    target="_blank"
-                    >Google Developers</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.npmjs.com/" title="NPM" target="_blank"
-                    >NPM</a
-                  >
-                </li>
-                <li>
-                  <a href="https://replit.com/" title="Replit" target="_blank"
-                    >Replit</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Design & Inspiration</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://www.artsy.net/"
-                    title="Artsy"
-                    target="_blank"
-                  >
-                    Artsy
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.behance.net/"
-                    title="Behance"
-                    target="_blank"
-                    >Behance</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.canva.com/" title="Canva" target="_blank"
-                    >Canva</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.deviantart.com/"
-                    title="DeviantArt"
-                    target="_blank"
-                    >DeviantArt</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://dribbble.com/"
-                    title="Dribbble"
-                    target="_blank"
-                    >Dribbble</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ello.co/" title="Ello" target="_blank"
-                    >Ello</a
-                  >
-                </li>
-                <li>
-                  <a href="https://giphy.com/" title="GIPHY" target="_blank"
-                    >GIPHY</a
-                  >
-                </li>
-                <li>
-                  <a href="https://imgur.com/" title="Imgur" target="_blank"
-                    >Imgur</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.instructables.com/"
-                    title="Instructables"
-                    target="_blank"
-                    >Instructables</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.pinterest.com/"
-                    title="Pinterest"
-                    target="_blank"
-                    >Pinterest</a
-                  >
-                </li>
-              </ul>
-            </article>
-
-            <article>
-              <h4><span>Internet Speed Test</span></h4>
-              <ul>
-                <li>
-                  <a
-                    href="https://speed.cloudflare.com/"
-                    title="Cloudflare Internet Speed Test"
-                    target="_blank"
-                    >Cloudflare Internet Speed Test</a
-                  >
-                </li>
-                <li>
-                  <a href="https://fast.com/" title="Fast" target="_blank"
-                    >Fast</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://fiber.google.com/speedtest/"
-                    title="Google Fiber Speed Test"
-                    target="_blank"
-                    >Google Fiber Speed Test</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://librespeed.org/"
-                    title="LibreSpeed"
-                    target="_blank"
-                  >
-                    LibreSpeed
-                  </a>
-                </li>
-
-                <li>
-                  <a
-                    href="https://openspeedtest.com/"
-                    title="OpenSpeedTest"
-                    target="_blank"
-                    >OpenSpeedTest</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.speedtest.net/"
-                    title="Speedtest"
-                    target="_blank"
-                    >Speedtest</a
-                  >
-                </li>
-              </ul>
-            </article>
-          </section>
-        </div>
-        <div class="main-content-bottom"></div>
+          <ul>
+            <li>
+              <a href="https://browsec.com/" title="Browsec" target="_blank">Browsec</a>
+            </li>
+            <li>
+              <a href="https://protonvpn.com/" title="ProtonVPN" target="_blank">ProtonVPN</a>
+            </li>
+            <li>
+              <a href="https://tunnelbear.com/" title="TunnelBear" target="_blank">TunnelBear</a>
+            </li>
+            <li>
+              <a href="https://windscribe.com/" title="Windscribe" target="_blank">Windscribe</a>
+            </li>
+          </ul>
+        </section>
       </div>
-      <div class="sidebar">
-        <div class="sidebox-container">
-          <div class="sidebox-00">
-            <div id="sidebox-header-00">
-              <h4>#NowPlaying</h4>
-            </div>
-            <div id="sidebox-content-00">
-              <div id="nowPlaying-container">
-                <span id="playingInfo"></span>
-              </div>
+      <div class="main-content-middle-right">
+        <section class="section" id="section-05">
+          <h3>Social</h3>
+
+          <article>
+            <h4><span>Forums</span></h4>
+            <ul>
+              <li>
+                <a href="https://dev.to/" title="DEV" target="_blank">DEV</a>
+              </li>
+              <li>
+                <a href="https://www.quora.com/" title="Quora" target="_blank">Quora</a>
+              </li>
+              <li>
+                <a href="https://www.reddit.com/" title="Reddit" target="_blank">Reddit</a>
+              </li>
+              <li>
+                <a href="https://stackexchange.com/" title="Stack Exchange" target="_blank">Stack Exchange</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Messengers</span></h4>
+
+            <ul>
+              <li>
+                <a href="https://beeper.com/" title="Beeper" target="_blank">Beeper</a>
+              </li>
+
+              <li>
+                <a href="https://discord.com/" title="Discord" target="_blank">Discord</a>
+              </li>
+              <li>
+                <a href="https://app.element.io/" title="Element" target="_blank">Element</a>
+              </li>
+              <li>
+                <a href="https://messenger.com" title="Facebook Messenger" target="_blank">Facebook Messenger</a>
+              </li>
+              <li>
+                <a href="https://messages.google.com" title="Google Messages" target="_blank">Google Messages</a>
+              </li>
+
+              <li>
+                <a href="https://signal.org" title="Signal" target="_blank">Signal</a>
+              </li>
+
+              <li>
+                <a href="https://web.telegram.org/" title="Telegram Web" target="_blank">Telegram Web</a>
+              </li>
+              <li>
+                <a href="https://web.whatsapp.com/" title="WhatsApp Web" target="_blank">WhatsApp Web</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Social Entertainment</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.gaiaonline.com/" title="Gaia Online" target="_blank">Gaia Online</a>
+              </li>
+              <li>
+                <a href="https://www.habbo.es/" title="Habbo" target="_blank">Habbo</a>
+              </li>
+              <li>
+                <a href="https://www.last.fm/" title="Last.fm" target="_blank">Last.fm</a>
+              </li>
+              <li>
+                <a href="https://myanimelist.net/" title="MyAnimeList.net" target="_blank">MyAnimeList</a>
+              </li>
+              <li>
+                <a href="https://myspace.com/" title="Myspace" target="_blank">Myspace</a>
+              </li>
+              <li>
+                <a href="https://trakt.tv/" title="Trakt.tv" target="_blank">Trakt.tv</a>
+              </li>
+              <li>
+                <a href="https://www.tvtime.com/" title="TV Time" target="_blank">TV Time</a>
+              </li>
+              <li>
+                <a href="https://volt.fm/" title="volt.fm" target="_blank">volt.fm</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="section-06">
+          <h3>Money</h3>
+          <article>
+            <h4><span>Crypto</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.binance.com/" title="Binance" target="_blank">Binance</a>
+              </li>
+              <li>
+                <a href="https://stake.solblaze.org/" title="BlazeStake" target="_blank">BlazeStake</a>
+              </li>
+              <li>
+                <a href="https://coinmarketcap.com/" title="CoinMarketCap" target="_blank">CoinMarketCap</a>
+              </li>
+              <li>
+                <a href="https://dappradar.com/" title="DappRadar" target="_blank">DappRadar</a>
+              </li>
+              <li>
+                <a href="https://pool.friedger.de/" title="Friedger Pool" target="_blank">Friedger Pool</a>
+              </li>
+              <li>
+                <a href="https://polygonscan.com/" title="Polygonscan" target="_blank">Polygonscan</a>
+              </li>
+              <li>
+                <a href="https://app.stormgain.com/" title="StormGain" target="_blank">StormGain</a>
+              </li>
+              <li>
+                <a href="https://pool.xverse.app/" title="Xverse Pool" target="_blank">Xverse Pool</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>NFT</span></h4>
+            <ul>
+              <li>
+                <a href="https://boom.money/" title="Boom" target="_blank">Boom</a>
+              </li>
+              <li>
+                <a href="https://coconft.com/" title="cocoNFT" target="_blank">cocoNFT</a>
+              </li>
+              <li>
+                <a href="https://nft.coinbase.com/" title="Coinbase NFT" target="_blank">Coinbase NFT</a>
+              </li>
+              <li>
+                <a href="https://colorglyph.io/" title="Colorglyph" target="_blank">Colorglyph</a>
+              </li>
+              <li>
+                <a href="https://opensea.io" title="OpenSea" target="_blank">OpenSea</a>
+              </li>
+              <li>
+                <a href="https://www.premint.xyz/" title="PREMINT" target="_blank">PREMINT</a>
+              </li>
+              <li>
+                <a href="https://rarible.com/" title="Rarible" target="_blank">Rarible</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Wallets</span></h4>
+            <ul>
+              <li>
+                <a href="https://app.airtm.io/" title="AirTM" target="_blank">AirTM</a>
+              </li>
+              <li>
+                <a href="https://bitpay.com/id/home/" title="BitPay" target="_blank">BitPay</a>
+              </li>
+              <li>
+                <a href="https://www.blockchain.com/" title="Blockchain" target="_blank">Blockchain</a>
+              </li>
+              <li>
+                <a href="https://www.doshi.app/" title="Doshi" target="_blank">Doshi</a>
+              </li>
+              <li>
+                <a href="https://eternl.io/" title="Eternl" target="_blank">Eternl</a>
+              </li>
+              <li>
+                <a href="https://www.hiro.so/" title="Hiro Wallet" target="_blank">Hiro Wallet</a>
+              </li>
+              <li>
+                <a href="https://metamask.io/" title="Metamask" target="_blank">Metamask</a>
+              </li>
+              <li>
+                <a href="https://www.myetherwallet.com/" title="My Ether Wallet" target="_blank">My Ether Wallet</a>
+              </li>
+              <li>
+                <a href="https://www.paypal.com/" title="PayPal" target="_blank">PayPal</a>
+              </li>
+              <li>
+                <a href="https://raywallet.io/" title="RayWallet" target="_blank">RayWallet</a>
+              </li>
+              <li>
+                <a href="https://phantom.app/" title="Phantom" target="_blank">Phantom</a>
+              </li>
+              <li>
+                <a href="https://reserve.org/" title="Reserve" target="_blank">Reserve</a>
+              </li>
+              <li>
+                <a href="https://wallet.roninchain.com/" title="Ronin Wallet" target="_blank">Ronin Wallet</a>
+              </li>
+              <li>
+                <a href="https://solflare.com/" title="Solflare" target="_blank">Solflare</a>
+              </li>
+              <li>
+                <a href="https://yoroi-wallet.com/" title="Yoroi Wallet" target="_blank">Yoroi Wallet</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="section" id="section-07">
+          <h3>Resources</h3>
+
+          <article>
+            <h4><span>Blogs & Websites</span></h4>
+            <ul>
+              <li>
+                <a href="https://draft.blogger.com/" title="Blogger" target="_blank">Blogger</a>
+              </li>
+              <li>
+                <a href="https://mmm.page/" title="mmm.page" target="_blank">mmm.page</a>
+              </li>
+              <li>
+                <a href="https://neocities.org/" title="NeoCities" target="_blank">NeoCities</a>
+              </li>
+              <li>
+                <a href="https://unstoppabledomains.com/" title="Unstoppable Domains" target="_blank">Unstoppable
+                  Domains</a>
+              </li>
+              <li>
+                <a href="https://wordpress.com/es/" title="WordPress" target="_blank">WordPress</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Code & Development</span></h4>
+            <ul>
+              <li>
+                <a href="https://codepen.io/" title="CodePen" target="_blank">CodePen</a>
+              </li>
+              <li>
+                <a href="https://www.codeproject.com/" title="CodeProject" target="_blank">CodeProject</a>
+              </li>
+              <li>
+                <a href="https://tympanus.net/codrops/" title="Codrops" target="_blank">Codrops</a>
+              </li>
+              <li>
+                <a href="https://github.com/" title="GitHub" target="_blank">GitHub</a>
+              </li>
+              <li>
+                <a href="https://gitlab.com/" title="GitLab" target="_blank">GitLab</a>
+              </li>
+              <li>
+                <a href="https://developers.google.com/web/" title="Google Developers" target="_blank">Google
+                  Developers</a>
+              </li>
+              <li>
+                <a href="https://www.npmjs.com/" title="NPM" target="_blank">NPM</a>
+              </li>
+              <li>
+                <a href="https://replit.com/" title="Replit" target="_blank">Replit</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Design & Inspiration</span></h4>
+            <ul>
+              <li>
+                <a href="https://www.artsy.net/" title="Artsy" target="_blank">
+                  Artsy
+                </a>
+              </li>
+              <li>
+                <a href="https://www.behance.net/" title="Behance" target="_blank">Behance</a>
+              </li>
+              <li>
+                <a href="https://www.canva.com/" title="Canva" target="_blank">Canva</a>
+              </li>
+              <li>
+                <a href="https://www.deviantart.com/" title="DeviantArt" target="_blank">DeviantArt</a>
+              </li>
+              <li>
+                <a href="https://dribbble.com/" title="Dribbble" target="_blank">Dribbble</a>
+              </li>
+              <li>
+                <a href="https://ello.co/" title="Ello" target="_blank">Ello</a>
+              </li>
+              <li>
+                <a href="https://giphy.com/" title="GIPHY" target="_blank">GIPHY</a>
+              </li>
+              <li>
+                <a href="https://imgur.com/" title="Imgur" target="_blank">Imgur</a>
+              </li>
+              <li>
+                <a href="https://www.instructables.com/" title="Instructables" target="_blank">Instructables</a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/" title="Pinterest" target="_blank">Pinterest</a>
+              </li>
+            </ul>
+          </article>
+
+          <article>
+            <h4><span>Internet Speed Test</span></h4>
+            <ul>
+              <li>
+                <a href="https://speed.cloudflare.com/" title="Cloudflare Internet Speed Test"
+                  target="_blank">Cloudflare Internet Speed Test</a>
+              </li>
+              <li>
+                <a href="https://fast.com/" title="Fast" target="_blank">Fast</a>
+              </li>
+              <li>
+                <a href="https://fiber.google.com/speedtest/" title="Google Fiber Speed Test" target="_blank">Google
+                  Fiber Speed Test</a>
+              </li>
+              <li>
+                <a href="https://librespeed.org/" title="LibreSpeed" target="_blank">
+                  LibreSpeed
+                </a>
+              </li>
+
+              <li>
+                <a href="https://openspeedtest.com/" title="OpenSpeedTest" target="_blank">OpenSpeedTest</a>
+              </li>
+              <li>
+                <a href="https://www.speedtest.net/" title="Speedtest" target="_blank">Speedtest</a>
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="section" id="section-08">
+          <article id="get-firefox">
+            <a href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-developer" target="_blank">
+              <img src="images/get-firefox-button-mono.png" alt="Get Firefox" title="Get Firefox" /></a>
+            <h4></h4>
+              <div id="sysinfo"></div>
+          </article>
+        </section>
+      </div>
+      <div class="main-content-bottom"></div>
+    </div>
+    <div class="sidebar">
+      <div class="sidebox-container">
+        <div class="sidebox-00">
+          <div id="sidebox-header-00">
+            <h4>#NowPlaying</h4>
+          </div>
+          <div id="sidebox-content-00">
+            <div id="nowPlaying-container">
+              <span id="playingInfo"></span>
             </div>
           </div>
+        </div>
 
-          <div class="sidebox-01">
-            <div id="sidebox-header-01">
-              <h4>Enail</h4>
-            </div>
-
-            <div id="sidebox-content-01">
-              <ul>
-                <li>
-                  <a
-                    href="https://mail.aol.com/"
-                    title="Aol Mail"
-                    target="_blank"
-                    >Aol Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://ethermail.io/webmail/"
-                    title="Ethermail"
-                    target="_blank"
-                    >Ethermail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mail.google.com/"
-                    title="Google Mail"
-                    target="_blank"
-                    >Google Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mail.onmail.com/"
-                    title="OnMail"
-                    target="_blank"
-                    >OnMail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://outlook.live.com/owa/"
-                    title="Outlook"
-                    target="_blank"
-                    >Outlook</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mail.proton.me/"
-                    title="Proton Mail"
-                    target="_blank"
-                    >Proton Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.skiff.com/signin?"
-                    title="Skiff Mail"
-                    target="_blank"
-                    >Skiff Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.tildamail.com/inbox"
-                    title="Tilda Mail"
-                    target="_blank"
-                    >Tilda Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://webmail.vivaldi.net/"
-                    title="Vivaldi Webmail"
-                    target="_blank"
-                    >Vivaldi Webmail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mail.yahoo.com/"
-                    title="Yahoo! Mail"
-                    target="_blank"
-                    >Yahoo! Mail</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mail.yandex.com/"
-                    title="Yandex Mail"
-                    target="_blank"
-                    >Yandex Mail</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="sidebox-02">
-            <div id="sidebox-header-02">
-              <h4>Social Networks</h4>
-            </div>
-
-            <div id="sidebox-content-02">
-              <ul>
-                <li>
-                  <a href="https://500px.com/" title="500px" target="_blank"
-                    >500px</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/"
-                    title="Facebook"
-                    target="_blank"
-                    >Facebook</a
-                  >
-                </li>
-                <li>
-                  <a href="https://flickr.com/" title="Flickr" target="_blank"
-                    >Flickr</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com"
-                    title="Instagram"
-                    target="_blank"
-                    >Instagram</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.linkedin.com/"
-                    title="LinkedIn"
-                    target="_blank"
-                    >LinkedIn</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://mastodon.social/"
-                    title="Mastodon"
-                    target="_blank"
-                    >Mastodon</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.minds.com/" title="Minds" target="_blank"
-                    >Minds</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.plurk.com/" title="Plurk" target="_blank"
-                    >Plurk</a
-                  >
-                </li>
-                <li>
-                  <a href="https://threads.net" title="Threads" target="_blank"
-                    >Threads</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.tumblr.com/"
-                    title="Tumblr"
-                    target="_blank"
-                    >Tumblr</a
-                  >
-                </li>
-                <li>
-                  <a href="https://twitter.com/" title="Twitter" target="_blank"
-                    >Twitter</a
-                  >
-                </li>
-                <li>
-                  <a href="https://vk.com/" title="VK" target="_blank">VK</a>
-                </li>
-              </ul>
-            </div>
+        <div class="sidebox-01">
+          <div id="sidebox-header-01">
+            <h4>Enail</h4>
           </div>
 
-          <div class="sidebox-03">
-            <div id="sidebox-header-03">
-              <h4>Storage</h4>
-            </div>
-
-            <div id="sidebox-content-03">
-              <ul>
-                <li>
-                  <a
-                    href="https://www.4shared.com/"
-                    title="4shared"
-                    target="_blank"
-                    >4shared</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.box.com/" title="Box" target="_blank"
-                    >Box</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.dropbox.com/"
-                    title="Dropbox"
-                    target="_blank"
-                    >Dropbox</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://drive.google.com/"
-                    title="Google Drive"
-                    target="_blank"
-                    >Google Drive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://keybase.io/gabeweb"
-                    title="Keybase"
-                    target="_blank"
-                    >Keybase</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.mediafire.com/"
-                    title="MediaFire"
-                    target="_blank"
-                    >MediaFire</a
-                  >
-                </li>
-                <li>
-                  <a href="https://mega.io/" title="MEGA" target="_blank"
-                    >MEGA</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://onedrive.live.com/"
-                    title="OneDrive"
-                    target="_blank"
-                    >OneDrive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.pcloud.com/"
-                    title="pCloud"
-                    target="_blank"
-                    >pCloud</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://app.skiff.com/drive/"
-                    title="Skiff Drive"
-                    target="_blank"
-                    >Skiff Drive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://disk.yandex.com/"
-                    title="Yandex Disk"
-                    target="_blank"
-                    >Yandex Disk</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div id="sidebox-content-01">
+            <ul>
+              <li>
+                <a href="https://mail.aol.com/" title="Aol Mail" target="_blank">Aol Mail</a>
+              </li>
+              <li>
+                <a href="https://ethermail.io/webmail/" title="Ethermail" target="_blank">Ethermail</a>
+              </li>
+              <li>
+                <a href="https://mail.google.com/" title="Google Mail" target="_blank">Google Mail</a>
+              </li>
+              <li>
+                <a href="https://mail.onmail.com/" title="OnMail" target="_blank">OnMail</a>
+              </li>
+              <li>
+                <a href="https://outlook.live.com/owa/" title="Outlook" target="_blank">Outlook</a>
+              </li>
+              <li>
+                <a href="https://mail.proton.me/" title="Proton Mail" target="_blank">Proton Mail</a>
+              </li>
+              <li>
+                <a href="https://app.skiff.com/signin?" title="Skiff Mail" target="_blank">Skiff Mail</a>
+              </li>
+              <li>
+                <a href="https://www.tildamail.com/inbox" title="Tilda Mail" target="_blank">Tilda Mail</a>
+              </li>
+              <li>
+                <a href="https://webmail.vivaldi.net/" title="Vivaldi Webmail" target="_blank">Vivaldi Webmail</a>
+              </li>
+              <li>
+                <a href="https://mail.yahoo.com/" title="Yahoo! Mail" target="_blank">Yahoo! Mail</a>
+              </li>
+              <li>
+                <a href="https://mail.yandex.com/" title="Yandex Mail" target="_blank">Yandex Mail</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="sidebox-02">
+          <div id="sidebox-header-02">
+            <h4>Social Networks</h4>
           </div>
 
-          <div class="sidebox-04">
-            <div id="sidebox-header-04">
-              <h4>Shopping</h4>
-            </div>
+          <div id="sidebox-content-02">
+            <ul>
+              <li>
+                <a href="https://500px.com/" title="500px" target="_blank">500px</a>
+              </li>
+              <li>
+                <a href="https://www.facebook.com/" title="Facebook" target="_blank">Facebook</a>
+              </li>
+              <li>
+                <a href="https://flickr.com/" title="Flickr" target="_blank">Flickr</a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com" title="Instagram" target="_blank">Instagram</a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/" title="LinkedIn" target="_blank">LinkedIn</a>
+              </li>
+              <li>
+                <a href="https://mastodon.social/" title="Mastodon" target="_blank">Mastodon</a>
+              </li>
+              <li>
+                <a href="https://www.minds.com/" title="Minds" target="_blank">Minds</a>
+              </li>
+              <li>
+                <a href="https://www.plurk.com/" title="Plurk" target="_blank">Plurk</a>
+              </li>
+              <li>
+                <a href="https://threads.net" title="Threads" target="_blank">Threads</a>
+              </li>
+              <li>
+                <a href="https://www.tumblr.com/" title="Tumblr" target="_blank">Tumblr</a>
+              </li>
+              <li>
+                <a href="https://twitter.com/" title="Twitter" target="_blank">Twitter</a>
+              </li>
+              <li>
+                <a href="https://vk.com/" title="VK" target="_blank">VK</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <div id="sidebox-content-04">
-              <ul>
-                <li>
-                  <a
-                    href="https://www.amazon.com/"
-                    title="Amazon"
-                    target="_blank"
-                    >Amazon</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.bestbuy.com/"
-                    title="Best Buy"
-                    target="_blank"
-                    >Best Buy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.bitrefill.com/"
-                    title="Bitrefill"
-                    target="_blank"
-                    >Bitrefill</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.ebay.com/" title="eBay" target="_blank"
-                    >eBay</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.etsy.com/" title="Etsy" target="_blank"
-                    >Etsy</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://libertyexpress.com/es-ve/"
-                    title="Liberty Express"
-                    target="_blank"
-                    >Liberty Express</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.mercadolibre.com.ve/"
-                    title="Mercado Libre Venezuela"
-                    target="_blank"
-                    >Mercado Libre Venezuela</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.newegg.com/"
-                    title="Newegg"
-                    target="_blank"
-                    >Newegg</a
-                  >
-                </li>
-              </ul>
-            </div>
+        <div class="sidebox-03">
+          <div id="sidebox-header-03">
+            <h4>Storage</h4>
           </div>
 
-          <div class="sidebox-05">
-            <div id="sidebox-header-05">
-              <h4>Internet Speed Test</h4>
-            </div>
+          <div id="sidebox-content-03">
+            <ul>
+              <li>
+                <a href="https://www.4shared.com/" title="4shared" target="_blank">4shared</a>
+              </li>
+              <li>
+                <a href="https://www.box.com/" title="Box" target="_blank">Box</a>
+              </li>
+              <li>
+                <a href="https://www.dropbox.com/" title="Dropbox" target="_blank">Dropbox</a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/" title="Google Drive" target="_blank">Google Drive</a>
+              </li>
+              <li>
+                <a href="https://keybase.io/gabeweb" title="Keybase" target="_blank">Keybase</a>
+              </li>
+              <li>
+                <a href="https://www.mediafire.com/" title="MediaFire" target="_blank">MediaFire</a>
+              </li>
+              <li>
+                <a href="https://mega.io/" title="MEGA" target="_blank">MEGA</a>
+              </li>
+              <li>
+                <a href="https://onedrive.live.com/" title="OneDrive" target="_blank">OneDrive</a>
+              </li>
+              <li>
+                <a href="https://www.pcloud.com/" title="pCloud" target="_blank">pCloud</a>
+              </li>
+              <li>
+                <a href="https://app.skiff.com/drive/" title="Skiff Drive" target="_blank">Skiff Drive</a>
+              </li>
+              <li>
+                <a href="https://disk.yandex.com/" title="Yandex Disk" target="_blank">Yandex Disk</a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
-            <div id="sidebox-content-05">
-              <div id="speedtest-container">
-                <div id="speedtest-presentation">Internet Speed Result</div>
-                <div id="speedtest-result"></div>
-                <div id="resultado"></div>
-                <br />
-                <button
-                  type="button"
-                  onclick="speedTest()"
-                  class="speedtest-button"
-                >
-                  Speed Test
-                </button>
-              </div>
-              <p id="small-print">
-                This simple JavaScript Internet Speed Test downloads a BMP image
-                weighing 13117578 bytes (12.5 MB) hosted on
-                <a
-                  href="https://freetestdata.com/image-files/bmp/"
-                  target="_blank"
-                  >Free Test Data</a
-                >. For relatively more realistic values over wireless, the code
-                has been altered to simulate a larger image size (x2), so the
-                results shown here are only estimates.
+        <div class="sidebox-04">
+          <div id="sidebox-header-04">
+            <h4>Shopping</h4>
+          </div>
+
+          <div id="sidebox-content-04">
+            <ul>
+              <li>
+                <a href="https://www.amazon.com/" title="Amazon" target="_blank">Amazon</a>
+              </li>
+              <li>
+                <a href="https://www.bestbuy.com/" title="Best Buy" target="_blank">Best Buy</a>
+              </li>
+              <li>
+                <a href="https://www.bitrefill.com/" title="Bitrefill" target="_blank">Bitrefill</a>
+              </li>
+              <li>
+                <a href="https://www.ebay.com/" title="eBay" target="_blank">eBay</a>
+              </li>
+              <li>
+                <a href="https://www.etsy.com/" title="Etsy" target="_blank">Etsy</a>
+              </li>
+              <li>
+                <a href="https://libertyexpress.com/es-ve/" title="Liberty Express" target="_blank">Liberty Express</a>
+              </li>
+              <li>
+                <a href="https://www.mercadolibre.com.ve/" title="Mercado Libre Venezuela" target="_blank">Mercado Libre
+                  Venezuela</a>
+              </li>
+              <li>
+                <a href="https://www.newegg.com/" title="Newegg" target="_blank">Newegg</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebox-05">
+          <div id="sidebox-header-05">
+            <h4>Internet Speed Test</h4>
+          </div>
+
+          <div id="sidebox-content-05">
+            <div id="speedtest-container">
+              <div id="speedtest-presentation">Internet Speed Result</div>
+              <div id="speedtest-result"></div>
+              <div id="resultado"></div>
+              <br />
+              <button type="button" onclick="speedTest()" class="speedtest-button">
+                Speed Test
+              </button>
+            </div>
+            <p id="small-print">
+              This simple JavaScript Internet Speed Test downloads a BMP image
+              weighing 13117578 bytes (12.5 MB) hosted on
+              <a href="https://freetestdata.com/image-files/bmp/" target="_blank">Free Test Data</a>. For relatively
+              more realistic values over wireless, the code
+              has been altered to simulate a larger image size (x2), so the
+              results shown here are only estimates.
+            </p>
+          </div>
+        </div>
+
+        <div class="sidebox-06">
+          <div id="sidebox-header-06">
+            <h4>Banking</h4>
+          </div>
+
+          <div id="sidebox-content-06">
+            <ul>
+              <li>
+                <a href="https://www.bicentenariobu.com.ve/" title="Banco Bicentenario del Pueblo" target="_blank">Banco
+                  Bicentenario</a>
+              </li>
+              <li>
+                <a href="https://www.bancodevenezuela.com/" title="Banco de Venezuela" target="_blank">BDV</a>
+              </li>
+              <li>
+                <a href="https://www.bncenlinea.com/" title="Banco Nacional de Crédito" target="_blank">BNC</a>
+              </li>
+              <li>
+                <a href="https://www.banesco.com/" title="Banesco Banco Universal" target="_blank">Banesco</a>
+              </li>
+              <li>
+                <a href="https://www.provincial.com/personas.html" title="BBVA Provincial" target="_blank">BBVA
+                  Provincial</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebox-07">
+          <div id="sidebox-header-07">
+            <h4>Software</h4>
+          </div>
+
+          <div id="sidebox-content-07">
+            <ul>
+              <li>
+                <a href="https://chocolatey.org/" title="Chocolatey" target="_blank">Chocolatey</a>
+              </li>
+              <li>
+                <a href="https://download.cnet.com/" title="CNET Download" target="_blank">CNET Download</a>
+              </li>
+              <li>
+                <a href="https://www.downloadcrew.com/" title="Downloadcrew" target="_blank">Downloadcrew</a>
+              </li>
+              <li>
+                <a href="https://www.filepuma.com/" title="Filepuma" target="_blank">Filepuma</a>
+              </li>
+              <li>
+                <a href="https://www.fosshub.com/" title="FOSSHUB" target="_blank">FOSSHUB</a>
+              </li>
+              <li>
+                <a href="https://www.majorgeeks.com/" title="MajorGeeks" target="_blank">MajorGeeks</a>
+              </li>
+              <li>
+                <a href="https://portableapps.com/" title="PortableApps" target="_blank">PortableApps</a>
+              </li>
+              <li>
+                <a href="https://www.softonic.com/" title="Softonic" target="_blank">Softonic</a>
+              </li>
+              <li>
+                <a href="https://www.softpedia.com/" title="Softpedia" target="_blank">Softpedia</a>
+              </li>
+              <li>
+                <a href="https://sourceforge.net/" title="SourceForge" target="_blank">SourceForge</a>
+              </li>
+              <li>
+                <a href="https://www.winsite.com/" title="WinSite" target="_blank">WinSite</a>
+              </li>
+              <li>
+                <a href="https://winstall.app/" title="winstall" target="_blank">winstall</a>
+              </li>
+              <li>
+                <a href="https://winworldpc.com/home" title="WinWorld" target="_blank">WinWorld</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebox-08">
+          <div id="sidebox-header-08">
+            <h4>Gaming</h4>
+          </div>
+
+          <div id="sidebox-content-08">
+            <ul>
+              <li>
+                <a href="https://app.axieinfinity.com/" title="App Axie" target="_blank">App Axie</a>
+              </li>
+              <li>
+                <a href="https://arc8.com/" title="Arc8 League" target="_blank">Arc8 League</a>
+              </li>
+              <li>
+                <a href="https://bethesda.net/" title="Bethesda" target="_blank">Bethesda</a>
+              </li>
+              <li>
+                <a href="https://blizzard.com/" title="Blizzard" target="_blank">Blizzard</a>
+              </li>
+              <li>
+                <a href="https://dosgames.com/" title="DOS Games" target="_blank">DOS Games</a>
+              </li>
+              <li>
+                <a href="https://www.ea.com/" title="EA" target="_blank">EA</a>
+              </li>
+              <li>
+                <a href="https://store.epicgames.com/" title="Epic Games" target="_blank">Epic Games</a>
+              </li>
+              <li>
+                <a href="https://www.gamepost.com/" title="GamePost" target="_blank">GamePost</a>
+              </li>
+              <li>
+                <a href="https://www.humblebundle.com/" title="Humble Bundle" target="_blank">Humble Bundle</a>
+              </li>
+              <li>
+                <a href="https://itch.io/" title="itch.io" target="_blank">itch.io</a>
+              </li>
+              <li>
+                <a href="https://kakele.io/" title="Kakele Online" target="_blank">Kakele Online</a>
+              </li>
+              <li>
+                <a href="https://www.kongregate.com/" title="Kongregate" target="_blank">Kongregate</a>
+              </li>
+              <li>
+                <a href="https://www.newgrounds.com/" title="Newgrounds" target="_blank">Newgrounds</a>
+              </li>
+              <li>
+                <a href="https://www.paradoxinteractive.com/" title="Paradox Interactive" target="_blank">Paradox
+                  Interactive</a>
+              </li>
+              <li>
+                <a href="https://accounts.skymavis.com/" title="Sky Mavis" target="_blank">Sky Mavis</a>
+              </li>
+              <li>
+                <a href="https://steamcommunity.com/" title="Steam" target="_blank">Steam</a>
+              </li>
+              <li>
+                <a href="https://www.ea.com/games/command-and-conquer/command-and-conquer-tiberium-alliances"
+                  title="Tiberium Alliances" target="_blank">Tiberium Alliances</a>
+              </li>
+              <li>
+                <a href="https://www.ubisoft.com/en-us/" title="Ubisoft" target="_blank">Ubisoft</a>
+              </li>
+              <li>
+                <a href="https://upland.me/" title="UplandMe" target="_blank">UplandMe</a>
+              </li>
+              <li>
+                <a href="https://www.urbanterror.info/" title="Urban Terror" target="_blank">Urban Terror</a>
+              </li>
+              <li>
+                <a href="https://y8.com/" title="Y8 Games" target="_blank">Y8 Games</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="sidebox-09">
+          <div id="sidebox-header-09">
+            <h4>Password Generator</h4>
+          </div>
+          <div id="sidebox-content-09">
+            <article id="passwordGenerator">
+              <p>
+                Need a strong password? Try the Password Generator to create
+                complex passwords that will keep your information safe:
               </p>
-            </div>
-          </div>
+              <!-- password generator -->
 
-          <div class="sidebox-06">
-            <div id="sidebox-header-06">
-              <h4>Banking</h4>
-            </div>
+              <div class="wrapper-pwd-gen">
+                <div class="input-box">
+                  <span id="copy-icon" class="material-icon" title="Copy to Clipboard">copy</span>
+                  <div contenteditable="true"></div>
+                </div>
+                <div class="pass-indicator"></div>
+                <div class="pass-length">
+                  <div class="details-pwd-gen">
+                    <label class="title">Password Length:</label>
+                    <span></span>
+                  </div>
+                  <input type="range" min="5" max="128" value="16" step="1" data-ddg-inputtype="credentials.password" />
+                </div>
+                <div class="pass-settings">
+                  <label class="title">Password Settings</label>
+                  <ul class="options">
+                    <li class="option">
+                      <input type="checkbox" id="lowercase" checked />
+                      <label for="lowercase" title="Lowercase">(a-z)</label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="uppercase" checked />
+                      <label for="uppercase" title="Uppercase">(A-Z)</label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="numbers" checked />
+                      <label for="numbers" title="Numbers">(0-9)</label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="symbols" />
+                      <label for="symbols" title="Symbols">(!-$^+)</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="generate-btn">
+                  <span class="material-icon">autorenew</span>Regenerate
+                </div>
 
-            <div id="sidebox-content-06">
-              <ul>
-                <li>
-                  <a
-                    href="https://www.bicentenariobu.com.ve/"
-                    title="Banco Bicentenario del Pueblo"
-                    target="_blank"
-                    >Banco Bicentenario</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.bancodevenezuela.com/"
-                    title="Banco de Venezuela"
-                    target="_blank"
-                    >BDV</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.bncenlinea.com/"
-                    title="Banco Nacional de Crédito"
-                    target="_blank"
-                    >BNC</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.banesco.com/"
-                    title="Banesco Banco Universal"
-                    target="_blank"
-                    >Banesco</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.provincial.com/personas.html"
-                    title="BBVA Provincial"
-                    target="_blank"
-                    >BBVA Provincial</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
+                <!-- end password generator -->
 
-          <div class="sidebox-07">
-            <div id="sidebox-header-07">
-              <h4>Software</h4>
-            </div>
-
-            <div id="sidebox-content-07">
-              <ul>
-                <li>
-                  <a
-                    href="https://chocolatey.org/"
-                    title="Chocolatey"
-                    target="_blank"
-                    >Chocolatey</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://download.cnet.com/"
-                    title="CNET Download"
-                    target="_blank"
-                    >CNET Download</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.downloadcrew.com/"
-                    title="Downloadcrew"
-                    target="_blank"
-                    >Downloadcrew</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.filepuma.com/"
-                    title="Filepuma"
-                    target="_blank"
-                    >Filepuma</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.fosshub.com/"
-                    title="FOSSHUB"
-                    target="_blank"
-                    >FOSSHUB</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.majorgeeks.com/"
-                    title="MajorGeeks"
-                    target="_blank"
-                    >MajorGeeks</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://portableapps.com/"
-                    title="PortableApps"
-                    target="_blank"
-                    >PortableApps</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.softonic.com/"
-                    title="Softonic"
-                    target="_blank"
-                    >Softonic</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.softpedia.com/"
-                    title="Softpedia"
-                    target="_blank"
-                    >Softpedia</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://sourceforge.net/"
-                    title="SourceForge"
-                    target="_blank"
-                    >SourceForge</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.winsite.com/"
-                    title="WinSite"
-                    target="_blank"
-                    >WinSite</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://winstall.app/"
-                    title="winstall"
-                    target="_blank"
-                    >winstall</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://winworldpc.com/home"
-                    title="WinWorld"
-                    target="_blank"
-                    >WinWorld</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sidebox-08">
-            <div id="sidebox-header-08">
-              <h4>Gaming</h4>
-            </div>
-
-            <div id="sidebox-content-08">
-              <ul>
-                <li>
-                  <a
-                    href="https://app.axieinfinity.com/"
-                    title="App Axie"
-                    target="_blank"
-                    >App Axie</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://arc8.com/"
-                    title="Arc8 League"
-                    target="_blank"
-                    >Arc8 League</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://bethesda.net/"
-                    title="Bethesda"
-                    target="_blank"
-                    >Bethesda</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://blizzard.com/"
-                    title="Blizzard"
-                    target="_blank"
-                    >Blizzard</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://dosgames.com/"
-                    title="DOS Games"
-                    target="_blank"
-                    >DOS Games</a
-                  >
-                </li>
-                <li>
-                  <a href="https://www.ea.com/" title="EA" target="_blank"
-                    >EA</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://store.epicgames.com/"
-                    title="Epic Games"
-                    target="_blank"
-                    >Epic Games</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.gamepost.com/"
-                    title="GamePost"
-                    target="_blank"
-                    >GamePost</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.humblebundle.com/"
-                    title="Humble Bundle"
-                    target="_blank"
-                    >Humble Bundle</a
-                  >
-                </li>
-                <li>
-                  <a href="https://itch.io/" title="itch.io" target="_blank"
-                    >itch.io</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://kakele.io/"
-                    title="Kakele Online"
-                    target="_blank"
-                    >Kakele Online</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.kongregate.com/"
-                    title="Kongregate"
-                    target="_blank"
-                    >Kongregate</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.newgrounds.com/"
-                    title="Newgrounds"
-                    target="_blank"
-                    >Newgrounds</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.paradoxinteractive.com/"
-                    title="Paradox Interactive"
-                    target="_blank"
-                    >Paradox Interactive</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://accounts.skymavis.com/"
-                    title="Sky Mavis"
-                    target="_blank"
-                    >Sky Mavis</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://steamcommunity.com/"
-                    title="Steam"
-                    target="_blank"
-                    >Steam</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.ea.com/games/command-and-conquer/command-and-conquer-tiberium-alliances"
-                    title="Tiberium Alliances"
-                    target="_blank"
-                    >Tiberium Alliances</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.ubisoft.com/en-us/"
-                    title="Ubisoft"
-                    target="_blank"
-                    >Ubisoft</a
-                  >
-                </li>
-                <li>
-                  <a href="https://upland.me/" title="UplandMe" target="_blank"
-                    >UplandMe</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://www.urbanterror.info/"
-                    title="Urban Terror"
-                    target="_blank"
-                    >Urban Terror</a
-                  >
-                </li>
-                <li>
-                  <a href="https://y8.com/" title="Y8 Games" target="_blank"
-                    >Y8 Games</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="sidebox-09">
-            <article id="get-firefox">
-              <a
-                href="https://www.mozilla.org/en-US/firefox/all/#product-desktop-developer"
-                target="_blank"
-              >
-                <img
-                  src="images/get-firefox-button-mono.png"
-                  alt="Get Firefox"
-                  title="Get Firefox"
-              /></a>
+                <p id="small-print">
+                  <strong>Warning:</strong> This password generator
+                  <strong>does not store or transmit</strong>
+                  passwords.
+                </p>
+              </div>
             </article>
           </div>
-
-          <div class="sidebox-10">
-            <div id="sidebox-header-10">
-              <h4>Password Generator</h4>
-            </div>
-            <div id="sidebox-content-10">
-              <article id="passwordGenerator">
-                <p>
-                  Need a strong password? Try the Password Generator to create
-                  complex passwords that will keep your information safe:
-                </p>
-                <!-- password generator -->
-
-                <div class="wrapper-pwd-gen">
-                  <div class="input-box">
-                    <span
-                      id="copy-icon"
-                      class="material-icon"
-                      title="Copy to Clipboard"
-                      >copy</span
-                    >
-                    <div contenteditable="true"></div>
-                  </div>
-                  <div class="pass-indicator"></div>
-                  <div class="pass-length">
-                    <div class="details-pwd-gen">
-                      <label class="title">Password Length:</label>
-                      <span></span>
-                    </div>
-                    <input
-                      type="range"
-                      min="5"
-                      max="128"
-                      value="16"
-                      step="1"
-                      data-ddg-inputtype="credentials.password"
-                    />
-                  </div>
-                  <div class="pass-settings">
-                    <label class="title">Password Settings</label>
-                    <ul class="options">
-                      <li class="option">
-                        <input type="checkbox" id="lowercase" checked />
-                        <label for="lowercase" title="Lowercase">(a-z)</label>
-                      </li>
-                      <li class="option">
-                        <input type="checkbox" id="uppercase" checked />
-                        <label for="uppercase" title="Uppercase">(A-Z)</label>
-                      </li>
-                      <li class="option">
-                        <input type="checkbox" id="numbers" checked />
-                        <label for="numbers" title="Numbers">(0-9)</label>
-                      </li>
-                      <li class="option">
-                        <input type="checkbox" id="symbols" />
-                        <label for="symbols" title="Symbols">(!-$^+)</label>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="generate-btn">
-                    <span class="material-icon">autorenew</span>Regenerate
-                  </div>
-
-                  <!-- end password generator -->
-
-                  <p id="small-print">
-                    <strong>Warning:</strong> This password generator
-                    <strong>does not store or transmit</strong>
-                    passwords.
-                  </p>
-                </div>
-              </article>
-            </div>
-          </div>
         </div>
-      </div>
-      <div class="footer">
-        <p>
-          <a href="https://github.com/gabeweb/gabehoo" target="_blank"
-            >GABEhoo!</a
-          >
-          is a startpage developerd by
-          <a href="https://gabeweb.github.io" target="_blank">GABEweb</a>
-          inspired by the old good
-          <a
-            href="https://www.webdesignmuseum.org/timeline/yahoo-2005"
-            title="Yahoo in 2005"
-            target="_blank"
-            >Yahoo!</a
-          >
-          frontpage.<br />
-          For full third-party credits pkease visit GitHub repository.
-          <br />
-          Released under a
-          <a
-            href="https://github.com/gabeweb/gabehoo/blob/main/LICENSE"
-            target="_blank"
-            >GPL-3.0 license</a
-          >.
-        </p>
       </div>
     </div>
-    <script src="main.js"></script>
-    <script src="scripts/suggestions.js"></script>
-    <script src="weather/weather.js"></script>
-    <script src="scripts/random.js"></script>
-    <script src="scripts/speedtest.js"></script>
-  </body>
+    <div class="footer">
+      <p>
+        <a href="https://github.com/gabeweb/gabehoo" target="_blank">GABEhoo!</a>
+        is a startpage developerd by
+        <a href="https://gabeweb.github.io" target="_blank">GABEweb</a>
+        inspired by the old good
+        <a href="https://www.webdesignmuseum.org/timeline/yahoo-2005" title="Yahoo in 2005" target="_blank">Yahoo!</a>
+        frontpage.<br />
+        For full third-party credits pkease visit GitHub repository.
+        <br />
+        Released under a
+        <a href="https://github.com/gabeweb/gabehoo/blob/main/LICENSE" target="_blank">GPL-3.0 license</a>.
+      </p>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="scripts/suggestions.js"></script>
+  <script src="weather/weather.js"></script>
+  <script src="scripts/random.js"></script>
+  <script src="scripts/speedtest.js"></script>
+</body>
+
 </html>
