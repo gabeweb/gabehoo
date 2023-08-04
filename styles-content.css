@@ -372,11 +372,16 @@ article#get-firefox img {
 }
 
 ul#sysinfo {
+  margin: 20px;
+  padding: 4px 0px;
+  margin: 6px;
   column-count: 3;
   column-gap: 20px;
 }
 
 ul#sysinfo li {
+  display: list-item;
+  padding: 0px 6px;
   break-inside: avoid;
   word-wrap: break-all;
 }
