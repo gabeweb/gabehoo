@@ -1,6 +1,6 @@
 # GABEhoo!
 
-[GABEhoo!](https://github.com/gabeweb/gabestart) is a startpage developerd by [GABEweb](https://gabeweb.github.io) inspired by the old good [Yahoo!](https://www.webdesignmuseum.org/timeline/yahoo-2005 "Yahoo in 2005") frontpage.
+[GABEhoo!](https://github.com/gabeweb/gabehoo) is a startpage developerd by [GABEweb](https://gabeweb.github.io) inspired by the old good [Yahoo!](https://www.webdesignmuseum.org/timeline/yahoo-2005 "Yahoo in 2005") frontpage.
 
 **This is a personal project for personal purporses only.**
 
