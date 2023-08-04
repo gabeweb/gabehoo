@@ -32,7 +32,8 @@ function getOS() {
 function newSysinfoRow(title, text) {
   let titleSpan = document.createElement("span");
   titleSpan.innerHTML = title;
-  titleSpan.style.color = "var(--indigo)";
+  titleSpan.style.color = "var(--green)";
+  titleSpan.style.fontWeight = "bold";
 
   let colonSpan = document.createElement("span");
   colonSpan.innerHTML = ": ";
@@ -64,13 +65,55 @@ let ua = navigator.userAgent;
 sysinfo.appendChild(newSysinfoRow("User Agent", ua));
 
 // Brpwser
-let browserTest = ua.match(/(\w+)\/(\d+\.\d+(?:\.\d+)?(?:\.\d+)?)/g),
-    browserOffset = browserTest.length && (browserTest.length > 2 && !(/^(ver|cri|gec)/.test(browserTest[1])) ? 1 : 0),
-    browserResult = browserTest.length && browserTest[browserTest.length - 1 - browserOffset].split("/"),
-    browser = browserResult && browserResult[0],
-    version = browserResult && browserResult[1];
 
-sysinfo.appendChild(newSysinfoRow("Browser", browser + " " + version));
+function getBrowserNameAndVersion() {
+  const userAgent = navigator.userAgent;
+  let browserName = "";
+  let fullVersion = "";
+  let version = "";
+
+  if (userAgent.includes("Firefox")) {
+    browserName = "Mozilla Firefox";
+    fullVersion = userAgent
+      .substring(userAgent.indexOf("Firefox"))
+      .split("/")[1];
+  } else if (userAgent.includes("SamsungBrowser")) {
+    browserName = "Samsung Internet";
+    fullVersion = userAgent
+      .substring(userAgent.indexOf("SamsungBrowser"))
+      .split("/")[1];
+  } else if (userAgent.includes("Opera") || userAgent.includes("OPR")) {
+    browserName = "Opera";
+    fullVersion = userAgent.substring(userAgent.indexOf("OPR")).split("/")[1];
+  } else if (userAgent.includes("Edg")) {
+    browserName = "Microsoft Edge (Chromium)";
+    fullVersion = userAgent.substring(userAgent.indexOf("Edg")).split("/")[1];
+  } else if (userAgent.includes("Chrome")) {
+    browserName = "Google Chrome or Chromium";
+    fullVersion = userAgent
+      .substring(userAgent.indexOf("Chrome"))
+      .split("/")[1];
+  } else if (userAgent.includes("Safari")) {
+    browserName = "Apple Safari";
+    fullVersion = userAgent
+      .substring(userAgent.indexOf("Safari"))
+      .split("/")[1];
+  } else if (userAgent.includes("Trident")) {
+    browserName = "Microsoft Internet Explorer";
+    fullVersion = userAgent
+      .substring(userAgent.indexOf("rv:"))
+      .split(",")[0]
+      .replace("rv:", "");
+  } else {
+    browserName = "unknown";
+  }
+
+  version = fullVersion.split(".")[0];
+
+  return `${browserName} ${fullVersion}`;
+}
+
+sysinfo.appendChild(newSysinfoRow("Browser", getBrowserNameAndVersion()));
 
 // Operating system
 let os = getOS();
