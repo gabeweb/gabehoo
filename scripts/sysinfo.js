@@ -52,8 +52,8 @@ let canvas = document.createElement("canvas");
 let gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 let debug = gl.getExtension("WEBGL_debug_renderer_info");
 let renderer = gl.getParameter(debug.UNMASKED_RENDERER_WEBGL);
-let gpu = renderer.split("(")[0].trim();
-let kernel = renderer.split("(")[1].split(")")[0].split(",").pop().trim();
+let kernel = renderer.split("(")[0].trim();
+let gpu = renderer.split("(")[1].split(")")[0].split(",").pop().trim();
 
 // Sysinfo
 let sysinfo = document.getElementById("sysinfo");
