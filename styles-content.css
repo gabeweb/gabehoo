@@ -117,7 +117,6 @@ div.sub-header {
 
 div.sub-header ul {
   list-style-type: none;
-  margin: 20px;
   padding: 4px 0px;
   margin: 6px;
   column-count: 5;
@@ -134,7 +133,6 @@ div.sub-header li {
 
 div[class*="main-content-top"] ul {
   list-style-type: none;
-  margin: 20px;
   padding: 4px 0px;
   margin: 6px;
   column-count: 4;
@@ -162,7 +160,6 @@ div[class*="main-content-middle"] {
 
 div[class*="main-content-middle"] ul {
   list-style-type: none;
-  margin: 20px;
   padding: 4px 0px;
   margin: 6px;
   column-count: 2;
@@ -372,18 +369,17 @@ article#get-firefox img {
 }
 
 ul#sysinfo {
-  margin: 20px;
+  margin: 6px -2px;
   padding: 4px 0px;
-  margin: 6px;
   column-count: 3;
   column-gap: 20px;
 }
 
 ul#sysinfo li {
   display: list-item;
-  padding: 0px 6px;
+  padding: 0px 0px;
   break-inside: avoid;
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 /* the sidebars */
@@ -400,7 +396,7 @@ ul#sysinfo li {
   display: list-item;
   padding: 2px 0px;
   break-inside: avoid;
-  word-wrap: break-all;
+  word-wrap: break-word;
 }
 
 div[class*="sidebox"]:not([class="sidebox-container"]) {
