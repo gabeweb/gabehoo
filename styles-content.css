@@ -371,6 +371,16 @@ article#get-firefox img {
   position: relative;
 }
 
+ul#sysinfo {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+ul#sysinfo li {
+  break-inside: avoid;
+  word-wrap: break-all;
+}
+
 /* the sidebars */
 
 .sidebar ul {
@@ -1161,7 +1171,7 @@ span.info-connector {
   div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
-  .sidebar ul {
+  .sidebar ul, ul#sysinfo {
     column-count: 2 !important;
   }
 
@@ -1206,7 +1216,7 @@ span.info-connector {
   div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
-  .sidebar ul {
+  .sidebar ul, ul#sysinfo {
     column-count: 3 !important;
   }
 
