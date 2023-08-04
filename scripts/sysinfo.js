@@ -52,6 +52,7 @@ let canvas = document.createElement("canvas");
 let gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 let debug = gl.getExtension("WEBGL_debug_renderer_info");
 let renderer = gl.getParameter(debug.UNMASKED_RENDERER_WEBGL);
+let platform = window.navigator.platform;
 let kernel = renderer.split("(")[0].trim();
 let gpu = renderer.split("(")[1].split(")")[0].split(",").pop().trim();
 
@@ -74,14 +75,14 @@ sysinfo.appendChild(newSysinfoRow("Browser", browser + " " + version));
 // Operating system
 let os = getOS();
 sysinfo.appendChild(newSysinfoRow("OS", os));
-sysinfo.appendChild(newSysinfoRow("Kernel", kernel));
+sysinfo.appendChild(newSysinfoRow("Platform", platform));
 
 // Resolution
 sysinfo.appendChild(
   newSysinfoRow("Resolution", `${screen.width}x${screen.height}`)
 );
 
-sysinfo.appendChild(newSysinfoRow("GPU", gpu));
+sysinfo.appendChild(newSysinfoRow("GPU", renderer));
 sysinfo.appendChild(
   newSysinfoRow("CPU", `${navigator.hardwareConcurrency} core processor`)
 );
