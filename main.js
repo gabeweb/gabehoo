@@ -100,7 +100,7 @@ let kernel = renderer.split("(")[1].split(")")[0].split(",").pop().trim();
 let sysinfo = document.getElementById("sysinfo");
 
 // Operating system
-sysinfo.appendChild(newSysinfoRow("OS", window.navigator.platform));
+sysinfo.appendChild(newSysinfoRow("OS", window.navigator.userAgentData.platform));
 sysinfo.appendChild(newSysinfoRow("Kernel", kernel));
 
 // Resolution
