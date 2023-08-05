@@ -53,7 +53,7 @@ let canvas = document.createElement("canvas");
 let gl = canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
 let debug = gl.getExtension("WEBGL_debug_renderer_info");
 let renderer = gl.getParameter(debug.UNMASKED_RENDERER_WEBGL);
-let platform = window.navigator.platform;
+let architecture = navigator.userAgent.match(/\(([^)]+)\)/)[1].split('; ')[1];
 let kernel = renderer.split("(")[0].trim();
 let gpu = renderer.split("(")[1].split(")")[0].split(",").pop().trim();
 
@@ -118,7 +118,7 @@ sysinfo.appendChild(newSysinfoRow("Browser", getBrowserNameAndVersion()));
 // Operating system
 let os = getOS();
 sysinfo.appendChild(newSysinfoRow("OS", os));
-sysinfo.appendChild(newSysinfoRow("Platform", platform));
+sysinfo.appendChild(newSysinfoRow("Architecture", architecture));
 
 // Resolution
 sysinfo.appendChild(
