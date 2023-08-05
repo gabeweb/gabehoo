@@ -1160,9 +1160,10 @@ span.info-connector {
 }
 
 .AWAD_byline {
-  margin: 0px 10px 20px 40px;
+  margin: 0px 40px 20px 40px;
   display: block;
   font-style: italic;
+  text-align: right;
 }
 
 .AWAD_byline a {
@@ -1170,7 +1171,6 @@ color: var(--green);
 text-decoration: underline;
 text-decoration-style: dashed;
 cursor: help;
-
 }
 
 /* media queries */
