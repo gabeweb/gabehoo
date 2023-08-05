@@ -1139,6 +1139,40 @@ span.info-connector {
   }
 }
 
+/* A WORD A DAY WIDGET */
+
+.AWAD_title {
+  background-color: var(--green);
+  color: var(--text-color-alt);
+  font-size: 1.2em;
+  font-weight: bold;
+  padding: 4px 6px;
+  display: block;
+  margin: -4px;
+}
+
+.AWAD_quotation {
+  display: block;
+  text-decoration: none;
+  color: var(--green);
+  padding: 20px;
+  font-size: 20px;
+}
+
+.AWAD_byline {
+  margin: 0px 10px 20px 40px;
+  display: block;
+  font-style: italic;
+}
+
+.AWAD_byline a {
+color: var(--green);
+text-decoration: underline;
+text-decoration-style: dashed;
+cursor: help;
+
+}
+
 /* media queries */
 
 @media only screen and (max-width: 720px) {
