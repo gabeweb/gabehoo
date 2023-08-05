@@ -550,7 +550,7 @@ div#sidebox-content-09 {
 
 .input-box div {
   width: 100%;
-  min-height: 150px;
+  height: 200px;
   padding: 10px;
   display: inline-flex;
   text-align: center;
@@ -560,11 +560,11 @@ div#sidebox-content-09 {
   color: var(--green);
   font-family: var(--fontBody);
   font-weight: bold;
-  background-color: transparent;
-  font-size: 1.2em;
+  font-size: 105%;
   letter-spacing: 0.2em;
   border: 1px solid var(--green);
   word-break: break-all;
+  text-overflow: ellipsis;
   background: linear-gradient(to right,
       var(--red) 0%,
       var(--orange) 20%,
