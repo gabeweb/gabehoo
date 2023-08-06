@@ -1,78 +1,67 @@
-// script based on:
-// https://www.sourcecodester.com/tutorials/javascript/12647/javascript-check-internet-speed.html
-
 var imageAddr =
-  "https://freetestdata.com/wp-content/uploads/2023/04/10.5-MB-scaled.bmp";
-var downloadSize = 26235156; //bytes
-
-function showMessage(msg) {
-  var result = document.getElementById("speedtest-result");
-  if (result) {
-    var actualHTML = typeof msg == "string" ? msg : msg.join("<br />");
-    result.innerHTML = actualHTML;
+    "https://freetestdata.com/wp-content/uploads/2023/04/10.5-MB-scaled.bmp",
+  downloadSize = 26235156;
+function showMessage(e) {
+  var t = document.getElementById("speedtest-result");
+  if (t) {
+    var n = "string" == typeof e ? e : e.join("<br />");
+    t.innerHTML = n;
   }
 }
-
 function startSpeedDetection() {
   showMessage(
     "<span id='dottime'>Please wait identifying internet speed</span>"
-  );
-  window.setTimeout(getConnectionSpeed, 3000);
+  ),
+    window.setTimeout(getConnectionSpeed, 3e3);
 }
-
 function speedTest() {
   startSpeedDetection();
 }
-
 function getConnectionSpeed() {
-  var startTime, endTime;
-  var download = new Image();
-  download.onload = function () {
-    endTime = new Date().getTime();
-    showResults();
-  };
-
-  download.onerror = function (err, msg) {
-    showMessage(
-      "<span style='color: var(--red)'>Error: Failed to get internet connection</span>"
-    );
-  };
-
-  startTime = new Date().getTime();
-  var cacheBuster = "?nnn=" + startTime;
-  download.src = imageAddr + cacheBuster;
-
-  function showResults() {
-    var duration = (endTime - startTime) / 1000;
-    var bitsLoaded = downloadSize * 8;
-    var speedBps = (bitsLoaded / duration).toFixed(2);
-    var speedKbps = (speedBps / 1024).toFixed(2);
-    var speedMbps = (speedKbps / 1024).toFixed(2);
-    showMessage([
-      "<h4>Your internet connection speed is:</h4>",
-      "<label class='text-primary'>" +
-      "<span style='color: var(--yellow); font-size: 1.5em;'>" +
-      speedBps +
-      "</span>" +
-      "</label> bps",
-      "<label class='text-primary'>" +
-      "<span style='color: var(--indigo); font-size: 1.5em;'>" +
-      speedKbps +
-      "</span>" +
-      "</label> kbps",
-      "<label class='text-primary'>" +
-      "<span style='color: var(--red); font-size: 1.5em;'>" +
-      speedMbps +
-      "</span>" +
-      "</label> Mbps",
-      "<div id='resultado'></div>",
-    ]);
-  }
-
-  $(document).ready(function () {
-    $.getJSON("https://hutils.loxal.net/whois", function (data) {
-      console.log(data);
-      $("#resultado").html("<p>Based on your public IP address: " + "<a href='https://hutils.loxal.net/whois' title='loxal' target='_blank' style='text-decoration-line: underline; text-decoration-style: dotted; cursor: help;'>" + data.ip + "</a>" + " provided by " + "<span style='font-weight: bold;'>" + data.isp + "</span>" + " at " + "<span style='font-weight: bold;'>" + data.city + "</span>" + ", " + "<span style='font-weight: bold;'>" + data.country + "<span></p>");
+  var e,
+    t,
+    n = new Image();
+  (n.onload = function () {
+    var n, o, s;
+    (t = new Date().getTime()),
+      (n = ((8 * downloadSize) / ((t - e) / 1e3)).toFixed(2)),
+      (o = (n / 1024).toFixed(2)),
+      (s = (o / 1024).toFixed(2)),
+      showMessage([
+        "<h4>Your internet connection speed is:</h4>",
+        "<label class='text-primary'><span style='color: var(--yellow); font-size: 1.5em;'>" +
+          n +
+          "</span></label> bps",
+        "<label class='text-primary'><span style='color: var(--indigo); font-size: 1.5em;'>" +
+          o +
+          "</span></label> kbps",
+        "<label class='text-primary'><span style='color: var(--red); font-size: 1.5em;'>" +
+          s +
+          "</span></label> Mbps",
+        "<div id='resultado'></div>",
+      ]);
+  }),
+    (n.onerror = function (e, t) {
+      showMessage(
+        "<span style='color: var(--red)'>Error: Failed to get internet connection</span>"
+      );
     });
-  });
+  var o = "?nnn=" + (e = new Date().getTime());
+  (n.src = imageAddr + o),
+    $(document).ready(function () {
+      $.getJSON("https://hutils.loxal.net/whois", function (e) {
+        console.log(e),
+          $("#resultado").html(
+            "<p>Based on your public IP address: <a href='https://hutils.loxal.net/whois' title='loxal' target='_blank' style='text-decoration-line: underline; text-decoration-style: dotted; cursor: help;'>" +
+              e.ip +
+              "</a> provided by <span style='font-weight: bold;'>" +
+              e.isp +
+              "</span> at <span style='font-weight: bold;'>" +
+              e.city +
+              "</span>, <span style='font-weight: bold;'>" +
+              e.country +
+              "<span></p>"
+          );
+      });
+    });
 }
