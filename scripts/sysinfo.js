@@ -22,7 +22,7 @@ if ((verOffset = nAgt.indexOf("OPR")) != -1) {
     fullVersion = nAgt.substring(verOffset + 8);
 }
 // In MS Edge, the true version is after "Edg" in userAgent
-else if ((verOffset = nAgt.indexOf("Edg")) != -1) {
+else if ((verOffset = nAgt.indexOf("Edg" || "EdgA")) != -1) {
   browserName = "Microsoft Edge";
   fullVersion = nAgt.substring(verOffset + 4);
 }
