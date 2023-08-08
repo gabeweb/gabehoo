@@ -112,5 +112,16 @@ sysinfo.appendChild(newSysinfoRow("GPU", renderer));
 sysinfo.appendChild(
   newSysinfoRow("CPU", `${navigator.hardwareConcurrency} core processor`)
 );
-sysinfo.appendChild(newSysinfoRow("Memory", `${navigator.deviceMemory} GB`));
 
+// Device Memory
+
+if (navigator.deviceMemory) {
+  const memory = navigator.deviceMemory;
+  sysinfo.appendChild(newSysinfoRow("Memory", `${memory} GB`)); // Imprime la cantidad de memoria RAM en GB
+} else {
+  sysinfo.appendChild(
+    newSysinfoRow(
+      "La propiedad 'deviceMemory' no es compatible con este navegador o plataforma."
+    )
+  );
+}
