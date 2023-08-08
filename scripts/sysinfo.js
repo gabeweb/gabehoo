@@ -24,7 +24,7 @@ if ((verOffset = nAgt.indexOf("OPR")) != -1) {
 // In MS Edge, the true version is after "Edg" in userAgent
 else if ((verOffset = nAgt.indexOf("Edg" || "EdgA")) != -1) {
   browserName = "Microsoft Edge";
-  fullVersion = nAgt.substring(verOffset + 4 || verOffset + 5);
+  fullVersion = nAgt.substring(verOffset + 4 || verOffset + 3);
 }
 // In MSIE, the true version is after "MSIE" in userAgent
 else if ((verOffset = nAgt.indexOf("MSIE")) != -1) {
