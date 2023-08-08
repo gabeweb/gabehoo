@@ -121,7 +121,7 @@ if (navigator.deviceMemory) {
 } else {
   sysinfo.appendChild(
     newSysinfoRow(
-      "Memory", "La propiedad 'deviceMemory' no es compatible con este navegador o plataforma."
+      "Memory", "The 'deviceMemory' property is not supported on this browser or platform."
     )
   );
 }
