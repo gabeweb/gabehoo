@@ -109,7 +109,7 @@ sysinfo.appendChild(newSysinfoRow("Architecture", architecture));
 sysinfo.appendChild(
   newSysinfoRow("Screen Resolution", `${screen.width}x${screen.height}`)
 );
-sysinfo.appendChild(newSysinfoRow("GPU", renderer));
+sysinfo.appendChild(newSysinfoRow("GPU", gpu));
 sysinfo.appendChild(
   newSysinfoRow("CPU", `${navigator.hardwareConcurrency} core processor`)
 );
