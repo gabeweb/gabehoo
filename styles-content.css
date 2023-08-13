@@ -1226,7 +1226,7 @@ cursor: help;
   }
 
   .container,
-  .header,
+  /*.header,*/
   .sub-header,
   .main-row,
   .sidebar,
