@@ -19,6 +19,7 @@
   --fontHeader: "Monocraft", monospace;
   --fontIcons: "MaterialIcons";
   --invert: 1;
+  font-feature-settings: 'zero' 1;
 }
 
 .material-icon {
