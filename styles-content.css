@@ -19,7 +19,6 @@
   --fontHeader: "Monocraft", monospace;
   --fontIcons: "MaterialIcons";
   --invert: 1;
-  font-feature-settings: "zero" 1;
 }
 
 .material-icon {
@@ -31,6 +30,7 @@
 * {
   box-sizing: border-box;
   scrollbar-color: #00000000 #00000000;
+  font-feature-settings: "zero" 1;
   /*scrollbar-width: thin;*/
 }
 
@@ -547,6 +547,7 @@ div#sidebox-content-09 {
 #password-validate {
   width: 100%;
   margin: auto;
+  position: relative;
 }
 
 #password-validate label {
@@ -555,7 +556,7 @@ div#sidebox-content-09 {
 
 #password-input {
   width: 100%;
-  padding: 10px;
+  padding: 10px 2px 10px 36px;
   margin: 10px 0 10px 0;
   background-color: transparent;
   font-family: var(--fontBody);
@@ -564,13 +565,24 @@ div#sidebox-content-09 {
   border: 1px solid var(--ctp-mocha-overlay2-rgb);
 }
 
+span.input-lock {
+  color: var(--green);
+  font-size: 1.5em;
+  position: absolute;
+  z-index: 1;
+  width: 32px;
+  display: inline;
+  text-align: center;
+  top: 38px;
+  left: 4px;
+}
+
 #password-input:focus-within {
   border: 1px solid var(--accent-color);
   background-color: var(--searcher-bg-color);
 }
 
 #password-strength {
-  height: 32px;
   width: 100%;
   display: block;
   background-color: transparent;
@@ -581,15 +593,15 @@ div#sidebox-content-09 {
   display: block;
   height: 32px;
   padding: 4px;
-  border-radius: 2px;
   transition: all 500ms ease;
+  color: var(--text-color-alt);
 }
 
 div[class*="strength-"]::before {
   position: absolute;
-  height: 20px;
-  padding: 3px 3px 3px 10px;
-  color: var(--text-color-alt);
+  height: 26px;
+  padding: 2px 2px 2px 10px;
+  mix-blend-mode: difference;
 }
 
 .strength-0 span {
@@ -602,7 +614,7 @@ div[class*="strength-"]::before {
 }
 
 .strength-1 span {
-  background-color: var(--red);
+  background-color: var(--orange);
   width: 40%;
 }
 
@@ -620,12 +632,12 @@ div[class*="strength-"]::before {
 }
 
 .strength-3 span {
-  background-color: var(--green);
-  width: 80%;
+  background-color: var(--yellow);
+  width: 60%;
 }
 
 .strength-3::before {
-  content: "strong";
+  content: "good";
 }
 
 .strength-4 span {
@@ -634,7 +646,7 @@ div[class*="strength-"]::before {
 }
 
 .strength-4::before {
-  content: "very strong";
+  content: "strong";
 }
 
 /* password generator  */
@@ -697,35 +709,61 @@ div[class*="strength-"]::before {
 
 .wrapper-pwd-gen .pass-indicator {
   width: 100%;
-  height: 4px;
   position: relative;
-  background: var(--black);
+  background-color: transparent;
+  border: 1px dashed var(--ctp-mocha-overlay2-rgb);
   margin-top: 0.75rem;
-  border-radius: 25px;
 }
 
-.pass-indicator::before {
+.wrapper-pwd-gen .pass-indicator span {
+  display: block;
+  height: 32px;
+  padding: 4px;
+  transition: all 500ms ease;
+  color: var(--text-color-alt);
+}
+
+div[class*="pass-indicator"]::before {
   position: absolute;
-  content: "";
-  height: 100%;
-  width: 50%;
-  border-radius: inherit;
-  transition: width 0.3s ease;
+  height: 26px;
+  padding: 2px 2px 2px 10px;
+  mix-blend-mode: difference;
 }
 
-.pass-indicator#weak::before {
+.pass-indicator#veryweak span {
   width: 20%;
   background: var(--red);
 }
 
-.pass-indicator#medium::before {
-  width: 50%;
+.pass-indicator#veryweak::before {
+  content: "very short"
+}
+
+.pass-indicator#weak span {
+  width: 40%;
+  background: var(--orange);
+}
+
+.pass-indicator#weak::before {
+  content: "short"
+}
+
+.pass-indicator#good span {
+  width: 60%;
   background: var(--yellow);
 }
 
-.pass-indicator#strong::before {
+.pass-indicator#good::before {
+  content: "good"
+}
+
+.pass-indicator#strong span {
   width: 100%;
   background: var(--green);
+}
+
+.pass-indicator#strong::before {
+  content: "long"
 }
 
 .wrapper-pwd-gen .pass-length {
