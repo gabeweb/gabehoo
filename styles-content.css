@@ -19,7 +19,7 @@
   --fontHeader: "Monocraft", monospace;
   --fontIcons: "MaterialIcons";
   --invert: 1;
-  font-feature-settings: 'zero' 1;
+  font-feature-settings: "zero" 1;
 }
 
 .material-icon {
@@ -184,9 +184,9 @@ section {
 section.section {
   border-width: 1px;
   border-style: solid;
-	outline-width: 8px;
-	outline-style: solid;
-	outline-color: var(--bg-color);
+  outline-width: 8px;
+  outline-style: solid;
+  outline-color: var(--bg-color);
 }
 
 section[id*="section-"] h3 {
@@ -405,12 +405,12 @@ ul#sysinfo li {
 }
 
 div[class*="sidebox"]:not([class="sidebox-container"]) {
-	padding: 4px 8px;
-	border-width: 1px 1px 1px 1px;
-	border-style: solid;
-	outline-width: 8px;
-	outline-style: solid;
-	outline-color: var(--bg-color);
+  padding: 4px 8px;
+  border-width: 1px 1px 1px 1px;
+  border-style: solid;
+  outline-width: 8px;
+  outline-style: solid;
+  outline-color: var(--bg-color);
 }
 
 div[id*="sidebox-header"] {
@@ -542,6 +542,101 @@ div#sidebox-content-09 {
   font-family: var(--fontBody);
 }
 
+/* password validator */
+
+#password-validate {
+  width: 100%;
+  margin: auto;
+}
+
+#password-validate label {
+  display: block;
+}
+
+#password-input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0 10px 0;
+  background-color: transparent;
+  font-family: var(--fontBody);
+  font-size: 1.1em;
+  color: inherit;
+  border: 1px solid var(--ctp-mocha-overlay2-rgb);
+}
+
+#password-input:focus-within {
+  border: 1px solid var(--accent-color);
+  background-color: var(--searcher-bg-color);
+}
+
+#password-strength {
+  height: 32px;
+  width: 100%;
+  display: block;
+  background-color: transparent;
+  border: 1px dashed var(--ctp-mocha-overlay2-rgb);
+}
+
+#password-strength span {
+  display: block;
+  height: 32px;
+  padding: 4px;
+  border-radius: 2px;
+  transition: all 500ms ease;
+}
+
+div[class*="strength-"]::before {
+  position: absolute;
+  height: 20px;
+  padding: 3px 3px 3px 10px;
+  color: var(--text-color-alt);
+}
+
+.strength-0 span {
+  background-color: var(--red);
+  width: 20%;
+}
+
+.strength-0::before {
+  content: "very weak";
+}
+
+.strength-1 span {
+  background-color: var(--red);
+  width: 40%;
+}
+
+.strength-1::before {
+  content: "weak";
+}
+
+.strength-2 span {
+  background-color: var(--yellow);
+  width: 60%;
+}
+
+.strength-2::before {
+  content: "good";
+}
+
+.strength-3 span {
+  background-color: var(--green);
+  width: 80%;
+}
+
+.strength-3::before {
+  content: "strong";
+}
+
+.strength-4 span {
+  background-color: var(--green);
+  width: 100%;
+}
+
+.strength-4::before {
+  content: "very strong";
+}
+
 /* password generator  */
 
 .wrapper-pwd-gen {
@@ -570,13 +665,15 @@ div#sidebox-content-09 {
   border: 1px solid var(--green);
   word-break: break-all;
   text-overflow: ellipsis;
-  background: linear-gradient(to right,
-      var(--red) 0%,
-      var(--orange) 20%,
-      var(--yellow) 40%,
-      var(--green) 60%,
-      var(--blue) 80%,
-      var(--indigo) 100%);
+  background: linear-gradient(
+    to right,
+    var(--red) 0%,
+    var(--orange) 20%,
+    var(--yellow) 40%,
+    var(--green) 60%,
+    var(--blue) 80%,
+    var(--indigo) 100%
+  );
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -953,7 +1050,7 @@ button#search-button {
   color: var(--green);
 }
 
-form input:placeholder-shown+button#clear-field {
+form input:placeholder-shown + button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
@@ -1172,10 +1269,10 @@ span.info-connector {
 }
 
 .AWAD_byline a {
-color: var(--green);
-text-decoration: underline;
-text-decoration-style: dashed;
-cursor: help;
+  color: var(--green);
+  text-decoration: underline;
+  text-decoration-style: dashed;
+  cursor: help;
 }
 
 /* media queries */
@@ -1211,7 +1308,8 @@ cursor: help;
   div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
-  .sidebar ul, ul#sysinfo {
+  .sidebar ul,
+  ul#sysinfo {
     column-count: 2 !important;
   }
 
@@ -1256,7 +1354,8 @@ cursor: help;
   div[class*="main-content-top"] ul,
   .sub-header ul,
   div[class*="main-content-middle"] ul,
-  .sidebar ul, ul#sysinfo {
+  .sidebar ul,
+  ul#sysinfo {
     column-count: 3 !important;
   }
 

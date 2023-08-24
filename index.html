@@ -35,6 +35,10 @@
         });
       }); /*]]>*/
     </script>
+
+    <!-- script for password valiation -->
+    <script src="scripts/zxcvbn.js"></script>
+
   </head>
 
   <body>
@@ -1822,6 +1826,9 @@
                 >
               </li>
               <li>
+                <a href="https://haveibeenpwned.com/" title="Have I Been Pwned?" target="_blank">Have I Been Pwned?</a>
+              </li>
+              <li>
                 <a
                   href="https://www.security.org/how-secure-is-my-password/"
                   title="How Secure Is My Password?"
@@ -3282,10 +3289,43 @@
 
           <div class="sidebox-09">
             <div id="sidebox-header-09">
-              <h4>Password Generator</h4>
+              <h4>Security Corner</h4>
             </div>
+
             <div id="sidebox-content-09">
+
+<article id="passwordValidator">
+
+  <h3>How Secure Is My Password?</h3>
+
+  <p>
+    How strong is your password? Find out below:
+  </p>
+
+  <form>
+    <div id="password-validate">
+      <label for="password-input">Password:</label>
+      <input
+        id="password-input"
+        name="password-input"
+        type="password"
+        required
+      />
+      <div id="password-strength"><span></span></div>
+      <p id="password-feedback"></p>
+    </div>
+  </form>
+
+  <p id="small-print">
+    <strong>Important:</strong> Your password is never transmitted to external servers and is processed locally in your device`s web browser window, using a tool called `<a href="https://github.com/dropbox/zxcvbn" target="_blank">zxcvbn</a>`.
+  </p>
+
+</article>
+
               <article id="passwordGenerator">
+
+                <h3>Password Generator</h3>
+
                 <p>
                   Need a strong password? Try the Password Generator to create
                   complex passwords that will keep your information safe:
@@ -3391,6 +3431,7 @@
     <script src="scripts/suggestions.js"></script>
     <script src="weather/weather.js"></script>
     <script src="scripts/random.js"></script>
+    <script src="scripts/passvalidator.js"></script>
     <script src="scripts/speedtest.js"></script>
     <script src="scripts/sysinfo.js"></script>
   </body>
