@@ -65,6 +65,7 @@ This page is made possible thanks to:
 - [IdreesInc](https://github.com/IdreesInc) for [Monocraft](https://github.com/IdreesInc/Monocraft) font.
 - [Catppuccin](https://github.com/catppuccin/catppuccin) color palette.
 - Password Generator is based on [Password Generator by CodingNepal](https://www.codingnepalweb.com/random-password-generator-javascript/) but using `crypto.getRandomValues(array)` instead `Math.random()`.
+- Password strength test tool is based on [password-strength-javascript](https://github.com/w3collective/password-strength-javascript) by [w3collective](https://w3collective.com/password-strength-javascript/), using [zxcvbn](https://github.com/dropbox/zxcvbn) script.
 
 Released under a [GPL-3.0 license](https://github.com/gabeweb/gabehoo/blob/main/LICENSE).
 
