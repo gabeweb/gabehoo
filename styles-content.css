@@ -604,6 +604,15 @@ div[class*="strength-"]::before {
   mix-blend-mode: difference;
 }
 
+.strength-null span {
+  background-color: transparent;
+  width: 100%;
+}
+
+.strength-null::before {
+  content: "no password entered";
+}
+
 .strength-0 span {
   background-color: var(--red);
   width: 20%;
