@@ -926,11 +926,11 @@ span#time-date {
 #weather-container {
   align-items: center;
   position: relative;
-  width: 200px;
+  width: max-content;
   text-align: center;
   margin: auto;
   display: flex;
-  column-gap: 20px;
+  column-gap: 10px;
   line-height: 1.5em;
 }
 
