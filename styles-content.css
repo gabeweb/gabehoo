@@ -691,25 +691,14 @@ div[class*="strength-"]::before {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  color: var(--green);
+  color: var(--blue);
   font-family: var(--fontBody);
   font-weight: bold;
   font-size: 105%;
   letter-spacing: 0.2em;
-  border: 1px solid var(--green);
+  border: 1px solid var(--blue);
   word-break: break-all;
   text-overflow: ellipsis;
-  background: linear-gradient(
-    to right,
-    var(--red) 0%,
-    var(--orange) 20%,
-    var(--yellow) 40%,
-    var(--green) 60%,
-    var(--blue) 80%,
-    var(--indigo) 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 .input-box span#copy-icon {
