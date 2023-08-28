@@ -931,7 +931,7 @@ span#time-date {
   margin: auto;
   display: flex;
   column-gap: 20px;
-  line-height: 1.1em;
+  line-height: 1.5em;
 }
 
 #weather-symbol {
@@ -954,6 +954,7 @@ img#weather-icon {
 #weather-info span {
   flex: 1;
   font-size: 2em;
+  display: block;
 }
 
 span#weather-description {
