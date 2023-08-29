@@ -569,12 +569,12 @@ div#sidebox-content-09 {
 
 #password-input {
   width: 100%;
-  padding: 10px 10px 10px 36px;
+  padding: 10px 34px 10px 32px;
   margin: 10px 0 10px 0;
   background-color: transparent;
   font-family: var(--fontBody);
   font-size: 1.1em;
-  color: inherit;
+  color: var(--blue);
   border: 1px solid var(--ctp-mocha-overlay2-rgb);
 }
 
@@ -588,6 +588,29 @@ span.input-lock {
   text-align: center;
   top: 38px;
   left: 4px;
+}
+
+span#togglePassword {
+  position: absolute;
+  float: right;
+  font-size: 1.5em;
+  width: 32px;
+  cursor: pointer;
+  top: 38px;
+  right: 0;
+  z-index: 9999999999999;
+}
+
+span.visibility_on::before {
+  width: 32px;
+  content: "visibility";
+  color: var(--green);
+}
+
+span.visibility_off::before {
+  width: 32px;
+  content: "visibility_off";
+  color: var(--red);
 }
 
 #password-input:focus-within {
