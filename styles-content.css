@@ -633,6 +633,18 @@ span.visibility_off::before {
   color: var(--text-color-alt);
 }
 
+#char-counter {
+position: absolute;
+height: 26px;
+top: 84px;
+right: 0px;
+mix-blend-mode: difference;
+}
+
+#char-counter::before {
+  content: "length: ";
+  }
+
 div[class*="strength-"]::before {
   position: absolute;
   height: 26px;
@@ -643,10 +655,6 @@ div[class*="strength-"]::before {
 .strength-null span {
   background-color: transparent;
   width: 100%;
-}
-
-.strength-null::before {
-  content: "no password entered";
 }
 
 .strength-0 span {
