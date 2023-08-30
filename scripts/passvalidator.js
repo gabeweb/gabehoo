@@ -28,3 +28,12 @@ togglePassword.addEventListener("click", function (e) {
   // toggle the eye slash icon
   this.classList.toggle("visibility_off");
 });
+
+var counter = document.getElementById("char-counter"),
+  input = document.getElementById("password-input");
+
+counter.innerHTML = input.value.length;
+
+input.addEventListener("input", function (e) {
+  counter.innerHTML = input.value.length;
+});
