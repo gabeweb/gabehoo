@@ -663,25 +663,25 @@ div[class*="strength-"]::before {
 }
 
 .strength-0::before {
-  content: "very weak";
+  content: "too guessable";
 }
 
 .strength-1 span {
-  background-color: var(--orange);
+  background-color: var(--maroon);
   width: 40%;
 }
 
 .strength-1::before {
-  content: "weak";
+  content: "very guessable";
 }
 
 .strength-2 span {
-  background-color: var(--yellow);
+  background-color: var(--orange);
   width: 60%;
 }
 
 .strength-2::before {
-  content: "good";
+  content: "somewhat guessable";
 }
 
 .strength-3 span {
@@ -690,7 +690,7 @@ div[class*="strength-"]::before {
 }
 
 .strength-3::before {
-  content: "good";
+  content: "safely moderate";
 }
 
 .strength-4 span {
@@ -699,7 +699,7 @@ div[class*="strength-"]::before {
 }
 
 .strength-4::before {
-  content: "strong";
+  content: "very unguessable";
 }
 
 /* password generator  */

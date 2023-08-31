@@ -53,6 +53,7 @@
   /* basic colors */
 
   --red: var(--ctp-mocha-red-rgb);
+  --maroon: var(--ctp-mocha-maroon-rgb);
   --orange: var(--ctp-mocha-peach-rgb);
   --yellow: var(--ctp-mocha-yellow-rgb);
   --green: var(--ctp-mocha-green-rgb);
