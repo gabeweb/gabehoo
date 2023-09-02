@@ -1,11 +1,11 @@
 // Password Generator code adapted from
 // CodingNepal
-// hhttps://www.codingnepalweb.com/random-password-generator-javascript/
+// https://www.codingnepalweb.com/random-password-generator-html-javascript/
 
 const lengthSlider = document.querySelector(".pass-length input"),
   options = document.querySelectorAll(".option input"),
-  copyIcon = document.querySelector(".input-box span"),
-  passwordInput = document.querySelector(".input-box div"),
+  copyIcon = document.querySelector(".password-box span"),
+  passwordInput = document.querySelector(".password-box div"),
   passIndicator = document.querySelector(".pass-indicator"),
   generateBtn = document.querySelector(".generate-btn");
 
@@ -14,7 +14,7 @@ const characters = {
   lowercase: "abcdefghijklmnopqrstuvwxyz",
   uppercase: "ABCDEFGHIJKLMNOPQRSTUVWXYZ",
   numbers: "0123456789",
-  symbols: "-!#$%&*./:?@_+=",
+  symbols: "-!#$*./:&?,_+=",
 };
 
 const generatePassword = () => {
@@ -61,7 +61,7 @@ const updateSlider = () => {
 updateSlider();
 
 const copyPassword = () => {
-  navigator.clipboard.writeText(passwordInput.innerHTML); // copying random password
+  navigator.clipboard.writeText(passwordInput.textContent); // copying random password
   copyIcon.innerText = "check"; // changing copy icon to tick
   copyIcon.style.color = "var(--indigo)";
   setTimeout(() => {
