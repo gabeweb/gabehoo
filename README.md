@@ -63,6 +63,7 @@ This page is made possible thanks to:
 - [Google](https://github.com/google) for [Material Design](https://github.com/google/material-design-icons/tree/master) icons.
 - [IBM](https://github.com/IBM) for [IBM Plex](https://github.com/IBM/plex) font and [IBM's Carbon Design System](https://carbondesignsystem.com/guidelines/icons/library/) icons.
 - [IdreesInc](https://github.com/IdreesInc) for [Monocraft](https://github.com/IdreesInc/Monocraft) font.
+- [JetBrains](https://github.com/JetBrains) for [JetBrainsMono](https://github.com/JetBrains/JetBrainsMono) font.
 - [Catppuccin](https://github.com/catppuccin/catppuccin) color palette.
 - Password Generator is based on [Random Password Generator in HTML CSS & JavaScript by CodingNepal](https://www.codingnepalweb.com/random-password-generator-html-javascript/) but using `crypto.getRandomValues(array)` instead `Math.random()`.
 - Password strength test tool is based on [password-strength-javascript](https://github.com/w3collective/password-strength-javascript) by [w3collective](https://w3collective.com/password-strength-javascript/), using [zxcvbn](https://github.com/dropbox/zxcvbn) script.
