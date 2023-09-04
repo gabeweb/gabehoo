@@ -13,9 +13,13 @@
   src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf");
 }
 
+@font-face {
+  font-family: "JetBrains Mono";
+  src: /*url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.ttf") format("truetype"), */url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2");
+}
+
 :root {
-  --fontBody: "IBM Plex Mono", "Menlo", "Noto Sans Mono",
-    "Bitstream Vera Sans Mono", Courier, monospace;
+  --fontBody: "JetBrains Mono"/*, "IBM Plex Mono", "Menlo", "Noto Sans Mono","Bitstream Vera Sans Mono", Consolas*/, monospace;
   --fontHeader: "Monocraft", monospace;
   --fontIcons: "MaterialIcons";
   --invert: 1;
@@ -30,7 +34,7 @@
 * {
   box-sizing: border-box;
   scrollbar-color: #00000000 #00000000;
-  font-feature-settings: "zero" 1;
+  font-feature-settings: "zero", "cv03";
   /*scrollbar-width: thin;*/
 }
 
@@ -634,16 +638,16 @@ span.visibility_off::before {
 }
 
 #char-counter {
-position: absolute;
-height: 26px;
-top: 84px;
-right: 0px;
-mix-blend-mode: difference;
+  position: absolute;
+  height: 26px;
+  top: 84px;
+  right: 0px;
+  mix-blend-mode: difference;
 }
 
 #char-counter::before {
   content: "length: ";
-  }
+}
 
 div[class*="strength-"]::before {
   position: absolute;
@@ -715,14 +719,11 @@ div[class*="strength-"]::before {
 
 .password-box {
   width: 100%;
-  height: 240px;
+  min-height: 250px;
   padding: 10px;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
   text-align: center;
-  line-height: 1.1;
   overflow: hidden;
   color: var(--blue);
   background-color: transparent;
@@ -731,6 +732,7 @@ div[class*="strength-"]::before {
   border: 1px solid var(--blue);
   word-break: break-all;
   text-overflow: ellipsis;
+  font-size: 1.1em;
 }
 
 .password-box div#password-text {
@@ -738,10 +740,9 @@ div[class*="strength-"]::before {
   margin: auto;
   overflow: hidden;
   text-overflow: ellipsis;
-  letter-spacing: .5em;
-  font-size: 16px;
+  font-size: 1.1em;
   width: 100%;
-  max-width: 20em;
+  max-width: 32ch;
 }
 
 .password-box span#copy-icon {
@@ -923,6 +924,7 @@ div.footer {
 }
 
 span#time-date {
+  font-family: var(--fontHeader);
   font-size: 2em;
   font-weight: bold;
 }
@@ -984,12 +986,14 @@ img#weather-icon {
 }
 
 #weather-info span {
+  font-family: var(--fontHeader);
   flex: 1;
   font-size: 2em;
   display: block;
 }
 
 span#weather-description {
+  font-family: var(--fontBody);
   font-size: 0.85em;
 }
 
