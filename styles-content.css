@@ -1027,18 +1027,14 @@ span#time-date {
   -webkit-animation-delay: -0.5s;
 }
 
-.wifi-signal {
-  color: var(--green);
-}
-
 .wifi-signal::before {
   content: "wifi_1_bar";
-  opacity: 0.2;
+  opacity: .2;
   animation-name: wifi-signal;
-  animation-duration: 4s;
+  animation-duration: 5s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
-  animation-delay: 1s;
+  animation-delay: 0s;
 }
 
 /* greeting's time */
@@ -1451,27 +1447,26 @@ span.info-connector {
 @keyframes wifi-signal {
   0% {
     content: "wifi_1_bar";
-    opacity: 0.4;
+    opacity: .4;
+    color: var(--red);
   }
 
   25% {
     content: "wifi_2_bar";
-    opacity: 0.6;
+    opacity: .6;
+    color: var(--orange);
   }
 
   50% {
     content: "wifi";
-    opacity: 0.8;
-  }
-
-  75% {
-    content: "wifi";
     opacity: 1;
+    color: var(--green);
   }
 
-  100% {
+  90% {
     content: "wifi";
     opacity: .6;
+    color: var(--yellow);
   }
 }
 
