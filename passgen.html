@@ -8,12 +8,19 @@
     <title>Cryptographic Password Generator</title>
     <link rel="stylesheet" href="styles-colors.css" />
     <link rel="stylesheet" href="styles-content.css" />
-    <style>.container {
+    <style>
+      .container {
         gap: 30px;
         width: 100%;
         max-width: 1120px;
         margin: auto;
         padding: 20px 20px 0px 20px;
+      }
+
+      .wrapper-pwd-gen {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
       }
 
       .password-input {
@@ -23,32 +30,57 @@
         color: var(--green);
         border: 1px solid var(--green);
       }
+
+      .password-box {
+        align-items: initial;
+        height: 280px;
+        overflow-y: auto;
+      }
+
+      div .password-box {
+        text-align: center;
+        display: inline-block;
+      }
     </style>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
   </head>
 
   <body>
     <div class="container fade-in">
-      <h1>Cryptographic Password Generator</h1>
+      <h2>Cryptographic Password Generator</h2>
+
+      <h3>Generate passwords locally on your device, not online.</h3>
 
       <div class="wrapper-pwd-gen">
-
         <div class="options">
-            <div>
-          <label for="cantidad">Cantidad:</label>
-          <input type="number" id="cantidad" min="5" max="128" value="10" step="1" class="password-input" />
-</div>
-
-<div>
-          <label for="longitud">Longitud:</label>
-          <input type="number" id="longitud" min="5" max="128" value="16" step="1" class="password-input" />
-        </div>
+            <label for="cantidad">Quantity:</label>
+            <input
+              type="number"
+              id="cantidad"
+              min="5"
+              max="128"
+              value="10"
+              step="1"
+              class="password-input"
+            />
+            <label for="longitud">Length:</label>
+            <input
+              type="number"
+              id="longitud"
+              min="5"
+              max="128"
+              value="16"
+              step="1"
+              class="password-input"
+            />
         </div>
 
         <button onclick="generarContrasenas()" class="generate-btn">
-            Generate Passwords
+          Generate Passwords
         </button>
 
-        <div id="contrasenas" class="password-box" ></div>
+          <div id="contrasenas" class="password-box" contenteditable="true" spellcheck="false"></div>
+
         <p id="small-print">
           <strong>Warning:</strong> This password generator
           <strong>does not store or transmit</strong>

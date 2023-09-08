@@ -49,14 +49,16 @@
 
 @font-face {
   font-family: "MaterialIcons";
-  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf") format("opentype");
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf")
+    format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -70,34 +72,39 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: 300;
 }
 
 :root {
-  --fontBody: "JetBrains Mono"/*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono","Bitstream Vera Sans Mono", Consolas, monospace;
+  --fontBody: "JetBrains Mono" /*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono",
+    "Bitstream Vera Sans Mono", Consolas, monospace;
   --fontHeader: Monocraft, monospace;
   --fontIcons: MaterialIcons;
   --invert: 1;
@@ -1020,6 +1027,20 @@ span#time-date {
   -webkit-animation-delay: -0.5s;
 }
 
+.wifi-signal {
+  color: var(--green);
+}
+
+.wifi-signal::before {
+  content: "wifi_1_bar";
+  opacity: 0.2;
+  animation-name: wifi-signal;
+  animation-duration: 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-delay: 1s;
+}
+
 /* greeting's time */
 
 .morning {
@@ -1422,6 +1443,40 @@ span.info-connector {
 
   100% {
     filter: opacity(1);
+  }
+}
+
+/* animated wifi */
+
+@keyframes wifi-signal {
+  0% {
+    content: "wifi_1_bar";
+    opacity: 0.4;
+  }
+
+  20% {
+    content: "wifi_2_bar";
+    opacity: 0.6;
+  }
+
+  40% {
+    content: "wifi";
+    opacity: 0.8;
+  }
+
+  60% {
+    content: "wifi";
+    opacity: 1;
+  }
+
+  80% {
+    content: "wifi_2_bar";
+    opacity: 0.8;
+  }
+
+  100% {
+    content: "wifi_1_bar";
+    opacity: 0.6;
   }
 }
 
