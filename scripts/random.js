@@ -29,11 +29,11 @@ const generatePassword = () => {
     }
   });
 
-  var array = new Uint32Array(1); // crea un array de un elemento
+  var array = new Uint32Array(1); // create an array of one element
   for (let i = 0; i < passLength; i++) {
-    crypto.getRandomValues(array); // rellena el array con un número aleatorio
-    let randomIndex = array[0] % staticPassword.length; // obtiene el índice del carácter
-    let randomChar = staticPassword[randomIndex]; // obtiene el carácter
+    crypto.getRandomValues(array); // fill the array with a random number
+    let randomIndex = array[0] % staticPassword.length; // get the index of the character
+    let randomChar = staticPassword[randomIndex]; // get the character
     randomPassword += randomChar;
   }
   passwordInput.innerHTML = randomPassword;
