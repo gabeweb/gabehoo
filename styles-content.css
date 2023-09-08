@@ -1036,7 +1036,7 @@ span#time-date {
   opacity: 0.2;
   animation-name: wifi-signal;
   animation-duration: 4s;
-  animation-timing-function: ease-in;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
   animation-delay: 1s;
 }
@@ -1454,29 +1454,24 @@ span.info-connector {
     opacity: 0.4;
   }
 
-  20% {
+  25% {
     content: "wifi_2_bar";
     opacity: 0.6;
   }
 
-  40% {
+  50% {
     content: "wifi";
     opacity: 0.8;
   }
 
-  60% {
+  75% {
     content: "wifi";
     opacity: 1;
   }
 
-  80% {
-    content: "wifi_2_bar";
-    opacity: 0.8;
-  }
-
   100% {
-    content: "wifi_1_bar";
-    opacity: 0.6;
+    content: "wifi";
+    opacity: .6;
   }
 }
 
