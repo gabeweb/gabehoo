@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cryptographic Password Generator</title>
+    <link rel="stylesheet" href="styles-colors.css" />
+    <link rel="stylesheet" href="styles-content.css" />
+    <style>.container {
+        gap: 30px;
+        width: 100%;
+        max-width: 1120px;
+        margin: auto;
+        padding: 20px 20px 0px 20px;
+      }
+
+      .password-input {
+        padding: 4px;
+        font-family: var(--fontBody);
+        background-color: transparent;
+        color: var(--green);
+        border: 1px solid var(--green);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container fade-in">
+      <h1>Cryptographic Password Generator</h1>
+
+      <div class="wrapper-pwd-gen">
+
+        <div class="options">
+            <div>
+          <label for="cantidad">Cantidad:</label>
+          <input type="number" id="cantidad" min="5" max="128" value="10" step="1" class="password-input" />
+</div>
+
+<div>
+          <label for="longitud">Longitud:</label>
+          <input type="number" id="longitud" min="5" max="128" value="16" step="1" class="password-input" />
+        </div>
+        </div>
+
+        <button onclick="generarContrasenas()" class="generate-btn">
+            Generate Passwords
+        </button>
+
+        <div id="contrasenas" class="password-box" ></div>
+        <p id="small-print">
+          <strong>Warning:</strong> This password generator
+          <strong>does not store or transmit</strong>
+          passwords.
+        </p>
+      </div>
+    </div>
+  </body>
+  <script src="scripts/multirandom.js"></script>
+</html>
