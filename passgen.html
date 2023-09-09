@@ -15,6 +15,8 @@
         max-width: 1120px;
         margin: auto;
         padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
       }
 
       .wrapper-pwd-gen {
@@ -29,18 +31,25 @@
         background-color: transparent;
         color: var(--green);
         border: 1px solid var(--green);
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        text-align: center;
       }
 
       .password-box {
+        width: 100%;
+        max-width: 520px;
         align-items: initial;
         height: 280px;
         overflow-y: auto;
+        overflow-x: hidden;
         padding: 0px 4px 0px 4px;
+        margin: auto;
       }
 
       div .password-box {
         text-align: justify;
-        display: inline-block;
       }
 
       .password-box ol {
@@ -48,6 +57,12 @@
         font-weight: normal;
         font-size: 90%;
         color: var(--white) !important;
+      }
+
+      footer {
+        font-size: 80%;
+        text-align: center;
+        padding: 10px;
       }
     </style>
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
@@ -62,45 +77,47 @@
       <div class="wrapper-pwd-gen">
         <form>
           <div class="options">
-            <label for="length">Password Length:</label>
-            <input
-              type="range"
-              id="lengthSlider"
-              min="5"
-              max="128"
-              value="16"
-              oninput="lengthNumber.value = lengthSlider.value"
-              class="password-input"
-            /><br />
-            <input
-              type="number"
-              id="lengthNumber"
-              min="5"
-              max="128"
-              value="16"
-              oninput="lengthSlider.value = lengthNumber.value"
-              class="password-input"
-            /><br />
+            <section>
+              <label for="length">Password Length:</label>
+              <input
+                type="range"
+                id="lengthSlider"
+                min="5"
+                max="128"
+                value="16"
+                oninput="lengthNumber.value = lengthSlider.value"
+              />
 
-            <label for="count">Number of Passwords:</label>
-            <input
-              type="range"
-              id="countSlider"
-              min="5"
-              max="100"
-              value="10"
-              oninput="countNumber.value = countSlider.value"
-              class="password-input"
-            /><br />
-            <input
-              type="number"
-              id="countNumber"
-              min="5"
-              max="100"
-              value="10"
-              oninput="countSlider.value = countNumber.value"
-              class="password-input"
-            />
+              <input
+                id="lengthNumber"
+                min="5"
+                max="128"
+                value="16"
+                oninput="lengthSlider.value = lengthNumber.value"
+                class="password-input"
+              />
+            </section>
+
+            <section>
+              <label for="count">Number of Passwords:</label>
+              <input
+                type="range"
+                id="countSlider"
+                min="5"
+                max="100"
+                value="10"
+                oninput="countNumber.value = countSlider.value"
+              />
+
+              <input
+                id="countNumber"
+                min="5"
+                max="100"
+                value="10"
+                oninput="countSlider.value = countNumber.value"
+                class="password-input"
+              />
+            </section>
           </div>
 
           <button
@@ -127,6 +144,11 @@
           passwords.
         </p>
       </div>
+      <footer>
+        The code of this cryptographic password generator has been created with
+        AI assistance, previously reviewed and corrected to guarantee optimal
+        performance, as well as the quality of randomness.
+      </footer>
     </div>
   </body>
   <script src="scripts/multirandom.js"></script>
