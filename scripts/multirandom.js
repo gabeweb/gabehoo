@@ -1,23 +1,26 @@
+function generatePasswords() {
+  var length = document.getElementById("lengthNumber").value;
+  var count = document.getElementById("countNumber").value;
+  var passwordsDiv = document.querySelector("#passwords ol");
+  passwordsDiv.innerHTML = ""; // Clear previous passwords
 
-      function generarContrasenas() {
-        const cantidad = document.getElementById("cantidad").value;
-        const longitud = document.getElementById("longitud").value;
-        const caracteres =
-          "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&*+-./:=?@_";
-        let contrasenas = [];
+  for (var i = 0; i < count; i++) {
+    var password = generatePassword(length);
+    var passwordElement = document.createElement("li");
+    passwordElement.textContent = password;
+    passwordsDiv.appendChild(passwordElement);
+  }
+}
 
-        for (let i = 0; i < cantidad; i++) {
-          let contraseña = "";
-          const array = new Uint32Array(longitud);
-          window.crypto.getRandomValues(array);
-          for (let j = 0; j < longitud; j++) {
-            const indice = array[j] % caracteres.length;
-            contraseña += caracteres.charAt(indice);
-          }
-          contrasenas.push(contraseña);
-        }
-
-        document.getElementById("contrasenas").innerHTML = contrasenas.join(
-          "<br>"
-        );
-      }
+function generatePassword(length) {
+  var buf = new Uint8Array(length);
+  window.crypto.getRandomValues(buf);
+  var charset =
+    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!#$%&*+-./:=?@_";
+  var password = "";
+  for (var i = 0; i < length; i++) {
+    var randomIndex = buf[i] % charset.length;
+    password += charset[randomIndex];
+  }
+  return password;
+}
