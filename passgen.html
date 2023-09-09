@@ -35,11 +35,19 @@
         align-items: initial;
         height: 280px;
         overflow-y: auto;
+        padding: 0px 4px 0px 4px;
       }
 
       div .password-box {
-        text-align: center;
+        text-align: justify;
         display: inline-block;
+      }
+
+      .password-box ol {
+        margin: 6px;
+        font-weight: normal;
+        font-size: 90%;
+        color: var(--white) !important;
       }
     </style>
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
@@ -52,34 +60,66 @@
       <h3>Generate passwords locally on your device, not online.</h3>
 
       <div class="wrapper-pwd-gen">
-        <div class="options">
-            <label for="cantidad">Quantity:</label>
+        <form>
+          <div class="options">
+            <label for="length">Password Length:</label>
             <input
-              type="number"
-              id="cantidad"
-              min="5"
-              max="128"
-              value="10"
-              step="1"
-              class="password-input"
-            />
-            <label for="longitud">Length:</label>
-            <input
-              type="number"
-              id="longitud"
+              type="range"
+              id="lengthSlider"
               min="5"
               max="128"
               value="16"
-              step="1"
+              oninput="lengthNumber.value = lengthSlider.value"
+              class="password-input"
+            /><br />
+            <input
+              type="number"
+              id="lengthNumber"
+              min="5"
+              max="128"
+              value="16"
+              oninput="lengthSlider.value = lengthNumber.value"
+              class="password-input"
+            /><br />
+
+            <label for="count">Number of Passwords:</label>
+            <input
+              type="range"
+              id="countSlider"
+              min="5"
+              max="100"
+              value="10"
+              oninput="countNumber.value = countSlider.value"
+              class="password-input"
+            /><br />
+            <input
+              type="number"
+              id="countNumber"
+              min="5"
+              max="100"
+              value="10"
+              oninput="countSlider.value = countNumber.value"
               class="password-input"
             />
+          </div>
+
+          <button
+            type="button"
+            onclick="generatePasswords()"
+            class="generate-btn"
+          >
+            Generate Passwords
+          </button>
+        </form>
+
+        <div
+          id="passwords"
+          class="password-box"
+          contenteditable="true"
+          spellcheck="false"
+        >
+          <ol></ol>
         </div>
-
-        <button onclick="generarContrasenas()" class="generate-btn">
-          Generate Passwords
-        </button>
-
-          <div id="contrasenas" class="password-box" contenteditable="true" spellcheck="false"></div>
 
         <p id="small-print">
           <strong>Warning:</strong> This password generator
