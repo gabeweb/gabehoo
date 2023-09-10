@@ -36,19 +36,19 @@
       div.input input,
       div.input div {
         font-family: var(--fontBody);
-        font-size: 120%;
+        font-size: 1rem;
         border-width: 1px;
         border-style: solid;
         background-color: transparent;
         color: var(--text-color);
-        padding: 4px;
+        padding: 6px;
         margin: 10px auto;
       }
 
       div.input #otp {
         font-size: 250%;
         border-width: 8px;
-        border-color: var(--green);
+        border-color: transparent;
         color: var(--green);
         width: 250px;
         height: 250px;
@@ -57,21 +57,22 @@
         font-weight: bold;
         letter-spacing: 6px;
         position: relative;
+        display: inline-flex;
       }
 
-      #otpTimer {
+      div #otpTimer {
         display: inline-block;
         position: absolute;
+        z-index: 1;
         top: 220px;
       }
 
-      div.input #updatingIn {
+      div #updatingIn {
         font-size: 160%;
-        border-style: dashed;
+        border-color: transparent;
         border-width: 6px;
         background-color: var(--bg-color);
         color: var(--red);
-        border-color: var(--red);
         width: 84px;
         height: 84px;
         border-radius: 50%;
@@ -80,16 +81,99 @@
         display: inline-grid;
       }
 
-      div.input #secret {
+      span.borderOtp {
+        z-index: 0;
+        position: absolute;
+        border-width: 10px;
+        display: inline-flex;
+        top: 42px;
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        display: inline-grid;
+        animation: counter-rotation;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-delay: -0.5s;
+      }
+
+      span.borderTimer {
+        z-index: 99;
+        position: absolute;
+        border-style: dashed;
+        border-width: 6px;
+        top: 8px;
+        width: 84px;
+        height: 84px;
+        border-radius: 50%;
+        display: inline-grid;
+        animation: counter-rotation;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        animation-delay: -1s;
+      }
+
+      @keyframes counter-rotation {
+        0% {
+          transform: rotate(0deg);
+        border-style: double dashed;
+          border-color: var(--blue);
+        }
+
+        25% {
+          transform: rotate(45deg);
+        border-style: dashed double;
+          border-color: var(--yellow);
+        }
+
+        50% {
+          transform: rotate(90deg);
+        border-style: double dashed;
+          border-color: var(--orange);
+        }
+
+        75% {
+          transform: rotate(135deg);
+        border-style: dashed double;
+          border-color: var(--red);
+        }
+
+        100% {
+          transform: rotate(180deg);
+        border-style: double dashed;
+          border-color: var(--blue);
+        }
+      }
+
+      section.section-secret {
+        position: relative;
+        display: inline-block;
         width: 300px;
+        margin: auto;
+      }
+
+      .section-secret input::placeholder {
+        font-size: 0.8rem;
+      }
+
+      div.input #secret {
         border-style: dashed;
         border-color: var(--blue);
         color: var(--blue);
         text-align: center;
+        padding: 10px 4px 10px 4px;
       }
 
       div#codeData {
         width: 100%;
+        max-width: 500px;
+        margin: auto;
+        display: block;
+        overflow: hidden;
+        overflow-wrap: break-word;
+        padding: 4px;
         font-size: 80%;
         border-width: 1px;
         border-style: dashed;
@@ -98,6 +182,19 @@
 
       div#codeData section {
         color: var(--article-border-color);
+      }
+
+      div#codeData label {
+        font-weight: bold;
+      }
+
+      #hmac .label {
+        display: inline;
+        padding: 0.2em 0.6em 0.3em;
+      }
+
+      .label-primary {
+        color: var(--blue);
       }
 
       footer {
@@ -116,9 +213,11 @@
         <section class="section-otp">
           <label>One-time Password</label>
           <div class="input">
+            <span class="borderOtp"></span>
             <input readonly id="otp" class="text3style" value="" />
           </div>
           <div class="input" id="otpTimer">
+            <span class="borderTimer"></span>
             <div id="updatingIn"></div>
           </div>
         </section>
@@ -164,7 +263,11 @@
         </p>
       </div>
       <footer>
-        This 2FA code generator is based on <a href="https://github.com/iamyuthan/2FA-Solver" target="_blank">2FA-Solver</a> by <a href="https://github.com/iamyuthan" target="_blank">iamyuthan</a>.
+        This 2FA code generator is based on
+        <a href="https://github.com/iamyuthan/2FA-Solver" target="_blank"
+          >2FA-Solver</a
+        >
+        by <a href="https://github.com/iamyuthan" target="_blank">iamyuthan</a>.
       </footer>
     </div>
     <!--
