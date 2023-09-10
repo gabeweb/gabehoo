@@ -46,7 +46,7 @@
       }
 
       div.input #otp {
-        font-size: 250%;
+        font-size: 220%;
         border-width: 8px;
         border-color: transparent;
         color: var(--green);
@@ -112,8 +112,8 @@
         animation: counter-rotation;
         animation-duration: 30s;
         animation-iteration-count: infinite;
-        animation-timing-function: ease-in-out;
-        animation-delay: -1s;
+        animation-timing-function: linear;
+        animation-delay: 3s;
       }
 
       @keyframes counter-rotation {
@@ -123,22 +123,19 @@
         }
 
         25% {
-          transform: rotate(45deg);
           border-color: var(--yellow);
         }
 
         50% {
-          transform: rotate(90deg);
           border-color: var(--orange);
         }
 
         75% {
-          transform: rotate(135deg);
           border-color: var(--red);
         }
 
         100% {
-          transform: rotate(180deg);
+          transform: rotate(360deg);
           border-color: var(--blue);
         }
       }
