@@ -143,7 +143,7 @@
         }
       }
 
-      section.section-secret {
+      .section-secret {
         position: relative;
         display: inline-block;
         width: 300px;
@@ -166,9 +166,10 @@
         width: 100%;
         max-width: 500px;
         margin: auto;
-        display: block;
+        display: inline-grid;
+        gap: 20px;
         overflow: hidden;
-        overflow-wrap: break-word;
+        overflow-wrap: break-all;
         padding: 4px;
         font-size: 80%;
         border-width: 1px;
@@ -176,7 +177,7 @@
         border-color: var(--article-border-color);
       }
 
-      div#codeData section {
+      div#codeData div {
         color: var(--article-border-color);
       }
 
@@ -185,8 +186,8 @@
       }
 
       #hmac .label {
-        display: inline;
-        padding: 0.2em 0.6em 0.3em;
+        display: inline-block;
+        padding: 2px 6px 3px;
       }
 
       .label-primary {
@@ -232,25 +233,25 @@
 
         <!-- /clearfix -->
         <div id="codeData">
-          <section class="section-hex">
+          <div class="section-hex">
             <label>Secret (hex)</label>
-            <div class="input">
+            <div>
               <span class="label label-default" id="secretHex"></span>
               <span id="secretHexLength"></span>
             </div>
-          </section>
+          </div>
 
-          <section class="section-unix">
+          <div class="section-unix">
             <label>Unix epoch div 30 (padded hex)</label>
-            <div class="input">
+            <div>
               <span class="label label-default" id="epoch"></span>
             </div>
-          </section>
+          </div>
 
-          <section class="section-hmac">
+          <div class="section-hmac">
             <label>HMAC(secret, time)</label>
-            <div class="input" id="hmac"></div>
-          </section>
+            <div id="hmac"></div>
+          </div>
         </div>
         <p id="small-print">
           <strong>Warning:</strong> This 2FA code generator
