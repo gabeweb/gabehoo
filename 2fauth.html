@@ -84,6 +84,7 @@
       span.borderOtp {
         z-index: 0;
         position: absolute;
+        border-style: solid double dashed double;
         border-width: 10px;
         display: inline-flex;
         top: 42px;
@@ -101,7 +102,7 @@
       span.borderTimer {
         z-index: 99;
         position: absolute;
-        border-style: dashed;
+        border-style: double dashed solid;
         border-width: 6px;
         top: 8px;
         width: 84px;
@@ -118,31 +119,26 @@
       @keyframes counter-rotation {
         0% {
           transform: rotate(0deg);
-        border-style: double dashed;
           border-color: var(--blue);
         }
 
         25% {
           transform: rotate(45deg);
-        border-style: dashed double;
           border-color: var(--yellow);
         }
 
         50% {
           transform: rotate(90deg);
-        border-style: double dashed;
           border-color: var(--orange);
         }
 
         75% {
           transform: rotate(135deg);
-        border-style: dashed double;
           border-color: var(--red);
         }
 
         100% {
           transform: rotate(180deg);
-        border-style: double dashed;
           border-color: var(--blue);
         }
       }
