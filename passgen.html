@@ -1,146 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="./favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cryptographic Password Generator</title>
+    <link rel="stylesheet" href="styles-colors.css" />
+    <link rel="stylesheet" href="styles-content.css" />
+    <style>
+      .container {
+        gap: 30px;
+        width: 100%;
+        max-width: 1120px;
+        margin: auto;
+        padding: 20px 20px 0px 20px;
+        display: flex;
+        flex-direction: column;
+      }
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" href="./favicon.ico" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-  <title>Cryptographic Password Generator</title>
-  <link rel="stylesheet" href="styles-colors.css" />
-  <link rel="stylesheet" href="styles-content.css" />
-  <style>
-    .container {
-      gap: 30px;
-      width: 100%;
-      max-width: 1120px;
-      margin: auto;
-      padding: 20px 20px 0px 20px;
-      display: flex;
-      flex-direction: column;
-    }
+      .wrapper-pwd-gen {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
 
-    .wrapper-pwd-gen {
-      width: 100%;
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
+      div .options {
+        margin: auto;
+        width: 100%;
+        position: relative;
+        display: grid;
+        grid-auto-flow: column;
+        text-align: center;
+        max-width: 600px;
+        gap: 20px;
+      }
 
-    div .options {
-      margin: auto;
-      width: 100%;
-      position: relative;
-      display: grid;
-      grid-auto-flow: column;
-      text-align: center;
-      max-width: 600px;
-      gap: 20px;
-    }
+      @media only screen and (max-width: 720px) {
+        div .options {
+          grid-auto-flow: row;
+        }
+      }
+      div.options section {
+        text-align: center;
+        margin: auto;
+        width: 100%;
+      }
 
-    div.options section {
-      text-align: center;
-      margin: auto;
-      width: 50%;
-    }
+      .password-input {
+        padding: 4px;
+        font-family: var(--fontBody);
+        background-color: transparent;
+        color: var(--green);
+        border: 1px solid var(--green);
+        width: 42px;
+        height: 42px;
+        align-items: center;
+        text-align: center;
+      }
 
-    .password-input {
-      padding: 4px;
-      font-family: var(--fontBody);
-      background-color: transparent;
-      color: var(--green);
-      border: 1px solid var(--green);
-      width: 42px;
-      height: 42px;
-      align-items: center;
-      text-align: center;
-    }
+      .password-box {
+        width: 100%;
+        max-width: 520px;
+        align-items: initial;
+        height: 280px;
+        overflow-y: auto;
+        overflow-x: hidden;
+        padding: 0px 4px 0px 4px;
+        margin: auto;
+      }
 
-    .password-box {
-      width: 100%;
-      max-width: 520px;
-      align-items: initial;
-      height: 280px;
-      overflow-y: auto;
-      overflow-x: hidden;
-      padding: 0px 4px 0px 4px;
-      margin: auto;
-    }
+      div .password-box {
+        text-align: justify;
+      }
 
-    div .password-box {
-      text-align: justify;
-    }
+      .password-box ol {
+        margin: 6px;
+        font-weight: normal;
+        font-size: 90%;
+        color: var(--white) !important;
+      }
 
-    .password-box ol {
-      margin: 6px;
-      font-weight: normal;
-      font-size: 90%;
-      color: var(--white) !important;
-    }
+      footer {
+        font-size: 80%;
+        text-align: center;
+        padding: 10px;
+      }
+    </style>
+    <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  </head>
 
-    footer {
-      font-size: 80%;
-      text-align: center;
-      padding: 10px;
-    }
-  </style>
-  <script type="text/javascript" src="scripts/jquery.min.js"></script>
-</head>
+  <body>
+    <div class="container fade-in">
+      <h2>Cryptographic Password Generator</h2>
 
-<body>
-  <div class="container fade-in">
-    <h2>Cryptographic Password Generator</h2>
+      <h3>Generate passwords locally on your device, not online.</h3>
 
-    <h3>Generate passwords locally on your device, not online.</h3>
+      <div class="wrapper-pwd-gen">
+        <form>
+          <div class="options">
+            <section class="section-length">
+              <label for="length">Password Length:</label>
+              <br />
+              <input
+                id="lengthNumber"
+                min="5"
+                max="128"
+                value="16"
+                oninput="lengthSlider.value = lengthNumber.value"
+                class="password-input"
+              /><br />
+              <input
+                type="range"
+                id="lengthSlider"
+                min="5"
+                max="128"
+                value="16"
+                oninput="lengthNumber.value = lengthSlider.value"
+              />
+            </section>
 
-    <div class="wrapper-pwd-gen">
-      <form>
-        <div class="options">
-          <section class="section-length">
-            <label for="length">Password Length:</label>
-            <br />
-            <input id="lengthNumber" min="5" max="128" value="16" oninput="lengthSlider.value = lengthNumber.value"
-              class="password-input" /><br />
-            <input type="range" id="lengthSlider" min="5" max="128" value="16"
-              oninput="lengthNumber.value = lengthSlider.value" />
-          </section>
+            <section class="section-number">
+              <label for="count">Number of Passwords:</label>
+              <br />
+              <input
+                id="countNumber"
+                min="5"
+                max="100"
+                value="10"
+                oninput="countSlider.value = countNumber.value"
+                class="password-input"
+              /><br />
+              <input
+                type="range"
+                id="countSlider"
+                min="5"
+                max="100"
+                value="10"
+                oninput="countNumber.value = countSlider.value"
+              />
+            </section>
+          </div>
 
-          <section class="section-number">
-            <label for="count">Number of Passwords:</label>
-            <br />
-            <input id="countNumber" min="5" max="100" value="10" oninput="countSlider.value = countNumber.value"
-              class="password-input" /><br />
-            <input type="range" id="countSlider" min="5" max="100" value="10"
-              oninput="countNumber.value = countSlider.value" />
-          </section>
+          <button
+            type="button"
+            onclick="generatePasswords()"
+            class="generate-btn"
+          >
+            Generate Passwords
+          </button>
+        </form>
+
+        <div
+          id="passwords"
+          class="password-box"
+          contenteditable="true"
+          spellcheck="false"
+        >
+          <ol></ol>
         </div>
 
-        <button type="button" onclick="generatePasswords()" class="generate-btn">
-          Generate Passwords
-        </button>
-      </form>
-
-      <div id="passwords" class="password-box" contenteditable="true" spellcheck="false">
-        <ol></ol>
+        <p id="small-print">
+          <strong>Warning:</strong> This password generator
+          <strong>does not store or transmit</strong>
+          passwords.
+        </p>
+        <p style="text-align: center">
+          Try the
+          <a href="2fauth.html" title="2FA Code Generator" target="_blank"
+            >2FA Code Generator</a
+          >
+        </p>
       </div>
-
-      <p id="small-print">
-        <strong>Warning:</strong> This password generator
-        <strong>does not store or transmit</strong>
-        passwords.
-      </p>
-      <p style="text-align: center">
-        Try the
-        <a href="2fauth.html" title="2FA Code Generator" target="_blank">2FA Code Generator</a>
-      </p>
+      <footer>
+        The code of this cryptographic password generator has been created with
+        AI assistance, previously reviewed and corrected to guarantee optimal
+        performance, as well as the quality of randomness.
+      </footer>
     </div>
-    <footer>
-      The code of this cryptographic password generator has been created with
-      AI assistance, previously reviewed and corrected to guarantee optimal
-      performance, as well as the quality of randomness.
-    </footer>
-  </div>
-</body>
-<script src="scripts/multirandom.js"></script>
-
+  </body>
+  <script src="scripts/multirandom.js"></script>
 </html>
