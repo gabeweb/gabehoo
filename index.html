@@ -44,9 +44,9 @@
     <div class="container fade-in">
       <div class="header">
         <div class="header-center">
-         <span id="greeting"></span>
+          <span id="greeting"></span>
           <h1>Internet<span class="material-icon wifi-signal"></span></h1>
-          </div>
+        </div>
         <div class="header-left">
           <div id="timestamp-container" class="fade-in">
             <span id="date-time"></span><br />
@@ -1734,8 +1734,7 @@
               <h4><span>Password Managers</span></h4>
 
               <h4>Online</h4>
-                  <ul>
-
+              <ul>
                 <li>
                   <a
                     href="https://1password.com/"
@@ -1769,11 +1768,10 @@
                     Proton Pass
                   </a>
                 </li>
-                  </ul>
+              </ul>
 
-                <h4>Off-line First</h4>
-                  <ul>
-
+              <h4>Off-line First</h4>
+              <ul>
                 <li>
                   <a
                     href="https://buttercup.pw/"
@@ -1827,7 +1825,7 @@
                     >Password Safe</a
                   >
                 </li>
-                  </ul>
+              </ul>
             </article>
 
             <article>
@@ -2011,6 +2009,10 @@
                     target="_blank"
                     >Google Messages</a
                   >
+                </li>
+
+                <li>
+                  <a href="https://icq.com" title="ICQ" target="_blank">ICQ</a>
                 </li>
 
                 <li>
@@ -2477,11 +2479,6 @@
                     title="Dribbble"
                     target="_blank"
                     >Dribbble</a
-                  >
-                </li>
-                <li>
-                  <a href="https://ello.co/" title="Ello" target="_blank"
-                    >Ello</a
                   >
                 </li>
                 <li>
@@ -3350,6 +3347,8 @@
                       id="password-input"
                       name="password-input"
                       type="password"
+                      autocomplete="off"
+                      autocomplete="new-password"
                       required
                     />
                     <span
@@ -3392,7 +3391,11 @@
                       title="Copy to Clipboard"
                       >copy</span
                     >
-                    <div id="password-text" name="password-text" contenteditable="false"></div>
+                    <div
+                      id="password-text"
+                      name="password-text"
+                      contenteditable="false"
+                    ></div>
                   </div>
                   <div class="pass-indicator"><span></span></div>
                   <div class="pass-length">
@@ -3437,12 +3440,23 @@
 
                   <p>Try these other simple but yet secure tools:</p>
 
-                    <ul>
-                      <li>
-                    <a href="passgen.html" title="Cryptographic Passwords Generator" target="_blank">Batch Passwords Generator</a></li>
+                  <ul>
+                    <li>
+                      <a
+                        href="passgen.html"
+                        title="Cryptographic Passwords Generator"
+                        target="_blank"
+                        >Batch Passwords Generator</a
+                      >
+                    </li>
 
                     <li>
-                      <a href="2fauth.html" title="2FA Code Generator" target="_blank">2FA Code Generator</a>
+                      <a
+                        href="2fauth.html"
+                        title="2FA Code Generator"
+                        target="_blank"
+                        >2FA Code Generator</a
+                      >
                     </li>
                   </ul>
                 </div>
