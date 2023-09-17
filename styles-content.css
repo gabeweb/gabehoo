@@ -724,8 +724,8 @@ span.visibility_off::before {
 
 #char-counter {
   position: absolute;
-  height: 26px;
-  top: 84px;
+  /*height: 26px;*/
+  top: 86px;
   right: 0px;
   mix-blend-mode: difference;
 }
@@ -736,8 +736,8 @@ span.visibility_off::before {
 
 div[class*="strength-"]::before {
   position: absolute;
-  height: 26px;
-  padding: 2px 2px 2px 10px;
+  /*height: 26px;*/
+  padding: 4px 2px 2px 4px;
   mix-blend-mode: difference;
 }
 
