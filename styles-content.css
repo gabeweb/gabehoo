@@ -865,8 +865,8 @@ div[class*="strength-"]::before {
 
 div[class*="pass-indicator"]::before {
   position: absolute;
-  height: 26px;
-  padding: 2px 2px 2px 10px;
+  height: 32px;
+  padding: 4px 2px 2px 4px;
   mix-blend-mode: difference;
 }
 
