@@ -1314,6 +1314,11 @@ div#nowPlaying-container {
   position: relative;
 }
 
+#playingInfo p.playing-now:hover,
+#playingInfo .playing-not:hover {
+  animation-play-state: paused;
+}
+
 span.info-connector {
   text-transform: lowercase;
   font-style: italic;
