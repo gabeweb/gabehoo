@@ -538,6 +538,37 @@ div#sidebox-content-00 {
   height: 64px;
 }
 
+/* AI CHATBOTS BOX */
+
+div#ai-box.sidebox-01 {
+  padding: 4px 8px;
+  border-width: 1px;
+  border-style: solid;
+  border-top-color: var(--lavender);
+  border-right-color: var(--indigo);
+  border-bottom-color: var(--green);
+  border-left-color: var(--orange);
+  box-shadow: 0px -4px 12px var(--lavender), 4px 4px 12px var(--indigo),
+    0px 4px 12px var(--green), -4px 0px 12px var(--orange);
+}
+
+div#ai-box.sidebox-01 > #sidebox-header-01 {
+  background-color: transparent !important;
+}
+
+div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
+  background-image: linear-gradient(-45deg,
+    var(--lavender),
+    var(--indigo),
+    var(--green),
+    var(--orange)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
 div.sidebox-01 {
   border-color: var(--lavender);
   box-shadow: 12px 12px var(--lavender);
@@ -1029,7 +1060,7 @@ span#time-date {
 
 .wifi-signal::before {
   content: "wifi_1_bar";
-  opacity: .2;
+  opacity: 0.2;
   animation-name: wifi-signal;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -1452,13 +1483,13 @@ span.info-connector {
 @keyframes wifi-signal {
   0% {
     content: "wifi_1_bar";
-    opacity: .4;
+    opacity: 0.4;
     color: var(--red);
   }
 
   25% {
     content: "wifi_2_bar";
-    opacity: .6;
+    opacity: 0.6;
     color: var(--orange);
   }
 
@@ -1470,7 +1501,7 @@ span.info-connector {
 
   90% {
     content: "wifi";
-    opacity: .6;
+    opacity: 0.6;
     color: var(--yellow);
   }
 }
