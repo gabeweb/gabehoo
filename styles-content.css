@@ -286,7 +286,7 @@ section {
   /*margin: 10px;*/
 }
 
-section.section {
+section.section, section.quote {
   border-width: 1px;
   border-style: solid;
   outline-width: 8px;
@@ -327,12 +327,13 @@ section#section-00 h4 {
 }
 
 section[id*="section-"] h4 span {
-  color: var(--text-color-alt);
-  padding: 4px 10px 0px 8px;
-  margin: 4px -8px -0px -8px;
-  line-height: 0.8em;
-  border-bottom-style: solid;
-  border-bottom-width: 8px;
+  display: inline;
+	color: var(--text-color-alt);
+	padding: 4px 8px 0px 8px;
+	margin: 4px 0px 0px -8px;
+	line-height: 1em;
+	border-bottom-style: solid;
+	/* border-bottom-width: 8px; */
 }
 
 .section#section-01 {
@@ -376,7 +377,7 @@ section#section-03 {
   box-shadow: 12px 12px var(--green);
 }
 
-section#section-03 a:hover, section#section-03 a:active {
+section.quote#section-03 a:hover, section.quote#section-03 a:active {
   background-color: transparent !important;
   text-decoration-style: wavy;
 }
