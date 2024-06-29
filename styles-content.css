@@ -157,12 +157,15 @@ body {
 
 a {
   color: var(--link-color);
-  text-decoration: none;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
 }
 
 a:hover,
 a:active {
-  text-decoration: underline;
+  text-decoration: none;
+  background-color: var(--accent-color);
+  color: var(--bg-color);
 }
 
 h1,
@@ -371,6 +374,11 @@ section#section-02 h4 span {
 section#section-03 {
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
+}
+
+section#section-03 a:hover, section#section-03 a:active {
+  background-color: transparent !important;
+  text-decoration-style: wavy;
 }
 
 section#section-03 h3 {
@@ -1617,7 +1625,7 @@ span.arrow-up:hover {
     /*max-height: 143px;*/
     height: 20vh;
   }
-  
+
   #scrollToTop:link,
   #scrollToTop:visited {
     display: none !important;
