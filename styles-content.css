@@ -286,7 +286,8 @@ section {
   /*margin: 10px;*/
 }
 
-section.section, section.quote {
+section.section,
+section.quote {
   border-width: 1px;
   border-style: solid;
   outline-width: 8px;
@@ -328,12 +329,12 @@ section#section-00 h4 {
 
 section[id*="section-"] h4 span {
   display: inline;
-	color: var(--text-color-alt);
-	padding: 4px 8px 0px 8px;
-	margin: 4px 0px 0px -8px;
-	line-height: 1em;
-	border-bottom-style: solid;
-	/* border-bottom-width: 8px; */
+  color: var(--text-color-alt);
+  padding: 4px 8px 0px 8px;
+  margin: 4px 0px 0px -8px;
+  line-height: 1em;
+  border-bottom-style: solid;
+  /* border-bottom-width: 8px; */
 }
 
 .section#section-01 {
@@ -377,7 +378,8 @@ section#section-03 {
   box-shadow: 12px 12px var(--green);
 }
 
-section.quote#section-03 a:hover, section.quote#section-03 a:active {
+section.quote#section-03 a:hover,
+section.quote#section-03 a:active {
   background-color: transparent !important;
   text-decoration-style: wavy;
 }
@@ -566,7 +568,8 @@ div#ai-box.sidebox-01 > #sidebox-header-01 {
 }
 
 div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
-  background-image: linear-gradient(-45deg,
+  background-image: linear-gradient(
+    -45deg,
     var(--lavender),
     var(--indigo),
     var(--green),
@@ -1572,8 +1575,13 @@ span.arrow-up {
   margin: 25px 0px 0px 22px;
 }
 
-span.arrow-up:hover {
-  border-color: var(--green);
+a:hover span.arrow-up {
+  border-color: var(--bg-color);
+}
+
+#scrollToTop:hover {
+  background-color: var(--green);
+  filter: opacity(90%);
 }
 
 .arrow-up {
