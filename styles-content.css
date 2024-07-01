@@ -169,12 +169,12 @@ a:active {
 }
 
 a:hover {
-  animation: blinkingHover 0.2s ease-in-out 1;
-  -webkit-animation: blinkingHover 0.2s ease-in-out 1;
+  animation: blinkingHover 2s linear infinite;
+  -webkit-animation: blinkingHover 2s linear infinite;
 }
 
 a:active {
-  animation: blinkingActive 0.2s linear 10;
+  animation: blinkingActive 0.2s bounce 10;
   -webkit-animation: blinkingActive 0.2s linear 10;
 }
 
