@@ -1560,8 +1560,12 @@ span.info-connector {
   color: var(--green);
   background-color: transparent !important;
   text-decoration: underline;
-  text-decoration-style: wavy;
+  text-decoration-style: dashed;
   cursor: help;
+}
+
+.AWAD_byline a:hover {
+  text-decoration-style: wavy;
 }
 
 /* ScrollToTop  */
