@@ -179,26 +179,30 @@ a:active {
 /* Blinking effect on links */
 
 @keyframes blinkingHover {
-  from,
-  49.9% {
+  0%,
+  50%,
+  100% {
     color: var(--bg-color);
     background-color: var(--link-color);
   }
-  50%,
-  to {
+
+  25%,
+  75% {
     color: var(--link-color);
     background-color: var(--bg-color);
   }
 }
 
 @keyframes blinkingActive {
-  from,
-  49.9% {
+  0%,
+  50%,
+  100% {
     color: var(--link-color);
     background-color: var(--bg-color);
   }
-  50%,
-  to {
+
+  25%,
+  75% {
     color: var(--bg-color);
     background-color: var(--link-color);
   }
