@@ -166,6 +166,9 @@ a:active {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
+}
+
+a:hover {
   animation: blinkingHover 2s linear infinite;
   -webkit-animation: blinkingHover 2s linear infinite;
 }
@@ -1412,14 +1415,12 @@ span.info-connector {
   0%,
   50%,
   100% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
+    filter: opacity(100%);
   }
 
   25%,
   75% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
+    filter: opacity(50%);
   }
 }
 
@@ -1427,14 +1428,12 @@ span.info-connector {
   0%,
   50%,
   100% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
+    filter: opacity(100%);
   }
 
   25%,
   75% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
+    filter: opacity(50%);
   }
 }
 
@@ -1442,14 +1441,12 @@ span.info-connector {
   0%,
   50%,
   100% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
+    filter: opacity(100%);
   }
 
   25%,
   75% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
+    filter: opacity(50%);
   }
 }
 
@@ -1457,14 +1454,12 @@ span.info-connector {
   0%,
   50%,
   100% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
+    filter: opacity(100%);
   }
 
   25%,
   75% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
+    filter: opacity(50%);
   }
 }
 
