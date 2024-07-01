@@ -170,42 +170,12 @@ a:active {
 
 a:hover {
   animation: blinkingHover 0.2s ease-in-out 1;
+  -webkit-animation: blinkingHover 0.2s ease-in-out 1;
 }
 
 a:active {
   animation: blinkingActive 0.2s linear 10;
-}
-
-/* Blinking effect on links */
-
-@keyframes blinkingHover {
-  0%,
-  50%,
-  100% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
-  }
-
-  25%,
-  75% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
-  }
-}
-
-@keyframes blinkingActive {
-  0%,
-  50%,
-  100% {
-    color: var(--link-color);
-    background-color: var(--bg-color);
-  }
-
-  25%,
-  75% {
-    color: var(--bg-color);
-    background-color: var(--link-color);
-  }
+  -webkit-animation: blinkingActive 0.2s linear 10;
 }
 
 h1,
@@ -1417,6 +1387,8 @@ span.info-connector {
   text-decoration: underline;
 }
 
+/* SCROLL TEXT  */
+
 @keyframes scroll-left {
   from {
     transform: translateX(100%);
@@ -1427,8 +1399,6 @@ span.info-connector {
   }
 }
 
-/* SCROLL TEXT  */
-
 @-webkit-keyframes scroll-left {
   from {
     transform: translateX(100%);
@@ -1436,6 +1406,68 @@ span.info-connector {
 
   to {
     transform: translateX(-100%);
+  }
+}
+
+/* Blinking effect on links */
+
+@keyframes blinkingHover {
+  0%,
+  50%,
+  100% {
+    color: var(--bg-color);
+    background-color: var(--link-color);
+  }
+
+  25%,
+  75% {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+}
+
+@-webkit-keyframes blinkingHover {
+  0%,
+  50%,
+  100% {
+    color: var(--bg-color);
+    background-color: var(--link-color);
+  }
+
+  25%,
+  75% {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+}
+
+@keyframes blinkingActive {
+  0%,
+  50%,
+  100% {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+
+  25%,
+  75% {
+    color: var(--bg-color);
+    background-color: var(--link-color);
+  }
+}
+
+@-webkit-keyframes blinkingActive {
+  0%,
+  50%,
+  100% {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+
+  25%,
+  75% {
+    color: var(--bg-color);
+    background-color: var(--link-color);
   }
 }
 
