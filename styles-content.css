@@ -168,11 +168,17 @@ a:active {
   color: var(--bg-color);
 }
 
-a:active {
-  animation: blinking 0.2s linear 5;
+a:hover {
+  animation: blinkingHover 0.2s ease-in-out 1;
 }
 
-@keyframes blinking {
+a:active {
+  animation: blinkingActive 0.2s linear 10;
+}
+
+/* Blinking effect on links */
+
+@keyframes blinkingHover {
   from,
   49.9% {
     color: var(--bg-color);
@@ -182,6 +188,19 @@ a:active {
   to {
     color: var(--link-color);
     background-color: var(--bg-color);
+  }
+}
+
+@keyframes blinkingActive {
+  from,
+  49.9% {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+  50%,
+  to {
+    color: var(--bg-color);
+    background-color: var(--link-color);
   }
 }
 
