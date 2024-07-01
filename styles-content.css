@@ -168,6 +168,23 @@ a:active {
   color: var(--bg-color);
 }
 
+a:active {
+  animation: blinking 0.2s linear 5;
+}
+
+@keyframes blinking {
+  from,
+  49.9% {
+    color: var(--bg-color);
+    background-color: var(--link-color);
+  }
+  50%,
+  to {
+    color: var(--link-color);
+    background-color: var(--bg-color);
+  }
+}
+
 h1,
 h2 {
   font-family: var(--fontHeader);
@@ -376,12 +393,6 @@ section#section-02 h4 span {
 section#section-03 {
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
-}
-
-section.quote#section-03 a:hover,
-section.quote#section-03 a:active {
-  background-color: transparent !important;
-  text-decoration-style: wavy;
 }
 
 section#section-03 h3 {
@@ -1547,8 +1558,9 @@ span.info-connector {
 
 .AWAD_byline a {
   color: var(--green);
+  background-color: transparent !important;
   text-decoration: underline;
-  text-decoration-style: dashed;
+  text-decoration-style: wavy;
   cursor: help;
 }
 
