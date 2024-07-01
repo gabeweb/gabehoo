@@ -166,6 +166,8 @@ a:active {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
+  animation: blinkingHover 2s linear infinite;
+  -webkit-animation: blinkingHover 2s linear infinite;
 }
 
 a:hover {
