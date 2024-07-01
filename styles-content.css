@@ -170,11 +170,6 @@ a:active {
   -webkit-animation: blinkingHover 2s linear infinite;
 }
 
-a:hover {
-  animation: blinkingHover 2s linear infinite;
-  -webkit-animation: blinkingHover 2s linear infinite;
-}
-
 a:active {
   animation: blinkingActive 0.2s bounce 10;
   -webkit-animation: blinkingActive 0.2s linear 10;
