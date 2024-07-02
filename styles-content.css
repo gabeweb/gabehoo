@@ -159,7 +159,7 @@ a {
   color: var(--link-color);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  /*transition-duration: 0.5s;*/
+  transition-duration: 0.5s !important;
 }
 
 a:hover,
@@ -167,11 +167,11 @@ a:active {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
-  /*transition-property: background-color;*/
+  transition-property: background-color !important;
 }
 
 :root:hover, :root:active {
-  transition-property: background-color;
+  transition-property: background-color !important;
 }
 
 .container li:hover {
