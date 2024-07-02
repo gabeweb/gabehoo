@@ -170,7 +170,7 @@ a:active {
   /*transition-property: background-color;*/
 }
 
-li:hover {
+.container li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -181,7 +181,7 @@ li:hover {
   --webkit-animation-iteration-count: infinite;
 }
 
-li:active {
+.container li:active {
   animation: blinkingActive;
   animation-duration: 0.2s;
   animation-direction: bounce;
