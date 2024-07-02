@@ -168,12 +168,12 @@ a:active {
   color: var(--bg-color);
 }
 
-.blink:hover {
+a.blink:hover {
   animation: blinkingHover 2s linear infinite;
   -webkit-animation: blinkingHover 2s linear infinite;
 }
 
-.blink:active {
+a.blink:active {
   animation: blinkingActive 0.2s bounce 10;
   -webkit-animation: blinkingActive 0.2s linear 10;
 }
