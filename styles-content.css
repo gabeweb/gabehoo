@@ -159,6 +159,7 @@ a {
   color: var(--link-color);
   text-decoration-line: underline;
   text-decoration-style: solid;
+  transition-duration: 0.2s;
 }
 
 a:hover,
@@ -166,9 +167,10 @@ a:active {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
+  transition-property: background-color;
 }
 
-a.blink:hover {
+a:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -179,7 +181,7 @@ a.blink:hover {
   --webkit-animation-iteration-count: infinite;
 }
 
-a.blink:active {
+a:active {
   animation: blinkingActive;
   animation-duration: 0.2s;
   animation-direction: bounce;
