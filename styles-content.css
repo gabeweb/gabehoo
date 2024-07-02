@@ -170,10 +170,6 @@ a:active {
   transition-property: background-color !important;
 }
 
-:root:hover, :root:active {
-  transition-property: background-color !important;
-}
-
 .container li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
