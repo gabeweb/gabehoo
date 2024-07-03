@@ -162,8 +162,8 @@ a {
   /*transition-duration: 0.5s !important;*/
 }
 
-a:hover,
-a:active,
+/*a:hover,
+a:active,*/
 ul.blink li:hover,
 ul.blink li:active,
 ul.blink li:hover a,
