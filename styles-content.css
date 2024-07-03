@@ -171,7 +171,7 @@ ul.blink li:active a {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
-  transition-property: background-color !important;
+  /*transition-property: background-color !important;*/
 }
 
 ul.blink a {
