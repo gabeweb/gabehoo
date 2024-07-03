@@ -174,7 +174,7 @@ ul.blink a {
   background-color: transparent !important;
 }
 
-ul.blink li:hover {
+.blink li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -185,7 +185,7 @@ ul.blink li:hover {
   --webkit-animation-iteration-count: infinite;
 }
 
-ul.blink li:active {
+.blink li:active {
   animation: blinkingActive;
   animation-duration: 0.2s;
   animation-direction: bounce;
