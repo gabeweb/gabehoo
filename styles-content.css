@@ -162,6 +162,13 @@ a {
   /*transition-duration: 0.5s !important;*/
 }
 
+.blink li {
+  border-width: 0px 1px 1px 0px;
+  border-style: solid;
+  border-color: var(--link-color);
+  margin: 0px 0px 6px 0px;
+}
+
 /*a:hover,
 a:active,*/
 .blink li:hover,
@@ -171,10 +178,11 @@ a:active,*/
   text-decoration: none;
   background-color: var(--accent-color) !important;
   color: var(--bg-color) !important;
+  cursor: pointer;
   /*transition-property: background-color !important;*/
 }
 
-ul.blink a {
+.blink a {
   background-color: transparent !important;
 }
 
