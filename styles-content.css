@@ -163,18 +163,22 @@ a {
 }
 
 a:hover,
-a:active {
+a:active,
+.blink li:hover,
+.blink li:active,
+.blink li:hover a,
+.blink li:active a {
   text-decoration: none;
   background-color: var(--accent-color);
   color: var(--bg-color);
-  /*transition-property: background-color !important;*/
+  transition-property: background-color !important;
 }
 
 ul.blink a {
   background-color: transparent !important;
 }
 
-.blink li:hover {
+/*.blink li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -194,7 +198,7 @@ ul.blink a {
   --webkit-animation-duration: 0.2s;
   --webkit-animation-direction: bounce;
   --webkit-animation-iteration-count: 10;
-}
+}*/
 
 h1,
 h2 {
