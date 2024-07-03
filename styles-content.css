@@ -169,8 +169,8 @@ a:active,*/
 .blink li:hover a,
 .blink li:active a {
   text-decoration: none;
-  background-color: var(--accent-color);
-  color: var(--bg-color);
+  background-color: var(--accent-color) !important;
+  color: var(--bg-color) !important;
   /*transition-property: background-color !important;*/
 }
 
