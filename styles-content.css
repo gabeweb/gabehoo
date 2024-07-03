@@ -173,7 +173,7 @@ a:hover,
 a:active {
   text-decoration: none;
   background-color: var(--accent-color) !important;
-  color: var(--bg-color) !important;
+  color: var(--red) !important;
   /*transition-property: background-color !important;*/
 }
 
