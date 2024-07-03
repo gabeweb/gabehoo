@@ -170,6 +170,10 @@ a:active {
   /*transition-property: background-color !important;*/
 }
 
+ul.blink a {
+  background-color: transparent !important;
+}
+
 ul.blink > li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
@@ -1429,12 +1433,14 @@ span.info-connector {
   0%,
   50%,
   100% {
-    filter: opacity(100%);
+    background-color: var(--link-color);
+    color: var(--bg-color);
   }
 
   25%,
   75% {
-    filter: opacity(50%);
+    background-color: var(--bg-color);
+    color: var(--link-color);
   }
 }
 
