@@ -162,7 +162,7 @@ a {
   /*transition-duration: 0.5s !important;*/
 }
 
-.blink li {
+.blinkian li {
   border-width: 0px 1px 1px 0px;
   border-style: solid;
   border-color: var(--link-color);
@@ -171,10 +171,10 @@ a {
 
 /*a:hover,
 a:active,*/
-.blink li:hover,
-.blink li:active,
-.blink li:hover a,
-.blink li:active a {
+.blinkian li:hover,
+.blinkian li:active,
+.blinkian li:hover a,
+.blinkian li:active a {
   text-decoration: none;
   background-color: var(--accent-color) !important;
   color: var(--bg-color) !important;
@@ -182,11 +182,11 @@ a:active,*/
   /*transition-property: background-color !important;*/
 }
 
-.blink a {
+.blinkian a {
   background-color: transparent !important;
 }
 
-/*.blink li:hover {
+/*.blinkian li:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -197,7 +197,7 @@ a:active,*/
   --webkit-animation-iteration-count: infinite;
 }
 
-.blink li:active {
+.blinkian li:active {
   animation: blinkingActive;
   animation-duration: 0.2s;
   animation-direction: bounce;
