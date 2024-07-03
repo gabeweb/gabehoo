@@ -170,23 +170,14 @@ a {
 }
 
 a:hover,
-a:active,
-.blinkian li:hover,
-.blinkian li:active,
-.blinkian li:hover a,
-.blinkian li:active a {
+a:active {
   text-decoration: none;
   background-color: var(--accent-color) !important;
   color: var(--bg-color) !important;
-  cursor: pointer;
   /*transition-property: background-color !important;*/
 }
 
-.blinkian a {
-  background-color: transparent !important;
-}
-
-/*.blinkian li:hover {
+h4:hover {
   animation: blinkingHover;
   animation-duration: 2s;
   animation-direction: linear;
@@ -196,17 +187,6 @@ a:active,
   --webkit-animation-direction: linear;
   --webkit-animation-iteration-count: infinite;
 }
-
-.blinkian li:active {
-  animation: blinkingActive;
-  animation-duration: 0.2s;
-  animation-direction: bounce;
-  animation-iteration-count: 10;
-  --webkit-animation: blinkingActive;
-  --webkit-animation-duration: 0.2s;
-  --webkit-animation-direction: bounce;
-  --webkit-animation-iteration-count: 10;
-}*/
 
 h1,
 h2 {
