@@ -159,7 +159,7 @@ a {
   color: var(--link-color);
   text-decoration-line: underline;
   text-decoration-style: solid;
-  /*transition-duration: 0.5s !important;*/
+  transition-duration: 0.5s !important;
 }
 
 a:hover,
@@ -167,7 +167,7 @@ a:active {
   text-decoration: none;
   background-color: var(--accent-color) !important;
   color: var(--bg-color) !important;
-  /*transition-property: background-color !important;*/
+  transition-property: background-color !important;
 }
 
 h1,
