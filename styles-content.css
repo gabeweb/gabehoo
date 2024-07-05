@@ -1134,6 +1134,7 @@ img#weather-icon {
 span#weather-description {
   font-family: var(--fontBody);
   font-size: 0.85em;
+  line-height: 1;
 }
 
 .fade-in {
