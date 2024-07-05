@@ -1094,12 +1094,17 @@ span#time-date {
 #weather-container {
   align-items: center;
   position: relative;
-  width: max-content;
+  width: 100%;
+  max-width: 160px;
   text-align: center;
   margin: auto;
-  display: flex;
+  display: inline-flex;
   column-gap: 10px;
   line-height: 1.5em;
+}
+
+.header-right a:hover {
+  background-color: transparent !important;
 }
 
 #weather-symbol {
