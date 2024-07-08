@@ -206,15 +206,56 @@ div.sidebar h4 {
 
 div[class="header"] {
   height: min-content;
-  border-width: 0 0 4px 0;
+  /*border-width: 0 0 4px 0;
   border-style: double;
-  border-color: var(--red);
+  border-color: var(--red);*/
   position: relative;
-  padding: 10px;
+  padding: 20px 10px 20px;
+
+  background: linear-gradient(
+      90deg,
+      var(--red) 0%,
+      var(--yellow) 20%,
+      var(--yellow) 20%,
+      var(--green) 40%,
+      var(--green) 40%,
+      var(--blue) 60%,
+      var(--blue) 60%,
+      var(--indigo) 80%,
+      var(--indigo) 80%,
+      var(--red) 100%
+    ),
+    linear-gradient(
+      90deg,
+      var(--red) 0%,
+      var(--yellow) 20%,
+      var(--yellow) 20%,
+      var(--green) 40%,
+      var(--green) 40%,
+      var(--blue) 60%,
+      var(--blue) 60%,
+      var(--indigo) 80%,
+      var(--indigo) 80%,
+      var(--red) 100%
+    );
+  background-repeat: repeat-x;
+  background-size: 500px 10px;
+  background-position: 0% 0%, 0% 100%;
+  animation: dash-border-top 5s linear infinite;
+}
+
+@keyframes dash-border-top {
+  to {
+    background-position: 100% 0%, -100% 100%;
+  }
 }
 
 div[class="header"] a {
   text-decoration: none;
+}
+
+div[class="header"] a:hover {
+  background-color: transparent !important;
 }
 
 div.sub-header {
@@ -1103,10 +1144,6 @@ span#time-date {
   line-height: 1.5em;
 }
 
-.header-right a:hover {
-  background-color: transparent !important;
-}
-
 #weather-symbol {
   flex: 1;
 }
@@ -1710,12 +1747,12 @@ a:hover span.arrow-up {
   } */
 
   .container,
-  /*.header,*/
-  .sub-header,
-  .main-row,
-  .sidebar,
-  .sidebox-container,
-  .footer {
+    /*.header,*/
+    .sub-header,
+    .main-row,
+    .sidebar,
+    .sidebox-container,
+    .footer {
     display: flex;
     flex-direction: column;
   }
