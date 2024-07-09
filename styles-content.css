@@ -228,20 +228,20 @@ div[class="header"] {
     linear-gradient(
       90deg,
       var(--red) 0%,
-      var(--yellow) 20%,
-      var(--yellow) 20%,
-      var(--green) 40%,
-      var(--green) 40%,
-      var(--blue) 60%,
-      var(--blue) 60%,
-      var(--indigo) 80%,
-      var(--indigo) 80%,
+      var(--indigo) 20%,
+      var(--indigo) 20%,
+      var(--blue) 40%,
+      var(--blue) 40%,
+      var(--green) 60%,
+      var(--green) 60%,
+      var(--yellow) 80%,
+      var(--yellow) 80%,
       var(--red) 100%
     );
   background-repeat: repeat-x;
-  background-size: 500px 10px;
+  background-size: 200% 2px, 200% 6px;
   background-position: 0% 0%, 0% 100%;
-  animation: dash-border-top 5s linear infinite;
+  animation: dash-border-top 10s linear infinite;
 }
 
 @keyframes dash-border-top {
