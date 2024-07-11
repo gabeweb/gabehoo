@@ -344,6 +344,7 @@ div.sub-header li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
+  border-left: 1px solid var(--green);
 }
 
 /* the main */
@@ -360,6 +361,7 @@ div.main-row .section#section-01 li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
+  border-left: 1px solid var(--main-content-border-color);
 }
 
 #main-content-top-header {
