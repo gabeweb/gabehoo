@@ -313,7 +313,7 @@ div.header::after {
   80% {
     filter: drop-shadow(-2px 0px 3px var(--blue));
   }
-  100% {
+  100% {sy
     filter: drop-shadow(-2px 0px 4px var(--indigo));
   }
 }
@@ -389,6 +389,20 @@ div[class*="main-content-middle"] li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
+}
+
+section#section-01 .sportive {
+  border: 4px double var(--green);
+  padding: 10px;
+}
+
+section#section-01 .sportive h4 span, section#section-01 .sportive h4 {
+  background-color: var(--green);
+  border-color: var(--green);
+}
+
+section#section-01 .sportive li {
+  border-color: var(--green) !important;
 }
 
 /* sections */
@@ -594,17 +608,19 @@ article#get-firefox img {
 }
 
 ul#sysinfo {
-  margin: 6px -2px;
-  padding: 4px 0px;
+  list-style-type: none;
+  padding: 0px 0px;
+  margin: 0px;
   column-count: 3;
   column-gap: 20px;
 }
 
-ul#sysinfo li {
+#sysinfo li {
   display: list-item;
-  padding: 0px 0px;
+  padding: 0px 10px;
   break-inside: avoid;
   word-wrap: break-word;
+  border-left: 1px solid var(--green);
 }
 
 /* the sidebars */
