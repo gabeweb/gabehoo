@@ -49,16 +49,14 @@
 
 @font-face {
   font-family: "MaterialIcons";
-  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf")
-    format("opentype");
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf") format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
-    format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -72,38 +70,36 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2")
-    format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2") format("woff2");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2")
-    format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2") format("woff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2")
-    format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2") format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2")
-    format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2") format("woff2");
   font-style: italic;
   font-weight: 300;
 }
 
 :root {
-  --fontBody: "JetBrains Mono" /*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono",
+  --fontBody: "JetBrains Mono"
+    /*, "IBM Plex Mono"*/
+    , Menlo, "Noto Sans Mono",
     "Bitstream Vera Sans Mono", Consolas, monospace;
   --fontHeader: Monocraft, monospace;
   --fontIcons: MaterialIcons;
@@ -211,8 +207,7 @@ div[class="header"] {
   border-color: var(--red);*/
   position: relative;
   padding: 20px 10px 20px;
-  background: linear-gradient(
-      90deg,
+  background: linear-gradient(90deg,
       var(--red) 0%,
       var(--yellow) 20%,
       var(--yellow) 20%,
@@ -222,10 +217,8 @@ div[class="header"] {
       var(--blue) 60%,
       var(--indigo) 80%,
       var(--indigo) 80%,
-      var(--red) 100%
-    ),
-    linear-gradient(
-      90deg,
+      var(--red) 100%),
+    linear-gradient(90deg,
       var(--red) 0%,
       var(--indigo) 20%,
       var(--indigo) 20%,
@@ -235,8 +228,7 @@ div[class="header"] {
       var(--green) 60%,
       var(--yellow) 80%,
       var(--yellow) 80%,
-      var(--red) 100%
-    );
+      var(--red) 100%);
   background-repeat: repeat-x;
   background-size: 50% 2px, 50% 6px;
   background-position: 0% 0%, 100% 100%;
@@ -286,15 +278,19 @@ div.header::after {
   0% {
     filter: drop-shadow(-2px 0px 3px var(--red));
   }
+
   40% {
     filter: drop-shadow(-2px 0px 4px var(--yellow));
   }
+
   60% {
     filter: drop-shadow(-2px 0px 6px var(--green));
   }
+
   80% {
     filter: drop-shadow(-2px 0px 3px var(--blue));
   }
+
   100% {
     filter: drop-shadow(-2px 0px 4px var(--indigo));
   }
@@ -304,16 +300,20 @@ div.header::after {
   0% {
     filter: drop-shadow(-2px 0px 3px var(--red));
   }
+
   40% {
     filter: drop-shadow(-2px 0px 4px var(--yellow));
   }
+
   60% {
     filter: drop-shadow(-2px 0px 6px var(--green));
   }
+
   80% {
     filter: drop-shadow(-2px 0px 3px var(--blue));
   }
-  100% {sy
+
+  100% {
     filter: drop-shadow(-2px 0px 4px var(--indigo));
   }
 }
@@ -391,12 +391,43 @@ div[class*="main-content-middle"] li {
   break-inside: avoid;
 }
 
+section#section-01 .funny {
+  border: 4px double;
+  border-top-color: var(--lavender);
+  border-right-color: var(--indigo);
+  border-bottom-color: var(--green);
+  border-left-color: var(--orange);
+  padding: 10px;
+}
+
+section#section-01 .funny h4 span {
+  border-bottom: transparent !important;
+  background-color: transparent !important;
+}
+
+section#section-01 .funny h4 {
+  background-image: linear-gradient(-45deg,
+      var(--lavender),
+      var(--indigo),
+      var(--green),
+      var(--orange));
+  border-color: var(--green);
+}
+
+section#section-01 .funny li {
+  border-image: linear-gradient(to bottom, var(--lavender),
+  var(--indigo),
+  var(--green),
+  var(--orange)) 1;
+}
+
 section#section-01 .sportive {
   border: 4px double var(--green);
   padding: 10px;
 }
 
-section#section-01 .sportive h4 span, section#section-01 .sportive h4 {
+section#section-01 .sportive h4 span,
+section#section-01 .sportive h4 {
   background-color: var(--green);
   border-color: var(--green);
 }
@@ -686,18 +717,16 @@ div#ai-box.sidebox-01 {
     0px 4px 12px var(--green), -4px 0px 12px var(--orange);
 }
 
-div#ai-box.sidebox-01 > #sidebox-header-01 {
+div#ai-box.sidebox-01>#sidebox-header-01 {
   background-color: transparent !important;
 }
 
-div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
-  background-image: linear-gradient(
-    -45deg,
-    var(--lavender),
-    var(--indigo),
-    var(--green),
-    var(--orange)
-  );
+div#ai-box.sidebox-01>#sidebox-header-01 h4 {
+  background-image: linear-gradient(-45deg,
+      var(--lavender),
+      var(--indigo),
+      var(--green),
+      var(--orange));
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -1419,7 +1448,7 @@ button#search-button {
   color: var(--green);
 }
 
-form input:placeholder-shown + button#clear-field {
+form input:placeholder-shown+button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
@@ -1533,6 +1562,7 @@ span.info-connector {
 /* Blinking effect on links */
 
 @keyframes blinkingHover {
+
   0%,
   50%,
   100% {
@@ -1548,6 +1578,7 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingHover {
+
   0%,
   50%,
   100% {
@@ -1561,6 +1592,7 @@ span.info-connector {
 }
 
 @keyframes blinkingActive {
+
   0%,
   50%,
   100% {
@@ -1574,6 +1606,7 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingActive {
+
   0%,
   50%,
   100% {
@@ -1833,12 +1866,12 @@ a:hover span.arrow-up {
   } */
 
   .container,
-    /*.header,*/
-    .sub-header,
-    .main-row,
-    .sidebar,
-    .sidebox-container,
-    .footer {
+  /*.header,*/
+  .sub-header,
+  .main-row,
+  .sidebar,
+  .sidebox-container,
+  .footer {
     display: flex;
     flex-direction: column;
   }
