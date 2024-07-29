@@ -4198,5 +4198,19 @@
     <a href="javascript:;" id="scrollToTop"
       ><span class="arrow-up" title="Scroll to up!" alt="Scroll to up!"></span
     ></a>
+
+    <script type="text/javascript">
+      title = "Welcome to Internet " + "[GABEhoo!] " + " ::: ";
+      position = 0;
+      function scrolltitle() {
+        document.title =
+          title.substring(position, title.length) +
+          title.substring(0, position);
+        position++;
+        if (position > title.length) position = 0;
+        titleScroll = window.setTimeout(scrolltitle, 170);
+      }
+      scrolltitle();
+    </script>
   </body>
 </html>
