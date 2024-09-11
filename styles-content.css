@@ -48,6 +48,41 @@
 }
 
 @font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft-Bold-Italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+/*@font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft-Italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft-Light-Italic.otf") format("opentype");
+  font-style: italic;
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "Monocraft";
+  src: url("asset/fonts/Monocraft/Monocraft-Light.otf") format("opentype");
+  font-style: normal;
+  font-weight: light;
+}*/
+
+@font-face {
   font-family: "MaterialIcons";
   src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf") format("opentype");
   font-style: normal;
