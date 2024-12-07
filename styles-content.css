@@ -180,7 +180,7 @@
 
 body {
   font-family: var(--fontBody);
-  font-size: 1em;
+  font-size: 0.9em;
   line-height: 1.5;
   color: var(--fg-color);
   background: var(--bg-color);
