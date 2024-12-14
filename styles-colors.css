@@ -1,7 +1,7 @@
 :root {
   /* Elementary colors */
 
-  --bg-color: var(--background-color);
+  --bg-color: #000000 /*var(--background-color)*/;
   --fg-color: var(--text-color);
 
   --text-color: var(--ctp-mocha-text-rgb);
