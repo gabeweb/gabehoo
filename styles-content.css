@@ -427,6 +427,7 @@ div[class*="main-content-middle"] li {
 }
 
 section#section-01 .funny {
+  background-color: var(--black-soft) !important;
   border: 4px double;
   border-top-color: var(--lavender);
   border-right-color: var(--indigo);
@@ -456,7 +457,17 @@ section#section-01 .funny li {
   var(--orange)) 1;
 }
 
+section#section-01 .funny a {
+  color: var(--violet) !important;
+}
+
+section#section-01 .funny a:hover, section#section-01 .funny a:active {
+  color: var(--black) !important;
+  background-color: var(--violet) !important;
+}
+
 section#section-01 .sportive {
+  background-color: var(--black-soft);
   border: 4px double var(--green);
   padding: 10px;
 }
@@ -469,6 +480,15 @@ section#section-01 .sportive h4 {
 
 section#section-01 .sportive li {
   border-color: var(--green) !important;
+}
+
+section#section-01 .sportive a {
+  color: var(--green) !important;
+}
+
+section#section-01 .sportive a:hover, section#section-01 .sportive a:active {
+  color: var(--black) !important;
+  background-color: var(--green) !important;
 }
 
 /* sections */
@@ -503,6 +523,7 @@ section[id*="section-"] h4 {
 }
 
 .section#section-00 {
+  background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
@@ -520,6 +541,15 @@ section#section-00 h4 {
   border-bottom-color: var(--green);
 }
 
+section#section-00 a {
+  color: var(--green) !important;
+}
+
+section#section-00 a:hover, section#section-00 a:active {
+  color: var(--black) !important;
+  background-color: var(--green) !important;
+}
+
 section[id*="section-"] h4 span {
   display: inline;
   color: var(--text-color-alt);
@@ -531,6 +561,7 @@ section[id*="section-"] h4 span {
 }
 
 .section#section-01 {
+  background-color: var(--orange-soft);
   border-color: var(--orange);
   box-shadow: 12px 12px var(--orange);
 }
@@ -548,7 +579,17 @@ section#section-01 h4 {
   border-bottom-color: var(--orange);
 }
 
+section#section-01 a {
+  color: var(--orange) !important;
+}
+
+section#section-01 a:hover, section#section-01 a:active {
+  color: var(--black) !important;
+  background-color: var(--orange) !important;
+}
+
 section#section-02 {
+  background-color: var(--yellow-soft);
   border-color: var(--yellow);
   box-shadow: 12px 12px var(--yellow);
 }
@@ -566,7 +607,17 @@ section#section-02 h4 span {
   border-bottom-color: var(--yellow);
 }
 
+section#section-02 a {
+  color: var(--yellow) !important;
+}
+
+section#section-02 a:hover, section#section-02 a:active {
+  color: var(--black) !important;
+  background-color: var(--yellow) !important;
+}
+
 section#section-03 {
+  background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
@@ -584,7 +635,17 @@ section#section-03 h4 span {
   border-bottom-color: var(--green);
 }
 
+section#section-03 a {
+  color: var(--green) !important;
+}
+
+section#section-03 a:hover, section#section-03 a:active {
+  color: var(--black) !important;
+  background-color: var(--green) !important;
+}
+
 section#section-04 {
+  background-color: var(--blue-soft);
   border-color: var(--blue);
   box-shadow: 12px 12px var(--blue);
 }
@@ -602,7 +663,17 @@ section#section-04 h4 span {
   border-bottom-color: var(--blue);
 }
 
+section#section-04 a {
+  color: var(--blue) !important;
+}
+
+section#section-04 a:hover, section#section-02 a:active {
+  color: var(--black) !important;
+  background-color: var(--blue) !important;
+}
+
 section#section-05 {
+  background-color: var(--indigo-soft);
   border-color: var(--indigo);
   box-shadow: 12px 12px var(--indigo);
 }
@@ -620,7 +691,17 @@ section#section-05 h4 span {
   border-bottom-color: var(--indigo);
 }
 
+section#section-05 a {
+  color: var(--indigo) !important;
+}
+
+section#section-05 a:hover, section#section-05 a:active {
+  color: var(--black) !important;
+  background-color: var(--indigo) !important;
+}
+
 section#section-06 {
+  background-color: var(--violet-soft);
   border-color: var(--violet);
   box-shadow: 12px 12px var(--violet);
 }
@@ -639,21 +720,40 @@ section#section-06 h4 span {
 }
 
 section#section-07 {
+  background-color: var(--lavender-soft);
   border-color: var(--lavender);
   box-shadow: 12px 12px var(--lavender);
 }
 
+section#section-06 a {
+  color: var(--lavender) !important;
+}
+
+section#section-06 a:hover, section#section-06 a:active {
+  color: var(--black) !important;
+  background-color: var(--lavender) !important;
+}
+
 section#section-07 h3 {
-  background-color: var(--lavender);
+  background-color: var(--blue);
 }
 
 section#section-07 h4 {
-  border-bottom-color: var(--lavender);
+  border-bottom-color: var(--blue);
 }
 
 section#section-07 h4 span {
-  background-color: var(--lavender);
-  border-bottom-color: var(--lavender);
+  background-color: var(--blue);
+  border-bottom-color: var(--blue);
+}
+
+section#section-07 a {
+  color: var(--blue) !important;
+}
+
+section#section-07 a:hover, section#section-07 a:active {
+  color: var(--black) !important;
+  background-color: var(--blue) !important;
 }
 
 section#section-08 {
@@ -722,6 +822,7 @@ div[id*="sidebox-header"] {
 }
 
 div.sidebox-00 {
+  background-color: var(--red-soft);
   border-color: var(--red);
   box-shadow: 12px 12px var(--red);
 }
@@ -738,9 +839,19 @@ div#sidebox-content-00 {
   height: 64px;
 }
 
+div#sidebox-content-00 a {
+  color: var(--red) !important;
+}
+
+div#sidebox-content-00 a:hover, div#sidebox-content-00 a:active {
+  color: var(--black) !important;
+  background-color: var(--red) !important;
+}
+
 /* AI CHATBOTS BOX */
 
 div#ai-box.sidebox-01 {
+  background-color: var(--black-soft);
   padding: 4px 8px;
   border-width: 1px;
   border-style: solid;
@@ -752,7 +863,7 @@ div#ai-box.sidebox-01 {
     0px 4px 12px var(--green), -4px 0px 12px var(--orange);
 }
 
-div#ai-box.sidebox-01>#sidebox-header-01 {
+div#ai-box.sidebox-01 #sidebox-header-01 {
   background-color: transparent !important;
 }
 
@@ -768,7 +879,8 @@ div#ai-box.sidebox-01>#sidebox-header-01 h4 {
   color: transparent;
 }
 
-div.sidebox-01 {
+div.sidebox-01:not(#ai-box) {
+  background-color: var(--lavender-soft);
   border-color: var(--lavender);
   box-shadow: 12px 12px var(--lavender);
 }
@@ -778,6 +890,7 @@ div#sidebox-header-01 {
 }
 
 div.sidebox-02 {
+  background-color: var(--violet-soft);
   border-color: var(--violet);
   box-shadow: 12px 12px var(--violet);
 }
@@ -786,7 +899,17 @@ div#sidebox-header-02 {
   background-color: var(--violet);
 }
 
+div#sidebox-content-02 a {
+  color: var(--violet) !important;
+}
+
+div#sidebox-content-02 a:hover, div#sidebox-content-02 a:active {
+  color: var(--black) !important;
+  background-color: var(--violet) !important;
+}
+
 div.sidebox-03 {
+  background-color: var(--indigo-soft);
   border-color: var(--indigo);
   box-shadow: 12px 12px var(--indigo);
 }
@@ -795,7 +918,17 @@ div#sidebox-header-03 {
   background-color: var(--indigo);
 }
 
+div#sidebox-content-03 a {
+  color: var(--indigo) !important;
+}
+
+div#sidebox-content-03 a:hover, div#sidebox-content-03 a:active {
+  color: var(--black) !important;
+  background-color: var(--indigo) !important;
+}
+
 div.sidebox-04 {
+  background-color: var(--blue-soft);
   border-color: var(--blue);
   box-shadow: 12px 12px var(--blue);
 }
@@ -804,7 +937,17 @@ div#sidebox-header-04 {
   background-color: var(--blue);
 }
 
+div#sidebox-content-04 a {
+  color: var(--blue) !important;
+}
+
+div#sidebox-content-04 a:hover, div#sidebox-content-04 a:active {
+  color: var(--black) !important;
+  background-color: var(--blue) !important;
+}
+
 div.sidebox-05 {
+  background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
@@ -818,7 +961,17 @@ div#sidebox-content-05 {
   /*padding: 20px 8px 8px 8px;*/
 }
 
+div#sidebox-content-05 a {
+  color: var(--green) !important;
+}
+
+div#sidebox-content-05 a:hover, div#sidebox-content-05 a:active {
+  color: var(--black) !important;
+  background-color: var(--green) !important;
+}
+
 div.sidebox-06 {
+  background-color: var(--yellow-soft);
   border-color: var(--yellow);
   box-shadow: 12px 12px var(--yellow);
 }
@@ -827,7 +980,17 @@ div#sidebox-header-06 {
   background-color: var(--yellow);
 }
 
+div#sidebox-content-06 a {
+  color: var(--yellow) !important;
+}
+
+div#sidebox-content-06 a:hover, div#sidebox-content-06 a:active {
+  color: var(--black) !important;
+  background-color: var(--yellow) !important;
+}
+
 div.sidebox-07 {
+  background-color: var(--orange-soft);
   border-color: var(--orange);
   box-shadow: 12px 12px var(--orange);
 }
@@ -836,7 +999,17 @@ div#sidebox-header-07 {
   background-color: var(--orange);
 }
 
+div#sidebox-content-07 a {
+  color: var(--orange) !important;
+}
+
+div#sidebox-content-07 a:hover, div#sidebox-content-07 a:active {
+  color: var(--black) !important;
+  background-color: var(--orange) !important;
+}
+
 div.sidebox-08 {
+  background-color: var(--red-soft);
   border-color: var(--red);
   box-shadow: 12px 12px var(--red);
 }
@@ -845,7 +1018,17 @@ div#sidebox-header-08 {
   background-color: var(--red);
 }
 
+div#sidebox-content-08 a {
+  color: var(--red) !important;
+}
+
+div#sidebox-content-08 a:hover, div#sidebox-content-08 a:active {
+  color: var(--black) !important;
+  background-color: var(--red) !important;
+}
+
 div.sidebox-09 {
+  background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
@@ -859,9 +1042,19 @@ div#sidebox-content-09 {
   padding: 20px 8px 8px 8px;
 }
 
+div#sidebox-content-09 a {
+  color: var(--green) !important;
+}
+
+div#sidebox-content-09 a:hover, div#sidebox-content-09 a:active {
+  color: var(--black) !important;
+  background-color: var(--green) !important;
+}
+
 /* speed test */
 
 #speedtest-container {
+  background-color: var(--black-soft);
   position: relative;
   display: block;
   width: 100%;
@@ -1041,7 +1234,7 @@ div[class*="strength-"]::before {
   text-align: center;
   overflow: hidden;
   color: var(--blue);
-  background-color: transparent;
+  background-color: var(--black-soft);
   font-family: var(--fontBody);
   font-weight: bold;
   border: 1px solid var(--blue);
@@ -1067,7 +1260,7 @@ div[class*="strength-"]::before {
   cursor: pointer;
   padding: 6px 10px 6px 10px;
   color: var(--orange);
-  background-color: var(--bg-color);
+  background-color: var(--black-soft);
   border-radius: 25px;
   font-size: 1.4em;
   z-index: 20;
@@ -1563,7 +1756,7 @@ span.info-connector {
   overflow: hidden;
   display: block;
   text-transform: lowercase;
-  color: var(--green);
+  color: var(--red);
   font-weight: bold;
   text-align: center !important;
 }
