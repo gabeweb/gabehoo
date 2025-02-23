@@ -66,17 +66,17 @@
 
   /* soft colors */
 
-  --red-soft: color-mix(in srgb, var(--red) 7.5%, transparent);
-  --maroon-soft: color-mix(in srgb, var(--maroon) 7.5%, transparent);
-  --orange-soft: color-mix(in srgb, var(--orange) 7.5%, transparent);
-  --yellow-soft: color-mix(in srgb, var(--yellow) 7.5%, transparent);
-  --green-soft: color-mix(in srgb, var(--green) 7.5%, transparent);
-  --blue-soft: color-mix(in srgb, var(--blue) 7.5%, transparent);
-  --indigo-soft: color-mix(in srgb, var(--indigo) 7.5%, transparent);
-  --violet-soft: color-mix(in srgb, var(--violet) 7.5%, transparent);
-  --lavender-soft: color-mix(in srgb, var(--lavender) 7.5%, transparent);
+  --red-soft: color-mix(in srgb, var(--red) 15%, transparent);
+  --maroon-soft: color-mix(in srgb, var(--maroon) 15%, transparent);
+  --orange-soft: color-mix(in srgb, var(--orange) 15%, transparent);
+  --yellow-soft: color-mix(in srgb, var(--yellow) 15%, transparent);
+  --green-soft: color-mix(in srgb, var(--green) 15%, transparent);
+  --blue-soft: color-mix(in srgb, var(--blue) 15%, transparent);
+  --indigo-soft: color-mix(in srgb, var(--indigo) 15%, transparent);
+  --violet-soft: color-mix(in srgb, var(--violet) 15%, transparent);
+  --lavender-soft: color-mix(in srgb, var(--lavender) 15%, transparent);
   --black-soft: color-mix(in srgb, var(--black) 20%, transparent);
-  --white-soft: color-mix(in srgb, var(--white) 7.5%, transparent);
+  --white-soft: color-mix(in srgb, var(--white) 15%, transparent);
 
   /* Catppuccin Mocha Palette */
 
