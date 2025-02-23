@@ -84,14 +84,16 @@
 
 @font-face {
   font-family: "MaterialIcons";
-  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf") format("opentype");
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf")
+    format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -105,36 +107,38 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: 300;
 }
 
 :root {
-  --fontBody: "JetBrains Mono"
-    /*, "IBM Plex Mono"*/
-    , Menlo, "Noto Sans Mono",
+  --fontBody: "JetBrains Mono" /*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono",
     "Bitstream Vera Sans Mono", Consolas, monospace;
   --fontHeader: Monocraft, monospace;
   --fontIcons: MaterialIcons;
@@ -237,12 +241,12 @@ div.sidebar h4 {
 
 div[class="header"] {
   height: min-content;
-  /*border-width: 0 0 4px 0;
+  border-width: 0 0 4px 0;
   border-style: double;
-  border-color: var(--red);*/
+  border-color: var(--red);
   position: relative;
   padding: 20px 10px 20px;
-  background: linear-gradient(90deg,
+  /*background: linear-gradient(90deg,
       var(--red) 0%,
       var(--yellow) 20%,
       var(--yellow) 20%,
@@ -268,9 +272,10 @@ div[class="header"] {
   background-size: 50% 2px, 50% 6px;
   background-position: 0% 0%, 100% 100%;
   animation: dash-border-top 5s linear infinite;
-  -webkit-animation: dash-border-top 5s linear infinite;
+  -webkit-animation: dash-border-top 5s linear infinite;*/
 }
 
+/*
 div.header::before {
   content: " ";
   background-color: var(--bg-color);
@@ -352,7 +357,7 @@ div.header::after {
     filter: drop-shadow(-2px 0px 4px var(--indigo));
   }
 }
-
+*/
 div[class="header"] a {
   text-decoration: none;
 }
@@ -379,7 +384,7 @@ div.sub-header li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
-  border-left: 1px solid var(--green);
+  border-left: 1px solid var(--blue);
 }
 
 /* the main */
@@ -442,26 +447,33 @@ section#section-01 .funny h4 span {
 }
 
 section#section-01 .funny h4 {
-  background-image: linear-gradient(-45deg,
-      var(--lavender),
-      var(--indigo),
-      var(--green),
-      var(--orange));
+  background-image: linear-gradient(
+    -45deg,
+    var(--lavender),
+    var(--indigo),
+    var(--green),
+    var(--orange)
+  );
   border-color: var(--green);
 }
 
 section#section-01 .funny li {
-  border-image: linear-gradient(to bottom, var(--lavender),
-  var(--indigo),
-  var(--green),
-  var(--orange)) 1;
+  border-image: linear-gradient(
+      to bottom,
+      var(--lavender),
+      var(--indigo),
+      var(--green),
+      var(--orange)
+    )
+    1;
 }
 
 section#section-01 .funny a {
   color: var(--violet) !important;
 }
 
-section#section-01 .funny a:hover, section#section-01 .funny a:active {
+section#section-01 .funny a:hover,
+section#section-01 .funny a:active {
   color: var(--black) !important;
   background-color: var(--violet) !important;
 }
@@ -486,7 +498,8 @@ section#section-01 .sportive a {
   color: var(--green) !important;
 }
 
-section#section-01 .sportive a:hover, section#section-01 .sportive a:active {
+section#section-01 .sportive a:hover,
+section#section-01 .sportive a:active {
   color: var(--black) !important;
   background-color: var(--green) !important;
 }
@@ -499,6 +512,7 @@ section {
   /*margin: 10px;*/
 }
 
+div.header,
 section.section,
 section.quote {
   border-width: 1px;
@@ -506,6 +520,81 @@ section.quote {
   outline-width: 8px;
   outline-style: solid;
   outline-color: var(--bg-color);
+}
+
+div.header {
+  background-color: var(--green-soft);
+  border-color: var(--green);
+  box-shadow: 12px 12px var(--green);
+}
+
+/* Header Title Animation */
+
+.animated-title > .letter {
+  animation: repeatAnimation 10s infinite;
+}
+
+@keyframes repeatAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.letter {
+  display: inline-block;
+  opacity: 0;
+  animation: fadeIn 0.25s forwards;
+}
+
+.letter {
+  margin: -10px;
+  padding: 0px;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.letter:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.letter:nth-child(2) {
+  animation-delay: 0.25s;
+}
+
+.letter:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.letter:nth-child(4) {
+  animation-delay: .75s;
+}
+
+.letter:nth-child(5) {
+  animation-delay: 1s;
+}
+
+.letter:nth-child(6) {
+  animation-delay: 1.25s;
+}
+
+.letter:nth-child(7) {
+  animation-delay: 1.5s;
+}
+
+.letter:nth-child(8) {
+  animation-delay: 1.75s;
 }
 
 section[id*="section-"] h3 {
@@ -523,31 +612,32 @@ section[id*="section-"] h4 {
 }
 
 .section#section-00 {
-  background-color: var(--green-soft);
-  border-color: var(--green);
-  box-shadow: 12px 12px var(--green);
+  background-color: var(--blue-soft);
+  border-color: var(--blue);
+  box-shadow: 12px 12px var(--blue);
 }
 
 section#section-00 h3 {
-  background-color: var(--green);
+  background-color: var(--blue);
 }
 
 section#section-00 h4 span {
-  background-color: var(--green);
-  border-bottom-color: var(--green);
+  background-color: var(--blue);
+  border-bottom-color: var(--blue);
 }
 
 section#section-00 h4 {
-  border-bottom-color: var(--green);
+  border-bottom-color: var(--blue);
 }
 
 section#section-00 a {
-  color: var(--green) !important;
+  color: var(--blue) !important;
 }
 
-section#section-00 a:hover, section#section-00 a:active {
+section#section-00 a:hover,
+section#section-00 a:active {
   color: var(--black) !important;
-  background-color: var(--green) !important;
+  background-color: var(--blue) !important;
 }
 
 section[id*="section-"] h4 span {
@@ -583,7 +673,8 @@ section#section-01 a {
   color: var(--orange) !important;
 }
 
-section#section-01 a:hover, section#section-01 a:active {
+section#section-01 a:hover,
+section#section-01 a:active {
   color: var(--black) !important;
   background-color: var(--orange) !important;
 }
@@ -611,7 +702,8 @@ section#section-02 a {
   color: var(--yellow) !important;
 }
 
-section#section-02 a:hover, section#section-02 a:active {
+section#section-02 a:hover,
+section#section-02 a:active {
   color: var(--black) !important;
   background-color: var(--yellow) !important;
 }
@@ -639,7 +731,8 @@ section#section-03 a {
   color: var(--green) !important;
 }
 
-section#section-03 a:hover, section#section-03 a:active {
+section#section-03 a:hover,
+section#section-03 a:active {
   color: var(--black) !important;
   background-color: var(--green) !important;
 }
@@ -667,7 +760,8 @@ section#section-04 a {
   color: var(--blue) !important;
 }
 
-section#section-04 a:hover, section#section-02 a:active {
+section#section-04 a:hover,
+section#section-04 a:active {
   color: var(--black) !important;
   background-color: var(--blue) !important;
 }
@@ -695,7 +789,8 @@ section#section-05 a {
   color: var(--indigo) !important;
 }
 
-section#section-05 a:hover, section#section-05 a:active {
+section#section-05 a:hover,
+section#section-05 a:active {
   color: var(--black) !important;
   background-color: var(--indigo) !important;
 }
@@ -719,19 +814,20 @@ section#section-06 h4 span {
   border-bottom-color: var(--violet);
 }
 
+section#section-06 a {
+  color: var(--violet) !important;
+}
+
+section#section-06 a:hover,
+section#section-06 a:active {
+  color: var(--black) !important;
+  background-color: var(--violet) !important;
+}
+
 section#section-07 {
   background-color: var(--lavender-soft);
   border-color: var(--lavender);
   box-shadow: 12px 12px var(--lavender);
-}
-
-section#section-06 a {
-  color: var(--lavender) !important;
-}
-
-section#section-06 a:hover, section#section-06 a:active {
-  color: var(--black) !important;
-  background-color: var(--lavender) !important;
 }
 
 section#section-07 h3 {
@@ -751,7 +847,8 @@ section#section-07 a {
   color: var(--blue) !important;
 }
 
-section#section-07 a:hover, section#section-07 a:active {
+section#section-07 a:hover,
+section#section-07 a:active {
   color: var(--black) !important;
   background-color: var(--blue) !important;
 }
@@ -843,7 +940,8 @@ div#sidebox-content-00 a {
   color: var(--red) !important;
 }
 
-div#sidebox-content-00 a:hover, div#sidebox-content-00 a:active {
+div#sidebox-content-00 a:hover,
+div#sidebox-content-00 a:active {
   color: var(--black) !important;
   background-color: var(--red) !important;
 }
@@ -867,12 +965,14 @@ div#ai-box.sidebox-01 #sidebox-header-01 {
   background-color: transparent !important;
 }
 
-div#ai-box.sidebox-01>#sidebox-header-01 h4 {
-  background-image: linear-gradient(-45deg,
-      var(--lavender),
-      var(--indigo),
-      var(--green),
-      var(--orange));
+div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
+  background-image: linear-gradient(
+    -45deg,
+    var(--lavender),
+    var(--indigo),
+    var(--green),
+    var(--orange)
+  );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -903,7 +1003,8 @@ div#sidebox-content-02 a {
   color: var(--violet) !important;
 }
 
-div#sidebox-content-02 a:hover, div#sidebox-content-02 a:active {
+div#sidebox-content-02 a:hover,
+div#sidebox-content-02 a:active {
   color: var(--black) !important;
   background-color: var(--violet) !important;
 }
@@ -922,7 +1023,8 @@ div#sidebox-content-03 a {
   color: var(--indigo) !important;
 }
 
-div#sidebox-content-03 a:hover, div#sidebox-content-03 a:active {
+div#sidebox-content-03 a:hover,
+div#sidebox-content-03 a:active {
   color: var(--black) !important;
   background-color: var(--indigo) !important;
 }
@@ -941,7 +1043,8 @@ div#sidebox-content-04 a {
   color: var(--blue) !important;
 }
 
-div#sidebox-content-04 a:hover, div#sidebox-content-04 a:active {
+div#sidebox-content-04 a:hover,
+div#sidebox-content-04 a:active {
   color: var(--black) !important;
   background-color: var(--blue) !important;
 }
@@ -965,7 +1068,8 @@ div#sidebox-content-05 a {
   color: var(--green) !important;
 }
 
-div#sidebox-content-05 a:hover, div#sidebox-content-05 a:active {
+div#sidebox-content-05 a:hover,
+div#sidebox-content-05 a:active {
   color: var(--black) !important;
   background-color: var(--green) !important;
 }
@@ -984,7 +1088,8 @@ div#sidebox-content-06 a {
   color: var(--yellow) !important;
 }
 
-div#sidebox-content-06 a:hover, div#sidebox-content-06 a:active {
+div#sidebox-content-06 a:hover,
+div#sidebox-content-06 a:active {
   color: var(--black) !important;
   background-color: var(--yellow) !important;
 }
@@ -1003,7 +1108,8 @@ div#sidebox-content-07 a {
   color: var(--orange) !important;
 }
 
-div#sidebox-content-07 a:hover, div#sidebox-content-07 a:active {
+div#sidebox-content-07 a:hover,
+div#sidebox-content-07 a:active {
   color: var(--black) !important;
   background-color: var(--orange) !important;
 }
@@ -1022,7 +1128,8 @@ div#sidebox-content-08 a {
   color: var(--red) !important;
 }
 
-div#sidebox-content-08 a:hover, div#sidebox-content-08 a:active {
+div#sidebox-content-08 a:hover,
+div#sidebox-content-08 a:active {
   color: var(--black) !important;
   background-color: var(--red) !important;
 }
@@ -1046,7 +1153,8 @@ div#sidebox-content-09 a {
   color: var(--green) !important;
 }
 
-div#sidebox-content-09 a:hover, div#sidebox-content-09 a:active {
+div#sidebox-content-09 a:hover,
+div#sidebox-content-09 a:active {
   color: var(--black) !important;
   background-color: var(--green) !important;
 }
@@ -1676,7 +1784,7 @@ button#search-button {
   color: var(--green);
 }
 
-form input:placeholder-shown+button#clear-field {
+form input:placeholder-shown + button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
@@ -1790,7 +1898,6 @@ span.info-connector {
 /* Blinking effect on links */
 
 @keyframes blinkingHover {
-
   0%,
   50%,
   100% {
@@ -1806,7 +1913,6 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingHover {
-
   0%,
   50%,
   100% {
@@ -1820,7 +1926,6 @@ span.info-connector {
 }
 
 @keyframes blinkingActive {
-
   0%,
   50%,
   100% {
@@ -1834,7 +1939,6 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingActive {
-
   0%,
   50%,
   100% {
