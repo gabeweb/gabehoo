@@ -1606,6 +1606,7 @@ span#time-date {
 
 img#weather-icon {
   filter: invert(1);
+  opacity: .8;
 }
 
 #weather-info {
