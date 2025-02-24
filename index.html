@@ -99,43 +99,45 @@
       </div>
       <div class="sub-header">
         <div id="search-container">
-          <form
-            id="searchbar"
-            action="https://duckduckgo.com/?search"
-            autocomplete="off"
-            oninput="suggest()"
-            target="_blank"
-          >
-            <!-- for DuckDuckGo use instead: "https://duckduckgo.com/?search" -->
-
-            <span id="search-favicon"></span>
-            <input
-              autofocus
-              id="searchInput"
-              spellcheck="false"
-              name="q"
-              placeholder="Search the web"
-            />
-
-            <button
-              id="clear-field"
-              onclick="InputBoxReset('searchInput')"
-              type="reset"
-              class="material-icon"
-              title="Clear"
+          <div id="search">
+            <form
+              id="searchbar"
+              action="https://duckduckgo.com/?search"
+              autocomplete="off"
+              oninput="suggest()"
+              target="_blank"
             >
-              clear
-            </button>
-            <button
-              id="search-button"
-              onclick="search()"
-              class="material-icon"
-              title="Search"
-            >
-              search
-            </button>
-          </form>
-          <div id="suggestions"></div>
+              <!-- for DuckDuckGo use instead: "https://duckduckgo.com/?search" -->
+
+              <span id="search-favicon"></span>
+              <input
+                autofocus
+                id="searchInput"
+                spellcheck="false"
+                name="q"
+                placeholder="Search the web"
+              />
+
+              <button
+                id="clear-field"
+                onclick="InputBoxReset('searchInput')"
+                type="reset"
+                class="material-icon"
+                title="Clear"
+              >
+                clear
+              </button>
+              <button
+                id="search-button"
+                onclick="search()"
+                class="material-icon"
+                title="Search"
+              >
+                search
+              </button>
+            </form>
+            <div id="suggestions"></div>
+          </div>
         </div>
         <section class="section" id="section-00">
           <h3>Breaking News</h3>
@@ -263,6 +265,17 @@
               <li>
                 <a href="https://reuters.com/" title="Reuters" target="_blank"
                   >Reuters</a
+                >
+              </li>
+              <li>
+                <a href="https://www.rt.com/" title="RT" target="_blank">RT</a>
+              </li>
+              <li>
+                <a
+                  href="https://sputnikglobe.com/index.html"
+                  title="Sputnik"
+                  target="_blank"
+                  >Sputnik</a
                 >
               </li>
               <li>
@@ -3092,6 +3105,22 @@
             <article>
               <h4><span>Code & Development</span></h4>
               <ul>
+                <li>
+                  <a
+                    href="https://bitbucket.org/"
+                    title="Bitbucket"
+                    target="_blank"
+                    >Bitbucket</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://codeberg.org/"
+                    title="Codeberg"
+                    target="_blank"
+                    >Codeberg</a
+                  >
+                </li>
                 <li>
                   <a href="https://codepen.io/" title="CodePen" target="_blank"
                     >CodePen</a

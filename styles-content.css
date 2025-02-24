@@ -513,6 +513,7 @@ section {
 }
 
 div.header,
+div#search-container,
 section.section,
 section.quote {
   border-width: 1px;
@@ -1706,14 +1707,17 @@ span#weather-description {
 
 #search-container {
   display: block;
-  width: 60%;
-  margin: 10px auto;
+  width: 100%;
+  margin: auto;
   position: relative;
+  background-color: var(--searcher-bg-color);
+  border-color: var(--accent-color);
+  box-shadow: 12px 12px var(--accent-color);
 }
 
 #search {
-  width: 100%;
-  margin: 1.5em auto 2em auto;
+  width: 80%;
+  margin: 1.5em auto;
   position: relative;
 }
 
@@ -1782,7 +1786,7 @@ button#clear-field {
 }
 
 button#search-button {
-  color: var(--green);
+  color: var(--accent-color);
 }
 
 form input:placeholder-shown + button#clear-field {
