@@ -231,7 +231,7 @@ div.sidebar h4 {
 
 /* basic structure */
 
-/*.header {
+/*header {
   border: 1px dashed var(--header-border-color);
 }*/
 
@@ -239,7 +239,7 @@ div.sidebar h4 {
   font-size: 200%;
 }
 
-div[class="header"] {
+header, div[class="header"] {
   height: min-content;
   border-width: 0 0 4px 0;
   border-style: double;
@@ -276,7 +276,7 @@ div[class="header"] {
 }
 
 /*
-div.header::before {
+header::before {
   content: " ";
   background-color: var(--bg-color);
   z-index: -2;
@@ -289,7 +289,7 @@ div.header::before {
   -webkit-animation: glowing 10s linear infinite;
 }
 
-div.header::after {
+header::after {
   content: " ";
   background-color: var(--bg-color);
   z-index: -2;
@@ -358,11 +358,11 @@ div.header::after {
   }
 }
 */
-div[class="header"] a {
+header a, div[class="header"] a {
   text-decoration: none;
 }
 
-div[class="header"] a:hover {
+header a:hover, div[class="header"] a:hover {
   background-color: transparent !important;
 }
 
@@ -512,7 +512,7 @@ section {
   /*margin: 10px;*/
 }
 
-div.header,
+header,
 div#search-container,
 section.section,
 section.quote {
@@ -523,7 +523,7 @@ section.quote {
   outline-color: var(--bg-color);
 }
 
-div.header {
+header {
   background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
@@ -1524,7 +1524,7 @@ p#small-print {
 
 /* the footer */
 
-div.footer {
+footer {
   border-width: 1px 0px 0px 0px;
   border-style: dashed;
   border-color: var(--violet);
@@ -2152,12 +2152,12 @@ a:hover span.arrow-up {
   } */
 
   .container,
-  .header,
+  header,
   .sub-header,
   .main-row,
   .sidebar,
   .sidebox-container,
-  .footer {
+  footer {
     display: flex;
     flex-direction: column;
   }
@@ -2170,7 +2170,7 @@ a:hover span.arrow-up {
     order: 2;
   }
 
-  .footer {
+  footer {
     order: 3;
   }
 
@@ -2203,12 +2203,12 @@ a:hover span.arrow-up {
   } */
 
   .container,
-  /*.header,*/
+  /*header,*/
   .sub-header,
   .main-row,
   .sidebar,
   .sidebox-container,
-  .footer {
+  footer {
     display: flex;
     flex-direction: column;
   }
@@ -2221,7 +2221,7 @@ a:hover span.arrow-up {
     order: 2;
   }
 
-  .footer {
+  footer {
     order: 3;
   }
 
