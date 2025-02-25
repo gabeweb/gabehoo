@@ -1247,7 +1247,7 @@ span.visibility_off::before {
   position: absolute;
   align-self: last baseline;
   right: 32px;
-  top: 43px;
+  top: 42px;
 }
 
 #password-strength {
