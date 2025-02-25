@@ -239,7 +239,8 @@ div.sidebar h4 {
   font-size: 200%;
 }
 
-header, div[class="header"] {
+header,
+div[class="header"] {
   height: min-content;
   border-width: 0 0 4px 0;
   border-style: double;
@@ -358,11 +359,13 @@ header::after {
   }
 }
 */
-header a, div[class="header"] a {
+header a,
+div[class="header"] a {
   text-decoration: none;
 }
 
-header a:hover, div[class="header"] a:hover {
+header a:hover,
+div[class="header"] a:hover {
   background-color: transparent !important;
 }
 
@@ -579,7 +582,7 @@ header {
 }
 
 .letter:nth-child(4) {
-  animation-delay: .75s;
+  animation-delay: 0.75s;
 }
 
 .letter:nth-child(5) {
@@ -1190,7 +1193,7 @@ div#sidebox-content-09 a:active {
 
 #password-input {
   width: 100%;
-  padding: 10px 34px 10px 32px;
+  padding: 10px 62px 10px 34px;
   margin: 10px 0 10px 0;
   background-color: transparent;
   font-family: var(--fontBody);
@@ -1234,9 +1237,17 @@ span.visibility_off::before {
   color: var(--red);
 }
 
-#password-input:focus-within {
+#password-input:focus-within,
+#password-input:hover {
   border: 1px solid var(--accent-color);
   background-color: var(--searcher-bg-color);
+}
+
+#password-validate button#clear-field {
+  position: absolute;
+  align-self: last baseline;
+  right: 32px;
+  top: 43px;
 }
 
 #password-strength {
@@ -1607,7 +1618,7 @@ span#time-date {
 
 img#weather-icon {
   filter: invert(1);
-  opacity: .8;
+  opacity: 0.8;
 }
 
 #weather-info {
@@ -1764,7 +1775,8 @@ span#weather-description {
   color: inherit;
 }
 
-#searchbar:focus-within {
+#searchbar:focus-within,
+#searchbar:hover {
   border: 1px solid var(--accent-color);
   background-color: var(--searcher-bg-color);
 }
