@@ -936,7 +936,7 @@ section#section-08 {
 .mozilla-logo-container p {
   font-family: "MozillaHeadline";
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.0;
   margin: 0 auto;
   width: fit-content;
   display: block;
@@ -944,13 +944,15 @@ section#section-08 {
 }
 
 #mozilla-type p {
-  padding: 0px 10px;
+  padding: 0px 6px;
+  margin: 0 10px;
   font-size: 4em;
   background-color: var(--green);
   color: var(--black);
 }
 
 #mozilla-logo p {
+  line-height: 0.8;
   color: var(--green);
   font-size: 3em;
 }
