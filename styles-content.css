@@ -137,6 +137,53 @@
   font-weight: 300;
 }
 
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Regular.otf")
+    format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Bold.otf") format("opentype");
+  font-style: normal;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-BoldItalic.otf")
+    format("opentype");
+  font-style: italic;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Italic.otf")
+    format("opentype");
+  font-style: italic;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Light.otf")
+    format("opentype");
+  font-style: normal;
+  font-weight: light;
+}
+
+@font-face {
+  font-family: "MozillaHeadline";
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-LightItalic.otf")
+    format("opentype");
+  font-style: italic;
+  font-weight: light;
+}
+
 :root {
   --fontBody: "JetBrains Mono" /*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono",
     "Bitstream Vera Sans Mono", Consolas, monospace;
@@ -867,11 +914,45 @@ section#section-08 {
   padding: 20px;
 }
 
-article#get-firefox img {
-  width: 256px;
+#get-firefox h4 {
+  border: 0;
+  padding: 0px;
+  margin: 10px 0px;
+}
+
+#get-firefox li {
+  padding: 0px;
+}
+
+.mozilla-logo-container {
+  width: 300px;
   margin: auto;
+  display: flex;
+  position: relative;
+  align-items: self-end;
+  vertical-align: bottom;
+}
+
+.mozilla-logo-container p {
+  font-family: "MozillaHeadline";
+  font-weight: bold;
+  line-height: 1.2;
+  margin: 0 auto;
+  width: fit-content;
   display: block;
   position: relative;
+}
+
+#mozilla-type p {
+  padding: 0px 10px;
+  font-size: 4em;
+  background-color: var(--green);
+  color: var(--black);
+}
+
+#mozilla-logo p {
+  color: var(--green);
+  font-size: 3em;
 }
 
 ul#sysinfo {
