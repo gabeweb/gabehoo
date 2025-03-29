@@ -17,49 +17,49 @@ else if (hrs >= 17 && hrs <= 24)
 
 document.getElementById("greeting").innerHTML = greet;
 
-// Date and Time
-// Function to format 1 in 01
-const zeroFill = (n) => {
-  return ("0" + n).slice(-2);
+// Botón para activar/desactivar la señal horaria
+const chimeButton = document.getElementById("hourly-chime-button");
+let chimeEnabled = true;
+
+chimeButton.addEventListener("click", () => {
+  chimeEnabled = !chimeEnabled;
+  if (chimeEnabled) {
+    chimeButton.classList.remove("chime-off");
+    chimeButton.classList.add("chime-on");
+    chimeButton.textContent = "notifications_active";
+  } else {
+    chimeButton.classList.remove("chime-on");
+    chimeButton.classList.add("chime-off");
+    chimeButton.textContent = "notifications_off";
+  }
+});
+
+// Función para reproducir el sonido de la señal horaria
+const playChime = () => {
+  const audio = new Audio("asset/audio/hourly-chime.wav");
+  audio.play();
 };
 
-// Creates interval
-const interval = setInterval(() => {
-  // Get current time
+// Intervalo para verificar la hora
+let lastHour = new Date().getHours();
+setInterval(() => {
   const now = new Date();
-  const weekday = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-  const month = [
-    "Jan",
-    "Feb",
-    "Mar",
-    "Apr",
-    "May",
-    "Jun",
-    "Jul",
-    "Aug",
-    "Sep",
-    "Oct",
-    "Nov",
-    "Dec",
-  ];
 
-  // Format date as in mm/dd/aaaa hh:ii:ss
-  const dateTime =
-    " " +
-    weekday[now.getDay()] +
-    " " +
-    month[now.getMonth()] +
-    " " +
-    zeroFill(now.getDate()) +
-    ", " +
-    now.getFullYear();
+  // Reproducir la señal horaria si está activada y cambia la hora
+  if (chimeEnabled && now.getHours() !== lastHour) {
+    playChime();
+    lastHour = now.getHours();
+  }
+
+  // Actualizar la hora y fecha en pantalla
+  const zeroFill = (n) => ("0" + n).slice(-2);
   const timeDate =
-    " " +
     zeroFill(now.getHours()) +
-    "<span id='dottime'>:</span>" +
+    ":" +
     zeroFill(now.getMinutes()) +
-    "<span id='dottime'>:</span>" +
+    ":" +
     zeroFill(now.getSeconds());
+  const dateTime = now.toDateString();
 
   // Display the date and time on the screen using div#date-time
   document.getElementById("date-time").innerHTML = dateTime;

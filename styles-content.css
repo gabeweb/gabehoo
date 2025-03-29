@@ -147,7 +147,8 @@
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Bold.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Bold.otf")
+    format("opentype");
   font-style: normal;
   font-weight: bold;
 }
@@ -936,7 +937,7 @@ section#section-08 {
 .mozilla-logo-container p {
   font-family: "MozillaHeadline";
   font-weight: bold;
-  line-height: 1.0;
+  line-height: 1;
   margin: 0 auto;
   width: fit-content;
   display: block;
@@ -1651,6 +1652,29 @@ span#time-date {
   -webkit-animation-timing-function: ease-in;
   -webkit-animation-iteration-count: infinite;
   -webkit-animation-delay: -0.5s;
+}
+
+#hourly-chime-button {
+  padding: 5px 10px;
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--green);
+  background-color: var(--green-soft); /* Verde opacado */
+  transition: background-color 0.3s ease;
+}
+
+#hourly-chime-button.chime-on {
+  background-color: var(--green); /* Verde brillante */
+  border: 1px solid var(--green-soft);
+  color: var(--black);
+}
+
+#hourly-chime-button.chime-off {
+  background-color: var(--green-soft); /* Verde opacado */
+  border: 1px solid var(--green);
 }
 
 .wifi-signal::before {
