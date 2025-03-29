@@ -1662,19 +1662,20 @@ span#time-date {
   font-size: 14px;
   font-weight: bold;
   color: var(--green);
-  background-color: var(--green-soft); /* Verde opacado */
+  background-color: var(--green-soft);
   transition: background-color 0.3s ease;
 }
 
-#hourly-chime-button.chime-on {
-  background-color: var(--green); /* Verde brillante */
+#hourly-chime-button.chime-on, #hourly-chime-button.chime-off:hover {
+  background-color: var(--green);
   border: 1px solid var(--green-soft);
   color: var(--black);
 }
 
-#hourly-chime-button.chime-off {
-  background-color: var(--green-soft); /* Verde opacado */
+#hourly-chime-button.chime-off, #hourly-chime-button.chime-on:hover {
+  background-color: var(--green-soft);
   border: 1px solid var(--green);
+  color: var(--green);
 }
 
 .wifi-signal::before {
