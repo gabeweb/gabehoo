@@ -482,6 +482,58 @@ div[class*="main-content-middle"] li {
   break-inside: avoid;
 }
 
+section#section-01 .breaking-news {
+  background-color: var(--black-soft) !important;
+  border: 4px double;
+  border-top-color: var(--indigo);
+  border-right-color: var(--indigo);
+  border-bottom-color: var(--green);
+  border-left-color: var(--green);
+  padding: 10px;
+}
+
+section#section-01 .breaking-news h4 span {
+  border-bottom: transparent !important;
+  background-color: transparent !important;
+}
+
+section#section-01 .breaking-news h4 {
+  background-image: linear-gradient(
+    -45deg,
+    var(--indigo),
+    var(--green),
+    var(--orange),
+    var(--green),
+    var(--indigo)
+  );
+  background-size: 200% 100%;
+  animation: gradient-animation 2s ease infinite alternate;
+  border-color: var(--green);
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+section#section-01 .breaking-news li {
+  border-image: linear-gradient(to bottom, var(--indigo), var(--green)) 1;
+}
+
+section#section-01 .breaking-news a {
+  color: var(--indigo) !important;
+}
+
+section#section-01 .breaking-news a:hover,
+section#section-01 .breaking-news a:active {
+  color: var(--black) !important;
+  background-color: var(--indigo) !important;
+}
+
 section#section-01 .funny {
   background-color: var(--black-soft) !important;
   border: 4px double;
@@ -690,6 +742,75 @@ section#section-00 a:hover,
 section#section-00 a:active {
   color: var(--black) !important;
   background-color: var(--blue) !important;
+}
+
+div.fancy-bar {
+  height: 20px;
+  margin: 6px 0px;
+  transform-origin: left;
+}
+
+div.fancy-bar#fancy-01 {
+  width: 40%;
+  background-color: var(--red);
+  animation: oscillate-01 3s infinite alternate ease-in-out;
+}
+
+div.fancy-bar#fancy-02 {
+  width: 80%;
+  background-color: var(--green);
+  animation: oscillate-02 1s infinite alternate ease-in-out;
+}
+
+div.fancy-bar#fancy-03 {
+  width: 60%;
+  background-color: var(--blue);
+  animation: oscillate-03 2s infinite alternate ease-in-out;
+}
+
+@keyframes oscillate-01 {
+  0% {
+    transform: scaleX(0.5);
+    background-color: var(--red);
+  }
+  50% {
+    transform: scaleX(2);
+    background-color: var(--green);
+  }
+  100% {
+    transform: scaleX(1);
+    background-color: var(--blue);
+  }
+}
+
+@keyframes oscillate-02 {
+  0% {
+    transform: scaleX(1);
+    background-color: var(--green);
+  }
+  40% {
+    transform: scaleX(0.5);
+    background-color: var(--blue);
+  }
+  100% {
+    transform: scaleX(1);
+    background-color: var(--red);
+  }
+}
+
+@keyframes oscillate-03 {
+  0% {
+    transform: scaleX(1.5);
+    background-color: var(--blue);
+  }
+  60% {
+    transform: scaleX(1);
+    background-color: var(--red);
+  }
+  100% {
+    transform: scaleX(0.5);
+    background-color: var(--green);
+  }
 }
 
 section[id*="section-"] h4 span {
@@ -1666,13 +1787,15 @@ span#time-date {
   transition: background-color 0.3s ease;
 }
 
-#hourly-chime-button.chime-on, #hourly-chime-button.chime-off:hover {
+#hourly-chime-button.chime-on,
+#hourly-chime-button.chime-off:hover {
   background-color: var(--green);
   border: 1px solid var(--green-soft);
   color: var(--black);
 }
 
-#hourly-chime-button.chime-off, #hourly-chime-button.chime-on:hover {
+#hourly-chime-button.chime-off,
+#hourly-chime-button.chime-on:hover {
   background-color: var(--green-soft);
   border: 1px solid var(--green);
   color: var(--green);
