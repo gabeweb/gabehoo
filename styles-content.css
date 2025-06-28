@@ -744,72 +744,66 @@ section#section-00 a:active {
   background-color: var(--blue) !important;
 }
 
+.scroll-container {
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+}
+
+.scrolling-content {
+  display: flex;
+  flex-direction: column;
+  will-change: transform;
+  animation: continuous-scroll 5s linear infinite;
+}
+
 div.fancy-bar {
   height: 20px;
   margin: 6px 0px;
   transform-origin: left;
 }
 
-div.fancy-bar#fancy-01 {
+div.fancy-bar#fancy-01, div.fancy-bar#fancy-01-dup {
   width: 40%;
   background-color: var(--red);
   animation: oscillate-01 3s infinite alternate ease-in-out;
 }
 
-div.fancy-bar#fancy-02 {
+div.fancy-bar#fancy-02, div.fancy-bar#fancy-02-dup {
   width: 80%;
   background-color: var(--green);
   animation: oscillate-02 1s infinite alternate ease-in-out;
 }
 
-div.fancy-bar#fancy-03 {
+div.fancy-bar#fancy-03, div.fancy-bar#fancy-03-dup {
   width: 60%;
   background-color: var(--blue);
   animation: oscillate-03 2s infinite alternate ease-in-out;
 }
 
 @keyframes oscillate-01 {
-  0% {
-    transform: scaleX(0.5);
-    background-color: var(--red);
-  }
-  50% {
-    transform: scaleX(2);
-    background-color: var(--green);
-  }
-  100% {
-    transform: scaleX(1);
-    background-color: var(--blue);
-  }
+  0% { transform: scaleX(0.5); background-color: var(--red); }
+  50% { transform: scaleX(2); background-color: var(--green); }
+  100% { transform: scaleX(1); background-color: var(--blue); }
 }
 
 @keyframes oscillate-02 {
-  0% {
-    transform: scaleX(1);
-    background-color: var(--green);
-  }
-  40% {
-    transform: scaleX(0.5);
-    background-color: var(--blue);
-  }
-  100% {
-    transform: scaleX(1);
-    background-color: var(--red);
-  }
+  0% { transform: scaleX(1); background-color: var(--green); }
+  40% { transform: scaleX(0.5); background-color: var(--blue); }
+  100% { transform: scaleX(1); background-color: var(--red); }
 }
 
 @keyframes oscillate-03 {
+  0% { transform: scaleX(1.5); background-color: var(--blue); }
+  60% { transform: scaleX(1); background-color: var(--red); }
+  100% { transform: scaleX(0.5); background-color: var(--green); }
+}
+@keyframes continuous-scroll {
   0% {
-    transform: scaleX(1.5);
-    background-color: var(--blue);
-  }
-  60% {
-    transform: scaleX(1);
-    background-color: var(--red);
+    transform: translateY(0);
   }
   100% {
-    transform: scaleX(0.5);
-    background-color: var(--green);
+    transform: translateY(-100%);
   }
 }
 
