@@ -764,39 +764,36 @@ div.fancy-bar {
 }
 
 div.fancy-bar#fancy-01, div.fancy-bar#fancy-01-dup {
-  width: 40%;
+  width: 80%;
   background-color: var(--red);
-  animation: oscillate-01 3s infinite alternate ease-in-out;
+  animation: oscillate-01 700ms infinite alternate ease-in-out;
 }
 
 div.fancy-bar#fancy-02, div.fancy-bar#fancy-02-dup {
   width: 80%;
   background-color: var(--green);
-  animation: oscillate-02 1s infinite alternate ease-in-out;
+  animation: oscillate-02 1000ms infinite alternate ease-in-out;
 }
 
 div.fancy-bar#fancy-03, div.fancy-bar#fancy-03-dup {
-  width: 60%;
+  width: 80%;
   background-color: var(--blue);
-  animation: oscillate-03 2s infinite alternate ease-in-out;
+  animation: oscillate-03 800ms infinite alternate ease-in-out;
 }
 
 @keyframes oscillate-01 {
-  0% { transform: scaleX(0.5); background-color: var(--red); }
-  50% { transform: scaleX(2); background-color: var(--green); }
-  100% { transform: scaleX(1); background-color: var(--blue); }
+  0% { transform: scaleX(0.8); background-color: var(--red); }
+  100% { transform: scaleX(1); background-color: var(--green); }
 }
 
 @keyframes oscillate-02 {
   0% { transform: scaleX(1); background-color: var(--green); }
-  40% { transform: scaleX(0.5); background-color: var(--blue); }
-  100% { transform: scaleX(1); background-color: var(--red); }
+  100% { transform: scaleX(0.8); background-color: var(--blue); }
 }
 
 @keyframes oscillate-03 {
-  0% { transform: scaleX(1.5); background-color: var(--blue); }
-  60% { transform: scaleX(1); background-color: var(--red); }
-  100% { transform: scaleX(0.5); background-color: var(--green); }
+  0% { transform: scaleX(0.7); background-color: var(--blue); }
+  100% { transform: scaleX(1); background-color: var(--red); }
 }
 @keyframes continuous-scroll {
   0% {
