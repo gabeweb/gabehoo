@@ -1362,26 +1362,46 @@ div#sidebox-content-08 a:active {
 }
 
 div.sidebox-09 {
+  background-color: var(--blue-soft);
+  border-color: var(--blue);
+  box-shadow: 12px 12px var(--blue);
+}
+
+div#sidebox-header-09 {
+  background-color: var(--blue);
+}
+
+div#sidebox-content-09 a {
+  color: var(--blue) !important;
+}
+
+div#sidebox-content-09 a:hover,
+div#sidebox-content-09 a:active {
+  color: var(--black) !important;
+  background-color: var(--blue) !important;
+}
+
+div.sidebox-10 {
   background-color: var(--green-soft);
   border-color: var(--green);
   box-shadow: 12px 12px var(--green);
 }
 
-div#sidebox-header-09 {
+div#sidebox-header-10 {
   background-color: var(--green);
 }
 
-div#sidebox-content-09 {
+div#sidebox-content-10 {
   position: relative;
   padding: 20px 8px 8px 8px;
 }
 
-div#sidebox-content-09 a {
+div#sidebox-content-10 a {
   color: var(--green) !important;
 }
 
-div#sidebox-content-09 a:hover,
-div#sidebox-content-09 a:active {
+div#sidebox-content-10 a:hover,
+div#sidebox-content-10 a:active {
   color: var(--black) !important;
   background-color: var(--green) !important;
 }
