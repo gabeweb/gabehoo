@@ -746,20 +746,21 @@ section#section-00 a:active {
 }
 
 .scroll-container {
-  height: 70px;
+  height: 60px;
   overflow: hidden;
   position: relative;
+  margin-top: -10px;
 }
 
-.scrolling-content {
+/*.scrolling-content {
   display: flex;
   flex-direction: column;
   will-change: transform;
   animation: continuous-scroll 3s infinite ease-in-out;
-}
+}*/
 
 div.fancy-bar {
-  height: 20px;
+  height: 12px;
   margin: 6px 0px;
   transform-origin: left;
 }
@@ -780,14 +781,14 @@ div.fancy-bar#fancy-02-dup {
 
 div.fancy-bar#fancy-03,
 div.fancy-bar#fancy-03-dup {
-  width: 60%;
+  width: 80%;
   background-color: var(--blue);
   animation: oscillate-03 800ms infinite alternate ease-in-out;
 }
 
 @keyframes oscillate-01 {
   0% {
-    transform: scaleX(0.8);
+    transform: scaleX(0.45);
     background-color: var(--red);
   }
 
@@ -804,14 +805,14 @@ div.fancy-bar#fancy-03-dup {
   }
 
   100% {
-    transform: scaleX(0.8);
+    transform: scaleX(0.4);
     background-color: var(--blue);
   }
 }
 
 @keyframes oscillate-03 {
   0% {
-    transform: scaleX(0.7);
+    transform: scaleX(0.5);
     background-color: var(--blue);
   }
 
