@@ -440,7 +440,9 @@ div.sub-header li {
 
 /* the main */
 
-div.main-row .section#section-01 ul {
+div.main-row .section#section-01 ul,
+div.main-row .section#section-02 ul,
+div.main-row .section#section-07 ul {
   list-style-type: none;
   padding: 4px 0px;
   margin: 6px;
@@ -448,11 +450,26 @@ div.main-row .section#section-01 ul {
   column-gap: 20px;
 }
 
-div.main-row .section#section-01 li {
+div.main-row .section#section-01 li,
+div.main-row .section#section-02 li,
+div.main-row .section#section-07 li {
   display: list-item;
   padding: 0px 6px;
   break-inside: avoid;
-  border-left: 1px solid var(--main-content-border-color);
+  border-style: solid;
+  border-width: 0px 0px 0px 1px;
+}
+
+div.main-row .section#section-01 li {
+  border-color: var(--main-content-border-color);
+}
+
+div.main-row .section#section-02 li {
+  border-color: var(--yellow);
+}
+
+div.main-row .section#section-07 li {
+  border-color: var(--blue);
 }
 
 #main-content-top-header {
@@ -1017,9 +1034,9 @@ section#section-06 a:active {
 }
 
 section#section-07 {
-  background-color: var(--lavender-soft);
-  border-color: var(--lavender);
-  box-shadow: 12px 12px var(--lavender);
+  background-color: var(--blue-soft);
+  border-color: var(--blue);
+  box-shadow: 12px 12px var(--blue);
 }
 
 section#section-07 h3 {
@@ -1051,8 +1068,11 @@ section#section-08 {
 }
 
 #get-firefox {
-  position: relative;
-  padding: 20px;
+	position: relative;
+	padding: 20px;
+	border-style: dashed;
+	border-color: var(--white);
+	border-width: 2px;
 }
 
 #get-firefox h4 {
@@ -1088,13 +1108,13 @@ section#section-08 {
   padding: 0px 6px;
   margin: 0 10px;
   font-size: 4em;
-  background-color: var(--green);
+  background-color: var(--white);
   color: var(--black);
 }
 
 #mozilla-logo p {
   line-height: 0.8;
-  color: var(--green);
+  color: var(--white);
   font-size: 3em;
 }
 
