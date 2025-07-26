@@ -737,6 +737,9 @@ section[id*="section-"] h4 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
   box-shadow: 12px 12px var(--blue);
+  width: 100%;
+  max-width: 720px;
+  margin: auto;
 }
 
 section#section-00 h3 {
