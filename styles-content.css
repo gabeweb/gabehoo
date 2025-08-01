@@ -206,9 +206,9 @@
   /*scrollbar-width: thin;*/
 }
 
-::-webkit-scrollbar {
-  /*width: 0.3em;*/
-}
+/*::-webkit-scrollbar {
+  width: 0.3em;
+}*/
 
 ::-webkit-scrollbar-track {
   background: #00000000;
@@ -1230,6 +1230,16 @@ div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
   color: transparent;
 }
 
+div#ai-box.sidebox-01 a {
+  color: var(--yellow) !important;
+}
+
+div#ai-box.sidebox-01 a:hover,
+div#ai-box.sidebox-01 a:active {
+  color: var(--black) !important;
+  background-color: var(--yellow) !important;
+}
+
 div.sidebox-01:not(#ai-box) {
   background-color: var(--lavender-soft);
   border-color: var(--lavender);
@@ -1238,6 +1248,16 @@ div.sidebox-01:not(#ai-box) {
 
 div#sidebox-header-01 {
   background-color: var(--lavender);
+}
+
+div.sidebox-01:not(#ai-box) a {
+  color: var(--lavender) !important;
+}
+
+div.sidebox-01:not(#ai-box) a:hover,
+div.sidebox-01:not(#ai-box) a:active {
+  color: var(--black) !important;
+  background-color: var(--lavender) !important;
 }
 
 div.sidebox-02 {
