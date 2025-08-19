@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="./favicon.ico" />
+    <link
+      rel="alternate icon"
+      class="js-site-favicon"
+      type="image/png"
+      href="./favicon.png"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <!-- GABEhoo! - A simple responsive Startpage
+Author: gabeweb(github.con/gabeweb) -->
+
+    <title>GABEhoo! | Software Catalaog</title>
+    <link rel="stylesheet" href="styles-grids.css" />
+    <link rel="stylesheet" href="styles-colors.css" />
+    <link rel="stylesheet" href="styles-content.css" />
+    <link rel="stylesheet" href="styles-softcat.css" />
+  </head>
+
+  <body>
+    <div class="container fade-in">
+      <header class="header">
+        <div class="header-left">
+          <span id="greeting"></span>
+          <a href="index.html" title="Go Home">
+            <h1 class="animated-title">
+              <span class="letter">G</span>
+              <span class="letter">A</span>
+              <span class="letter">B</span>
+              <span class="letter">E</span>
+              <span class="letter">h</span>
+              <span class="letter">o</span>
+              <span class="letter">o</span>
+              <span class="letter">!</span>
+            </h1>
+          </a>
+        </div>
+        <div class="header-center">
+          <a href="https://openweathermap.org/city/3647651" target="_blank">
+            <div class="fade-in-weather" id="weather-container" title="">
+              <div id="weather-symbol">
+                <img
+                  src=""
+                  class="fade-in-icon"
+                  id="weather-icon"
+                  data-remote-svg-uri=""
+                  data-remote-svg-class="weather-linea"
+                />
+              </div>
+              <div id="weather-info">
+                <span id="weather">Loading ... </span>
+                <span id="weather-description"></span>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="header-right">
+          <a
+            href="https://www.timeanddate.com/worldclock/@3647651"
+            title="Current Local Time in Cabimas, Venezuela"
+            target="_blank"
+          >
+            <div id="timestamp-container" class="fade-in">
+              <span id="date-time"></span><br />
+              <span id="time-date"></span>
+            </div>
+          </a>
+          <div id="hourly-chime-container" style="display: inline-block">
+            <button
+              id="hourly-chime-button"
+              class="chime-on material-icon"
+              alt="Hourly Time Signal"
+              title="Hourly Time Signal"
+            >
+              notifications_active
+            </button>
+          </div>
+        </div>
+      </header>
+      <div class="sub-header">
+        <div id="search-container">
+          <div id="search">
+            <form
+              id="searchbar"
+              action="https://duckduckgo.com/?search"
+              autocomplete="off"
+              oninput="suggest()"
+              target="_blank"
+            >
+              <!-- for DuckDuckGo use instead: "https://duckduckgo.com/?search" -->
+              <span id="search-favicon"></span>
+              <input
+                autofocus
+                id="searchInput"
+                spellcheck="false"
+                name="q"
+                placeholder="Search the web"
+              />
+              <button
+                id="clear-field"
+                onclick="InputBoxReset('searchInput')"
+                type="reset"
+                class="material-icon"
+                title="Clear"
+              >
+                clear
+              </button>
+              <button
+                id="search-button"
+                onclick="search()"
+                class="material-icon"
+                title="Search"
+              >
+                search
+              </button>
+            </form>
+            <div id="suggestions"></div>
+          </div>
+        </div>
+        <section class="section" id="section-00">
+          <h3>Software Catalog</h3>
+          <article>
+            <p>
+              Explore best software recommnedations.<br />From open source
+              and free to freemium and commercial.<span id="dottime">█</span>
+            </p>
+          </article>
+        </section>
+      </div>
+
+      <div class="main-row" id="main-soft">
+        <ul class="soft-categories">
+          <li class="tags" id="tags-01">
+            <a href="#accessibility" title="Accessibility">Accessibility</a>
+          </li>
+          <li class="tags" id="tags-02">
+            <a href="#development" title="Development">Development</a>
+          </li>
+          <li class="tags" id="tags-03">
+            <a href="#graphics" title="Graphics">Graphics</a>
+          </li>
+          <li class="tags" id="tags-04">
+            <a href="#internet" title="Internet">Internet</a>
+          </li>
+          <li class="tags" id="tags-05">
+            <a href="#mobile" title="Mobile Phone">Mobile Phone</a>
+          </li>
+          <li class="tags" id="tags-06">
+            <a href="#multimedia" title="Multimedia">Multimedia</a>
+          </li>
+          <li class="tags" id="tags-07">
+            <a href="#networking" title="Networking">Networking</a>
+          </li>
+          <li class="tags" id="tags-08"><a href="#p2p" title="P2P">P2P</a></li>
+          <li class="tags" id="tags-09">
+            <a href="#productivity" title="Productivity">Productivity</a>
+          </li>
+          <li class="tags" id="tags-10">
+            <a href="#security" title="Security">Security</a>
+          </li>
+          <li class="tags" id="tags-11">
+            <a href="#themes" title="Themes">Themes</a>
+          </li>
+          <li class="tags" id="tags-12">
+            <a href="#utilities" title="Utilities">Utilities</a>
+          </li>
+          <li class="tags" id="tags-13">
+            <a href="#wallets" title="Wallets">Wallets</a>
+          </li>
+        </ul>
+
+        <div class="table-soft" id="table-01">
+          <span id="accessibility"></span>
+        </div>
+
+        <div class="table-soft" id="table-02">
+          <span id="development"></span>
+        </div>
+
+        <div class="table-soft" id="table-03"><span id="graphics"></span></div>
+
+        <div class="table-soft" id="table-04"><span id="internet"></span></div>
+
+        <div class="table-soft" id="table-05"><span id="mobile"></span></div>
+
+        <div class="table-soft" id="table-06">
+          <span id="multimedia"></span>
+        </div>
+
+        <div class="table-soft" id="table-07">
+          <span id="networking"></span>
+        </div>
+
+        <div class="table-soft" id="table-08"><span id="p2p"></span></div>
+
+        <div class="table-soft" id="table-09">
+          <span id="productivity"></span>
+        </div>
+
+        <div class="table-soft" id="table-10"><span id="security"></span></div>
+
+        <div class="table-soft" id="table-11"><span id="themes"></span></div>
+
+        <div class="table-soft" id="table-12"><span id="utilities"></span></div>
+
+        <div class="table-soft" id="table-13"><span id="wallets"></span></div>
+        <div>
+          <section class="section" id="section-01">
+            <article>
+              <h4><span>+Software</span></h4>
+              <ul>
+                <li>
+                  <a
+                    href="https://chocolatey.org/"
+                    title="Chocolatey"
+                    target="_blank"
+                    >Chocolatey</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://download.cnet.com/"
+                    title="CNET Download"
+                    target="_blank"
+                    >CNET Download</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.downloadcrew.com/"
+                    title="Downloadcrew"
+                    target="_blank"
+                    >Downloadcrew</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://fileforum.com/"
+                    title="FileForum"
+                    target="_blank"
+                    >FileForum</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.filepuma.com/"
+                    title="Filepuma"
+                    target="_blank"
+                    >Filepuma</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.fosshub.com/"
+                    title="FOSSHUB"
+                    target="_blank"
+                    >FOSSHUB</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.libhunt.com/"
+                    title="LibHunt"
+                    target="_blank"
+                    >LibHunt</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.majorgeeks.com/"
+                    title="MajorGeeks"
+                    target="_blank"
+                    >MajorGeeks</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://portableapps.com/"
+                    title="PortableApps"
+                    target="_blank"
+                    >PortableApps</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.softonic.com/"
+                    title="Softonic"
+                    target="_blank"
+                    >Softonic</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.softpedia.com/"
+                    title="Softpedia"
+                    target="_blank"
+                    >Softpedia</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://sourceforge.net/"
+                    title="SourceForge"
+                    target="_blank"
+                    >SourceForge</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.uptodown.com/"
+                    title="Uptodown"
+                    target="_blank"
+                    >Uptodown</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://www.winsite.com/"
+                    title="WinSite"
+                    target="_blank"
+                    >WinSite</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="https://winworldpc.com/home"
+                    title="WinWorld"
+                    target="_blank"
+                    >WinWorld</a
+                  >
+                </li>
+              </ul>
+            </article>
+          </section>
+        </div>
+      </div>
+      <footer class="footer">
+        <section>
+          <article>
+            <h4>System Information</h4>
+            <ul id="sysinfo"></ul>
+          </article>
+        </section>
+        <p>
+          <a href="https://github.com/gabeweb/gabehoo" target="_blank"
+            >GABEhoo!</a
+          >
+          is a startpage developerd by
+          <a href="https://gabeweb.github.io" target="_blank">GABEweb</a>
+          inspired by the old good
+          <a
+            href="https://www.webdesignmuseum.org/timeline/yahoo-2005"
+            title="Yahoo in 2005"
+            target="_blank"
+            >Yahoo!</a
+          >
+          frontpage.<br />
+          For full third-party credits pkease visit GitHub repository.
+          <br />
+          Released under a
+          <a
+            href="https://github.com/gabeweb/gabehoo/blob/main/LICENSE"
+            target="_blank"
+            >GPL-3.0 license</a
+          >.
+        </p>
+      </footer>
+    </div>
+    <script src="main.js"></script>
+    <script src="scripts/suggestions.js"></script>
+    <script src="weather/weather.js"></script>
+    <script src="scripts/random.js"></script>
+    <script src="scripts/passvalidator.js"></script>
+    <script src="scripts/speedtest.js"></script>
+    <script src="scripts/sysinfo.js"></script>
+    <script src="scripts/softcat.js"></script>
+
+    <!-- ScrollToTop by GABE -->
+
+    <script src="scripts/scrolltotop.min.js"></script>
+    <a href="javascript:;" id="scrollToTop"
+      ><span class="arrow-up" title="Scroll to up!" alt="Scroll to up!"></span
+    ></a>
+  </body>
+</html>

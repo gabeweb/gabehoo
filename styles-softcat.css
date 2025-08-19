@@ -1,0 +1,269 @@
+#main-soft {
+  display: table-row;
+  grid-area: 3/1/3/4;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+ul.soft-categories {
+  text-align: center;
+  margin: 10px;
+  padding: 0px;
+}
+
+ul.soft-categories li {
+  display: inline-block;
+  line-height: 2rem;
+}
+
+ul.soft-categories li a {
+  color: inherit !important;
+}
+
+ul.soft-categories li a:hover,
+ul.soft-categories li a:active {
+  background-color: inherit !important;
+}
+
+.table-soft table {
+  width: 100%;
+  display: table;
+  border-width: 1px;
+  border-style: solid;
+  margin: 20px auto;
+  position: relative;
+  border-collapse: collapse;
+}
+.table-soft table .table-title {
+  text-align: left;
+  padding: 10px;
+}
+
+.table-soft td {
+  padding: 10px 14px;
+}
+
+.table-soft td:nth-of-type(1) {
+  width: 30%;
+}
+
+.table-soft td:nth-of-type(2) {
+  width: 30%;
+}
+
+.table-soft td:nth-of-type(3),
+.table-soft td:nth-of-type(4),
+.table-soft td:nth-of-type(5),
+.table-soft td:nth-of-type(6) {
+  width: 10%;
+  text-align: center;
+}
+
+.table-soft table tr {
+  border-width: 1px 0px;
+  border-style: dashed;
+  line-height: 30px;
+}
+
+.table-soft#table-01 table .table-title,
+.table-soft#table-08 table .table-title {
+  background-color: var(--red-soft);
+  color: var(--red);
+}
+
+.table-soft#table-01 table .column-header-cell,
+.table-soft#table-08 table .column-header-cell {
+  background-color: var(--red);
+  color: var(--black);
+}
+
+.table-soft#table-01 table,
+.table-soft#table-01 table tr,
+.table-soft#table-08 table,
+.table-soft#table-08 table tr {
+  border-color: var(--red);
+  background-color: var(--red-soft);
+}
+
+.table-soft#table-02 table .table-title,
+.table-soft#table-09 table .table-title {
+  background-color: var(--orange-soft);
+  color: var(--orange);
+}
+
+.table-soft#table-02 table .column-header-cell,
+.table-soft#table-09 table .column-header-cell {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+.table-soft#table-02 table,
+.table-soft#table-02 table tr,
+.table-soft#table-09 table,
+.table-soft#table-09 table tr {
+  border-color: var(--orange);
+  background-color: var(--orange-soft);
+}
+
+.table-soft#table-03 .table-title,
+.table-soft#table-10 .table-title {
+  background-color: var(--yellow-soft);
+  color: var(--yellow);
+}
+
+.table-soft#table-03 table .column-header-cell,
+.table-soft#table-10 table .column-header-cell {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+.table-soft#table-03 table,
+.table-soft#table-03 table tr,
+.table-soft#table-10 table,
+.table-soft#table-10 table tr {
+  border-color: var(--yellow);
+  background-color: var(--yellow-soft);
+}
+
+.table-soft#table-04 .table-title,
+.table-soft#table-11 .table-title {
+  background-color: var(--yellow-soft);
+  color: var(--green);
+}
+
+.table-soft#table-04 table .column-header-cell,
+.table-soft#table-11 table .column-header-cell {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+.table-soft#table-04 table,
+.table-soft#table-04 table tr,
+.table-soft#table-11 table,
+.table-soft#table-11 table tr {
+  border-color: var(--green);
+  background-color: var(--green-soft);
+}
+
+.table-soft#table-05 .table-title,
+.table-soft#table-12 .table-title {
+  background-color: var(--blue-soft);
+  color: var(--blue);
+}
+
+.table-soft#table-05 table .column-header-cell,
+.table-soft#table-12 table .column-header-cell {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+.table-soft#table-05 table,
+.table-soft#table-05 table tr,
+.table-soft#table-12 table,
+.table-soft#table-12 table tr {
+  border-color: var(--blue);
+  background-color: var(--blue-soft);
+}
+
+.table-soft#table-06 .table-title,
+.table-soft#table-13 .table-title {
+  background-color: var(--indigo-soft);
+  color: var(--indigo);
+}
+
+.table-soft#table-06 table .column-header-cell,
+.table-soft#table-13 table .column-header-cell {
+  background-color: var(--indigo);
+  color: var(--black);
+}
+
+.table-soft#table-06 table,
+.table-soft#table-06 table tr,
+.table-soft#table-13 table,
+.table-soft#table-13 table tr {
+  border-color: var(--indigo);
+  background-color: var(--indigo-soft);
+}
+
+.table-soft#table-07 .table-title {
+  background-color: var(--lavender-soft);
+  color: var(--lavender);
+}
+
+.table-soft#table-07 table .column-header-cell {
+  background-color: var(--lavender);
+  color: var(--black);
+}
+
+.table-soft#table-07 table,
+.table-soft#table-07 table tr {
+  border-color: var(--lavender);
+  background-color: var(--lavender-soft);
+}
+
+.tags {
+  padding: 6px;
+  border-radius: 25px;
+  margin: 10px auto;
+  line-height: 1rem;
+  text-align: center;
+}
+
+#table-01 .tags,
+#table-08 .tags,
+li#tags-01,
+li#tags-08 {
+  background-color: var(--red);
+  color: var(--black);
+}
+
+#table-02 .tags,
+#table-09 .tags,
+li#tags-02,
+li#tags-09 {
+  background-color: var(--orange);
+  color: var(--black);
+}
+
+#table-03 .tags,
+#table-10 .tags,
+li#tags-03,
+li#tags-10 {
+  background-color: var(--yellow);
+  color: var(--black);
+}
+
+#table-04 .tags,
+#table-11 .tags,
+li#tags-04,
+li#tags-11 {
+  background-color: var(--green);
+  color: var(--black);
+}
+
+#table-05 .tags,
+#table-12 .tags,
+li#tags-05,
+li#tags-12 {
+  background-color: var(--blue);
+  color: var(--black);
+}
+
+#table-06 .tags,
+#table-13 .tags,
+li#tags-06,
+li#tags-13 {
+  background-color: var(--indigo);
+  color: var(--black);
+}
+
+#table-07 .tags,
+li#tags-01,
+li#tags-07 {
+  background-color: var(--lavender);
+  color: var(--black);
+}
+
+.table-soft .material-icon {
+  font-size: 1.2rem;
+}
