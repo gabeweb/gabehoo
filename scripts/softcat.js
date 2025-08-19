@@ -508,6 +508,17 @@ const tableData = [
         ["#viewers"],
       ],
       [
+        "LibreCAD",
+        "Graphics",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/LibreCAD/LibreCAD" },
+        { name: "attribution", title: "Open Source" },
+        ["#editors"],
+      ],
+      [
         "Lunacy",
         "Graphics",
         {
@@ -1391,7 +1402,7 @@ const tableData = [
           url: "https://github.com/bitwarden/clients",
         },
         { name: "attribution monetization_on", title: "Open Source, Commercial" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "Bitwarden Authenticator",
@@ -1405,7 +1416,7 @@ const tableData = [
           url: "https://bitwarden.com/products/authenticator/",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#2fa-auth"],
       ],
       [
         "Emsisoft Emergency Kit",
@@ -1433,7 +1444,7 @@ const tableData = [
           url: "https://www.enpass.io/downloads/",
         },
         { name: "monetization_on", title: "Freemium" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "ESET Tools and Utilities",
@@ -1489,7 +1500,21 @@ const tableData = [
           url: "https://sourceforge.net/projects/keepass/",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
+      ],
+      [
+        "Keepass2Android",
+        "Security",
+        {
+          name: ["android"],
+          title: ["Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/PhilippC/keepass2android",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "KeePassDX",
@@ -1503,7 +1528,7 @@ const tableData = [
           url: "https://github.com/Kunzisoft/KeePassDX",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "KeePassXC",
@@ -1517,7 +1542,7 @@ const tableData = [
           url: "https://github.com/keepassxreboot/keepassxc",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "KeeWeb",
@@ -1531,7 +1556,7 @@ const tableData = [
           url: "https://github.com/keeweb/keeweb",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "Norton Power Eraser",
@@ -1559,7 +1584,7 @@ const tableData = [
           url: "https://github.com/pwsafe/pwsafe",
         },
         { name: "attribution monetization_on", title: "Open Source, Commercial" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "Proton Authenticator",
@@ -1573,7 +1598,7 @@ const tableData = [
           url: "https://proton.me/authenticator",
         },
         { name: "attribution", title: "Open Source" },
-        ["#password-manager"],
+        ["#2fa-auth"],
       ],
       [
         "Proton Pass",
@@ -1587,7 +1612,7 @@ const tableData = [
           url: "https://proton.me/pass",
         },
         { name: "attribution monetization_on", title: "Open Source, Commercial" },
-        ["#password-manager"],
+        ["#password-manager", "#2fa-auth"],
       ],
       [
         "Sophos Free Tools",
@@ -1602,6 +1627,20 @@ const tableData = [
         },
         { name: "monetization_on", title: "Freemium" },
         ["#anti-malware"],
+      ],
+      [
+        "Stratum",
+        "Security",
+        {
+          name: ["android"],
+          title: ["Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/stratumauth/app",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#2fa-auth"],
       ],
       [
         "Trellix Stinger",
