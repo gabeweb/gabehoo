@@ -873,6 +873,20 @@ const tableData = [
         ["#multimedia"],
       ],
       [
+        "scrcpy",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/Genymobile/scrcpy",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#mirroring"],
+      ],
+      [
         "SDK Platform Tools (adb)",
         "Mobile Phone",
         {
@@ -885,6 +899,34 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#debugging"],
+      ],
+      [
+        "sndcpy",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/rom1v/sndcpy",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#mirroring"],
+      ],
+      [
+        "Universal Android Debloater Next Generation",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#debloater"],
       ],
       [
         "UniversalAdbDriver",
