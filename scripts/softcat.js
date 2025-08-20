@@ -817,15 +817,85 @@ const tableData = [
     ],
     rows: [
       [
-        "Driver Store Explorer",
-        "Drivers",
+        "AdbFileManager",
+        "Mobile Phone",
         {
           name: ["desktop_windows"],
           title: ["Windows"],
         },
         {
           name: "GitHub",
-          url: "https://github.com/lostindark/DriverStoreExplorer",
+          url: "https://github.com/T0biasCZe/AdbFileManager",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#file-manager"],
+      ],
+      [
+        "Audio-Share",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_windows android"],
+          title: ["Linux, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/mkckr0/audio-share",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#multimedia"],
+      ],
+      [
+        "AudioRelay",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "Web",
+          url: "https://audiorelay.net/downloads",
+        },
+        { name: "monetization_on", title: "Freemium" },
+        ["#multimedia"],
+      ],
+      [
+        "Mousedroid",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_windows android"],
+          title: ["Linux, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/darusc/Mousedroid/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#multimedia"],
+      ],
+      [
+        "SDK Platform Tools (adb)",
+        "Mobile Phone",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://developer.android.com/tools/releases/platform-tools",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#debugging"],
+      ],
+      [
+        "UniversalAdbDriver",
+        "Mobile Phone",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/koush/UniversalAdbDriver",
         },
         { name: "attribution", title: "Open Source" },
         ["#drivers"],
@@ -1376,6 +1446,34 @@ const tableData = [
       "Tags",
     ],
     rows: [
+      [
+        "2FAS Auth",
+        "Security",
+        {
+          name: ["android phone_iphone"],
+          title: ["Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://2fas.com/auth/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#2fa-auth"],
+      ],
+      [
+        "2FAS Pass",
+        "Security",
+        {
+          name: ["android phone_iphone"],
+          title: ["Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://2fas.com/pass/",
+        },
+        { name: "attribution monetization_on", title: "Open Source, Freemium" },
+        ["#password-manager"],
+      ],
       [
         "Authme",
         "Security",
