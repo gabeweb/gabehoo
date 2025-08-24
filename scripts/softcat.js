@@ -802,6 +802,22 @@ const tableData = [
         { name: "monetization_on", title: "Freeware" },
         ["#messengers"],
       ],
+      [
+        "Zen Browser",
+        "Internet",
+        {
+          name: [
+            "flutter_dash desktop_mac desktop_windows",
+          ],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/zen-browser/desktop",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#internet-browsers"],
+      ],
     ],
   },
   {
@@ -957,6 +973,118 @@ const tableData = [
     ],
     rows: [
       [
+        "AIMP",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_windows android"],
+          title: ["Linux, Windows, Android"],
+        },
+        {
+          name: "Web",
+          url: "https://www.aimp.ru/?do=download",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#music-player"],
+      ],
+      [
+        "AnyBurn Free",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.anyburn.com/download.php",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#disc-burning"],
+      ],
+      [
+        "Audacious",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://audacious-media-player.org/download",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#music-player"],
+      ],
+      [
+        "Audacity",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/audacity/audacity/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#audio-editor"],
+      ],
+      [
+        "BurnAware Free",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.burnaware.com/download.html",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#disc-burning"],
+      ],
+      [
+        "CDBurnerXP",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.cdburnerxp.se/en/download",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#disc-burning"],
+      ],
+      [
+        "DirectX",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.microsoft.com/en-us/download/details.aspx?id=35",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#runtime"],
+      ],
+      [
+        "Exact Audio Copy",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.exactaudiocopy.de/",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#audio-grabber"],
+      ],
+      [
         "fre:ac",
         "Multimedia",
         {
@@ -983,6 +1111,48 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#equalizer"],
+      ],
+      [
+        "Harmonoid",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/harmonoid/harmonoid",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#music-player"],
+      ],
+      [
+        "HEVC Video Extensions",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://apps.microsoft.com/store/detail/hevc-video-extensions-from-device-manufacturer/9N4WGH0Z6VHQ?hl=en-us&gl=us",
+        },
+        { name: "monetization_on", title: "Commercial" },
+        ["#codecs"],
+      ],
+      [
+        "iTunes",
+        "Multimedia",
+        {
+          name: ["desktop_mac desktop_windows"],
+          title: ["macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.apple.com/itunes/",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#music-player"],
       ],
       [
         "K-Lite Codec Pack",
@@ -1027,6 +1197,48 @@ const tableData = [
         ["#video-player"],
       ],
       [
+        "MP3 Diags",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_windows"],
+          title: ["Linux, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/mciobanu/mp3diags",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#audio-validator"],
+      ],
+      [
+        "MP3 Database",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.bernd-leitenberger.de/mp3database.shtml",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#database"],
+      ],
+      [
+        "MP3val",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "SourceForge",
+          url: "https://sourceforge.net/projects/mp3val/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#audio-validator"],
+      ],
+      [
         "Mp3Tag",
         "Multimedia",
         {
@@ -1069,6 +1281,48 @@ const tableData = [
         ["#social"],
       ],
       [
+        "musikcube",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/clangen/musikcube",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#music-player"],
+      ],
+      [
+        "Qmmp",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://qmmp.ylsoftware.com/downloads.php",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#music-player"],
+      ],
+      [
+        "Small Player",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.igorware.com/small-player",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#music-player"],
+      ],
+      [
         "Tag Editor",
         "Multimedia",
         {
@@ -1106,6 +1360,20 @@ const tableData = [
         {
           name: "Web",
           url: "https://winamp.com/player",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#music-player"],
+      ],
+      [
+        "XMPlay",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://support.xmplay.com/",
         },
         { name: "monetization_on", title: "Freeware" },
         ["#music-player"],
@@ -1270,6 +1538,28 @@ const tableData = [
         { name: "GitHub", url: "https://github.com/MarkHopper24/barcodrod.io" },
         { name: "attribution", title: "Open Source" },
         ["#qr-codes"],
+      ],
+      [
+        "CherryTree",
+        "Productivity",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/giuspen/cherrytree" },
+        { name: "attribution", title: "Open Source" },
+        ["#note-taking"],
+      ],
+      [
+        "CopyQ",
+        "Productivity",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/hluk/CopyQ" },
+        { name: "attribution", title: "Open Source" },
+        ["#clipboard"],
       ],
       [
         "GnuCash",
