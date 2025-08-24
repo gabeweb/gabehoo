@@ -1113,6 +1113,34 @@ const tableData = [
         ["#equalizer"],
       ],
       [
+        "GifTuna",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/dudewheresmycode/GifTuna",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-converter"],
+      ],
+      [
+        "HandBrake",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/HandBrake/HandBrake",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-converter"],
+      ],
+      [
         "Harmonoid",
         "Multimedia",
         {
@@ -1195,6 +1223,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#video-player"],
+      ],
+      [
+        "MKVToolNix",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.bunkus.org/videotools/mkvtoolnix/downloads.html",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-converter"],
       ],
       [
         "MP3 Diags",
@@ -1295,6 +1337,20 @@ const tableData = [
         ["#music-player"],
       ],
       [
+        "OBS Studio",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/obsproject/obs-studio/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-editor"],
+      ],
+      [
         "Qmmp",
         "Multimedia",
         {
@@ -1323,6 +1379,34 @@ const tableData = [
         ["#music-player"],
       ],
       [
+        "SMPlayer",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/smplayer-dev/smplayer",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-player"],
+      ],
+      [
+        "Subtitle Edit",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/SubtitleEdit/subtitleedit/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#subtitle-editor"],
+      ],
+      [
         "Tag Editor",
         "Multimedia",
         {
@@ -1335,6 +1419,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#taggers"],
+      ],
+      [
+        "VLC",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://www.videolan.org/vlc/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#video-player"],
       ],
       [
         "WACUP",
