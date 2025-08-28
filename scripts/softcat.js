@@ -630,8 +630,8 @@ const tableData = [
           title: ["Windows"],
         },
         {
-          name: "GitHub",
-          url: "https://github.com/Eclipse-Community/r3dfox",
+          name: "Web",
+          url: "https://eclipse.cx/projects/r3dfox",
         },
         { name: "attribution", title: "Open Source" },
         ["#internet-browsers"],
@@ -1491,6 +1491,20 @@ const tableData = [
     ],
     rows: [
       [
+        "HTTP Toolkit",
+        "Networking",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://httptoolkit.com/",
+        },
+        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        ["#network-analyzer"],
+      ],
+      [
         "NetSpeedTray",
         "Networking",
         {
@@ -1500,6 +1514,48 @@ const tableData = [
         {
           name: "GitHub",
           url: "https://github.com/erez-c137/NetSpeedTray",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#network-monitor"],
+      ],
+      [
+        "Network Activity Indicator",
+        "Networking",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "SourceForge",
+          url: "https://sourceforge.net/projects/network-activity-indicator/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#network-monitor"],
+      ],
+      [
+        "Network Activity Indicator",
+        "Networking",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "SourceForge",
+          url: "https://sourceforge.net/projects/network-activity-indicator/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#network-monitor"],
+      ],
+      [
+        "OpenNetMeter",
+        "Networking",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/Ashfaaq18/OpenNetMeter",
         },
         { name: "attribution", title: "Open Source" },
         ["#network-monitor"],
@@ -1533,6 +1589,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#vpn"],
+      ],
+      [
+        "Wireless Network Watcher",
+        "Networking",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.nirsoft.net/utils/wireless_network_watcher.html",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#network-monitor"],
       ],
     ],
   },
@@ -2265,6 +2335,17 @@ const tableData = [
         { name: "GitHub", url: "https://github.com/ip7z/7zip" },
         { name: "attribution", title: "Open Source" },
         ["#file-manager"],
+      ],
+      [
+        "86Box",
+        "Utilities",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/86Box/86Box" },
+        { name: "attribution", title: "Open Source" },
+        ["#emulators"],
       ],
       [
         "Dark7zip for 7Zip",
