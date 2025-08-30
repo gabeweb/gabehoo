@@ -1351,6 +1351,20 @@ const tableData = [
         ["#video-editor"],
       ],
       [
+        "phiola",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_windows android"],
+          title: ["Linux, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/stsaz/phiola",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#audio-converter"],
+      ],
+      [
         "Qmmp",
         "Multimedia",
         {
