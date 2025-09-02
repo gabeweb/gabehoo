@@ -1505,6 +1505,20 @@ const tableData = [
     ],
     rows: [
       [
+        "Freegate",
+        "Networking",
+        {
+          name: ["desktop_windows android"],
+          title: ["Windows, Android"],
+        },
+        {
+          name: "Web",
+          url: "https://dongtaiwang.com/loc/phome_en.php",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#proxy"],
+      ],
+      [
         "HTTP Toolkit",
         "Networking",
         {
@@ -1517,6 +1531,20 @@ const tableData = [
         },
         { name: "attribution monetization_on", title: "Open Source, Commercial" },
         ["#network-analyzer"],
+      ],
+      [
+        "Internet Information Services (IIS) Express",
+        "Networking",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.microsoft.com/download/details.aspx?id=48264",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#servers"],
       ],
       [
         "NetSpeedTray",
@@ -1559,6 +1587,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#network-monitor"],
+      ],
+      [
+        "Ookla Speedtest",
+        "Networking",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://www.speedtest.net/apps",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#network-tester"],
       ],
       [
         "OpenNetMeter",
@@ -1633,6 +1675,146 @@ const tableData = [
     ],
     rows: [
       [
+        "BiglyBT",
+        "P2P",
+        {
+          name: ["android"],
+          title: ["Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/BiglySoftware/BiglyBT-Android",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#torrent"],
+      ],
+      [
+        "Dropbox",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://www.dropbox.com/install",
+        },
+        { name: "monetization_on", title: "Commercial" },
+        ["#synchronization"],
+      ],
+      [
+        "FileZilla",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://filezilla-project.org/download.php?show_all=1",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#ftp"],
+      ],
+      [
+        "LocalSend",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/localsend/localsend",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#file-sharing"],
+      ],
+      [
+        "MegaBasterd",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/tonikelope/megabasterd",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#file-sharing"],
+      ],
+      [
+        "OneDrive",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://www.microsoft.com/en-us/microsoft-365/onedrive/download",
+        },
+        { name: "monetization_on", title: "Commercial" },
+        ["#synchronization"],
+      ],
+      [
+        "qBittorrent",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.qbittorrent.org/download",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#torrent"],
+      ],
+      [
+        "Random Copy",
+        "P2P",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://bernd-leitenberger.de/randomcopy.shtml",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#synchronization"],
+      ],
+      [
+        "Random File Copier",
+        "P2P",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/pietje666/RandomFileCopier",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#synchronization"],
+      ],
+      [
+        "SyncFolders",
+        "P2P",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.syncfolders.elementfx.com/home.html",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#synchronization"],
+      ],
+      [
         "Syncthing",
         "P2P",
         {
@@ -1673,6 +1855,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#synchronization"],
+      ],
+      [
+        "WinSCP",
+        "P2P",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://winscp.net/eng/downloads.php",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#ftp"],
       ],
     ],
   },
@@ -2314,7 +2510,7 @@ const tableData = [
   },
   {
     id: "table-11",
-    title: "Themes",
+    title: "Theming",
     columns: [
       "Application",
       "Category",
@@ -2324,7 +2520,17 @@ const tableData = [
       "Tags",
     ],
     rows: [
-
+      [
+        "Mica For Everyone",
+        "Theming",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/MicaForEveryone/MicaForEveryone" },
+        { name: "attribution", title: "Open Source" },
+        ["#theming"],
+      ],
     ],
   },
   {
