@@ -165,6 +165,17 @@ const tableData = [
         ["#text-editor"],
       ],
       [
+        "Google Antigravity",
+        "Development",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "Web", url: "https://antigravity.google/download" },
+        { name: "attribution", title: "Open Source" },
+        ["#text-editor"],
+      ],
+      [
         "KompoZer",
         "Development",
         {
@@ -463,6 +474,17 @@ const tableData = [
       "Tags",
     ],
     rows: [
+      [
+        "Affinity",
+        "Graphics",
+        {
+          name: ["desktop_mac desktop_windows"],
+          title: ["macOS, Windows"],
+        },
+        { name: "Web", url: "https://www.affinity.studio/" },
+        { name: "monetization_on", title: "Freemium" },
+        ["#editors"],
+      ],
       [
         "Flameshot",
         "Graphics",
@@ -1433,6 +1455,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#taggers"],
+      ],
+      [
+        "Tenacity",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_windows"],
+          title: ["Linux, Windows"],
+        },
+        {
+          name: "Codeberg",
+          url: "https://codeberg.org/tenacityteam/tenacity/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#audio-editor"],
       ],
       [
         "VLC",
@@ -2651,6 +2687,17 @@ const tableData = [
     ],
     rows: [
       [
+        "AdGuard Wallet",
+        "Wallets",
+        {
+          name: ["desktop_mac desktop_windows android phone_iphone"],
+          title: ["macOS, Windows, Android, iOS"],
+        },
+        { name: "Web", url: "https://adguard-wallet.com/" },
+        { name: "monetization_on", title: "Freeware" },
+        ["#wallets"],
+      ],
+      [
         "BitPay",
         "Wallets",
         {
@@ -2699,7 +2746,7 @@ const tableData = [
         "Wallets",
         {
           name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
-          title: ["Linus, macOS, Windows, Android, iOS"],
+          title: ["Linux, macOS, Windows, Android, iOS"],
         },
         { name: "Web", url: "https://mymonero.com/" },
         { name: "attribution", title: "Open Source" },
