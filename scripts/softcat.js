@@ -2049,6 +2049,25 @@ const tableData = [
         ["#scanners"],
       ],
       [
+        "Notanic",
+        "Productivity",
+        {
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/oskarkraemer/notanic-releases",
+        },
+        {
+          name: "monetization_on",
+          title: "Freemium",
+        },
+        ["#note-taking"],
+      ],
+      [
         "NotesHub",
         "Productivity",
         {
