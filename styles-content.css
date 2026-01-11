@@ -517,11 +517,12 @@ section#section-01 .breaking-news h4 span {
 section#section-01 .breaking-news h4 {
   background-image: linear-gradient(
     -45deg,
-    var(--indigo),
-    var(--green),
-    var(--orange),
-    var(--green),
-    var(--indigo)
+    var(--blue),
+    var(--white),
+    var(--red),
+    var(--blue),
+    var(--white),
+    var(--red)
   );
   background-size: 200% 100%;
   animation: gradient-animation 2s ease infinite alternate;
@@ -530,11 +531,11 @@ section#section-01 .breaking-news h4 {
 
 @keyframes gradient-animation {
   0% {
-    background-position: 0% 50%;
+    background-position: 100% 100%;
   }
 
   100% {
-    background-position: 100% 50%;
+    background-position: 0% -100%;
   }
 }
 
@@ -575,6 +576,9 @@ section#section-01 .funny h4 {
     var(--green),
     var(--orange)
   );
+  background-size: 200% 100%;
+  border-color: var(--green);
+  animation: gradient-animation 2s ease infinite alternate;
   border-color: var(--green);
 }
 
