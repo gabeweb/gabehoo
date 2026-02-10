@@ -2164,8 +2164,10 @@ div#nowPlaying-container {
   margin: auto;
 }
 
-span#playingInfo {
-	width: 100%;
+div#playingInfo {
+	display: block;
+	width: fit-content;
+	margin: auto;
 }
 
 .playing-info {
