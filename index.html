@@ -107,11 +107,53 @@ Author: gabeweb(github.con/gabeweb) -->
           </a>
         </div>
       </header>
+
+      <style>
+        .animated-cursor {
+          caret-color: transparent;
+          animation: rainbow 8s infinite linear;
+        }
+
+        .animated-box {
+          outline: none;
+          animation: rainbow 8s infinite linear;
+        }
+
+        @keyframes rainbow {
+
+          0%,
+          100% {
+            caret-color: var(--blue);
+            border-color: var(--blue);
+          }
+
+          20% {
+            caret-color: var(--green);
+            border-color: var(--green);
+          }
+
+          40% {
+            caret-color: var(--yellow);
+            border-color: var(--yellow);
+          }
+
+          60% {
+            caret-color: var(--red);
+            border-color: var(--red);
+          }
+
+          80% {
+            caret-color: var(--purple);
+            border-color: var(--purple);
+          }
+        }
+      </style>
       <div class="sub-header">
         <div id="search-container">
           <div id="search">
             <form
               id="searchbar"
+              class="animated-box"
               action="https://duckduckgo.com/?search"
               autocomplete="off"
               oninput="suggest()"
@@ -121,7 +163,9 @@ Author: gabeweb(github.con/gabeweb) -->
               <span id="search-favicon"></span>
               <input
                 autofocus
+                type="text"
                 id="searchInput"
+                class="animated-cursor"
                 spellcheck="false"
                 name="q"
                 placeholder="Search the web"
@@ -2698,7 +2742,11 @@ Author: gabeweb(github.con/gabeweb) -->
                   >
                 </li>
                 <li>
-                  <a href="https://famelack.com/" title="Famelack" target="_blank">
+                  <a
+                    href="https://famelack.com/"
+                    title="Famelack"
+                    target="_blank"
+                  >
                     Famelack
                   </a>
                 </li>
@@ -4388,9 +4436,14 @@ Author: gabeweb(github.con/gabeweb) -->
               </ul>
               <h4>General</h4>
               <ul>
-              <li>
-              <a href="https://academia.edu" title="Academia" target="_blank">Academia</a>
-              </li>
+                <li>
+                  <a
+                    href="https://academia.edu"
+                    title="Academia"
+                    target="_blank"
+                    >Academia</a
+                  >
+                </li>
                 <li>
                   <a
                     href="https://discmaster.textfiles.com/"
