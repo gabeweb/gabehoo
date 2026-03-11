@@ -181,6 +181,8 @@
   --fontHeader: Monocraft, monospace;
   --fontIcons: MaterialIcons;
   --invert: 1;
+  caret-color: transparent;
+  animation: rainbow 5s infinite linear;
 }
 
 .material-icon {
@@ -1888,16 +1890,14 @@ span#time-date {
 }
 
 #dottime {
-  animation-name: blink;
-  animation-duration: 1s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-delay: -0.5s;
-  -webkit-animation-name: blink;
-  -webkit-animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in;
-  -webkit-animation-iteration-count: infinite;
-  -webkit-animation-delay: -0.5s;
+  margin: 2px;
+  animation:
+    blink 1s ease-in -0.5s infinite,
+    rainbow-text 0.5s ease-in -0.5s infinite;
+
+  -webkit-animation:
+    blink 1s ease-in -0.5s infinite,
+    rainbow-text 0.5s ease-in -0.5s infinite;
 }
 
 #hourly-chime-button {

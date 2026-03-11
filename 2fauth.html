@@ -1,380 +1,377 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/ico" href="./favicon.ico" />
-    <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./favicon.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <title>2FA Code Generator</title>
-    <link rel="stylesheet" href="styles-grids.css" />
-    <link rel="stylesheet" href="styles-colors.css" />
-    <link rel="stylesheet" href="styles-content.css" />
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/ico" href="./favicon.ico" />
+  <link rel="alternate icon" class="js-site-favicon" type="image/png" href="./favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
 
-    <script type="text/javascript" src="scripts/jquery.min.js"></script>
-    <script type="text/javascript" src="scripts/sha.js"></script>
+  <title>2FA Code Generator</title>
+  <link rel="stylesheet" href="styles-grids.css" />
+  <link rel="stylesheet" href="styles-colors.css" />
+  <link rel="stylesheet" href="styles-content.css" />
 
-    <style>
-      .container {
-        gap: 30px;
-        width: 100%;
-        max-width: 1120px;
-        margin: auto;
-        padding: 20px 20px 0px 20px;
-        display: flex;
-        flex-direction: column;
-      }
+  <script type="text/javascript" src="scripts/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/sha.js"></script>
 
-      .wrapper-pwd-gen {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        position: relative;
-        width: 100%;
-      }
+  <style>
+    .container {
+      gap: 30px;
+      width: 100%;
+      max-width: 1120px;
+      margin: auto;
+      padding: 20px 20px 0px 20px;
+      display: flex;
+      flex-direction: column;
+    }
 
-      div.input input,
-      div.input div {
-        font-family: var(--fontBody);
-        font-size: 1rem;
-        border-width: 1px;
-        border-style: solid;
-        background-color: transparent;
-        color: var(--text-color);
-        padding: 6px;
-        margin: 10px auto;
-      }
+    .wrapper-pwd-gen {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      position: relative;
+      width: 100%;
+    }
 
-      div.input #otp {
-        font-size: 180%;
-        border-width: 8px;
-        border-color: transparent;
-        color: var(--green);
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        text-align: center;
-        font-weight: bold;
-        letter-spacing: 6px;
-        position: relative;
-        display: inline-flex;
-      }
+    div.input input,
+    div.input div {
+      font-family: var(--fontBody);
+      font-size: 1rem;
+      border-width: 1px;
+      border-style: solid;
+      background-color: transparent;
+      color: var(--text-color);
+      padding: 6px;
+      margin: 10px auto;
+    }
 
-      div #otpTimer {
-        display: inline-block;
-        position: absolute;
-        z-index: 1;
-        top: 180px;
-      }
+    div.input #otp {
+      font-size: 180%;
+      border-width: 8px;
+      border-color: transparent;
+      color: var(--green);
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: 6px;
+      position: relative;
+      display: inline-flex;
+    }
 
-      div #updatingIn {
-        font-size: 160%;
-        border-color: transparent;
-        border-width: 6px;
-        background-color: var(--bg-color);
-        color: var(--red);
-        width: 84px;
-        height: 84px;
-        border-radius: 50%;
-        text-align: center;
-        align-content: center;
-        display: inline-grid;
-      }
+    div #otpTimer {
+      display: inline-block;
+      position: absolute;
+      z-index: 1;
+      top: 180px;
+    }
 
-      span.borderOtp {
-        z-index: 0;
-        position: absolute;
-        border-style: solid double dashed;
-        border-width: 10px;
-        display: inline-flex;
-        top: 42px;
-        width: 200px;
-        height: 200px;
-        border-radius: 50%;
-        display: inline-grid;
-        animation: counter-rotation;
-        animation-duration: 15s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-delay: -1s;
-      }
+    div #updatingIn {
+      font-size: 160%;
+      border-color: transparent;
+      border-width: 6px;
+      background-color: var(--bg-color);
+      color: var(--red);
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      text-align: center;
+      align-content: center;
+      display: inline-grid;
+    }
 
-      span.borderTimer {
-        z-index: 99;
-        position: absolute;
-        border-style: double dashed solid;
-        border-width: 6px;
-        top: 8px;
-        width: 84px;
-        height: 84px;
-        border-radius: 50%;
-        display: inline-grid;
-        animation: counter-rotation;
-        animation-duration: 30s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
-        animation-delay: 0s;
-      }
+    span.borderOtp {
+      z-index: 0;
+      position: absolute;
+      border-style: solid double dashed;
+      border-width: 10px;
+      display: inline-flex;
+      top: 42px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      display: inline-grid;
+      animation: counter-rotation;
+      animation-duration: 15s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-delay: -1s;
+    }
 
-      @keyframes counter-rotation {
-        0% {
-          transform: rotate(0deg);
-          border-color: var(--blue);
-        }
+    span.borderTimer {
+      z-index: 99;
+      position: absolute;
+      border-style: double dashed solid;
+      border-width: 6px;
+      top: 8px;
+      width: 84px;
+      height: 84px;
+      border-radius: 50%;
+      display: inline-grid;
+      animation: counter-rotation;
+      animation-duration: 30s;
+      animation-iteration-count: infinite;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+    }
 
-        25% {
-          border-color: var(--yellow);
-        }
-
-        50% {
-          border-color: var(--orange);
-        }
-
-        75% {
-          border-color: var(--red);
-        }
-
-        100% {
-          transform: rotate(360deg);
-          border-color: var(--blue);
-        }
-      }
-
-      .section-secret {
-        position: relative;
-        display: inline-block;
-        width: 80%;
-        max-width: 400px;
-        margin: auto;
-      }
-
-      .section-secret input::placeholder {
-        font-size: 0.8rem;
-      }
-
-      div.input #secret {
-        border-style: dashed;
+    @keyframes counter-rotation {
+      0% {
+        transform: rotate(0deg);
         border-color: var(--blue);
-        color: var(--blue);
-        text-align: center;
-        padding: 10px 4px 10px 4px;
       }
 
-      div#codeData {
-        width: 100%;
-        max-width: 500px;
-        margin: auto;
-        display: inline-grid;
-        gap: 20px;
-        overflow: hidden;
-        overflow-wrap: break-all;
-        padding: 4px;
-        font-size: 80%;
-        border-width: 1px;
-        border-style: dashed;
-        border-color: var(--article-border-color);
+      25% {
+        border-color: var(--yellow);
       }
 
-      div#codeData div {
-        color: var(--article-border-color);
+      50% {
+        border-color: var(--orange);
       }
 
-      div#codeData label {
-        font-weight: bold;
+      75% {
+        border-color: var(--red);
       }
 
-      #hmac .label {
-        display: inline-block;
-        padding: 2px 6px 3px;
+      100% {
+        transform: rotate(360deg);
+        border-color: var(--blue);
       }
+    }
 
-      .label-primary {
-        color: var(--blue);
-      }
+    .section-secret {
+      position: relative;
+      display: inline-block;
+      width: 80%;
+      max-width: 400px;
+      margin: auto;
+    }
 
-      footer {
-        font-size: 80%;
-        text-align: center;
-        padding: 10px;
-      }
-    </style>
-  </head>
+    .section-secret input::placeholder {
+      font-size: 0.8rem;
+    }
 
-  <body>
-    <div class="container fade-in">
-      <h2>2FA Code Generator</h2>
-      <h3>Generate one-time passwords locally on your device, not online.</h3>
-      <div class="wrapper-pwd-gen">
-        <section class="section-otp">
-          <label>One-time Password</label>
-          <div class="input">
-            <span class="borderOtp"></span>
-            <input readonly id="otp" class="text3style" value="" />
-          </div>
-          <div class="input" id="otpTimer">
-            <span class="borderTimer"></span>
-            <div id="updatingIn"></div>
-          </div>
-        </section>
+    div.input #secret {
+      border-style: dashed;
+      border-color: var(--blue);
+      color: var(--blue);
+      text-align: center;
+      padding: 10px 4px 10px 4px;
+    }
 
-        <section class="section-secret">
-          <label for="secret">Secret (base32)</label>
-          <div class="input">
-            <input
-              type="text"
-              id="secret"
-              class="text2style"
-              placeholder="Enter your secret key"
-            />
-          </div>
-        </section>
+    div#codeData {
+      width: 100%;
+      max-width: 500px;
+      margin: auto;
+      display: inline-grid;
+      gap: 20px;
+      overflow: hidden;
+      overflow-wrap: break-all;
+      padding: 4px;
+      font-size: 80%;
+      border-width: 1px;
+      border-style: dashed;
+      border-color: var(--article-border-color);
+    }
 
-        <!-- /clearfix -->
-        <div id="codeData">
-          <div class="section-hex">
-            <label>Secret (hex)</label>
-            <div>
-              <span class="label label-default" id="secretHex"></span>
-              <span id="secretHexLength"></span>
-            </div>
-          </div>
+    div#codeData div {
+      color: var(--article-border-color);
+    }
 
-          <div class="section-unix">
-            <label>Unix epoch div 30 (padded hex)</label>
-            <div>
-              <span class="label label-default" id="epoch"></span>
-            </div>
-          </div>
+    div#codeData label {
+      font-weight: bold;
+    }
 
-          <div class="section-hmac">
-            <label>HMAC(secret, time)</label>
-            <div id="hmac"></div>
+    #hmac .label {
+      display: inline-block;
+      padding: 2px 6px 3px;
+    }
+
+    .label-primary {
+      color: var(--blue);
+      animation: rainbow-text 5s infinite linear;
+    }
+
+    footer {
+      font-size: 80%;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container fade-in">
+    <h2>2FA Code Generator</h2>
+    <h3>Generate one-time passwords locally on your device, not online.</h3>
+    <div class="wrapper-pwd-gen">
+      <section class="section-otp">
+        <label>One-time Password</label>
+        <div class="input">
+          <span class="borderOtp"></span>
+          <input readonly id="otp" class="text3style" value="" />
+        </div>
+        <div class="input" id="otpTimer">
+          <span class="borderTimer"></span>
+          <div id="updatingIn"></div>
+        </div>
+      </section>
+
+      <section class="section-secret">
+        <label for="secret">Secret (base32)</label>
+        <div class="input">
+          <input type="text" id="secret" class="text2style animated-box" placeholder="Enter your secret key" />
+        </div>
+      </section>
+
+      <!-- /clearfix -->
+      <div id="codeData">
+        <div class="section-hex">
+          <label>Secret (hex)</label>
+          <div>
+            <span class="label label-default" id="secretHex"></span>
+            <span id="secretHexLength"></span>
           </div>
         </div>
-        <p id="small-print">
-          <strong>Warning:</strong> This 2FA code generator
-          <strong>does not store or transmit</strong>
-          the generated data.
-        </p>
-        <p>Try the <a href="passgen.html" title="Batch Passwords Generator" target="_blank">Batch Passwords Generator</a></p>
+
+        <div class="section-unix">
+          <label>Unix epoch div 30 (padded hex)</label>
+          <div>
+            <span class="label label-default" id="epoch"></span>
+          </div>
+        </div>
+
+        <div class="section-hmac">
+          <label>HMAC(secret, time)</label>
+          <div id="hmac"></div>
+        </div>
       </div>
-      <footer>
-        This 2FA code generator is based on
-        <a href="https://github.com/iamyuthan/2FA-Solver" target="_blank"
-          >2FA-Solver</a
-        >
-        by <a href="https://github.com/iamyuthan" target="_blank">iamyuthan</a>.
-      </footer>
+      <p id="small-print">
+        <strong>Warning:</strong> This 2FA code generator
+        <strong>does not store or transmit</strong>
+        the generated data.
+      </p>
+      <p>Try the <a href="passgen.html" title="Batch Passwords Generator" target="_blank">Batch Passwords Generator</a>
+      </p>
     </div>
-    <!--
+    <footer>
+      This 2FA code generator is based on
+      <a href="https://github.com/iamyuthan/2FA-Solver" target="_blank">2FA-Solver</a>
+      by <a href="https://github.com/iamyuthan" target="_blank">iamyuthan</a>.
+    </footer>
+  </div>
+  <!--
 		@author - Russau
 	-->
 
-    <script type="text/javascript">
-      //<![CDATA[
+  <script type="text/javascript">
+    //<![CDATA[
 
-      function dec2hex(s) {
-        return (s < 15.5 ? "0" : "") + Math.round(s).toString(16);
-      }
-      function hex2dec(s) {
-        return parseInt(s, 16);
-      }
+    function dec2hex(s) {
+      return (s < 15.5 ? "0" : "") + Math.round(s).toString(16);
+    }
+    function hex2dec(s) {
+      return parseInt(s, 16);
+    }
 
-      function base32tohex(base32) {
-        var base32chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
-        var bits = "";
-        var hex = "";
+    function base32tohex(base32) {
+      var base32chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ234567";
+      var bits = "";
+      var hex = "";
 
-        for (var i = 0; i < base32.length; i++) {
-          var val = base32chars.indexOf(base32.charAt(i).toUpperCase());
-          bits += leftpad(val.toString(2), 5, "0");
-        }
-
-        for (var i = 0; i + 4 <= bits.length; i += 4) {
-          var chunk = bits.substr(i, 4);
-          hex = hex + parseInt(chunk, 2).toString(16);
-        }
-        return hex;
+      for (var i = 0; i < base32.length; i++) {
+        var val = base32chars.indexOf(base32.charAt(i).toUpperCase());
+        bits += leftpad(val.toString(2), 5, "0");
       }
 
-      function leftpad(str, len, pad) {
-        if (len + 1 >= str.length) {
-          str = Array(len + 1 - str.length).join(pad) + str;
-        }
-        return str;
+      for (var i = 0; i + 4 <= bits.length; i += 4) {
+        var chunk = bits.substr(i, 4);
+        hex = hex + parseInt(chunk, 2).toString(16);
       }
+      return hex;
+    }
 
-      function updateOtp() {
-        var key = base32tohex($("#secret").val());
-        var epoch = Math.round(new Date().getTime() / 1000.0);
-        var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
+    function leftpad(str, len, pad) {
+      if (len + 1 >= str.length) {
+        str = Array(len + 1 - str.length).join(pad) + str;
+      }
+      return str;
+    }
 
-        // updated for jsSHA v2.0.0 - http://caligatio.github.io/jsSHA/
-        var shaObj = new jsSHA("SHA-1", "HEX");
-        shaObj.setHMACKey(key, "HEX");
-        shaObj.update(time);
-        var hmac = shaObj.getHMAC("HEX");
+    function updateOtp() {
+      var key = base32tohex($("#secret").val());
+      var epoch = Math.round(new Date().getTime() / 1000.0);
+      var time = leftpad(dec2hex(Math.floor(epoch / 30)), 16, "0");
 
-        $("#secretHex").text(key);
-        $("#secretHexLength").text(key.length * 4 + " bits");
-        $("#epoch").text(time);
-        $("#hmac").empty();
+      // updated for jsSHA v2.0.0 - http://caligatio.github.io/jsSHA/
+      var shaObj = new jsSHA("SHA-1", "HEX");
+      shaObj.setHMACKey(key, "HEX");
+      shaObj.update(time);
+      var hmac = shaObj.getHMAC("HEX");
 
-        if (hmac == "KEY MUST BE IN BYTE INCREMENTS") {
+      $("#secretHex").text(key);
+      $("#secretHexLength").text(key.length * 4 + " bits");
+      $("#epoch").text(time);
+      $("#hmac").empty();
+
+      if (hmac == "KEY MUST BE IN BYTE INCREMENTS") {
+        $("#hmac").append(
+          $("<span/>").addClass("label important").append(hmac)
+        );
+      } else {
+        var offset = hex2dec(hmac.substring(hmac.length - 1));
+        var part1 = hmac.substr(0, offset * 2);
+        var part2 = hmac.substr(offset * 2, 8);
+        var part3 = hmac.substr(offset * 2 + 8, hmac.length - offset);
+        if (part1.length > 0)
           $("#hmac").append(
-            $("<span/>").addClass("label important").append(hmac)
+            $("<span/>").addClass("label label-default").append(part1)
           );
-        } else {
-          var offset = hex2dec(hmac.substring(hmac.length - 1));
-          var part1 = hmac.substr(0, offset * 2);
-          var part2 = hmac.substr(offset * 2, 8);
-          var part3 = hmac.substr(offset * 2 + 8, hmac.length - offset);
-          if (part1.length > 0)
-            $("#hmac").append(
-              $("<span/>").addClass("label label-default").append(part1)
-            );
+        $("#hmac").append(
+          $("<span/>").addClass("label label-primary").append(part2)
+        );
+        if (part3.length > 0)
           $("#hmac").append(
-            $("<span/>").addClass("label label-primary").append(part2)
+            $("<span/>").addClass("label label-default").append(part3)
           );
-          if (part3.length > 0)
-            $("#hmac").append(
-              $("<span/>").addClass("label label-default").append(part3)
-            );
-        }
-
-        var otp =
-          (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec("7fffffff")) + "";
-        otp = otp.substr(otp.length - 6, 6);
-
-        $("#otp").val(otp);
       }
 
-      function timer() {
-        var epoch = Math.round(new Date().getTime() / 1000.0);
-        var sect = " secs";
-        var countDown = 30 - (epoch % 30);
-        if (epoch % 30 == 0) updateOtp();
-        $("#updatingIn").text(countDown.toString().padStart(2, "0"));
-      }
+      var otp =
+        (hex2dec(hmac.substr(offset * 2, 8)) & hex2dec("7fffffff")) + "";
+      otp = otp.substr(otp.length - 6, 6);
 
-      $(function () {
+      $("#otp").val(otp);
+    }
+
+    function timer() {
+      var epoch = Math.round(new Date().getTime() / 1000.0);
+      var sect = " secs";
+      var countDown = 30 - (epoch % 30);
+      if (epoch % 30 == 0) updateOtp();
+      $("#updatingIn").text(countDown.toString().padStart(2, "0"));
+    }
+
+    $(function () {
+      updateOtp();
+
+      $("#update").click(function (event) {
         updateOtp();
-
-        $("#update").click(function (event) {
-          updateOtp();
-          event.preventDefault();
-        });
-
-        $("#secret").keyup(function () {
-          updateOtp();
-        });
-
-        setInterval(timer, 1000);
+        event.preventDefault();
       });
 
-      //]]>
-    </script>
-  </body>
+      $("#secret").keyup(function () {
+        updateOtp();
+      });
+
+      setInterval(timer, 1000);
+    });
+
+    //]]>
+  </script>
+</body>
+
 </html>
