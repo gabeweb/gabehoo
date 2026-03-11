@@ -109,44 +109,6 @@ Author: gabeweb(github.con/gabeweb) -->
       </header>
 
       <style>
-        .animated-cursor {
-          caret-color: transparent;
-          animation: rainbow 8s infinite linear;
-        }
-
-        .animated-box {
-          outline: none;
-          animation: rainbow 8s infinite linear;
-        }
-
-        @keyframes rainbow {
-
-          0%,
-          100% {
-            caret-color: var(--blue);
-            border-color: var(--blue);
-          }
-
-          20% {
-            caret-color: var(--green);
-            border-color: var(--green);
-          }
-
-          40% {
-            caret-color: var(--yellow);
-            border-color: var(--yellow);
-          }
-
-          60% {
-            caret-color: var(--red);
-            border-color: var(--red);
-          }
-
-          80% {
-            caret-color: var(--purple);
-            border-color: var(--purple);
-          }
-        }
       </style>
       <div class="sub-header">
         <div id="search-container">
@@ -182,7 +144,7 @@ Author: gabeweb(github.con/gabeweb) -->
               <button
                 id="search-button"
                 onclick="search()"
-                class="material-icon"
+                class="material-icon animated-cursor"
                 title="Search"
               >
                 search
