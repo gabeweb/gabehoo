@@ -176,6 +176,17 @@ const tableData = [
         ["#text-editor"],
       ],
       [
+        "JSONEdit",
+        "Development",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "Web", url: "https://tomeko.net/software/JSONedit/" },
+        { name: "monetization_on", title: "Freeware" },
+        ["#text-editor"],
+      ],
+      [
         "KompoZer",
         "Development",
         {
@@ -208,6 +219,17 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/lite-xl/lite-xl" },
+        { name: "attribution", title: "Open Source" },
+        ["#text-editor"],
+      ],
+      [
+        "Markpad",
+        "Development",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/alecdotdev/Markpad" },
         { name: "attribution", title: "Open Source" },
         ["#text-editor"],
       ],
@@ -1205,6 +1227,20 @@ const tableData = [
         ["#music-player"],
       ],
       [
+        "JustScrobble (for Winamp)",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.blackcoder.de/changelog-justscrobble.html",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#social #scrobbler"],
+      ],
+      [
         "K-Lite Codec Pack",
         "Multimedia",
         {
@@ -1230,7 +1266,7 @@ const tableData = [
           url: "https://www.last.fm/about/trackmymusic",
         },
         { name: "monetization_on", title: "Freeware" },
-        ["#social"],
+        ["#social #scrobbler"],
       ],
       [
         "Media Player Classic - Home Cinema",
@@ -1540,6 +1576,20 @@ const tableData = [
       "Tags",
     ],
     rows: [
+      [
+        "Amnezia",
+        "Networking",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows android"],
+          title: ["Linux, macOS, Windows, Android"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/amnezia-vpn/amnezia-client",
+        },
+        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        ["#vpn"],
+      ],
       [
         "Freegate",
         "Networking",
@@ -2506,20 +2556,6 @@ const tableData = [
         ["#2fa-auth"],
       ],
       [
-        "Trellix Stinger",
-        "Security",
-        {
-          name: ["desktop_windows"],
-          title: ["Windows"],
-        },
-        {
-          name: "Web",
-          url: "https://www.trellix.com/downloads/free-tools/stinger/",
-        },
-        { name: "monetization_on", title: "Freeware" },
-        ["#anti-malware"],
-      ],
-      [
         "Trend Micro Free Tools",
         "Security",
         {
@@ -2648,6 +2684,17 @@ const tableData = [
         ["#drivers"],
       ],
       [
+        "FancyZones (Custom Standalone",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/rolandas-rimkus/FancyZones" },
+        { name: "attribution", title: "Open Source" },
+        ["#tweaks"],
+      ],
+      [
         "Fastfetch",
         "Utilities",
         {
@@ -2678,6 +2725,17 @@ const tableData = [
         },
         { name: "GitHub", url: "https://github.com/microsoft/PowerToys" },
         { name: "attribution", title: "Open Source" },
+        ["#tweaks"],
+      ],
+      [
+        "Window Centering Helper",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "Web", url: "https://kamilszymborski.github.io/" },
+        { name: "attribution monetization_on", title: "Open Source, Freeware" },
         ["#tweaks"],
       ],
       [
