@@ -543,6 +543,32 @@ section#section-01 .breaking-news a:active {
   background-color: var(--indigo) !important;
 }
 
+section#section-01 .comictive {
+  background-color: var(--black-soft);
+  border: 4px double var(--blue);
+  padding: 10px;
+}
+
+section#section-01 .comictive h4 span,
+section#section-01 .comictive h4 {
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+section#section-01 .comictive li {
+  border-color: var(--blue) !important;
+}
+
+section#section-01 .comictive a {
+  color: var(--blue) !important;
+}
+
+section#section-01 .comictive a:hover,
+section#section-01 .comictive a:active {
+  color: var(--black) !important;
+  background-color: var(--blue) !important;
+}
+
 section#section-01 .funny {
   background-color: var(--black-soft) !important;
   border: 4px double;
@@ -590,28 +616,28 @@ section#section-01 .funny a:active {
 
 section#section-01 .sportive {
   background-color: var(--black-soft);
-  border: 4px double var(--green);
+  border: 4px double var(--red);
   padding: 10px;
 }
 
 section#section-01 .sportive h4 span,
 section#section-01 .sportive h4 {
-  background-color: var(--green);
-  border-color: var(--green);
+  background-color: var(--red);
+  border-color: var(--red);
 }
 
 section#section-01 .sportive li {
-  border-color: var(--green) !important;
+  border-color: var(--red) !important;
 }
 
 section#section-01 .sportive a {
-  color: var(--green) !important;
+  color: var(--red) !important;
 }
 
 section#section-01 .sportive a:hover,
 section#section-01 .sportive a:active {
   color: var(--black) !important;
-  background-color: var(--green) !important;
+  background-color: var(--red) !important;
 }
 
 /* sections */
