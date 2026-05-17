@@ -224,8 +224,8 @@
 
 body {
   font-family: var(--fontBody);
-  font-size: 0.9em;
-  line-height: 1.5;
+  font-size: 0.8em;
+  line-height: 1.4;
   color: var(--fg-color);
   background: var(--bg-color);
 }
@@ -652,17 +652,17 @@ header,
 div#search-container,
 section.section,
 section.quote {
-  border-width: 1px;
+  border-width: 1px 4px 4px 1px;
   border-style: solid;
-  outline-width: 8px;
+  /*outline-width: 8px;
   outline-style: solid;
-  outline-color: var(--bg-color);
+  outline-color: var(--bg-color);*/
 }
 
 header {
   background-color: var(--green-soft);
   border-color: var(--green);
-  box-shadow: 12px 12px var(--green);
+  /*box-shadow: 12px 12px var(--green);*/
 }
 
 /* Header Title Animation */
@@ -751,9 +751,9 @@ section[id*="section-"] h4 {
 .section#section-00 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
-  box-shadow: 12px 12px var(--blue);
+  /*box-shadow: 12px 12px var(--blue);*/
   width: 100%;
-  max-width: 720px;
+  max-width: 700px;
   margin: auto;
 }
 
@@ -880,7 +880,7 @@ section[id*="section-"] h4 span {
 .section#section-01 {
   background-color: var(--orange-soft);
   border-color: var(--orange);
-  box-shadow: 12px 12px var(--orange);
+  /*box-shadow: 12px 12px var(--orange);*/
 }
 
 section#section-01 h3 {
@@ -909,7 +909,7 @@ section#section-01 a:active {
 section#section-02 {
   background-color: var(--yellow-soft);
   border-color: var(--yellow);
-  box-shadow: 12px 12px var(--yellow);
+  /*box-shadow: 12px 12px var(--yellow);*/
 }
 
 section#section-02 h3 {
@@ -938,7 +938,7 @@ section#section-02 a:active {
 section#section-03 {
   background-color: var(--green-soft);
   border-color: var(--green);
-  box-shadow: 12px 12px var(--green);
+  /*box-shadow: 12px 12px var(--green);*/
 }
 
 section#section-03 h3 {
@@ -967,7 +967,7 @@ section#section-03 a:active {
 section#section-04 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
-  box-shadow: 12px 12px var(--blue);
+  /*box-shadow: 12px 12px var(--blue);*/
 }
 
 section#section-04 h3 {
@@ -996,7 +996,7 @@ section#section-04 a:active {
 section#section-05 {
   background-color: var(--indigo-soft);
   border-color: var(--indigo);
-  box-shadow: 12px 12px var(--indigo);
+  /*box-shadow: 12px 12px var(--indigo);*/
 }
 
 section#section-05 h3 {
@@ -1025,7 +1025,7 @@ section#section-05 a:active {
 section#section-06 {
   background-color: var(--violet-soft);
   border-color: var(--violet);
-  box-shadow: 12px 12px var(--violet);
+  /*box-shadow: 12px 12px var(--violet);*/
 }
 
 section#section-06 h3 {
@@ -1054,7 +1054,7 @@ section#section-06 a:active {
 section#section-07 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
-  box-shadow: 12px 12px var(--blue);
+  /*box-shadow: 12px 12px var(--blue);*/
 }
 
 section#section-07 h3 {
@@ -1171,7 +1171,7 @@ ul#sysinfo {
 
 div[class*="sidebox"]:not([class="sidebox-container"]) {
   padding: 4px 8px;
-  border-width: 1px 1px 1px 1px;
+  border-width: 1px 4px 4px 1px;
   border-style: solid;
   outline-width: 8px;
   outline-style: solid;
@@ -1187,7 +1187,7 @@ div[id*="sidebox-header"] {
 div.sidebox-00 {
   background-color: var(--red-soft);
   border-color: var(--red);
-  box-shadow: 12px 12px var(--red);
+  /*box-shadow: 12px 12px var(--red);*/
 }
 
 div#sidebox-header-00 {
@@ -1281,14 +1281,14 @@ div#sidebox-content-00 a:active {
 div#ai-box.sidebox-01 {
   background-color: var(--black-soft);
   padding: 4px 8px;
-  border-width: 1px;
-  border-style: double !important;
+  border-width: 2px;
+  border-style: dashed !important;
   border-top-color: var(--lavender);
   border-right-color: var(--indigo);
   border-bottom-color: var(--green);
   border-left-color: var(--orange);
-  box-shadow: 0px -4px 12px var(--lavender), 4px 4px 12px var(--indigo),
-    0px 4px 12px var(--green), -4px 0px 12px var(--orange);
+  /*box-shadow: 0px -4px 12px var(--lavender), 4px 4px 12px var(--indigo),
+    0px 4px 12px var(--green), -4px 0px 12px var(--orange);*/
   animation: rainbow 5s infinite linear;
 }
 
@@ -1314,7 +1314,7 @@ div#ai-box.sidebox-01 a:active {
 div.sidebox-01:not(#ai-box) {
   background-color: var(--lavender-soft);
   border-color: var(--lavender);
-  box-shadow: 12px 12px var(--lavender);
+  /*box-shadow: 12px 12px var(--lavender);*/
 }
 
 div#sidebox-header-01 {
@@ -1334,7 +1334,7 @@ div.sidebox-01:not(#ai-box) a:active {
 div.sidebox-02 {
   background-color: var(--violet-soft);
   border-color: var(--violet);
-  box-shadow: 12px 12px var(--violet);
+  /*box-shadow: 12px 12px var(--violet);*/
 }
 
 div#sidebox-header-02 {
@@ -1354,7 +1354,7 @@ div#sidebox-content-02 a:active {
 div.sidebox-03 {
   background-color: var(--indigo-soft);
   border-color: var(--indigo);
-  box-shadow: 12px 12px var(--indigo);
+  /*box-shadow: 12px 12px var(--indigo);*/
 }
 
 div#sidebox-header-03 {
@@ -1374,7 +1374,7 @@ div#sidebox-content-03 a:active {
 div.sidebox-04 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
-  box-shadow: 12px 12px var(--blue);
+  /*box-shadow: 12px 12px var(--blue);*/
 }
 
 div#sidebox-header-04 {
@@ -1394,7 +1394,7 @@ div#sidebox-content-04 a:active {
 div.sidebox-05 {
   background-color: var(--green-soft);
   border-color: var(--green);
-  box-shadow: 12px 12px var(--green);
+  /*box-shadow: 12px 12px var(--green);*/
 }
 
 div#sidebox-header-05 {
@@ -1419,7 +1419,7 @@ div#sidebox-content-05 a:active {
 div.sidebox-06 {
   background-color: var(--yellow-soft);
   border-color: var(--yellow);
-  box-shadow: 12px 12px var(--yellow);
+  /*box-shadow: 12px 12px var(--yellow);*/
 }
 
 div#sidebox-header-06 {
@@ -1439,7 +1439,7 @@ div#sidebox-content-06 a:active {
 div.sidebox-07 {
   background-color: var(--orange-soft);
   border-color: var(--orange);
-  box-shadow: 12px 12px var(--orange);
+  /*box-shadow: 12px 12px var(--orange);*/
 }
 
 div#sidebox-header-07 {
@@ -1459,7 +1459,7 @@ div#sidebox-content-07 a:active {
 div.sidebox-08 {
   background-color: var(--red-soft);
   border-color: var(--red);
-  box-shadow: 12px 12px var(--red);
+  /*box-shadow: 12px 12px var(--red);*/
 }
 
 div#sidebox-header-08 {
@@ -1479,7 +1479,7 @@ div#sidebox-content-08 a:active {
 div.sidebox-09 {
   background-color: var(--blue-soft);
   border-color: var(--blue);
-  box-shadow: 12px 12px var(--blue);
+  /*box-shadow: 12px 12px var(--blue);*/
 }
 
 div#sidebox-header-09 {
@@ -1499,7 +1499,7 @@ div#sidebox-content-09 a:active {
 div.sidebox-10 {
   background-color: var(--green-soft);
   border-color: var(--green);
-  box-shadow: 12px 12px var(--green);
+  /*box-shadow: 12px 12px var(--green);*/
 }
 
 div#sidebox-header-10 {
@@ -2105,7 +2105,7 @@ span#weather-description {
   position: relative;
   background-color: var(--searcher-bg-color);
   border-color: var(--accent-color);
-  box-shadow: 12px 12px var(--accent-color);
+  /*box-shadow: 12px 12px var(--accent-color);*/
 }
 
 #search {
