@@ -1199,7 +1199,8 @@ div#sidebox-content-00 {
   align-content: center;
   overflow: hidden;
   position: relative;
-  height: 64px;
+  height: 50px;
+  padding-top: 4px;
 }
 
 div#sidebox-content-00 a {
