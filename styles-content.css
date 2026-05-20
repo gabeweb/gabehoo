@@ -271,10 +271,6 @@ div.sidebar h4 {
 
 /* basic structure */
 
-/*header {
-  border: 1px dashed var(--header-border-color);
-}*/
-
 .header-center h2 {
   font-size: 200%;
 }
@@ -283,8 +279,6 @@ header,
 div[class="header"] {
   height: min-content;
   border-width: 0 0 4px 0;
-  border-style: double;
-  border-color: var(--red);
   position: relative;
   padding: 20px 10px 20px;
   /*background: linear-gradient(90deg,
@@ -660,8 +654,8 @@ section.quote {
 }
 
 header {
-  background-color: var(--green-soft);
-  border-color: var(--green);
+  background-color: var(--red-soft);
+  border-color: var(--red);
   /*box-shadow: 12px 12px var(--green);*/
 }
 
@@ -688,7 +682,7 @@ header {
 }
 
 .letter {
-  margin: -10px;
+  margin: -8px;
   padding: 0px;
 }
 

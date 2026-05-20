@@ -92,7 +92,26 @@
     <script type="text/javascript" src="scripts/jquery.min.js"></script>
   </head>
 
-  <body>
+  <body><button
+            id="theme-toggle"
+            onclick="themeToggle()"
+            style="
+              cursor: pointer;
+              border: none;
+              background: none;
+              font-size: 1.5rem;
+              top: 40px;
+              right: 40px;
+              position: fixed;
+              z-index: 100;
+              margin-left: auto;
+              width: fit-content;
+            "
+            title="Toggle the theme color"
+            alt="Toggle theme"
+          >
+            ☀️
+          </button>
     <div class="container fade-in">
       <h2>Cryptographic Password Generator</h2>
 
@@ -181,5 +200,6 @@
       </footer>
     </div>
   </body>
+    <script src="main.js"></script>
   <script src="scripts/multirandom.js"></script>
 </html>
