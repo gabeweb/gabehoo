@@ -54,11 +54,30 @@ Author: gabeweb(github.con/gabeweb) -->
     </script>
   </head>
 
-  <body>animated-title
+  <body>
+    <button
+      id="theme-toggle"
+      onclick="themeToggle()"
+      style="
+        cursor: pointer;
+        border: none;
+        background: none;
+        font-size: 1.5rem;
+        top: 40px;
+        right: 40px;
+        position: fixed;
+        z-index: 100;
+        margin-left: auto;
+        width: fit-content;
+      "
+      title="Toggle the theme color"
+      alt="Toggle theme"
+    >
+      ☀️
+    </button>
     <div class="container fade-in">
       <header class="header">
         <div class="header-center">
-
           <span id="greeting"></span>
           <h1 class="animated-title">
             <span class="letter">I</span>
