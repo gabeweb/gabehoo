@@ -65,3 +65,26 @@ setInterval(() => {
   document.getElementById("date-time").innerHTML = dateTime;
   document.getElementById("time-date").innerHTML = timeDate;
 }, 1000);
+
+// theme toggle
+
+function themeToggle() {
+  const html = document.documentElement;
+  const btn = document.getElementById("theme-toggle");
+
+  html.classList.toggle("light-mode");
+
+  if (html.classList.contains("light-mode")) {
+    btn.textContent = "🌙";
+    localStorage.setItem("theme", "light");
+  } else {
+    btn.textContent = "☀️";
+    localStorage.setItem("theme", "dark");
+  }
+}
+
+window.onload = () => {
+  if (localStorage.getItem("theme") === "light") {
+    document.getElementById("theme-toggle").textContent = "🌙";
+  }
+};

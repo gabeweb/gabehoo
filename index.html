@@ -44,14 +44,38 @@ Author: gabeweb(github.con/gabeweb) -->
       }); /*]]>*/
     </script>
 
-    <!-- script for password valiation -->
+    <!-- script for password validation -->
     <script src="scripts/zxcvbn.js"></script>
+
+    <script>
+      if (localStorage.getItem("theme") === "light") {
+        document.documentElement.classList.add("light-mode");
+      }
+    </script>
   </head>
 
-  <body>
+  <body><button
+            id="theme-toggle"
+            onclick="themeToggle()"
+            style="
+              cursor: pointer;
+              border: none;
+              background: none;
+              font-size: 1.5rem;
+              top: 40px;
+              right: 40px;
+              position: fixed;
+              z-index: 100;
+              margin-left: auto;
+              width: fit-content;
+            "
+          >
+            ☀️
+          </button>
     <div class="container fade-in">
       <header class="header">
         <div class="header-center">
+
           <span id="greeting"></span>
           <h1 class="animated-title">
             <span class="letter">I</span>
@@ -479,9 +503,7 @@ Author: gabeweb(github.con/gabeweb) -->
               <h4><span>Comic Strips</span></h4>
               <ul>
                 <li>
-                  <a
-                    href="https://www.comicstriplibrary.org/"
-                    target="_blank"
+                  <a href="https://www.comicstriplibrary.org/" target="_blank"
                     >Comic Strip Library</a
                   >
                 </li>
@@ -4401,8 +4423,6 @@ Author: gabeweb(github.con/gabeweb) -->
               </ul>
             </div>
           </div>
-
-          <!--- AQUÍ -->
 
           <div class="sidebox-09">
             <div id="sidebox-header-09">

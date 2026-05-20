@@ -205,6 +205,25 @@
 </head>
 
 <body>
+
+  <body><button
+            id="theme-toggle"
+            onclick="themeToggle()"
+            style="
+              cursor: pointer;
+              border: none;
+              background: none;
+              font-size: 1.5rem;
+              top: 40px;
+              right: 40px;
+              position: fixed;
+              z-index: 100;
+              margin-left: auto;
+              width: fit-content;
+            "
+          >
+            ☀️
+          </button>
   <div class="container fade-in">
     <h2>2FA Code Generator</h2>
     <h3>Generate one-time passwords locally on your device, not online.</h3>
@@ -372,6 +391,7 @@
 
     //]]>
   </script>
+    <script src="main.js"></script>
 </body>
 
 </html>

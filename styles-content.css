@@ -1173,9 +1173,9 @@ div[class*="sidebox"]:not([class="sidebox-container"]) {
   padding: 4px 8px;
   border-width: 1px 4px 4px 1px;
   border-style: solid;
-  outline-width: 8px;
+  /*outline-width: 8px;
   outline-style: solid;
-  outline-color: var(--bg-color);
+  outline-color: var(--bg-color);*/
 }
 
 div[id*="sidebox-header"] {
@@ -2647,4 +2647,18 @@ a:hover span.arrow-up {
     /*max-height: 143px;*/
     height: 20vh;
   }
+}
+
+@media (prefers-color-scheme: light) {
+  #weather-icon {
+    filter: invert(0) !important;
+  }
+}
+
+:root.light-mode #weather-icon {
+  filter: invert(0) !important;
+}
+
+:root {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
