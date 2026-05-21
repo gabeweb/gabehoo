@@ -84,14 +84,16 @@
 
 @font-face {
   font-family: "MaterialIcons";
-  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf") format("opentype");
+  src: url("asset/fonts/MaterialIcons/MaterialIconsOutlined-Regular.otf")
+    format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Regular.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: normal;
 }
@@ -105,78 +107,87 @@
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-BoldItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Italic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-Light.woff2")
+    format("woff2");
   font-style: normal;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "JetBrains Mono";
-  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2") format("woff2");
+  src: url("asset/fonts/JetBrainsMono/JetBrainsMono-LightItalic.woff2")
+    format("woff2");
   font-style: italic;
   font-weight: 300;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Regular.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Regular.otf")
+    format("opentype");
   font-style: normal;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Bold.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Bold.otf")
+    format("opentype");
   font-style: normal;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-BoldItalic.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-BoldItalic.otf")
+    format("opentype");
   font-style: italic;
   font-weight: bold;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Italic.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Italic.otf")
+    format("opentype");
   font-style: italic;
   font-weight: normal;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Light.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Light.otf")
+    format("opentype");
   font-style: normal;
   font-weight: light;
 }
 
 @font-face {
   font-family: "MozillaHeadline";
-  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-LightItalic.otf") format("opentype");
+  src: url("asset/fonts/MozillaHeadline/MozillaHeadline-LightItalic.otf")
+    format("opentype");
   font-style: italic;
   font-weight: light;
 }
 
 :root {
-  --fontBody: "JetBrains Mono"
-    /*, "IBM Plex Mono"*/
-    , Menlo, "Noto Sans Mono",
+  --fontBody:
+    "JetBrains Mono" /*, "IBM Plex Mono"*/, Menlo, "Noto Sans Mono",
     "Bitstream Vera Sans Mono", Consolas, monospace;
   --fontHeader: Monocraft, monospace;
   --fontIcons: MaterialIcons;
@@ -501,13 +512,15 @@ section#section-01 .breaking-news h4 span {
 }
 
 section#section-01 .breaking-news h4 {
-  background-image: linear-gradient(-45deg,
-      var(--blue),
-      var(--white),
-      var(--red),
-      var(--blue),
-      var(--white),
-      var(--red));
+  background-image: linear-gradient(
+    -45deg,
+    var(--blue),
+    var(--white),
+    var(--red),
+    var(--blue),
+    var(--white),
+    var(--red)
+  );
   background-size: 200% 100%;
   animation: gradient-animation 2s ease infinite alternate;
   border-color: var(--green);
@@ -579,11 +592,13 @@ section#section-01 .funny h4 span {
 }
 
 section#section-01 .funny h4 {
-  background-image: linear-gradient(-45deg,
-      var(--lavender),
-      var(--indigo),
-      var(--green),
-      var(--orange));
+  background-image: linear-gradient(
+    -45deg,
+    var(--lavender),
+    var(--indigo),
+    var(--green),
+    var(--orange)
+  );
   background-size: 200% 100%;
   border-color: var(--green);
   animation: gradient-animation 2s ease infinite alternate;
@@ -591,11 +606,14 @@ section#section-01 .funny h4 {
 }
 
 section#section-01 .funny li {
-  border-image: linear-gradient(to bottom,
+  border-image: linear-gradient(
+      to bottom,
       var(--lavender),
       var(--indigo),
       var(--green),
-      var(--orange)) 1;
+      var(--orange)
+    )
+    1;
 }
 
 section#section-01 .funny a {
@@ -661,7 +679,7 @@ header {
 
 /* Header Title Animation */
 
-.animated-title>.letter {
+.animated-title > .letter {
   animation: repeatAnimation 10s infinite;
 }
 
@@ -797,57 +815,57 @@ div.fancy-bar {
 div.fancy-bar#fancy-01,
 div.fancy-bar#fancy-01-dup {
   width: 80%;
-  background-color: var(--red);
+  background-color: var(--yellow);
   animation: oscillate-01 1200ms infinite alternate ease-in-out;
 }
 
 div.fancy-bar#fancy-02,
 div.fancy-bar#fancy-02-dup {
   width: 70%;
-  background-color: var(--green);
+  background-color: var(--blue);
   animation: oscillate-02 1600ms infinite alternate ease-in-out;
 }
 
 div.fancy-bar#fancy-03,
 div.fancy-bar#fancy-03-dup {
   width: 80%;
-  background-color: var(--blue);
+  background-color: var(--red);
   animation: oscillate-03 800ms infinite alternate ease-in-out;
 }
 
 @keyframes oscillate-01 {
   0% {
     transform: scaleX(0.45);
-    background-color: var(--red);
+    opacity: 1;
   }
 
   100% {
     transform: scaleX(1);
-    background-color: var(--green);
+    opacity: .5;
   }
 }
 
 @keyframes oscillate-02 {
   0% {
     transform: scaleX(1);
-    background-color: var(--green);
+    opacity: 1;
   }
 
   100% {
     transform: scaleX(0.4);
-    background-color: var(--blue);
+    opacity: .5;
   }
 }
 
 @keyframes oscillate-03 {
   0% {
     transform: scaleX(0.5);
-    background-color: var(--blue);
+    opacity: 1;
   }
 
   100% {
     transform: scaleX(1);
-    background-color: var(--red);
+    opacity: .5;
   }
 }
 
@@ -1220,7 +1238,6 @@ div#sidebox-content-00 a:active {
 }
 
 @keyframes rainbow {
-
   0%,
   100% {
     caret-color: var(--blue);
@@ -1249,7 +1266,6 @@ div#sidebox-content-00 a:active {
 }
 
 @keyframes rainbow-text {
-
   100% {
     color: var(--blue);
   }
@@ -1266,7 +1282,8 @@ div#sidebox-content-00 a:active {
     color: var(--red);
   }
 
-  20%,0% {
+  20%,
+  0% {
     color: var(--lavender);
   }
 }
@@ -1291,7 +1308,7 @@ div#ai-box.sidebox-01 #sidebox-header-01 {
   background-color: transparent !important;
 }
 
-div#ai-box.sidebox-01>#sidebox-header-01 h4 {
+div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
   color: var(--yellow);
   animation: rainbow-text 5s infinite linear;
 }
@@ -2180,7 +2197,7 @@ button#search-button {
   animation: rainbow-text 5s infinite linear;
 }
 
-form input:placeholder-shown+button#clear-field {
+form input:placeholder-shown + button#clear-field {
   opacity: 0;
   pointer-events: none;
 }
@@ -2300,7 +2317,6 @@ span.info-connector {
 /* Blinking effect on links */
 
 @keyframes blinkingHover {
-
   0%,
   50%,
   100% {
@@ -2316,7 +2332,6 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingHover {
-
   0%,
   50%,
   100% {
@@ -2330,7 +2345,6 @@ span.info-connector {
 }
 
 @keyframes blinkingActive {
-
   0%,
   50%,
   100% {
@@ -2344,7 +2358,6 @@ span.info-connector {
 }
 
 @-webkit-keyframes blinkingActive {
-
   0%,
   50%,
   100% {
@@ -2598,7 +2611,7 @@ a:hover span.arrow-up {
   }
 }
 
-@media only screen and (min-width: 721px) and (max-width: 1020px) {
+@media only screen and (min-width: 721px) and (max-width: 1040px) {
   /* body {
     margin: 20px;
   } */
@@ -2649,5 +2662,7 @@ a:hover span.arrow-up {
 }
 
 :root {
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
