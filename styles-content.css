@@ -1891,7 +1891,8 @@ p#small-print {
 footer {
   border-width: 1px 0px 0px 0px;
   border-style: dashed;
-  border-color: var(--violet);
+  border-color: var(--footer-border-color);
+  background-color: var(--footer-bg-color);
   font-size: 0.8em;
 }
 
