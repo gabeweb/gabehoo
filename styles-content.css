@@ -2643,12 +2643,6 @@ a:hover span.arrow-up {
   }
 }
 
-@media (prefers-color-scheme: light) {
-  #weather-icon {
-    filter: invert(0) !important;
-  }
-}
-
 :root.light-mode #weather-icon {
   filter: invert(0) !important;
 }

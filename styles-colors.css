@@ -156,7 +156,73 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root:not(.dark-mode) {
-    color-scheme: light;
-  }
+  /* Latte */
+  --bg-color: #ffffff;
+  --fg-color: var(--text-color);
+  --text-color: var(--ctp-latte-text-rgb);
+  --text-color-alt: var(--background-color);
+  --background-color: var(--ctp-latte-crust-rgb);
+  --background-color-alt: var(--text-color);
+  --link-color: var(--accent-color);
+  --accent-color: var(--ctp-latte-blue-rgb);
+  --scrollbar: var(--accent-color);
+  --section-bg-color: var(--ctp-latte-surface0-rgb);
+  --section-border-color: var(--ctp-latte-surface0-rgb);
+  --article-bg-color: var(--ctp-latte-surface1-rgb);
+  --article-border-color: var(--ctp-latte-surface1-rgb);
+  --main-content-bg-color: var(--ctp-latte-yellow-rgb);
+  --main-content-fg-color: var(--ctp-latte-mantle-rgb);
+  --main-content-border-color: var(--ctp-latte-peach-rgb);
+  --aside-left-bg-color: var(--ctp-latte-surface1-rgb);
+  --aside-left-border-color: var(--ctp-latte-overlay1-rgb);
+  --aside-right-bg-color: var(--ctp-latte-surface1-rgb);
+  --aside-right-border-color: var(--ctp-latte-overlay1-rgb);
+  --header-fg-color: var(--red);
+  --header-border-color: var(--blue);
+  --searcher-bg-color: var(--ctp-latte-base-rgb);
+  --searcher-border-color: var(--ctp-latte-surface1-rgb);
+  --border-color-common: var(--ctp-latte-overlay0-rgb);
+  --footer-bg-color: ;
+  --footer-border-color: var(--ctp-latte-surface1-rgb);
+
+  /* basic colors */
+  --red: var(--ctp-latte-red-rgb);
+  --maroon: var(--ctp-latte-maroon-rgb);
+  --orange: var(--ctp-latte-peach-rgb);
+  --yellow: var(--ctp-latte-yellow-rgb);
+  --green: var(--ctp-latte-green-rgb);
+  --blue: var(--ctp-latte-sky-rgb);
+  --indigo: var(--ctp-latte-blue-rgb);
+  --violet: var(--ctp-latte-lavender-rgb);
+  --lavender: var(--ctp-latte-lavender-rgb);
+  --black: var(--ctp-latte-surface0-rgb);
+  --white: var(--ctp-latte-text-rgb);
+
+  /* Catppuccin Latte Palette */
+  --ctp-latte-rosewater-rgb: rgb(220, 138, 120);
+  --ctp-latte-flamingo-rgb: rgb(221, 120, 120);
+  --ctp-latte-pink-rgb: rgb(234, 118, 203);
+  --ctp-latte-mauve-rgb: rgb(136, 57, 239);
+  --ctp-latte-red-rgb: rgb(210, 15, 57);
+  --ctp-latte-maroon-rgb: rgb(230, 69, 83);
+  --ctp-latte-peach-rgb: rgb(254, 100, 11);
+  --ctp-latte-yellow-rgb: rgb(223, 142, 29);
+  --ctp-latte-green-rgb: rgb(64, 160, 43);
+  --ctp-latte-teal-rgb: rgb(23, 146, 153);
+  --ctp-latte-sky-rgb: rgb(4, 165, 229);
+  --ctp-latte-sapphire-rgb: rgb(32, 159, 181);
+  --ctp-latte-blue-rgb: rgb(30, 102, 245);
+  --ctp-latte-lavender-rgb: rgb(114, 135, 253);
+  --ctp-latte-text-rgb: rgb(76, 79, 105);
+  --ctp-latte-subtext1-rgb: rgb(92, 95, 119);
+  --ctp-latte-subtext0-rgb: rgb(108, 111, 133);
+  --ctp-latte-overlay2-rgb: rgb(124, 127, 147);
+  --ctp-latte-overlay1-rgb: rgb(140, 143, 161);
+  --ctp-latte-overlay0-rgb: rgb(156, 160, 176);
+  --ctp-latte-surface2-rgb: rgb(172, 176, 190);
+  --ctp-latte-surface1-rgb: rgb(188, 192, 204);
+  --ctp-latte-surface0-rgb: rgb(204, 208, 218);
+  --ctp-latte-base-rgb: rgb(239, 241, 245);
+  --ctp-latte-mantle-rgb: rgb(230, 233, 239);
+  --ctp-latte-crust-rgb: rgb(220, 224, 232);
 }
