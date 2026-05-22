@@ -546,7 +546,7 @@ section#section-01 .breaking-news a {
 
 section#section-01 .breaking-news a:hover,
 section#section-01 .breaking-news a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--indigo) !important;
 }
 
@@ -572,7 +572,7 @@ section#section-01 .comictive a {
 
 section#section-01 .comictive a:hover,
 section#section-01 .comictive a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -622,7 +622,7 @@ section#section-01 .funny a {
 
 section#section-01 .funny a:hover,
 section#section-01 .funny a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--violet) !important;
 }
 
@@ -648,7 +648,7 @@ section#section-01 .sportive a {
 
 section#section-01 .sportive a:hover,
 section#section-01 .sportive a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--red) !important;
 }
 
@@ -788,7 +788,7 @@ section#section-00 a {
 
 section#section-00 a:hover,
 section#section-00 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -914,7 +914,7 @@ section#section-01 a {
 
 section#section-01 a:hover,
 section#section-01 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--orange) !important;
 }
 
@@ -943,7 +943,7 @@ section#section-02 a {
 
 section#section-02 a:hover,
 section#section-02 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--yellow) !important;
 }
 
@@ -972,7 +972,7 @@ section#section-03 a {
 
 section#section-03 a:hover,
 section#section-03 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--green) !important;
 }
 
@@ -1001,7 +1001,7 @@ section#section-04 a {
 
 section#section-04 a:hover,
 section#section-04 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -1030,7 +1030,7 @@ section#section-05 a {
 
 section#section-05 a:hover,
 section#section-05 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--indigo) !important;
 }
 
@@ -1059,7 +1059,7 @@ section#section-06 a {
 
 section#section-06 a:hover,
 section#section-06 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--violet) !important;
 }
 
@@ -1088,7 +1088,7 @@ section#section-07 a {
 
 section#section-07 a:hover,
 section#section-07 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -1221,7 +1221,7 @@ div#sidebox-content-00 a {
 
 div#sidebox-content-00 a:hover,
 div#sidebox-content-00 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--red) !important;
 }
 
@@ -1319,7 +1319,7 @@ div#ai-box.sidebox-01 a {
 
 div#ai-box.sidebox-01 a:hover,
 div#ai-box.sidebox-01 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--yellow) !important;
 }
 
@@ -1339,7 +1339,7 @@ div.sidebox-01:not(#ai-box) a {
 
 div.sidebox-01:not(#ai-box) a:hover,
 div.sidebox-01:not(#ai-box) a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--lavender) !important;
 }
 
@@ -1359,7 +1359,7 @@ div#sidebox-content-02 a {
 
 div#sidebox-content-02 a:hover,
 div#sidebox-content-02 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--violet) !important;
 }
 
@@ -1379,7 +1379,7 @@ div#sidebox-content-03 a {
 
 div#sidebox-content-03 a:hover,
 div#sidebox-content-03 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--indigo) !important;
 }
 
@@ -1399,7 +1399,7 @@ div#sidebox-content-04 a {
 
 div#sidebox-content-04 a:hover,
 div#sidebox-content-04 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -1424,7 +1424,7 @@ div#sidebox-content-05 a {
 
 div#sidebox-content-05 a:hover,
 div#sidebox-content-05 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--green) !important;
 }
 
@@ -1444,7 +1444,7 @@ div#sidebox-content-06 a {
 
 div#sidebox-content-06 a:hover,
 div#sidebox-content-06 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--yellow) !important;
 }
 
@@ -1464,7 +1464,7 @@ div#sidebox-content-07 a {
 
 div#sidebox-content-07 a:hover,
 div#sidebox-content-07 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--orange) !important;
 }
 
@@ -1484,7 +1484,7 @@ div#sidebox-content-08 a {
 
 div#sidebox-content-08 a:hover,
 div#sidebox-content-08 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--red) !important;
 }
 
@@ -1504,7 +1504,7 @@ div#sidebox-content-09 a {
 
 div#sidebox-content-09 a:hover,
 div#sidebox-content-09 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--blue) !important;
 }
 
@@ -1529,7 +1529,7 @@ div#sidebox-content-10 a {
 
 div#sidebox-content-10 a:hover,
 div#sidebox-content-10 a:active {
-  color: var(--black) !important;
+  color: var(--bg-color) !important;
   background-color: var(--green) !important;
 }
 
