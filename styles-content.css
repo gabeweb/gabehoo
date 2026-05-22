@@ -1638,7 +1638,7 @@ span.visibility_off::before {
 #char-counter {
   position: absolute;
   /*height: 26px;*/
-  top: 82px;
+  top: 78px;
   right: 0px;
   mix-blend-mode: difference;
 }
@@ -1650,7 +1650,7 @@ span.visibility_off::before {
 div[class*="strength-"]::before {
   position: absolute;
   /*height: 26px;*/
-  padding: 4px 2px 2px 4px;
+  padding: 6px 2px 2px 4px;
   mix-blend-mode: difference;
 }
 
@@ -1779,7 +1779,7 @@ div[class*="strength-"]::before {
 div[class*="pass-indicator"]::before {
   position: absolute;
   height: 32px;
-  padding: 4px 2px 2px 4px;
+  padding: 6px 2px 2px 4px;
   mix-blend-mode: difference;
 }
 

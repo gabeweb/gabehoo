@@ -74,7 +74,7 @@
   --bg-color: #000000;
   --fg-color: var(--text-color);
   --text-color: var(--ctp-mocha-text-rgb);
-  --text-color-alt: var(--background-color);
+  --text-color-alt: var(--ctp-mocha-mantle-rgb);
   --background-color: var(--ctp-mocha-crust-rgb);
   --background-color-alt: var(--text-color);
   --link-color: var(--accent-color);
@@ -119,7 +119,7 @@
     --bg-color: #ffffff;
     --fg-color: var(--text-color);
     --text-color: var(--ctp-latte-text-rgb);
-    --text-color-alt: var(--background-color);
+    --text-color-alt: var(--ctp-latte-mantle-rgb);
     --background-color: var(--ctp-latte-crust-rgb);
     --background-color-alt: var(--text-color);
     --link-color: var(--accent-color);
@@ -163,7 +163,7 @@
   --bg-color: #ffffff;
   --fg-color: var(--text-color);
   --text-color: var(--ctp-latte-text-rgb);
-  --text-color-alt: var(--background-color);
+  --text-color-alt: var(--ctp-latte-mantle-rgb);
   --background-color: var(--ctp-latte-crust-rgb);
   --background-color-alt: var(--text-color);
   --link-color: var(--accent-color);
