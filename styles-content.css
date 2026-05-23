@@ -479,7 +479,7 @@ div.main-row .section#section-07 li {
 div[class*="main-content-middle"] {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 20px;
 }
 
 div[class*="main-content-middle"] ul {
