@@ -672,8 +672,9 @@ section.quote {
 }
 
 header {
-  background-color: var(--red-soft);
-  border-color: var(--red);
+  /*background-color: var(--red-soft);*/
+  /*border-color: var(--red);*/
+  border-style: none;
   /*box-shadow: 12px 12px var(--green);*/
 }
 
@@ -2116,9 +2117,11 @@ span#weather-description {
   width: 100%;
   margin: auto;
   position: relative;
-  background-color: var(--searcher-bg-color);
-  border-color: var(--accent-color);
+  /*background-color: var(--searcher-bg-color);*/
+  /*border-color: var(--accent-color);*/
+  border-style: none !important;
   /*box-shadow: 12px 12px var(--accent-color);*/
+  padding: 0px !important;
 }
 
 #search {
@@ -2128,7 +2131,9 @@ span#weather-description {
 }
 
 #searchbar {
-  border: 1px solid var(--searcher-border-color);
+  border-width: 1px 4px 4px 1px;
+  border-style: solid;
+  border-color: var(--searcher-border-color);
   display: flex;
   background-color: transparent;
   height: 50px;
@@ -2172,7 +2177,9 @@ span#weather-description {
 
 #searchbar:focus-within,
 #searchbar:hover {
-  border: 1px solid var(--accent-color);
+  border-width: 1px 4px 4px 1px;
+  border-style: solid;
+  border-color: var(--accent-color);
   background-color: var(--searcher-bg-color);
 }
 
