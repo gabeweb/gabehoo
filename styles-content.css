@@ -497,7 +497,7 @@ div[class*="main-content-middle"] li {
 }
 
 section#section-01 .breaking-news {
-  background-color: var(--black-soft) !important;
+  background-color: var(--blue-soft) !important;
   border: 4px double;
   border-top-color: var(--indigo);
   border-right-color: var(--indigo);
@@ -514,12 +514,12 @@ section#section-01 .breaking-news h4 span {
 section#section-01 .breaking-news h4 {
   background-image: linear-gradient(
     -45deg,
+    var(--yellow),
     var(--blue),
-    var(--white),
+    var(--red),
     var(--red),
     var(--blue),
-    var(--white),
-    var(--red)
+    var(--yellow)
   );
   background-size: 200% 100%;
   animation: gradient-animation 2s ease infinite alternate;
@@ -551,33 +551,33 @@ section#section-01 .breaking-news a:active {
 }
 
 section#section-01 .comictive {
-  background-color: var(--black-soft);
-  border: 4px double var(--blue);
+  background-color: var(--lavender-soft);
+  border: 4px double var(--lavender);
   padding: 10px;
 }
 
 section#section-01 .comictive h4 span,
 section#section-01 .comictive h4 {
-  background-color: var(--blue);
-  border-color: var(--blue);
+  background-color: var(--lavender);
+  border-color: var(--lavender);
 }
 
 section#section-01 .comictive li {
-  border-color: var(--blue) !important;
+  border-color: var(--lavender) !important;
 }
 
 section#section-01 .comictive a {
-  color: var(--blue) !important;
+  color: var(--lavender) !important;
 }
 
 section#section-01 .comictive a:hover,
 section#section-01 .comictive a:active {
   color: var(--bg-color) !important;
-  background-color: var(--blue) !important;
+  background-color: var(--lavender) !important;
 }
 
 section#section-01 .funny {
-  background-color: var(--black-soft) !important;
+  background-color: var(--green-soft) !important;
   border: 4px double;
   border-top-color: var(--lavender);
   border-right-color: var(--indigo);
@@ -617,17 +617,17 @@ section#section-01 .funny li {
 }
 
 section#section-01 .funny a {
-  color: var(--violet) !important;
+  color: var(--green) !important;
 }
 
 section#section-01 .funny a:hover,
 section#section-01 .funny a:active {
   color: var(--bg-color) !important;
-  background-color: var(--violet) !important;
+  background-color: var(--green) !important;
 }
 
 section#section-01 .sportive {
-  background-color: var(--black-soft);
+  background-color: var(--red-soft);
   border: 4px double var(--red);
   padding: 10px;
 }
@@ -695,6 +695,7 @@ header {
 }
 
 .letter {
+  color: var(--red);
   display: inline-block;
   opacity: 0;
   animation: fadeIn 0.25s forwards;
@@ -1102,7 +1103,7 @@ section#section-08 {
   position: relative;
   padding: 20px;
   border-style: dashed;
-  border-color: var(--white);
+  border-color: var(--fg-color);
   border-width: 2px;
 }
 
@@ -1139,13 +1140,13 @@ section#section-08 {
   padding: 0px 6px;
   margin: 0 10px;
   font-size: 4em;
-  background-color: var(--white);
-  color: var(--black);
+  background-color: var(--fg-color);
+  color: var(--bg-color);
 }
 
 #mozilla-logo p {
   line-height: 0.8;
-  color: var(--white);
+  color: var(--fg-color);
   font-size: 3em;
 }
 
@@ -1292,7 +1293,7 @@ div#sidebox-content-00 a:active {
 /* AI CHATBOTS BOX */
 
 div#ai-box.sidebox-01 {
-  background-color: var(--black-soft);
+  background-color: var(--yellow-soft);
   padding: 4px 8px;
   border-width: 2px;
   border-style: dashed !important;
@@ -1570,7 +1571,7 @@ div#sidebox-content-10 a:active {
   font-family: var(--fontBody);
   font-size: 1.1em;
   color: var(--blue);
-  border: 1px solid var(--ctp-mocha-overlay2-rgb);
+  border: 1px solid var(--searcher-border-color);
 }
 
 span.input-lock {
@@ -1625,7 +1626,7 @@ span.visibility_off::before {
   width: 100%;
   display: block;
   background-color: transparent;
-  border: 1px dashed var(--ctp-mocha-overlay2-rgb);
+  border: 1px dashed var(--searcher-border-color);
 }
 
 #password-strength span {
@@ -1765,7 +1766,7 @@ div[class*="strength-"]::before {
   width: 100%;
   position: relative;
   background-color: transparent;
-  border: 1px dashed var(--ctp-mocha-overlay2-rgb);
+  border: 1px dashed var(--searcher-border-color);
   margin-top: 0.75rem;
 }
 
@@ -1901,7 +1902,7 @@ input[type="range"]:focus {
 p#small-print {
   font-size: 0.8em;
   text-align: center;
-  color: var(--ctp-mocha-overlay2-rgb);
+  color: var(--border-color-common);
 }
 
 /* the footer */

@@ -1,203 +1,204 @@
 :root {
-  /* soft colors */
-  --red-soft: color-mix(in srgb, var(--red) 15%, transparent);
-  --maroon-soft: color-mix(in srgb, var(--maroon) 15%, transparent);
-  --orange-soft: color-mix(in srgb, var(--orange) 15%, transparent);
-  --yellow-soft: color-mix(in srgb, var(--yellow) 15%, transparent);
-  --green-soft: color-mix(in srgb, var(--green) 15%, transparent);
-  --blue-soft: color-mix(in srgb, var(--blue) 15%, transparent);
-  --indigo-soft: color-mix(in srgb, var(--indigo) 15%, transparent);
-  --violet-soft: color-mix(in srgb, var(--violet) 15%, transparent);
-  --lavender-soft: color-mix(in srgb, var(--lavender) 15%, transparent);
-  --black-soft: color-mix(in srgb, var(--black) 20%, transparent);
-  --white-soft: color-mix(in srgb, var(--white) 15%, transparent);
-
-  /* Catppuccin Mocha Palette */
-  --ctp-mocha-rosewater-rgb: rgb(245, 224, 220);
-  --ctp-mocha-flamingo-rgb: rgb(242, 205, 205);
-  --ctp-mocha-pink-rgb: rgb(245, 194, 231);
-  --ctp-mocha-mauve-rgb: rgb(203, 166, 247);
-  --ctp-mocha-red-rgb: rgb(243, 139, 168);
-  --ctp-mocha-maroon-rgb: rgb(235, 160, 172);
-  --ctp-mocha-peach-rgb: rgb(250, 179, 135);
-  --ctp-mocha-yellow-rgb: rgb(249, 226, 175);
-  --ctp-mocha-green-rgb: rgb(166, 227, 161);
-  --ctp-mocha-teal-rgb: rgb(148, 226, 213);
-  --ctp-mocha-sky-rgb: rgb(137, 220, 235);
-  --ctp-mocha-sapphire-rgb: rgb(116, 199, 236);
-  --ctp-mocha-blue-rgb: rgb(137, 180, 250);
-  --ctp-mocha-lavender-rgb: rgb(180, 190, 254);
-  --ctp-mocha-text-rgb: rgb(205, 214, 244);
-  --ctp-mocha-subtext1-rgb: rgb(186, 194, 222);
-  --ctp-mocha-subtext0-rgb: rgb(166, 173, 200);
-  --ctp-mocha-overlay2-rgb: rgb(147, 153, 178);
-  --ctp-mocha-overlay1-rgb: rgb(127, 132, 156);
-  --ctp-mocha-overlay0-rgb: rgb(108, 112, 134);
-  --ctp-mocha-surface2-rgb: rgb(88, 91, 112);
-  --ctp-mocha-surface1-rgb: rgb(69, 71, 90);
-  --ctp-mocha-surface0-rgb: rgb(49, 50, 68);
-  --ctp-mocha-base-rgb: rgb(30, 30, 46);
-  --ctp-mocha-mantle-rgb: rgb(24, 24, 37);
-  --ctp-mocha-crust-rgb: rgb(17, 17, 27);
-
-  /* Catppuccin Latte Palette */
-  --ctp-latte-rosewater-rgb: rgb(220, 138, 120);
-  --ctp-latte-flamingo-rgb: rgb(221, 120, 120);
-  --ctp-latte-pink-rgb: rgb(234, 118, 203);
-  --ctp-latte-mauve-rgb: rgb(136, 57, 239);
-  --ctp-latte-red-rgb: rgb(210, 15, 57);
-  --ctp-latte-maroon-rgb: rgb(230, 69, 83);
-  --ctp-latte-peach-rgb: rgb(254, 100, 11);
-  --ctp-latte-yellow-rgb: rgb(223, 142, 29);
-  --ctp-latte-green-rgb: rgb(64, 160, 43);
-  --ctp-latte-teal-rgb: rgb(23, 146, 153);
-  --ctp-latte-sky-rgb: rgb(4, 165, 229);
-  --ctp-latte-sapphire-rgb: rgb(32, 159, 181);
-  --ctp-latte-blue-rgb: rgb(30, 102, 245);
-  --ctp-latte-lavender-rgb: rgb(114, 135, 253);
-  --ctp-latte-text-rgb: rgb(76, 79, 105);
-  --ctp-latte-subtext1-rgb: rgb(92, 95, 119);
-  --ctp-latte-subtext0-rgb: rgb(108, 111, 133);
-  --ctp-latte-overlay2-rgb: rgb(124, 127, 147);
-  --ctp-latte-overlay1-rgb: rgb(140, 143, 161);
-  --ctp-latte-overlay0-rgb: rgb(156, 160, 176);
-  --ctp-latte-surface2-rgb: rgb(172, 176, 190);
-  --ctp-latte-surface1-rgb: rgb(188, 192, 204);
-  --ctp-latte-surface0-rgb: rgb(204, 208, 218);
-  --ctp-latte-base-rgb: rgb(239, 241, 245);
-  --ctp-latte-mantle-rgb: rgb(230, 233, 239);
-  --ctp-latte-crust-rgb: rgb(220, 224, 232);
+  /* SOFT COLORS (Generated automatically via color-mix) */
+  --red-soft: color-mix(in srgb, var(--red) 10%, transparent);
+  --maroon-soft: color-mix(in srgb, var(--maroon) 10%, transparent);
+  --orange-soft: color-mix(in srgb, var(--orange) 10%, transparent);
+  --yellow-soft: color-mix(in srgb, var(--yellow) 10%, transparent);
+  --green-soft: color-mix(in srgb, var(--green) 10%, transparent);
+  --blue-soft: color-mix(in srgb, var(--blue) 10%, transparent);
+  --indigo-soft: color-mix(in srgb, var(--indigo) 10%, transparent);
+  --violet-soft: color-mix(in srgb, var(--violet) 10%, transparent);
+  --lavender-soft: color-mix(in srgb, var(--lavender) 10%, transparent);
+  --black-soft: color-mix(in srgb, var(--black) 15%, transparent);
+  --white-soft: color-mix(in srgb, var(--white) 10%, transparent);
 }
 
-/* 1. MODO OSCURO POR DEFECTO (Mocha se aplica si NO se detecta o activa el modo claro) */
+/* DARK MODE (Yahoo Night Mode) */
+
 :root:not(.light-mode) {
-  --bg-color: #000000;
+  /* Interfaz y Fondos (Selección de Grises/Negros de Yahoo) */
+  --bg-color: #0e0e11;
+  /* Negro profundo de Yahoo */
   --fg-color: var(--text-color);
-  --text-color: var(--ctp-mocha-text-rgb);
-  --text-color-alt: var(--ctp-mocha-mantle-rgb);
-  --background-color: var(--ctp-mocha-crust-rgb);
+  --text-color: #fcfbfb;
+  /* Blanco roto de Yahoo para texto */
+  --text-color-alt: #1a1a1c;
+  /* Gris muy oscuro */
+  --background-color: #141414;
+  /* Fondo secundario oscuro */
   --background-color-alt: var(--text-color);
+
+  /* Enlaces y Acentos */
   --link-color: var(--accent-color);
-  --accent-color: var(--ctp-mocha-blue-rgb);
+  --accent-color: #12a9ff;
+  /* Azul acento brillante Yahoo */
   --scrollbar: var(--accent-color);
-  --section-bg-color: var(--ctp-mocha-surface0-rgb);
-  --section-border-color: var(--ctp-mocha-surface0-rgb);
-  --article-bg-color: var(--ctp-mocha-surface1-rgb);
-  --article-border-color: var(--ctp-mocha-surface1-rgb);
-  --main-content-bg-color: var(--ctp-mocha-yellow-rgb);
-  --main-content-fg-color: var(--ctp-mocha-mantle-rgb);
-  --main-content-border-color: var(--ctp-mocha-peach-rgb);
-  --aside-left-bg-color: var(--ctp-mocha-surface1-rgb);
-  --aside-left-border-color: var(--ctp-mocha-overlay1-rgb);
-  --aside-right-bg-color: var(--ctp-mocha-surface1-rgb);
-  --aside-right-border-color: var(--ctp-mocha-overlay1-rgb);
+
+  /* Componentes, Secciones y Tarjetas */
+  --section-bg-color: #1d1d1f;
+  /* Gris de sección Yahoo */
+  --section-border-color: #2b2b2b;
+  --article-bg-color: #232a31;
+  /* Azul grisáceo oscuro de interfaz Yahoo */
+  --article-border-color: #323232;
+
+  /* Main Content Block */
+  --main-content-bg-color: var(--yellow);
+  --main-content-fg-color: #1a1a1c;
+  --main-content-border-color: var(--orange);
+
+  /* Asides */
+  --aside-left-bg-color: #1d2228;
+  --aside-left-border-color: #5b636a;
+  --aside-right-bg-color: #1d2228;
+  --aside-right-border-color: #5b636a;
+
+  /* Header, Searcher and Footpage */
   --header-fg-color: var(--red);
   --header-border-color: var(--blue);
-  --searcher-bg-color: var(--ctp-mocha-base-rgb);
-  --searcher-border-color: var(--ctp-mocha-surface1-rgb);
-  --border-color-common: var(--ctp-mocha-overlay0-rgb);
-  --footer-bg-color: var(--ctp-mocha-surface0-rgb);
-  --footer-border-color: var(--ctp-mocha-surface1-rgb);
+  --searcher-bg-color: #1a1a1c;
+  --searcher-border-color: #323232;
+  --border-color-common: #515151;
+  --footer-bg-color: #141414;
+  --footer-border-color: #2b2b2b;
 
-  /* basic colors */
-  --red: var(--ctp-mocha-red-rgb);
-  --maroon: var(--ctp-mocha-maroon-rgb);
-  --orange: var(--ctp-mocha-peach-rgb);
-  --yellow: var(--ctp-mocha-yellow-rgb);
-  --green: var(--ctp-mocha-green-rgb);
-  --blue: var(--ctp-mocha-sky-rgb);
-  --indigo: var(--ctp-mocha-blue-rgb);
-  --violet: var(--ctp-mocha-lavender-rgb);
-  --lavender: var(--ctp-mocha-lavender-rgb);
-  --black: var(--ctp-mocha-surface0-rgb);
-  --white: var(--ctp-mocha-text-rgb);
+  /* BASIC COLORS (Dark Yahoo Tones) */
+  --red: #eb0f29;
+  /* Rojo clásico Yahoo */
+  --maroon: #da071f;
+  /* Guinda/Rojo oscuro */
+  --orange: #fd6100;
+  /* Naranja brillante */
+  --yellow: #ffd333;
+  /* Amarillo Yahoo */
+  --green: #1ac567;
+  /* Verde vibrante */
+  --blue: #12a9ff;
+  /* Azul brillante */
+  --indigo: #5d5eff;
+  /* Indigo / Azul purpúreo */
+  --violet: #7d2eff;
+  /* Púrpura icónico corporativo */
+  --lavender: #c8a7ff;
+  /* Lavanda/Púrpura pastel */
+  --black: #1a1a1c;
+  /* Negro de interfaz */
+  --white: #fcfbfb;
+  /* Blanco de texto */
 }
 
-/* 2. MODO CLARO AUTOMÁTICO (Por el sistema operativo) O MANUAL (Por clase .light-mode) */
+/* LIGHT MODE (Yahoo Light Mode) */
 @media (prefers-color-scheme: light) {
   :root {
+    /* Interfaz y Fondos Claros */
     --bg-color: #ffffff;
     --fg-color: var(--text-color);
-    --text-color: var(--ctp-latte-text-rgb);
-    --text-color-alt: var(--ctp-latte-mantle-rgb);
-    --background-color: var(--ctp-latte-crust-rgb);
+    --text-color: #333333;
+    /* Gris oscuro para alta legibilidad */
+    --text-color-alt: #ededed;
+    --background-color: #f6f6f6;
+    /* Gris muy claro de fondo */
     --background-color-alt: var(--text-color);
+
+    /* Enlaces y Acentos */
     --link-color: var(--accent-color);
-    --accent-color: var(--ctp-latte-blue-rgb);
+    --accent-color: #0f69ff;
+    /* Azul corporativo de enlaces Yahoo */
     --scrollbar: var(--accent-color);
-    --section-bg-color: var(--ctp-latte-surface0-rgb);
-    --section-border-color: var(--ctp-latte-surface0-rgb);
-    --article-bg-color: var(--ctp-latte-surface1-rgb);
-    --article-border-color: var(--ctp-latte-surface1-rgb);
-    --main-content-bg-color: var(--ctp-latte-yellow-rgb);
-    --main-content-fg-color: var(--ctp-latte-mantle-rgb);
-    --main-content-border-color: var(--ctp-latte-peach-rgb);
-    --aside-left-bg-color: var(--ctp-latte-surface1-rgb);
-    --aside-left-border-color: var(--ctp-latte-overlay1-rgb);
-    --aside-right-bg-color: var(--ctp-latte-surface1-rgb);
-    --aside-right-border-color: var(--ctp-latte-overlay1-rgb);
+
+    /* Componentes, Secciones y Tarjetas */
+    --section-bg-color: #f8f8f8;
+    --section-border-color: #d9d9d9;
+    --article-bg-color: #ffffff;
+    --article-border-color: #e4e4e4;
+
+    /* Bloque de Contenido Principal */
+    --main-content-bg-color: var(--yellow);
+    --main-content-fg-color: #333333;
+    --main-content-border-color: var(--orange);
+
+    /* Asides */
+    --aside-left-bg-color: #f0f3f5;
+    --aside-left-border-color: #c7cdd2;
+    --aside-right-bg-color: #f0f3f5;
+    --aside-right-border-color: #c7cdd2;
+
+    /* Header, Searcher and Footpage */
     --header-fg-color: var(--red);
     --header-border-color: var(--blue);
-    --searcher-bg-color: var(--ctp-latte-base-rgb);
-    --searcher-border-color: var(--ctp-latte-surface1-rgb);
-    --border-color-common: var(--ctp-latte-overlay0-rgb);
-    --footer-bg-color: var(--ctp-latte-surface0-rgb);
-    --footer-border-color: var(--ctp-latte-surface1-rgb);
+    --searcher-bg-color: #ffffff;
+    --searcher-border-color: #ccc;
+    --border-color-common: #b0b0b0;
+    --footer-bg-color: #ededed;
+    --footer-border-color: #d9d9d9;
 
-    /* basic colors */
-    --red: var(--ctp-latte-red-rgb);
-    --maroon: var(--ctp-latte-maroon-rgb);
-    --orange: var(--ctp-latte-peach-rgb);
-    --yellow: var(--ctp-latte-yellow-rgb);
-    --green: var(--ctp-latte-green-rgb);
-    --blue: var(--ctp-latte-sky-rgb);
-    --indigo: var(--ctp-latte-blue-rgb);
-    --violet: var(--ctp-latte-lavender-rgb);
-    --lavender: var(--ctp-latte-lavender-rgb);
-    --black: var(--ctp-latte-surface0-rgb);
-    --white: var(--ctp-latte-text-rgb);
+    /* BASIC COLORS (Light Yahoo Tones) */
+    --red: #f0162f;
+    --maroon: #cc008c;
+    --orange: #ff8b12;
+    --yellow: #ffca20;
+    --green: #07d17c;
+    --blue: #0f69ff;
+    --indigo: #4b5dff;
+    --violet: #6d00f6;
+    --lavender: #8383fe;
+    --black: #333333;
+    --white: #ffffff;
   }
 }
 
+/* MANUAL LIGHT MODE (.light-mode) */
+
 :root.light-mode {
+  /* Interfaz y Fondos Claros */
   --bg-color: #ffffff;
   --fg-color: var(--text-color);
-  --text-color: var(--ctp-latte-text-rgb);
-  --text-color-alt: var(--ctp-latte-mantle-rgb);
-  --background-color: var(--ctp-latte-crust-rgb);
+  --text-color: #333333;
+  --text-color-alt: #ededed;
+  --background-color: #f6f6f6;
   --background-color-alt: var(--text-color);
+
+  /* Enlaces y Acentos */
   --link-color: var(--accent-color);
-  --accent-color: var(--ctp-latte-blue-rgb);
+  --accent-color: #0f69ff;
   --scrollbar: var(--accent-color);
-  --section-bg-color: var(--ctp-latte-surface0-rgb);
-  --section-border-color: var(--ctp-latte-surface0-rgb);
-  --article-bg-color: var(--ctp-latte-surface1-rgb);
-  --article-border-color: var(--ctp-latte-surface1-rgb);
-  --main-content-bg-color: var(--ctp-latte-yellow-rgb);
-  --main-content-fg-color: var(--ctp-latte-mantle-rgb);
-  --main-content-border-color: var(--ctp-latte-peach-rgb);
-  --aside-left-bg-color: var(--ctp-latte-surface1-rgb);
-  --aside-left-border-color: var(--ctp-latte-overlay1-rgb);
-  --aside-right-bg-color: var(--ctp-latte-surface1-rgb);
-  --aside-right-border-color: var(--ctp-latte-overlay1-rgb);
+
+  /* Componentes, Secciones y Tarjetas */
+  --section-bg-color: #f8f8f8;
+  --section-border-color: #d9d9d9;
+  --article-bg-color: #ffffff;
+  --article-border-color: #e4e4e4;
+
+  /* Bloque de Contenido Principal */
+  --main-content-bg-color: var(--yellow);
+  --main-content-fg-color: #333333;
+  --main-content-border-color: var(--orange);
+
+  /* Laterales (Asides) */
+  --aside-left-bg-color: #f0f3f5;
+  --aside-left-border-color: #c7cdd2;
+  --aside-right-bg-color: #f0f3f5;
+  --aside-right-border-color: #c7cdd2;
+
+  /* Cabecera, Buscador y Pie */
   --header-fg-color: var(--red);
   --header-border-color: var(--blue);
-  --searcher-bg-color: var(--ctp-latte-base-rgb);
-  --searcher-border-color: var(--ctp-latte-surface1-rgb);
-  --border-color-common: var(--ctp-latte-overlay0-rgb);
-  --footer-bg-color: var(--ctp-latte-surface0-rgb);
-  --footer-border-color: var(--ctp-latte-surface1-rgb);
+  --searcher-bg-color: #ffffff;
+  --searcher-border-color: #ccc;
+  --border-color-common: #b0b0b0;
+  --footer-bg-color: #ededed;
+  --footer-border-color: #d9d9d9;
 
-  /* basic colors */
-  --red: var(--ctp-latte-red-rgb);
-  --maroon: var(--ctp-latte-maroon-rgb);
-  --orange: var(--ctp-latte-peach-rgb);
-  --yellow: var(--ctp-latte-yellow-rgb);
-  --green: var(--ctp-latte-green-rgb);
-  --blue: var(--ctp-latte-sky-rgb);
-  --indigo: var(--ctp-latte-blue-rgb);
-  --violet: var(--ctp-latte-lavender-rgb);
-  --lavender: var(--ctp-latte-lavender-rgb);
-  --black: var(--ctp-latte-surface0-rgb);
-  --white: var(--ctp-latte-text-rgb);
+  /* BASIC COLORS (Light Yahoo Tones) */
+  --red: #f0162f;
+  --maroon: #cc008c;
+  --orange: #ff8b12;
+  --yellow: #ffca20;
+  --green: #07d17c;
+  --blue: #0f69ff;
+  --indigo: #4b5dff;
+  --violet: #6d00f6;
+  --lavender: #8383fe;
+  --black: #333333;
+  --white: #ffffff;
 }
