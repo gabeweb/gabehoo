@@ -649,7 +649,7 @@ section#section-01 .sportive a {
 
 section#section-01 .sportive a:hover,
 section#section-01 .sportive a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-2) !important;
   background-color: var(--red) !important;
 }
 
@@ -1335,7 +1335,7 @@ div#ai-box.sidebox-01 a {
 
 div#ai-box.sidebox-01 a:hover,
 div#ai-box.sidebox-01 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-2) !important;
   background-color: var(--orange) !important;
 }
 
