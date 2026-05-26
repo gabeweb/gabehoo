@@ -472,7 +472,7 @@ div.main-row .section#section-07 li {
 #main-content-top-header {
   background-color: var(--main-content-border-color);
   padding: 2px 8px;
-  color: var(--text-color-alt);
+  color: var(--text-color-alt-2);
   margin-bottom: 8px;
 }
 
@@ -558,6 +558,7 @@ section#section-01 .comictive {
 
 section#section-01 .comictive h4 span,
 section#section-01 .comictive h4 {
+  color: var(--text-color-alt);
   background-color: var(--lavender);
   border-color: var(--lavender);
 }
@@ -750,7 +751,7 @@ header {
 
 section[id*="section-"] h3 {
   display: block;
-  color: var(--text-color-alt);
+  color: var(--text-color-alt-2);
   padding: 10px 6px 6px 6px;
   margin: -8px -8px 16px -8px;
 }
@@ -772,6 +773,7 @@ section[id*="section-"] h4 {
 }
 
 section#section-00 h3 {
+  color: var(--text-color-alt);
   background-color: var(--blue);
 }
 
@@ -883,7 +885,7 @@ div.fancy-bar#fancy-03-dup {
 
 section[id*="section-"] h4 span {
   display: inline;
-  color: var(--text-color-alt);
+  color: var(--text-color-alt-2);
   padding: 4px 8px 0px 8px;
   margin: 4px 0px 0px -8px;
   line-height: 1em;
@@ -927,6 +929,7 @@ section#section-02 {
 }
 
 section#section-02 h3 {
+  color: var(--text-color-alt-3);
   background-color: var(--yellow);
 }
 
@@ -935,6 +938,7 @@ section#section-02 h4 {
 }
 
 section#section-02 h4 span {
+  color: var(--text-color-alt-3);
   background-color: var(--yellow);
   border-bottom-color: var(--yellow);
 }
@@ -956,6 +960,7 @@ section#section-03 {
 }
 
 section#section-03 h3 {
+  color: var(--text-color-alt);
   background-color: var(--green);
 }
 
@@ -964,6 +969,7 @@ section#section-03 h4 {
 }
 
 section#section-03 h4 span {
+  color: var(--text-color-alt);
   background-color: var(--green);
   border-bottom-color: var(--green);
 }
@@ -985,6 +991,7 @@ section#section-04 {
 }
 
 section#section-04 h3 {
+  color: var(--text-color-alt);
   background-color: var(--blue);
 }
 
@@ -993,6 +1000,7 @@ section#section-04 h4 {
 }
 
 section#section-04 h4 span {
+  color: var(--text-color-alt);
   background-color: var(--blue);
   border-bottom-color: var(--blue);
 }
@@ -1014,6 +1022,7 @@ section#section-05 {
 }
 
 section#section-05 h3 {
+  color: var(--text-color-alt);
   background-color: var(--indigo);
 }
 
@@ -1022,6 +1031,7 @@ section#section-05 h4 {
 }
 
 section#section-05 h4 span {
+  color: var(--text-color-alt);
   background-color: var(--indigo);
   border-bottom-color: var(--indigo);
 }
@@ -1043,6 +1053,7 @@ section#section-06 {
 }
 
 section#section-06 h3 {
+  color: var(--text-color-alt);
   background-color: var(--violet);
 }
 
@@ -1051,6 +1062,7 @@ section#section-06 h4 {
 }
 
 section#section-06 h4 span {
+  color: var(--text-color-alt);
   background-color: var(--violet);
   border-bottom-color: var(--violet);
 }
@@ -1072,6 +1084,7 @@ section#section-07 {
 }
 
 section#section-07 h3 {
+  color: var(--text-color-alt);
   background-color: var(--blue);
 }
 
@@ -1080,6 +1093,7 @@ section#section-07 h4 {
 }
 
 section#section-07 h4 span {
+  color: var(--text-color-alt);
   background-color: var(--blue);
   border-bottom-color: var(--blue);
 }
@@ -1193,7 +1207,6 @@ div[class*="sidebox"]:not([class="sidebox-container"]) {
 }
 
 div[id*="sidebox-header"] {
-  color: var(--text-color-alt);
   padding: 2px 8px;
   margin: -4px -8px;
 }
@@ -1205,6 +1218,7 @@ div.sidebox-00 {
 }
 
 div#sidebox-header-00 {
+  color: var(--text-color-alt-2);
   background-color: var(--red);
 }
 
@@ -1332,6 +1346,7 @@ div.sidebox-01:not(#ai-box) {
 }
 
 div#sidebox-header-01 {
+  color: var(--text-color-alt);
   background-color: var(--lavender);
 }
 
@@ -1352,6 +1367,7 @@ div.sidebox-02 {
 }
 
 div#sidebox-header-02 {
+  color: var(--text-color-alt);
   background-color: var(--violet);
 }
 
@@ -1372,6 +1388,7 @@ div.sidebox-03 {
 }
 
 div#sidebox-header-03 {
+  color: var(--text-color-alt);
   background-color: var(--indigo);
 }
 
@@ -1392,6 +1409,7 @@ div.sidebox-04 {
 }
 
 div#sidebox-header-04 {
+  color: var(--text-color-alt);
   background-color: var(--blue);
 }
 
@@ -1412,6 +1430,7 @@ div.sidebox-05 {
 }
 
 div#sidebox-header-05 {
+  color: var(--text-color-alt);
   background-color: var(--green);
 }
 
@@ -1437,6 +1456,7 @@ div.sidebox-06 {
 }
 
 div#sidebox-header-06 {
+  color: var(--text-color-alt-3);
   background-color: var(--yellow);
 }
 
@@ -1457,6 +1477,7 @@ div.sidebox-07 {
 }
 
 div#sidebox-header-07 {
+  color: var(--text-color-alt);
   background-color: var(--orange);
 }
 
@@ -1477,6 +1498,7 @@ div.sidebox-08 {
 }
 
 div#sidebox-header-08 {
+  color: var(--text-color-alt-2);
   background-color: var(--red);
 }
 
@@ -1497,6 +1519,7 @@ div.sidebox-09 {
 }
 
 div#sidebox-header-09 {
+  color: var(--text-color-alt);
   background-color: var(--blue);
 }
 
@@ -1517,6 +1540,7 @@ div.sidebox-10 {
 }
 
 div#sidebox-header-10 {
+  color: var(--text-color-alt);
   background-color: var(--green);
 }
 
@@ -2223,6 +2247,9 @@ form input:placeholder-shown + button#clear-field {
   z-index: 4;
   text-align: left;
   padding: 0px 0px 10px 0px;
+  border-style: dashed;
+  border-width: 0px 2px 2px 2px;
+  border-color: var(--searcher-border-color);
 }
 
 #suggestions hr {

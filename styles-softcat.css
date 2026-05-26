@@ -74,7 +74,7 @@ ul.soft-categories li a:active {
 .table-soft#table-01 table .column-header-cell,
 .table-soft#table-08 table .column-header-cell {
   background-color: var(--red);
-  color: var(--black);
+  color: var(--text-color-alt-2);
 }
 
 .table-soft#table-01 table,
@@ -94,7 +94,7 @@ ul.soft-categories li a:active {
 .table-soft#table-02 table .column-header-cell,
 .table-soft#table-09 table .column-header-cell {
   background-color: var(--orange);
-  color: var(--black);
+  color: var(--text-color-alt-2);
 }
 
 .table-soft#table-02 table,
@@ -114,7 +114,7 @@ ul.soft-categories li a:active {
 .table-soft#table-03 table .column-header-cell,
 .table-soft#table-10 table .column-header-cell {
   background-color: var(--yellow);
-  color: var(--black);
+  color: var(--text-color-alt-3);
 }
 
 .table-soft#table-03 table,
@@ -134,7 +134,7 @@ ul.soft-categories li a:active {
 .table-soft#table-04 table .column-header-cell,
 .table-soft#table-11 table .column-header-cell {
   background-color: var(--green);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 .table-soft#table-04 table,
@@ -154,7 +154,7 @@ ul.soft-categories li a:active {
 .table-soft#table-05 table .column-header-cell,
 .table-soft#table-12 table .column-header-cell {
   background-color: var(--blue);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 .table-soft#table-05 table,
@@ -174,7 +174,7 @@ ul.soft-categories li a:active {
 .table-soft#table-06 table .column-header-cell,
 .table-soft#table-13 table .column-header-cell {
   background-color: var(--indigo);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 .table-soft#table-06 table,
@@ -192,7 +192,7 @@ ul.soft-categories li a:active {
 
 .table-soft#table-07 table .column-header-cell {
   background-color: var(--lavender);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 .table-soft#table-07 table,
@@ -214,7 +214,7 @@ ul.soft-categories li a:active {
 li#tags-01,
 li#tags-08 {
   background-color: var(--red);
-  color: var(--black);
+  color: var(--text-color-alt-2);
 }
 
 #table-02 .tags,
@@ -222,7 +222,7 @@ li#tags-08 {
 li#tags-02,
 li#tags-09 {
   background-color: var(--orange);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 #table-03 .tags,
@@ -230,7 +230,7 @@ li#tags-09 {
 li#tags-03,
 li#tags-10 {
   background-color: var(--yellow);
-  color: var(--black);
+  color: var(--text-color-alt-3);
 }
 
 #table-04 .tags,
@@ -238,7 +238,7 @@ li#tags-10 {
 li#tags-04,
 li#tags-11 {
   background-color: var(--green);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 #table-05 .tags,
@@ -246,7 +246,7 @@ li#tags-11 {
 li#tags-05,
 li#tags-12 {
   background-color: var(--blue);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 #table-06 .tags,
@@ -254,14 +254,14 @@ li#tags-12 {
 li#tags-06,
 li#tags-13 {
   background-color: var(--indigo);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 #table-07 .tags,
 li#tags-01,
 li#tags-07 {
   background-color: var(--lavender);
-  color: var(--black);
+  color: var(--text-color-alt);
 }
 
 .table-soft .material-icon {
