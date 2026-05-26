@@ -23,6 +23,8 @@
   --text-color: #fcfbfb;
   /* Blanco roto de Yahoo para texto */
   --text-color-alt: #1a1a1c;
+  --text-color-alt-2: var(--text-color);
+  --text-color-alt-3: var(--text-color-alt);
   /* Gris muy oscuro */
   --background-color: #141414;
   /* Fondo secundario oscuro */
@@ -95,7 +97,9 @@
     --fg-color: var(--text-color);
     --text-color: #333333;
     /* Gris oscuro para alta legibilidad */
-    --text-color-alt: #ededed;
+  --text-color-alt: #ededed;
+  --text-color-alt-2: #fcfbfb;
+  --text-color-alt-3: var(--text-color);
     --background-color: #f6f6f6;
     /* Gris muy claro de fondo */
     --background-color-alt: var(--text-color);
@@ -155,6 +159,8 @@
   --fg-color: var(--text-color);
   --text-color: #333333;
   --text-color-alt: #ededed;
+  --text-color-alt-2: #fcfbfb;
+  --text-color-alt-3: var(--text-color);
   --background-color: #f6f6f6;
   --background-color-alt: var(--text-color);
 

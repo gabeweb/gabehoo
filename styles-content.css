@@ -918,7 +918,7 @@ section#section-01 a {
 
 section#section-01 a:hover,
 section#section-01 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-2) !important;
   background-color: var(--orange) !important;
 }
 
@@ -949,7 +949,7 @@ section#section-02 a {
 
 section#section-02 a:hover,
 section#section-02 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-3) !important;
   background-color: var(--yellow) !important;
 }
 
@@ -1237,7 +1237,7 @@ div#sidebox-content-00 a {
 
 div#sidebox-content-00 a:hover,
 div#sidebox-content-00 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-2) !important;
   background-color: var(--red) !important;
 }
 
@@ -1466,7 +1466,7 @@ div#sidebox-content-06 a {
 
 div#sidebox-content-06 a:hover,
 div#sidebox-content-06 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-3) !important;
   background-color: var(--yellow) !important;
 }
 
@@ -1508,7 +1508,7 @@ div#sidebox-content-08 a {
 
 div#sidebox-content-08 a:hover,
 div#sidebox-content-08 a:active {
-  color: var(--bg-color) !important;
+  color: var(--text-color-alt-2) !important;
   background-color: var(--red) !important;
 }
 
