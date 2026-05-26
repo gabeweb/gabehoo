@@ -1311,18 +1311,18 @@ div#ai-box.sidebox-01 #sidebox-header-01 {
 }
 
 div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
-  color: var(--yellow);
+  color: var(--orange);
   animation: rainbow-text 5s infinite linear;
 }
 
 div#ai-box.sidebox-01 a {
-  color: var(--yellow) !important;
+  color: var(--orange) !important;
 }
 
 div#ai-box.sidebox-01 a:hover,
 div#ai-box.sidebox-01 a:active {
   color: var(--bg-color) !important;
-  background-color: var(--yellow) !important;
+  background-color: var(--orange) !important;
 }
 
 div.sidebox-01:not(#ai-box) {
