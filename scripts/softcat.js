@@ -725,6 +725,22 @@ const tableData = [
         ["#email-clients"],
       ],
       [
+        "Midor Browser",
+        "Internet",
+        {
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://astian.org/midori-browser/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#internet-browsers"],
+      ],
+      [
         "Mozilla Firefox",
         "Internet",
         {
@@ -2684,7 +2700,7 @@ const tableData = [
         ["#drivers"],
       ],
       [
-        "FancyZones (Custom Standalone",
+        "FancyZones (Custom Standalone)",
         "Utilities",
         {
           name: ["desktop_windows"],
@@ -2706,6 +2722,17 @@ const tableData = [
         ["#system-information"],
       ],
       [
+        "InstallerClean",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/no-faff/InstallerClean" },
+        { name: "attribution", title: "Open Source" },
+        ["#system-cleanup"],
+      ],
+      [
         "PeaZip",
         "Utilities",
         {
@@ -2725,6 +2752,17 @@ const tableData = [
         },
         { name: "GitHub", url: "https://github.com/microsoft/PowerToys" },
         { name: "attribution", title: "Open Source" },
+        ["#tweaks"],
+      ],
+      [
+        "Sysinternals Suite",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "Web", url: "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite" },
+        { name: "monetization_on", title: "Freeware" },
         ["#tweaks"],
       ],
       [
