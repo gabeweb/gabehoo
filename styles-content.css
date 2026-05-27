@@ -845,7 +845,7 @@ div.fancy-bar#fancy-03-dup {
 
   100% {
     transform: scaleX(1);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -857,7 +857,7 @@ div.fancy-bar#fancy-03-dup {
 
   100% {
     transform: scaleX(0.4);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -869,7 +869,7 @@ div.fancy-bar#fancy-03-dup {
 
   100% {
     transform: scaleX(1);
-    opacity: .5;
+    opacity: 0.5;
   }
 }
 
@@ -1658,7 +1658,7 @@ span.visibility_off::before {
   height: 32px;
   padding: 4px;
   transition: all 500ms ease;
-  color: var(--text-color-alt);
+  color: var(--text-color);
 }
 
 #char-counter {
@@ -1666,17 +1666,18 @@ span.visibility_off::before {
   /*height: 26px;*/
   top: 78px;
   right: 0px;
-  mix-blend-mode: difference;
 }
 
 #char-counter::before {
   content: "length: ";
+  color: var(--text-color);
 }
 
 div[class*="strength-"]::before {
   position: absolute;
   /*height: 26px;*/
   padding: 6px 2px 2px 4px;
+  color: var(--text-color);
   mix-blend-mode: difference;
 }
 
@@ -1691,33 +1692,37 @@ div[class*="strength-"]::before {
 }
 
 .strength-0::before {
+  color: var(--red) !important;
   content: "too guessable";
 }
 
 .strength-1 span {
-  background-color: var(--maroon);
+  background-color: var(--orange);
   width: 40%;
 }
 
 .strength-1::before {
+  color: var(--orange) !important;
   content: "very guessable";
 }
 
 .strength-2 span {
-  background-color: var(--orange);
-  width: 60%;
-}
-
-.strength-2::before {
-  content: "somewhat guessable";
-}
-
-.strength-3 span {
   background-color: var(--yellow);
   width: 60%;
 }
 
+.strength-2::before {
+  color: var(--yellow) !important;
+  content: "somewhat guessable";
+}
+
+.strength-3 span {
+  background-color: var(--blue);
+  width: 60%;
+}
+
 .strength-3::before {
+  color: var(--blue) !important;
   content: "safely moderate";
 }
 
@@ -1727,6 +1732,7 @@ div[class*="strength-"]::before {
 }
 
 .strength-4::before {
+  color: var(--green) !important;
   content: "very unguessable";
 }
 
@@ -1799,40 +1805,43 @@ div[class*="strength-"]::before {
   height: 32px;
   padding: 4px;
   transition: all 500ms ease;
-  color: var(--text-color-alt);
 }
 
 div[class*="pass-indicator"]::before {
   position: absolute;
   height: 32px;
   padding: 6px 2px 2px 4px;
+  color: var(--text-color);
   mix-blend-mode: difference;
 }
 
-.pass-indicator#veryweak span {
+div.pass-indicator#veryweak span {
   width: 20%;
   background: var(--red);
 }
 
 .pass-indicator#veryweak::before {
+  color: var(--red) !important;
   content: "very short";
 }
 
-.pass-indicator#weak span {
+div.pass-indicator#weak span {
   width: 40%;
   background: var(--orange);
 }
 
 .pass-indicator#weak::before {
+  color: var(--orange) !important;
   content: "short";
 }
 
-.pass-indicator#good span {
+div.pass-indicator#good span {
   width: 60%;
   background: var(--yellow);
 }
 
 .pass-indicator#good::before {
+  color: var(--yellow) !important;
   content: "good";
 }
 
@@ -1842,6 +1851,7 @@ div[class*="pass-indicator"]::before {
 }
 
 .pass-indicator#strong::before {
+  color: var(--green) !important;
   content: "long";
 }
 
