@@ -1674,7 +1674,6 @@ div[class*="strength-"]::before {
   z-index: 1;
 }
 
-/* 2. TEXTO RECORTADO (Color blanco sobre la barra) */
 div[class*="strength-"] span::before {
   position: absolute;
   top: 0;
@@ -1828,60 +1827,89 @@ div[class*="strength-"] span::before {
   background-color: transparent;
   border: 1px dashed var(--searcher-border-color);
   margin-top: 0.75rem;
+  box-sizing: border-box;
 }
 
 .wrapper-pwd-gen .pass-indicator span {
   display: block;
   height: 32px;
   padding: 4px;
-  transition: all 500ms ease;
+  transition: width 500ms ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
 }
 
 div[class*="pass-indicator"]::before {
   position: absolute;
-  height: 32px;
+  top: 0;
+  left: 0;
   padding: 6px 2px 2px 4px;
-  color: var(--text-color);
-  mix-blend-mode: difference;
+  z-index: 1;
+}
+
+div[class*="pass-indicator"] span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 2px 2px 4px;
+  color: var(--text-color-alt);
+  z-index: 2;
+  width: 100%;
+  white-space: nowrap;
 }
 
 div.pass-indicator#veryweak span {
   width: 20%;
   background: var(--red);
 }
-
 .pass-indicator#veryweak::before {
-  color: var(--red) !important;
+  color: var(--red);
+}
+.pass-indicator#veryweak::before,
+.pass-indicator#veryweak span::before {
   content: "very short";
 }
 
+/* WEAK */
 div.pass-indicator#weak span {
   width: 40%;
   background: var(--orange);
 }
-
 .pass-indicator#weak::before {
-  color: var(--orange) !important;
+  color: var(--orange);
+}
+.pass-indicator#weak::before,
+.pass-indicator#weak span::before {
   content: "short";
 }
 
+/* GOOD */
 div.pass-indicator#good span {
   width: 60%;
   background: var(--yellow);
 }
-
 .pass-indicator#good::before {
-  color: var(--yellow) !important;
+  color: var(--yellow);
+}
+.pass-indicator#good::before,
+.pass-indicator#good span::before {
   content: "good";
+}
+/* Opcional: Si el texto blanco no se lee bien sobre tu var(--yellow) */
+.pass-indicator#good span::before {
+  color: var(--text-color-alt-3);
 }
 
 .pass-indicator#strong span {
   width: 100%;
   background: var(--green);
 }
-
 .pass-indicator#strong::before {
-  color: var(--green) !important;
+  color: var(--green);
+}
+.pass-indicator#strong::before,
+.pass-indicator#strong span::before {
   content: "long";
 }
 
