@@ -1651,20 +1651,44 @@ span.visibility_off::before {
   display: block;
   background-color: transparent;
   border: 1px dashed var(--searcher-border-color);
+  position: relative;
+  box-sizing: border-box;
 }
 
 #password-strength span {
   display: block;
   height: 32px;
   padding: 4px;
-  transition: all 500ms ease;
-  color: var(--text-color);
+  transition: width 500ms ease;
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+/* 1. TEXTO DE FONDO (Color original) */
+div[class*="strength-"]::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 2px 2px 4px;
+  z-index: 1;
+}
+
+/* 2. TEXTO RECORTADO (Color blanco sobre la barra) */
+div[class*="strength-"] span::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 6px 2px 2px 4px;
+  color: var(--text-color-alt);
+  z-index: 2;
+  width: 100%;
+  white-space: nowrap;
 }
 
 #char-counter {
   position: absolute;
-  /*height: 26px;*/
-  top: 78px;
+  top: 0px;
   right: 0px;
 }
 
@@ -1673,66 +1697,72 @@ span.visibility_off::before {
   color: var(--text-color);
 }
 
-div[class*="strength-"]::before {
-  position: absolute;
-  /*height: 26px;*/
-  padding: 6px 2px 2px 4px;
-  color: var(--text-color);
-  mix-blend-mode: difference;
-}
-
 .strength-null span {
   background-color: transparent;
   width: 100%;
 }
 
+.strength-0::before {
+  color: var(--red);
+}
 .strength-0 span {
   background-color: var(--red);
   width: 20%;
 }
-
-.strength-0::before {
-  color: var(--red) !important;
+.strength-0::before,
+.strength-0 span::before {
   content: "too guessable";
 }
 
+.strength-1::before {
+  color: var(--orange);
+}
 .strength-1 span {
   background-color: var(--orange);
   width: 40%;
 }
-
-.strength-1::before {
-  color: var(--orange) !important;
+.strength-1::before,
+.strength-1 span::before {
   content: "very guessable";
 }
 
+.strength-2::before {
+  color: var(--yellow);
+}
 .strength-2 span {
   background-color: var(--yellow);
   width: 60%;
 }
-
-.strength-2::before {
-  color: var(--yellow) !important;
+.strength-2::before,
+.strength-2 span::before {
   content: "somewhat guessable";
 }
-
-.strength-3 span {
-  background-color: var(--blue);
-  width: 60%;
+/* Si en el amarillo el texto blanco no se lee bien, puedes descomentar la línea de abajo: */
+.strength-2 span::before {
+  color: var(--text-color-alt-3) !important;
 }
 
 .strength-3::before {
-  color: var(--blue) !important;
+  color: var(--blue);
+}
+.strength-3 span {
+  background-color: var(--blue);
+  width: 75%;
+}
+.strength-3::before,
+.strength-3 span::before {
   content: "safely moderate";
 }
 
+.strength-4::before {
+  color: var(--green);
+}
 .strength-4 span {
   background-color: var(--green);
   width: 100%;
 }
-
-.strength-4::before {
-  color: var(--green) !important;
+.strength-4::before,
+.strength-4 span::before {
   content: "very unguessable";
 }
 
