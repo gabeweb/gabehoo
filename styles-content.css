@@ -523,7 +523,7 @@ section#section-01 .breaking-news h4 {
   );
   background-size: 200% 100%;
   animation: gradient-animation 2s ease infinite alternate;
-  border-color: var(--green);
+  border: none;
 }
 
 @keyframes gradient-animation {
@@ -560,7 +560,7 @@ section#section-01 .comictive h4 span,
 section#section-01 .comictive h4 {
   color: var(--text-color-alt);
   background-color: var(--lavender);
-  border-color: var(--lavender);
+  border: none;
 }
 
 section#section-01 .comictive li {
@@ -603,7 +603,7 @@ section#section-01 .funny h4 {
   background-size: 200% 100%;
   border-color: var(--green);
   animation: gradient-animation 2s ease infinite alternate;
-  border-color: var(--green);
+  border: none;
 }
 
 section#section-01 .funny li {
@@ -636,7 +636,7 @@ section#section-01 .sportive {
 section#section-01 .sportive h4 span,
 section#section-01 .sportive h4 {
   background-color: var(--red);
-  border-color: var(--red);
+  border: none;
 }
 
 section#section-01 .sportive li {
