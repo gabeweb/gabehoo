@@ -1589,7 +1589,7 @@ div#sidebox-content-10 a:active {
 
 #password-input {
   width: 100%;
-  padding: 10px 62px 10px 34px;
+  padding: 10px 56px 10px 34px;
   margin: 10px 0 10px 0;
   background-color: transparent;
   font-family: var(--fontBody);
@@ -1616,7 +1616,7 @@ span#togglePassword {
   font-size: 1.5em;
   width: 32px;
   cursor: pointer;
-  top: 38px;
+  top: 36px;
   right: 0;
   z-index: 9999999999999;
 }
@@ -1643,7 +1643,7 @@ span.visibility_off::before {
   position: absolute;
   align-self: last baseline;
   right: 32px;
-  top: 42px;
+  top: 38px;
 }
 
 #password-strength {
