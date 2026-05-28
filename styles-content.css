@@ -1212,14 +1212,14 @@ div[id*="sidebox-header"] {
 }
 
 div.sidebox-00 {
-  background-color: var(--red-soft);
-  border-color: var(--red);
-  /*box-shadow: 12px 12px var(--red);*/
+  background-color: var(--violet-soft);
+  border-color: var(--violet);
+  /*box-shadow: 12px 12px var(--violet);*/
 }
 
 div#sidebox-header-00 {
-  color: var(--text-color-alt-2);
-  background-color: var(--red);
+  color: var(--text-color-alt);
+  background-color: var(--violet);
 }
 
 div#sidebox-content-00 {
@@ -1232,13 +1232,13 @@ div#sidebox-content-00 {
 }
 
 div#sidebox-content-00 a {
-  color: var(--red) !important;
+  color: var(--violet) !important;
 }
 
 div#sidebox-content-00 a:hover,
 div#sidebox-content-00 a:active {
-  color: var(--text-color-alt-2) !important;
-  background-color: var(--red) !important;
+  color: var(--text-color-alt) !important;
+  background-color: var(--violet) !important;
 }
 
 /* AI-STYLED ELEMENTS */
@@ -2386,7 +2386,7 @@ span.info-connector {
   overflow: hidden;
   display: block;
   text-transform: lowercase;
-  color: var(--red);
+  color: var(--violet);
   font-weight: bold;
   text-align: center !important;
 }
