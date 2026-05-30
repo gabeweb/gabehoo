@@ -2207,7 +2207,7 @@ span#weather-description {
 
 #search-container {
   display: block;
-  width: 100%;
+  width: 90%;
   margin: auto;
   position: relative;
   /*background-color: var(--searcher-bg-color);*/
@@ -2700,7 +2700,11 @@ a:hover span.arrow-up {
   }
 
   #search-container {
-    width: 90%;
+    width: 100%;
+  }
+
+  #search {
+    width: 100%;
   }
 
   #suggestions {
