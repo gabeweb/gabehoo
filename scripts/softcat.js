@@ -771,6 +771,20 @@ const tableData = [
         ["#email-clients", "#news-clients"],
       ],
       [
+        "Pegasus Mail",
+        "Internet",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.pmail.com/downloads.htm",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#email-clients", "#news-clients"],
+      ],
+      [
         "Session",
         "Internet",
         {
