@@ -894,7 +894,7 @@ section[id*="section-"] h4 span {
 }
 
 .section#section-01 {
-  background-color: var(--orange-soft);
+  /*background-color: var(--orange-soft);*/
   border-color: var(--orange);
   /*box-shadow: 12px 12px var(--orange);*/
 }
@@ -923,7 +923,7 @@ section#section-01 a:active {
 }
 
 section#section-02 {
-  background-color: var(--yellow-soft);
+  /*background-color: var(--yellow-soft);*/
   border-color: var(--yellow);
   /*box-shadow: 12px 12px var(--yellow);*/
 }
@@ -954,7 +954,7 @@ section#section-02 a:active {
 }
 
 section#section-03 {
-  background-color: var(--green-soft);
+  /*background-color: var(--green-soft);*/
   border-color: var(--green);
   /*box-shadow: 12px 12px var(--green);*/
 }
@@ -985,7 +985,7 @@ section#section-03 a:active {
 }
 
 section#section-04 {
-  background-color: var(--blue-soft);
+  /*background-color: var(--blue-soft);*/
   border-color: var(--blue);
   /*box-shadow: 12px 12px var(--blue);*/
 }
@@ -1016,7 +1016,7 @@ section#section-04 a:active {
 }
 
 section#section-05 {
-  background-color: var(--indigo-soft);
+  /*background-color: var(--indigo-soft);*/
   border-color: var(--indigo);
   /*box-shadow: 12px 12px var(--indigo);*/
 }
@@ -1047,7 +1047,7 @@ section#section-05 a:active {
 }
 
 section#section-06 {
-  background-color: var(--violet-soft);
+  /*background-color: var(--violet-soft);*/
   border-color: var(--violet);
   /*box-shadow: 12px 12px var(--violet);*/
 }
@@ -1078,7 +1078,7 @@ section#section-06 a:active {
 }
 
 section#section-07 {
-  background-color: var(--blue-soft);
+  /*background-color: var(--blue-soft);*/
   border-color: var(--blue);
   /*box-shadow: 12px 12px var(--blue);*/
 }
@@ -1307,7 +1307,7 @@ div#sidebox-content-00 a:active {
 /* AI CHATBOTS BOX */
 
 div#ai-box.sidebox-01 {
-  background-color: var(--yellow-soft);
+  /*background-color: var(--yellow-soft);*/
   padding: 4px 8px;
   border-width: 2px;
   border-style: dashed !important;
@@ -1340,7 +1340,7 @@ div#ai-box.sidebox-01 a:active {
 }
 
 div.sidebox-01:not(#ai-box) {
-  background-color: var(--lavender-soft);
+  /*background-color: var(--lavender-soft);*/
   border-color: var(--lavender);
   /*box-shadow: 12px 12px var(--lavender);*/
 }
@@ -1361,7 +1361,7 @@ div.sidebox-01:not(#ai-box) a:active {
 }
 
 div.sidebox-02 {
-  background-color: var(--violet-soft);
+  /*background-color: var(--violet-soft);*/
   border-color: var(--violet);
   /*box-shadow: 12px 12px var(--violet);*/
 }
@@ -1382,7 +1382,7 @@ div#sidebox-content-02 a:active {
 }
 
 div.sidebox-03 {
-  background-color: var(--indigo-soft);
+  /*background-color: var(--indigo-soft);*/
   border-color: var(--indigo);
   /*box-shadow: 12px 12px var(--indigo);*/
 }
@@ -1403,7 +1403,7 @@ div#sidebox-content-03 a:active {
 }
 
 div.sidebox-04 {
-  background-color: var(--blue-soft);
+  /*background-color: var(--blue-soft);*/
   border-color: var(--blue);
   /*box-shadow: 12px 12px var(--blue);*/
 }
@@ -1424,7 +1424,7 @@ div#sidebox-content-04 a:active {
 }
 
 div.sidebox-05 {
-  background-color: var(--green-soft);
+  /*background-color: var(--green-soft);*/
   border-color: var(--green);
   /*box-shadow: 12px 12px var(--green);*/
 }
@@ -1450,7 +1450,7 @@ div#sidebox-content-05 a:active {
 }
 
 div.sidebox-06 {
-  background-color: var(--yellow-soft);
+  /*background-color: var(--yellow-soft);*/
   border-color: var(--yellow);
   /*box-shadow: 12px 12px var(--yellow);*/
 }
@@ -1471,7 +1471,7 @@ div#sidebox-content-06 a:active {
 }
 
 div.sidebox-07 {
-  background-color: var(--orange-soft);
+  /*background-color: var(--orange-soft);*/
   border-color: var(--orange);
   /*box-shadow: 12px 12px var(--orange);*/
 }
@@ -1492,7 +1492,7 @@ div#sidebox-content-07 a:active {
 }
 
 div.sidebox-08 {
-  background-color: var(--red-soft);
+  /*background-color: var(--red-soft);*/
   border-color: var(--red);
   /*box-shadow: 12px 12px var(--red);*/
 }
@@ -1513,7 +1513,7 @@ div#sidebox-content-08 a:active {
 }
 
 div.sidebox-09 {
-  background-color: var(--blue-soft);
+  /*background-color: var(--blue-soft);*/
   border-color: var(--blue);
   /*box-shadow: 12px 12px var(--blue);*/
 }
@@ -1534,7 +1534,7 @@ div#sidebox-content-09 a:active {
 }
 
 div.sidebox-10 {
-  background-color: var(--green-soft);
+  /*background-color: var(--green-soft);*/
   border-color: var(--green);
   /*box-shadow: 12px 12px var(--green);*/
 }
