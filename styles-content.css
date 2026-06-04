@@ -138,6 +138,14 @@
 }
 
 @font-face {
+  font-family: "Doto Black";
+  src: url("asset/fonts/Doto/Doto.ttf")
+    format("truetype");
+  font-style: normal;
+  font-weight: black;
+}
+
+@font-face {
   font-family: "MozillaHeadline";
   src: url("asset/fonts/MozillaHeadline/MozillaHeadline-Regular.otf")
     format("opentype");
@@ -1212,14 +1220,14 @@ div[id*="sidebox-header"] {
 }
 
 div.sidebox-00 {
-  background-color: var(--violet-soft);
-  border-color: var(--violet);
-  /*box-shadow: 12px 12px var(--violet);*/
+  /*background-color: var(--green-soft);*/
+  border-color: var(--green);
+  /*box-shadow: 12px 12px var(--green);*/
 }
 
 div#sidebox-header-00 {
   color: var(--text-color-alt);
-  background-color: var(--violet);
+  background-color: var(--green);
 }
 
 div#sidebox-content-00 {
@@ -1228,17 +1236,17 @@ div#sidebox-content-00 {
   overflow: hidden;
   position: relative;
   height: 50px;
-  padding-top: 4px;
+  padding: 2px 0px 2px 0px;
 }
 
 div#sidebox-content-00 a {
-  color: var(--violet) !important;
+  color: var(--green) !important;
 }
 
 div#sidebox-content-00 a:hover,
 div#sidebox-content-00 a:active {
   color: var(--text-color-alt) !important;
-  background-color: var(--violet) !important;
+  background-color: var(--green) !important;
 }
 
 /* AI-STYLED ELEMENTS */
@@ -2350,6 +2358,7 @@ div#playingInfo {
   display: block;
   width: fit-content;
   margin: auto;
+  font-family: "Doto Black";
 }
 
 .playing-info {
@@ -2359,14 +2368,14 @@ div#playingInfo {
 
 #playingInfo p.playing-now,
 #playingInfo .playing-not {
-  font-size: 1.2em;
-  text-transform: uppercase;
+  font-size: 1.3em;
   animation: scroll-left 30s linear infinite;
   -webkit-animation: scroll-left 30s linear infinite;
   white-space: nowrap;
   overflow: hidden;
   display: block;
   position: relative;
+  text-transform: uppercase;
 }
 
 #playingInfo p.playing-now:hover,
@@ -2385,8 +2394,7 @@ span.info-connector {
   white-space: nowrap;
   overflow: hidden;
   display: block;
-  text-transform: lowercase;
-  color: var(--violet);
+  color: var(--green);
   font-weight: bold;
   text-align: center !important;
 }
