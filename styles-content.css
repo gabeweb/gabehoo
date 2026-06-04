@@ -138,11 +138,10 @@
 }
 
 @font-face {
-  font-family: "Doto Black";
-  src: url("asset/fonts/Doto/Doto.ttf")
-    format("truetype");
+  font-family: "Doto";
+  src: url("asset/fonts/Doto/Doto.ttf") format("truetype");
   font-style: normal;
-  font-weight: black;
+  font-weight: 900;
 }
 
 @font-face {
@@ -1235,7 +1234,7 @@ div#sidebox-content-00 {
   align-content: center;
   overflow: hidden;
   position: relative;
-  height: 50px;
+  height: 56px;
   padding: 2px 0px 2px 0px;
 }
 
@@ -2358,7 +2357,6 @@ div#playingInfo {
   display: block;
   width: fit-content;
   margin: auto;
-  font-family: "Doto Black";
 }
 
 .playing-info {
@@ -2367,8 +2365,19 @@ div#playingInfo {
 }
 
 #playingInfo p.playing-now,
-#playingInfo .playing-not {
-  font-size: 1.3em;
+#playingInfo p.playing-now *,
+#playingInfo p.playingNow,
+#playingInfo p.playingNow *,
+#playingInfo p.playing-not,
+#playingInfo p.playing-not * {
+  font-family: "Doto", sans-serif !important;
+  font-weight: 900 !important;
+}
+
+#playingInfo p.playing-now,
+#playingInfo p.playingNow,
+#playingInfo p.playing-not {
+  font-size: 1.5em;
   animation: scroll-left 30s linear infinite;
   -webkit-animation: scroll-left 30s linear infinite;
   white-space: nowrap;
