@@ -119,7 +119,7 @@ $('#nowPlayingBox').nowplaying({
           if (options.icon) {
             html =
               html +
-              '<p class="playingNow"><img src="' +
+              '<p class="playing-now"><img src="' +
               options.icon +
               '" class="icon" />' +
               "&nbsp";
