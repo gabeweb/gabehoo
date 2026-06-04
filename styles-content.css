@@ -139,9 +139,9 @@
 
 @font-face {
   font-family: "Doto";
-  src: url("asset/fonts/Doto/Doto.ttf") format("truetype");
+  src: url("asset/fonts/Doto/Doto.woff2") format("woff2");
   font-style: normal;
-  font-weight: 900;
+  font-weight: 500;
 }
 
 @font-face {
@@ -2370,8 +2370,10 @@ div#playingInfo {
 #playingInfo p.playingNow *,
 #playingInfo p.playing-not,
 #playingInfo p.playing-not * {
-  font-family: "Doto", sans-serif !important;
-  font-weight: 900 !important;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
 
 #playingInfo p.playing-now,
