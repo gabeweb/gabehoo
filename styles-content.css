@@ -2364,21 +2364,17 @@ div#playingInfo {
   align-content: center;
 }
 
-#playingInfo p.playing-now,
-#playingInfo p.playing-now *,
-#playingInfo p.playingNow,
-#playingInfo p.playingNow *,
-#playingInfo p.playing-not,
-#playingInfo p.playing-not * {
+p.playing-now,
+p.playing-not
+{
   font-family: "Doto", sans-serif;
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
 }
 
-#playingInfo p.playing-now,
-#playingInfo p.playingNow,
-#playingInfo p.playing-not {
+p.playing-now,
+p.playing-not {
   font-size: 1.5em;
   animation: scroll-left 30s linear infinite;
   -webkit-animation: scroll-left 30s linear infinite;
@@ -2389,8 +2385,8 @@ div#playingInfo {
   text-transform: uppercase;
 }
 
-#playingInfo p.playing-now:hover,
-#playingInfo .playing-not:hover {
+p.playing-now:hover,
+.playing-not:hover {
   animation-play-state: paused;
 }
 
