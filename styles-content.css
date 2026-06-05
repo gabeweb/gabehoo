@@ -1219,7 +1219,7 @@ div[id*="sidebox-header"] {
 }
 
 div.sidebox-00 {
-  /*background-color: var(--green-soft);*/
+  background-color: var(--green-soft);
   border-color: var(--green);
   /*box-shadow: 12px 12px var(--green);*/
 }
@@ -1235,7 +1235,7 @@ div#sidebox-content-00 {
   overflow: hidden;
   position: relative;
   height: 56px;
-  padding: 2px 0px 2px 0px;
+  padding: 0px;
 }
 
 div#sidebox-content-00 a {
@@ -2357,6 +2357,11 @@ div#playingInfo {
   display: block;
   width: fit-content;
   margin: auto;
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5em;
 }
 
 .playing-info {
@@ -2365,17 +2370,7 @@ div#playingInfo {
 }
 
 p.playing-now,
-p.playing-not
-{
-  font-family: "Doto", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-p.playing-now,
 p.playing-not {
-  font-size: 1.5em;
   animation: scroll-left 30s linear infinite;
   -webkit-animation: scroll-left 30s linear infinite;
   white-space: nowrap;
@@ -2398,12 +2393,7 @@ span.info-connector {
 }
 
 #playingInfo p.playing-not {
-  white-space: nowrap;
-  overflow: hidden;
-  display: block;
   color: var(--green);
-  font-weight: bold;
-  text-align: center !important;
 }
 
 .playing-not a {
