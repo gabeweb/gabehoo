@@ -127,8 +127,14 @@ $('#nowPlayingBox').nowplaying({
 
           html =
             html +
-            "</span>" +
-            '<p class="playing-now"><object class="bars"><button class="bar bar1" /><button class="bar bar2" /><button class="bar bar3" /></object><span class="playing-info"><span class="track">' +
+            '</span><p class="playing-now"><object class="bars"><button class="bar bar1" /><button class="bar bar2" /><button class="bar bar3" /></object><span class="playing-info"><span class="info-connector"> Artist: </span>' +
+            '<span class="artist">' +
+            '<a href="https://last.fm/user/' + options.username + '/library/music/' +
+            track.artist["#text"] +
+            '/" target="_blank">' +
+            track.artist["#text"] +
+            "</a>" +
+            "</span>" + '<span class="track"><span class="info-connector"> / Track: </span>' +
             '<a href="https://last.fm/user/' + options.username + '/library/music/' +
             track.artist["#text"] +
             "/" +
@@ -138,20 +144,13 @@ $('#nowPlayingBox').nowplaying({
             '/" target="_blank">' +
             track.name +
             "</a>" +
-            "</span>" +
-            '<span class="info-connector"> by </span>' +
-            '<span class="artist">' +
-            '<a href="https://last.fm/user/' + options.username + '/library/music/' +
-            track.artist["#text"] +
-            '/" target="_blank">' +
-            track.artist["#text"] +
-            "</a>" +
-            "</span>";
+            "</span>"
+            ;
 
           if (track.album["#text"]) {
             html =
               html +
-              '<span class="album"><span class="info-connector"> from </span>' +
+              '<span class="album"><span class="info-connector"> / Album: </span>' +
               '<a href="https://last.fm/user/' + options.username + '/library/music/' +
               track.artist["#text"] +
               "/" +
