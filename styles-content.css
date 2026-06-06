@@ -2508,6 +2508,20 @@ span.info-connector {
   background-color: var(--green);
   appearance: none;
   border: 0px none;
+  -webkit-mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 2px,
+    transparent 2px,
+    transparent 3px
+  );
+  mask-image: repeating-linear-gradient(
+    to bottom,
+    black 0px,
+    black 2px,
+    transparent 2px,
+    transparent 3px
+  );
 }
 
 .bars .bar.bar1 {
