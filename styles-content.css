@@ -139,10 +139,14 @@
 
 @font-face {
   font-family: "Doto";
-  src: url("asset/fonts/Doto/Doto[ROND\,wght].ttf")
-    format("truetype-variations");
+  src:
+    url("asset/fonts/Doto/Doto[ROND\,wght].ttf") format("truetype-variations"),
+    url("asset/fonts/Doto/Doto.woff2") format("woff2");
+  font-weight: normal;
   font-style: normal;
-  font-weight: 400;
+  font-variation-settings:
+    "wght" 400,
+    "wdth" 300;
 }
 
 @font-face {
@@ -2362,7 +2366,7 @@ div#playingInfo {
   font-weight: 500;
   font-style: normal;
   font-stretch: normal;
-  font-variation-settings: "ROND" 100;
+  font-variation-settings: "ROND" 100, "wght" 500;
   font-optical-sizing: auto;
   line-height: 1em;
   font-size: 1.7rem;
