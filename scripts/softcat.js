@@ -2926,6 +2926,17 @@ const tableData = [
         ["#wallets"],
       ],
       [
+        "SecondFi",
+        "Wallets",
+        {
+          name: ["android phone_iphone"],
+          title: ["Android, iOS"],
+        },
+        { name: "Web", url: "https://secondfi.io/" },
+        { name: "monetization_on", title: "Freeware" },
+        ["#wallets"],
+      ],
+      [
         "Solflare",
         "Wallets",
         {
@@ -2933,17 +2944,6 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://www.solflare.com/download/" },
-        { name: "attribution", title: "Open Source" },
-        ["#wallets"],
-      ],
-      [
-        "Yoroi Wallet",
-        "Wallets",
-        {
-          name: ["android phone_iphone"],
-          title: ["Android, iOS"],
-        },
-        { name: "Web", url: "https://yoroiwallet.com/" },
         { name: "attribution", title: "Open Source" },
         ["#wallets"],
       ],
