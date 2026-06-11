@@ -2492,7 +2492,7 @@ span.info-connector {
   display: flex;
   justify-content: space-between;
   width: 40px;
-  height: 24px;
+  height: 1em;
   position: absolute;
   bottom: 4px;
 }
