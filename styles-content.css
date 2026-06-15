@@ -2354,13 +2354,13 @@ div#nowPlaying-container {
   padding: 0;
   display: flex;
   flex: 1;
-  width: 100%;
+  width: fit-content;
   margin: auto;
 }
 
 div#playingInfo {
   display: block;
-  width: fit-content;
+  width: 100%;
   margin: -4px -2px;
   font-family: "Doto", sans-serif;
   font-weight: 500;
