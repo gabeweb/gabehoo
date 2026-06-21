@@ -2186,6 +2186,17 @@ const tableData = [
         ["#note-taking"],
       ],
       [
+        "Okular",
+        "Productivity",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "Web", url: "https://okular.kde.org" },
+        { name: "attribution", title: "Open Source" },
+        ["#doc-viewer"],
+      ],
+      [
         "ONLYOFFICE",
         "Productivity",
         {
