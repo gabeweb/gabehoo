@@ -334,7 +334,7 @@ const tableData = [
           name: ["flutter_dash desktop_mac desktop_windows"],
           title: ["Linux, macOS, Windows"],
         },
-        { name: "GitHub", url: "https://www.python.org" },
+        { name: "Web", url: "https://www.python.org" },
         { name: "attribution", title: "Open Source" },
         ["#runtime"],
       ],
