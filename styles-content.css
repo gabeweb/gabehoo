@@ -2374,7 +2374,7 @@ div#playingInfo {
 
 .playing-info {
   margin-left: 50px;
-  align-content: center;
+  padding-right: 10px;
 }
 
 p.playing-now,
