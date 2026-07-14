@@ -1791,6 +1791,20 @@ const tableData = [
     ],
     rows: [
       [
+        "aMule",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/amule-org/amule",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#file-sharing"],
+      ],
+      [
         "BiglyBT",
         "P2P",
         {
