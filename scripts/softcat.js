@@ -381,6 +381,17 @@ const tableData = [
         ["#text-editor"],
       ],
       [
+        "starship",
+        "Development",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/starship/starship" },
+        { name: "attribution", title: "Open Source" },
+        ["#terminal"],
+      ],
+      [
         "Temurin (OpenJDK/JRE)",
         "Development",
         {
