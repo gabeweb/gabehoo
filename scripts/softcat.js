@@ -2816,6 +2816,17 @@ const tableData = [
         ["#tweaks"],
       ],
       [
+        "WhatInStartup",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "Web", url: "https://www.nirsoft.net/utils/what_run_in_startup.html" },
+        { name: "monetization_on", title: "Freeware" },
+        ["#tweaks"],
+      ],
+      [
         "Window Centering Helper",
         "Utilities",
         {
