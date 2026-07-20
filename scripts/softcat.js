@@ -32,6 +32,17 @@ const tableData = [
         ["#display"],
       ],
       [
+        "Twinkle Tray",
+        "Accessibility",
+        { name: "desktop_windows", title: "Windows" },
+        {
+          name: "GitHub",
+          url: "https://github.com/xanderfrangos/twinkle-tray",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#display"],
+      ],
+      [
         "Windows Auto Dark Mode",
         "Accessibility",
         { name: "desktop_windows", title: "Windows" },
