@@ -553,7 +553,7 @@ section#section-01 .breaking-news li {
 }
 
 section#section-01 .breaking-news a {
-  color: var(--indigo) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-01 .breaking-news a:hover,
@@ -580,7 +580,7 @@ section#section-01 .comictive li {
 }
 
 section#section-01 .comictive a {
-  color: var(--lavender) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-01 .comictive a:hover,
@@ -630,7 +630,7 @@ section#section-01 .funny li {
 }
 
 section#section-01 .funny a {
-  color: var(--green) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-01 .funny a:hover,
@@ -656,7 +656,7 @@ section#section-01 .sportive li {
 }
 
 section#section-01 .sportive a {
-  color: var(--red) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-01 .sportive a:hover,
@@ -799,7 +799,7 @@ section#section-00 h4 {
 }
 
 section#section-00 a {
-  color: var(--blue) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-00 a:hover,
@@ -925,7 +925,7 @@ section#section-01 h4 {
 }
 
 section#section-01 a {
-  color: var(--orange) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-01 a:hover,
@@ -956,7 +956,7 @@ section#section-02 h4 span {
 }
 
 section#section-02 a {
-  color: var(--yellow) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-02 a:hover,
@@ -987,7 +987,7 @@ section#section-03 h4 span {
 }
 
 section#section-03 a {
-  color: var(--green) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-03 a:hover,
@@ -1018,7 +1018,7 @@ section#section-04 h4 span {
 }
 
 section#section-04 a {
-  color: var(--blue) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-04 a:hover,
@@ -1049,7 +1049,7 @@ section#section-05 h4 span {
 }
 
 section#section-05 a {
-  color: var(--indigo) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-05 a:hover,
@@ -1080,7 +1080,7 @@ section#section-06 h4 span {
 }
 
 section#section-06 a {
-  color: var(--violet) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-06 a:hover,
@@ -1111,7 +1111,7 @@ section#section-07 h4 span {
 }
 
 section#section-07 a {
-  color: var(--blue) !important;
+  color: var(--link-color) !important;
 }
 
 section#section-07 a:hover,
@@ -1244,7 +1244,7 @@ div#sidebox-content-00 {
 }
 
 div#sidebox-content-00 a {
-  color: var(--green) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-00 a:hover,
@@ -1342,7 +1342,7 @@ div#ai-box.sidebox-01 > #sidebox-header-01 h4 {
 }
 
 div#ai-box.sidebox-01 a {
-  color: var(--orange) !important;
+  color: var(--link-color) !important;
 }
 
 div#ai-box.sidebox-01 a:hover,
@@ -1363,7 +1363,7 @@ div#sidebox-header-01 {
 }
 
 div.sidebox-01:not(#ai-box) a {
-  color: var(--lavender) !important;
+  color: var(--link-color) !important;
 }
 
 div.sidebox-01:not(#ai-box) a:hover,
@@ -1384,7 +1384,7 @@ div#sidebox-header-02 {
 }
 
 div#sidebox-content-02 a {
-  color: var(--violet) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-02 a:hover,
@@ -1405,7 +1405,7 @@ div#sidebox-header-03 {
 }
 
 div#sidebox-content-03 a {
-  color: var(--indigo) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-03 a:hover,
@@ -1426,7 +1426,7 @@ div#sidebox-header-04 {
 }
 
 div#sidebox-content-04 a {
-  color: var(--blue) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-04 a:hover,
@@ -1452,7 +1452,7 @@ div#sidebox-content-05 {
 }
 
 div#sidebox-content-05 a {
-  color: var(--green) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-05 a:hover,
@@ -1473,7 +1473,7 @@ div#sidebox-header-06 {
 }
 
 div#sidebox-content-06 a {
-  color: var(--yellow) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-06 a:hover,
@@ -1494,7 +1494,7 @@ div#sidebox-header-07 {
 }
 
 div#sidebox-content-07 a {
-  color: var(--orange) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-07 a:hover,
@@ -1515,7 +1515,7 @@ div#sidebox-header-08 {
 }
 
 div#sidebox-content-08 a {
-  color: var(--red) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-08 a:hover,
@@ -1536,7 +1536,7 @@ div#sidebox-header-09 {
 }
 
 div#sidebox-content-09 a {
-  color: var(--blue) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-09 a:hover,
@@ -1562,7 +1562,7 @@ div#sidebox-content-10 {
 }
 
 div#sidebox-content-10 a {
-  color: var(--green) !important;
+  color: var(--link-color) !important;
 }
 
 div#sidebox-content-10 a:hover,
