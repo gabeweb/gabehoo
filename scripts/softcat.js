@@ -1897,6 +1897,20 @@ const tableData = [
         ["#file-sharing"],
       ],
       [
+        "Nicotine+",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/nicotine-plus/nicotine-plus",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#file-sharing"],
+      ],
+      [
         "OneDrive",
         "P2P",
         {
@@ -1951,6 +1965,20 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#synchronization"],
+      ],
+      [
+        "Soulseek",
+        "P2P",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.slsknet.org/news/node/1",
+        },
+        { name: "monetization_on", title: "Freeware" },
+        ["#file-sharing"],
       ],
       [
         "SyncFolders",
