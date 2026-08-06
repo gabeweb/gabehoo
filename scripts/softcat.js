@@ -2844,6 +2844,17 @@ const tableData = [
         ["#tweaks"],
       ],
       [
+        "UnSign",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/SV-Foster/UnSign" },
+        { name: "attribution", title: "Open Source" },
+        ["#tweaks"],
+      ],
+      [
         "Sysinternals Suite",
         "Utilities",
         {
