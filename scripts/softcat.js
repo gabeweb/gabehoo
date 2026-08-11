@@ -2176,6 +2176,23 @@ const tableData = [
         ["#office-suite"],
       ],
       [
+        "Monoleaf",
+        "Productivity",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/vibingbiochemist/Monoleaf",
+        },
+        {
+          name: "attribution",
+          title: "Open Source",
+        },
+        ["#word-processor"],
+      ],
+      [
         "NAPS2",
         "Productivity",
         {
