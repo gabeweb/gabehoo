@@ -2839,6 +2839,17 @@ const tableData = [
         ["#system-cleanup"],
       ],
       [
+        "Libre Hardware Monitor",
+        "Utilities",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" },
+        { name: "attribution", title: "Open Source" },
+        ["#hardware-monitor"],
+      ],
+      [
         "PeaZip",
         "Utilities",
         {
