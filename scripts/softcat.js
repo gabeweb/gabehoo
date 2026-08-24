@@ -747,7 +747,7 @@ const tableData = [
         ["#email-clients"],
       ],
       [
-        "Midor Browser",
+        "Midori Browser",
         "Internet",
         {
           name: [
@@ -791,6 +791,22 @@ const tableData = [
         },
         { name: "attribution", title: "Open Source" },
         ["#email-clients", "#news-clients"],
+      ],
+      [
+        "Pale Moon",
+        "Internet",
+        {
+          name: [
+            "flutter_dash desktop_mac desktop_windows",
+          ],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.palemoon.org/download.shtml",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#internet-browsers"],
       ],
       [
         "Pegasus Mail",
