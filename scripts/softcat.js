@@ -628,6 +628,17 @@ const tableData = [
         { name: "monetization_on", title: "Freemiun" },
         ["#editors"],
       ],
+      [
+        "ZCAD",
+        "Graphics",
+        {
+          name: ["flutter_dash desktop_windows"],
+          title: ["Linux, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/zamtmn/zcad" },
+        { name: "attribution", title: "Open Source" },
+        ["#cad"],
+      ],
     ],
   },
   {
@@ -1113,6 +1124,20 @@ const tableData = [
         ["#disc-burning"],
       ],
       [
+        "aTunes",
+        "Multimedia",
+        {
+          name: ["flutter_dash desktop_windows android"],
+          title: ["Linux, Windows, Android"],
+        },
+        {
+          name: "SourceForge",
+          url: "https://sourceforge.net/projects/atunes/",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#music-player"],
+      ],
+      [
         "Audacious",
         "Multimedia",
         {
@@ -1195,6 +1220,20 @@ const tableData = [
         },
         { name: "monetization_on", title: "Freeware" },
         ["#audio-grabber"],
+      ],
+      [
+        "Fluent Scrobbler",
+        "Multimedia",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/snw-mint/fluent-scrobbler",
+        },
+        { name: "attribution", title: "Open Source" },
+        ["#social #scrobbler"],
       ],
       [
         "fre:ac",
