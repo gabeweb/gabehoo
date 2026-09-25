@@ -17,7 +17,7 @@ const tableData = [
         "Accessibility",
         { name: "desktop_windows", title: "Windows" },
         { name: "GitHub", url: "https://github.com/Tyrrrz/LightBulb" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#display"],
       ],
       [
@@ -28,7 +28,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/night-mode-for-windows/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#display"],
       ],
       [
@@ -39,7 +39,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/xanderfrangos/twinkle-tray",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#display"],
       ],
       [
@@ -50,7 +50,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/AutoDarkMode/Windows-Auto-Night-Mode",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#display"],
       ],
     ],
@@ -75,7 +75,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://dotnet.microsoft.com/download/dotnet" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#runtime"],
       ],
       [
@@ -86,7 +86,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/stefankueng/BowPad" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -97,7 +97,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/Alex313031/codium" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -108,7 +108,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/ConEmu/ConEmu" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -122,7 +122,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/cudatext/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -136,7 +136,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/sqlitebrowser/sqlitebrowser/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#database"],
       ],
       [
@@ -161,7 +161,7 @@ const tableData = [
           title: ["Linux, Windows"],
         },
         { name: "GitHub", url: "https://github.com/microsoft/edit/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -172,7 +172,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/akiyosi/goneovim/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -183,7 +183,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://antigravity.google/download" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -208,7 +208,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/kompozer/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -219,7 +219,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/lapce/lapce" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -230,7 +230,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/lite-xl/lite-xl" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -241,7 +241,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/alecdotdev/Markpad" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -266,7 +266,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/neovim/neovim/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -280,7 +280,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/notepad-plus-plus/notepad-plus-plus/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -291,7 +291,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/rizonesoft/Notepad3" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -302,7 +302,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/dail8859/NotepadNext/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -313,7 +313,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/JanDeDobbeleer/oh-my-posh" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -324,7 +324,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/PowerShell/PowerShell" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -346,7 +346,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://www.python.org" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#runtime"],
       ],
       [
@@ -360,7 +360,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/QB64-Phoenix-Edition/QB64pe",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -399,7 +399,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/starship/starship" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -413,7 +413,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/adoptium/temurin8-binaries",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#runtime"],
       ],
       [
@@ -424,7 +424,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/orbitalquark/textadept/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -435,7 +435,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://code.visualstudio.com/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -446,7 +446,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/VSCodium/vscodium/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
       [
@@ -457,7 +457,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://github.com/wavetermdev/waveterm/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -468,7 +468,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/microsoft/terminal" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#terminal"],
       ],
       [
@@ -479,7 +479,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/microsoft/winget-cli" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#package-manager"],
       ],
       [
@@ -490,7 +490,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/microsoft/XmlNotepad/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#xml-editor"],
       ],
       [
@@ -501,7 +501,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://zim-wiki.org/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#text-editor"],
       ],
     ],
@@ -537,7 +537,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/flameshot-org/flameshot" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#tools"],
       ],
       [
@@ -548,7 +548,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://www.gimp.org/downloads/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#editors"],
       ],
       [
@@ -581,7 +581,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/LibreCAD/LibreCAD" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#editors"],
       ],
       [
@@ -603,7 +603,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://photoflare.io/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#editors"],
       ],
       [
@@ -613,8 +613,8 @@ const tableData = [
           name: ["flutter_dash desktop_mac desktop_windows"],
           title: ["Linux, macOS, Windows"],
         },
-        { name: "Web", url: "https://github.com/eolix/photosuite" },
-        { name: "attribution", title: "Open Source" },
+        { name: "GitHub", url: "https://github.com/eolix/photosuite" },
+        { name: "code", title: "Open Source" },
         ["#editors"],
       ],
       [
@@ -647,7 +647,7 @@ const tableData = [
           title: ["Linux, Windows"],
         },
         { name: "GitHub", url: "https://github.com/zamtmn/zcad" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#cad"],
       ],
     ],
@@ -677,7 +677,7 @@ const tableData = [
           name: "Web",
           url: "https://www.beeper.com/download",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -693,7 +693,7 @@ const tableData = [
           name: "Web",
           url: "https://discord.com/download",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -707,7 +707,7 @@ const tableData = [
           name: "Web",
           url: "https://duckduckgo.com/app",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -721,7 +721,7 @@ const tableData = [
           name: "Web",
           url: "https://eclipse.cx/projects/r3dfox",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -737,7 +737,7 @@ const tableData = [
           name: "Web",
           url: "https://element.io/app",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -765,7 +765,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/eneam/mboxviewer",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#email-clients"],
       ],
       [
@@ -781,7 +781,7 @@ const tableData = [
           name: "Web",
           url: "https://astian.org/midori-browser/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -797,7 +797,7 @@ const tableData = [
           name: "Web",
           url: "https://www.firefox.com/download/all/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -811,7 +811,7 @@ const tableData = [
           name: "Web",
           url: "https://www.thunderbird.net/thunderbird/all/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#email-clients", "#news-clients"],
       ],
       [
@@ -827,7 +827,7 @@ const tableData = [
           name: "Web",
           url: "https://www.palemoon.org/download.shtml",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -857,7 +857,7 @@ const tableData = [
           name: "Web",
           url: "https://getsession.org/download",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -873,7 +873,7 @@ const tableData = [
           name: "Web",
           url: "https://signal.org/download/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -889,7 +889,7 @@ const tableData = [
           name: "Web",
           url: "https://telegram.org/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#messengers"],
       ],
       [
@@ -903,7 +903,7 @@ const tableData = [
           name: "Web",
           url: "https://www.torproject.org/download/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
       [
@@ -919,7 +919,7 @@ const tableData = [
           name: "Web",
           url: "https://vivaldi.com/download/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers", "#email-clients", "#news-clients"],
       ],
       [
@@ -949,7 +949,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/zen-browser/desktop",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#internet-browsers"],
       ],
     ],
@@ -977,7 +977,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/T0biasCZe/AdbFileManager",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-manager"],
       ],
       [
@@ -991,7 +991,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/mkckr0/audio-share",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#multimedia"],
       ],
       [
@@ -1019,7 +1019,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/darusc/Mousedroid/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#multimedia"],
       ],
       [
@@ -1033,7 +1033,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Genymobile/scrcpy",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#mirroring"],
       ],
       [
@@ -1047,7 +1047,7 @@ const tableData = [
           name: "Web",
           url: "https://developer.android.com/tools/releases/platform-tools",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#debugging"],
       ],
       [
@@ -1061,7 +1061,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/rom1v/sndcpy",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#mirroring"],
       ],
       [
@@ -1075,7 +1075,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Universal-Debloater-Alliance/universal-android-debloater-next-generation/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#debloater"],
       ],
       [
@@ -1089,7 +1089,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/koush/UniversalAdbDriver",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#drivers"],
       ],
     ],
@@ -1145,7 +1145,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/atunes/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1159,7 +1159,7 @@ const tableData = [
           name: "Web",
           url: "https://audacious-media-player.org/download",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1173,7 +1173,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/audacity/audacity/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-editor"],
       ],
       [
@@ -1243,7 +1243,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/snw-mint/fluent-scrobbler",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#social #scrobbler"],
       ],
       [
@@ -1257,7 +1257,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/enzo1982/freac",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-converter"],
       ],
       [
@@ -1271,7 +1271,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/fxsound2/fxsound-app",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#equalizer"],
       ],
       [
@@ -1285,7 +1285,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/dudewheresmycode/GifTuna",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-converter"],
       ],
       [
@@ -1299,7 +1299,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/HandBrake/HandBrake",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-converter"],
       ],
       [
@@ -1313,7 +1313,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/harmonoid/harmonoid",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1397,7 +1397,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/clsid2/mpc-hc",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-player"],
       ],
       [
@@ -1411,7 +1411,7 @@ const tableData = [
           name: "Web",
           url: "https://www.bunkus.org/videotools/mkvtoolnix/downloads.html",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-converter"],
       ],
       [
@@ -1425,7 +1425,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/mciobanu/mp3diags",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-validator"],
       ],
       [
@@ -1453,7 +1453,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/mp3val/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-validator"],
       ],
       [
@@ -1467,7 +1467,7 @@ const tableData = [
           name: "Web",
           url: "https://www.mp3tag.de/en/index.html",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#taggers"],
       ],
       [
@@ -1481,7 +1481,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/martpie/museeks",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1495,7 +1495,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/ungive/discord-music-presence",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#social"],
       ],
       [
@@ -1509,7 +1509,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/clangen/musikcube",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1523,7 +1523,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/obsproject/obs-studio/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-editor"],
       ],
       [
@@ -1537,7 +1537,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/stsaz/phiola",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-converter"],
       ],
       [
@@ -1551,7 +1551,7 @@ const tableData = [
           name: "Web",
           url: "https://qmmp.ylsoftware.com/downloads.php",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#music-player"],
       ],
       [
@@ -1579,7 +1579,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/smplayer-dev/smplayer",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-player"],
       ],
       [
@@ -1593,7 +1593,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/SubtitleEdit/subtitleedit/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#subtitle-editor"],
       ],
       [
@@ -1607,7 +1607,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Martchus/tageditor",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#taggers"],
       ],
       [
@@ -1621,7 +1621,7 @@ const tableData = [
           name: "Codeberg",
           url: "https://codeberg.org/tenacityteam/tenacity/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#audio-editor"],
       ],
       [
@@ -1635,7 +1635,7 @@ const tableData = [
           name: "Web",
           url: "https://www.videolan.org/vlc/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#video-player"],
       ],
       [
@@ -1761,7 +1761,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/erez-c137/NetSpeedTray",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#network-monitor"],
       ],
       [
@@ -1775,7 +1775,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/network-activity-indicator/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#network-monitor"],
       ],
       [
@@ -1789,7 +1789,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/network-activity-indicator/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#network-monitor"],
       ],
       [
@@ -1817,7 +1817,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Ashfaaq18/OpenNetMeter",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#network-monitor"],
       ],
       [
@@ -1847,7 +1847,7 @@ const tableData = [
           name: "Web",
           url: "https://windscribe.com/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#vpn"],
       ],
       [
@@ -1889,7 +1889,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/amule-org/amule",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-sharing"],
       ],
       [
@@ -1903,7 +1903,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/BiglySoftware/BiglyBT-Android",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#torrent"],
       ],
       [
@@ -1931,7 +1931,7 @@ const tableData = [
           name: "Web",
           url: "https://filezilla-project.org/download.php?show_all=1",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#ftp"],
       ],
       [
@@ -1945,7 +1945,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/localsend/localsend",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-sharing"],
       ],
       [
@@ -1959,7 +1959,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/tonikelope/megabasterd",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-sharing"],
       ],
       [
@@ -1973,7 +1973,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/nicotine-plus/nicotine-plus",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-sharing"],
       ],
       [
@@ -2001,7 +2001,7 @@ const tableData = [
           name: "Web",
           url: "https://www.qbittorrent.org/download",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#torrent"],
       ],
       [
@@ -2029,7 +2029,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/pietje666/RandomFileCopier",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#synchronization"],
       ],
       [
@@ -2071,7 +2071,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/syncthing/syncthing",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#synchronization"],
       ],
       [
@@ -2085,7 +2085,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Catfriend1/syncthing-android",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#synchronization"],
       ],
       [
@@ -2099,7 +2099,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Martchus/syncthingtray",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#synchronization"],
       ],
       [
@@ -2113,7 +2113,7 @@ const tableData = [
           name: "Web",
           url: "https://winscp.net/eng/downloads.php",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#ftp"],
       ],
     ],
@@ -2149,7 +2149,7 @@ const tableData = [
           title: ["Linux, macOS, Windows, Android"],
         },
         { name: "GitHub", url: "https://github.com/anyproto/anytype-ts" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#note-taking"],
       ],
       [
@@ -2160,7 +2160,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/MarkHopper24/barcodrod.io" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#qr-codes"],
       ],
       [
@@ -2171,7 +2171,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/giuspen/cherrytree" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#note-taking"],
       ],
       [
@@ -2182,7 +2182,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/hluk/CopyQ" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#clipboard"],
       ],
       [
@@ -2193,7 +2193,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/Gnucash/gnucash" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#accounting"],
       ],
       [
@@ -2204,7 +2204,7 @@ const tableData = [
           title: ["Linux"],
         },
         { name: "GitHub", url: "https://github.com/davidsmorais/kuro" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#to-do"],
       ],
       [
@@ -2219,7 +2219,7 @@ const tableData = [
           url: "https://www.libreoffice.org/",
         },
         {
-          name: "attribution",
+          name: "code",
           title: "Open Source",
         },
         ["#office-suite"],
@@ -2253,7 +2253,7 @@ const tableData = [
           url: "https://github.com/vibingbiochemist/Monoleaf",
         },
         {
-          name: "attribution",
+          name: "code",
           title: "Open Source",
         },
         ["#word-processor"],
@@ -2270,7 +2270,7 @@ const tableData = [
           url: "https://github.com/cyanfish/naps2",
         },
         {
-          name: "attribution",
+          name: "code",
           title: "Open Source",
         },
         ["#scanners"],
@@ -2340,7 +2340,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "Web", url: "https://okular.kde.org" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#doc-viewer"],
       ],
       [
@@ -2368,7 +2368,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/pbek/QOwnNotes/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#note-taking"],
       ],
       [
@@ -2393,7 +2393,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/vnotex/vnote" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#note-taking"],
       ],
       [
@@ -2408,7 +2408,7 @@ const tableData = [
           url: "https://sourceforge.net/projects/wordtsar/",
         },
         {
-          name: "attribution",
+          name: "code",
           title: "Open Source",
         },
         ["#word-processor"],
@@ -2421,7 +2421,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/Zettlr/Zettlr" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#note-taking"],
       ],
       [
@@ -2432,7 +2432,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "SourceForge", url: "https://sourceforge.net/projects/zint/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#barcodes"],
       ],
     ],
@@ -2460,7 +2460,7 @@ const tableData = [
           name: "Web",
           url: "https://2fas.com/auth/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#2fa-auth"],
       ],
       [
@@ -2488,7 +2488,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Levminer/authme",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#2fa-auth"],
       ],
       [
@@ -2516,7 +2516,7 @@ const tableData = [
           name: "Web",
           url: "https://bitwarden.com/products/authenticator/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#2fa-auth"],
       ],
       [
@@ -2600,7 +2600,7 @@ const tableData = [
           name: "SourceForge",
           url: "https://sourceforge.net/projects/keepass/",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2614,7 +2614,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/PhilippC/keepass2android",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2628,7 +2628,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/Kunzisoft/KeePassDX",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2642,7 +2642,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/keepassxreboot/keepassxc",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2656,7 +2656,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/keeweb/keeweb",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2698,7 +2698,7 @@ const tableData = [
           name: "Web",
           url: "https://proton.me/authenticator",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#2fa-auth"],
       ],
       [
@@ -2740,7 +2740,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/stratumauth/app",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#2fa-auth"],
       ],
       [
@@ -2807,7 +2807,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/MicaForEveryone/MicaForEveryone" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#theming"],
       ],
     ],
@@ -2832,7 +2832,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/ip7z/7zip" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-manager"],
       ],
       [
@@ -2843,7 +2843,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/86Box/86Box" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#emulators"],
       ],
       [
@@ -2854,7 +2854,7 @@ const tableData = [
           title: ["Linux, Windows"],
         },
         { name: "GitHub", url: "https://github.com/ozone10/7zip-Dark7zip" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-manager"],
       ],
       [
@@ -2868,7 +2868,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/lostindark/DriverStoreExplorer",
         },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#drivers"],
       ],
       [
@@ -2879,7 +2879,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/rolandas-rimkus/FancyZones" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#tweaks"],
       ],
       [
@@ -2890,7 +2890,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/fastfetch-cli/fastfetch" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#system-information"],
       ],
       [
@@ -2901,7 +2901,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/no-faff/InstallerClean" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#system-cleanup"],
       ],
       [
@@ -2912,7 +2912,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#hardware-monitor"],
       ],
       [
@@ -2923,7 +2923,7 @@ const tableData = [
           title: ["Linux, macOS, Windows"],
         },
         { name: "GitHub", url: "https://github.com/peazip/PeaZip/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#file-manager"],
       ],
       [
@@ -2934,7 +2934,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/microsoft/PowerToys" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#tweaks"],
       ],
       [
@@ -2945,7 +2945,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "GitHub", url: "https://github.com/SV-Foster/UnSign" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#tweaks"],
       ],
       [
@@ -3036,7 +3036,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://leather.io/wallet" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3047,7 +3047,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://metamask.io/download" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3058,7 +3058,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://www.mewwallet.com/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3069,7 +3069,7 @@ const tableData = [
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         { name: "Web", url: "https://mymonero.com/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3080,7 +3080,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://perawallet.app/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3102,7 +3102,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://proton.me/wallet/download" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3113,7 +3113,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://wallet.roninchain.com/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
       [
@@ -3135,7 +3135,7 @@ const tableData = [
           title: ["Android, iOS"],
         },
         { name: "Web", url: "https://www.solflare.com/download/" },
-        { name: "attribution", title: "Open Source" },
+        { name: "code", title: "Open Source" },
         ["#wallets"],
       ],
     ],
