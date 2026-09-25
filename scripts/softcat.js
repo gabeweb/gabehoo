@@ -607,6 +607,17 @@ const tableData = [
         ["#editors"],
       ],
       [
+        "PhotoSuite",
+        "Graphics",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "Web", url: "https://github.com/eolix/photosuite" },
+        { name: "attribution", title: "Open Source" },
+        ["#editors"],
+      ],
+      [
         "Pichon",
         "Graphics",
         {
