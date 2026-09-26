@@ -530,6 +530,17 @@ const tableData = [
         ["#editors"],
       ],
       [
+        "drawio-desktop",
+        "Graphics",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/jgraph/drawio-desktop" },
+        { name: "code", title: "Open Source" },
+        ["#diagramming"],
+      ],
+      [
         "Flameshot",
         "Graphics",
         {
