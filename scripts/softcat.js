@@ -2587,6 +2587,34 @@ const tableData = [
         ["#privacy-tools"],
       ],
       [
+        "Gpg4Win",
+        "Security",
+        {
+          name: ["desktop_windows"],
+          title: ["Windows"],
+        },
+        {
+          name: "Web",
+          url: "https://www.gpg4win.org/",
+        },
+        { name: "code", title: "Open Source" },
+        ["#encryption"],
+      ],
+      [
+        "GpgFrontend",
+        "Security",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        {
+          name: "GitHub",
+          url: "https://github.com/saturneric/GpgFrontend",
+        },
+        { name: "code", title: "Open Source" },
+        ["#encryption"],
+      ],
+      [
         "Kaspersky Free Recovery Tools",
         "Security",
         {
