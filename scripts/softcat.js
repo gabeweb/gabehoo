@@ -148,7 +148,7 @@ const tableData = [
         },
         { name: "GitHub", url: "https://github.com/dbeaver/dbeaver/" },
         {
-          name: "attribution monetization_on",
+          name: "code monetization_on",
           title: "Open Source, Commercial",
         },
         ["#database"],
@@ -386,7 +386,7 @@ const tableData = [
           url: "https://www.scintilla.org/SciTE.html",
         },
         {
-          name: "attribution monetization_on",
+          name: "code monetization_on",
           title: "Open Source, Commercial",
         },
         ["#text-editor"],
@@ -1716,7 +1716,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/amnezia-vpn/amnezia-client",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#vpn"],
       ],
       [
@@ -1744,7 +1744,7 @@ const tableData = [
           name: "Web",
           url: "https://httptoolkit.com/",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#network-analyzer"],
       ],
       [
@@ -1842,7 +1842,7 @@ const tableData = [
           name: "Web",
           url: "https://protonvpn.com/",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#vpn"],
       ],
       [
@@ -2338,7 +2338,7 @@ const tableData = [
           url: "https://github.com/obsidianmd/obsidian-releases",
         },
         {
-          name: "attribution monetization_on",
+          name: "code monetization_on",
           title: "Open Source, Commercial",
         },
         ["#note-taking"],
@@ -2366,7 +2366,7 @@ const tableData = [
           url: "https://github.com/ONLYOFFICE/DesktopEditors/",
         },
         {
-          name: "attribution monetization_on",
+          name: "code monetization_on",
           title: "Open Source, Commercial",
         },
         ["#office-suite"],
@@ -2383,6 +2383,25 @@ const tableData = [
         ["#note-taking"],
       ],
       [
+        "Simplenote",
+        "Productivity",
+        {
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
+          title: ["Linux, macOS, Windows, Android, iOS"],
+        },
+        {
+          name: "Web",
+          url: "https://simplenote.com/",
+        },
+        {
+          name: "code",
+          title: "Open Source",
+        },
+        ["#note-taking"],
+      ],
+      [
         "Text-Grab",
         "Productivity",
         {
@@ -2391,7 +2410,7 @@ const tableData = [
         },
         { name: "GitHub", url: "https://github.com/TheJoeFin/Text-Grab/" },
         {
-          name: "attribution monetization_on",
+          name: "code monetization_on",
           title: "Open Source, Commercial",
         },
         ["#ocr"],
@@ -2485,7 +2504,7 @@ const tableData = [
           name: "Web",
           url: "https://2fas.com/pass/",
         },
-        { name: "attribution monetization_on", title: "Open Source, Freemium" },
+        { name: "code monetization_on", title: "Open Source, Freemium" },
         ["#password-manager"],
       ],
       [
@@ -2513,7 +2532,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/bitwarden/clients",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2723,7 +2742,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/pwsafe/pwsafe",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2751,7 +2770,7 @@ const tableData = [
           name: "Web",
           url: "https://proton.me/pass",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#password-manager", "#2fa-auth"],
       ],
       [
@@ -2821,7 +2840,7 @@ const tableData = [
           name: "GitHub",
           url: "https://github.com/windscribe",
         },
-        { name: "attribution monetization_on", title: "Open Source, Commercial" },
+        { name: "code monetization_on", title: "Open Source, Commercial" },
         ["#vpn"],
       ],
     ],
@@ -3017,7 +3036,7 @@ const tableData = [
           title: ["Windows"],
         },
         { name: "Web", url: "https://kamilszymborski.github.io/" },
-        { name: "attribution monetization_on", title: "Open Source, Freeware" },
+        { name: "code monetization_on", title: "Open Source, Freeware" },
         ["#tweaks"],
       ],
       [
