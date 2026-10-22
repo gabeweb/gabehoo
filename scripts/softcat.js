@@ -3175,17 +3175,6 @@ const tableData = [
         ["#wallets"],
       ],
       [
-        "SecondFi",
-        "Wallets",
-        {
-          name: ["android phone_iphone"],
-          title: ["Android, iOS"],
-        },
-        { name: "Web", url: "https://secondfi.io/" },
-        { name: "monetization_on", title: "Freeware" },
-        ["#wallets"],
-      ],
-      [
         "Solflare",
         "Wallets",
         {
@@ -3194,6 +3183,20 @@ const tableData = [
         },
         { name: "Web", url: "https://www.solflare.com/download/" },
         { name: "code", title: "Open Source" },
+        ["#wallets"],
+      ],
+      [
+        "Trust Wallet",
+        "Wallets",
+        {
+          name: ["android phone_iphone"],
+          title: ["Android, iOS"],
+        },
+        { name: "Web", url: "https://trustwallet.com/download" },
+        {
+          name: "code monetization_on",
+          title: "Open Source, Commercial",
+        },
         ["#wallets"],
       ],
     ],
