@@ -3087,7 +3087,7 @@ const tableData = [
         ["#wallets"],
       ],
       [
-        "Metamask",
+        "MetaMask",
         "Wallets",
         {
           name: ["android phone_iphone"],
