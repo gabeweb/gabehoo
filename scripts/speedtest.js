@@ -1,7 +1,7 @@
 // ==========================================
 // CONFIGURACIÓN
 // ==========================================
-var fileAddr = "https://gabeweb.github.io/gabehoo/assets/data/test-file.bin";
+var fileAddr = "https://gabeweb.github.io/gabehoo/asset/data/test-file.bin";
 var downloadSize = 5242880; // 5 MB en bytes
 
 function showMessage(msg) {
