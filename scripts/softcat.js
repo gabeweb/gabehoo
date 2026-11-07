@@ -2963,6 +2963,17 @@ const tableData = [
         ["#hardware-monitor"],
       ],
       [
+        "UniGetUI",
+        "Utilities",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/Devolutions/UniGetUI/" },
+        { name: "code", title: "Open Source" },
+        ["#package-manager"],
+      ],
+      [
         "PeaZip",
         "Utilities",
         {
