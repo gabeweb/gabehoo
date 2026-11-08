@@ -617,7 +617,6 @@ const tableData = [
         { name: "code", title: "Open Source" },
         ["#editors"],
       ],
-      ],
       [
         "Pichon",
         "Graphics",
@@ -819,9 +818,7 @@ const tableData = [
         "Pale Moon",
         "Internet",
         {
-          name: [
-            "flutter_dash desktop_mac desktop_windows",
-          ],
+          name: ["flutter_dash desktop_mac desktop_windows"],
           title: ["Linux, macOS, Windows"],
         },
         {
@@ -941,9 +938,7 @@ const tableData = [
         "Zen Browser",
         "Internet",
         {
-          name: [
-            "flutter_dash desktop_mac desktop_windows",
-          ],
+          name: ["flutter_dash desktop_mac desktop_windows"],
           title: ["Linux, macOS, Windows"],
         },
         {
@@ -1629,7 +1624,9 @@ const tableData = [
         "VLC",
         "Multimedia",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -1797,7 +1794,9 @@ const tableData = [
         "Ookla Speedtest",
         "Networking",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -1825,7 +1824,9 @@ const tableData = [
         "Proton VPN",
         "Networking",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -1911,7 +1912,9 @@ const tableData = [
         "Dropbox",
         "P2P",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -1939,7 +1942,9 @@ const tableData = [
         "LocalSend",
         "P2P",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -1981,7 +1986,9 @@ const tableData = [
         "OneDrive",
         "P2P",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2515,7 +2522,9 @@ const tableData = [
         "Bitwarden",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2557,7 +2566,9 @@ const tableData = [
         "Enpass",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2725,7 +2736,9 @@ const tableData = [
         "Password Safe",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2739,7 +2752,9 @@ const tableData = [
         "Proton Authenticator",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2753,7 +2768,9 @@ const tableData = [
         "Proton Pass",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2767,7 +2784,9 @@ const tableData = [
         "Sophos Free Tools",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2823,7 +2842,9 @@ const tableData = [
         "Windscribe",
         "Security",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         {
@@ -2854,7 +2875,10 @@ const tableData = [
           name: ["desktop_windows"],
           title: ["Windows"],
         },
-        { name: "GitHub", url: "https://github.com/MicaForEveryone/MicaForEveryone" },
+        {
+          name: "GitHub",
+          url: "https://github.com/MicaForEveryone/MicaForEveryone",
+        },
         { name: "code", title: "Open Source" },
         ["#theming"],
       ],
@@ -2937,7 +2961,10 @@ const tableData = [
           name: ["desktop_windows"],
           title: ["Windows"],
         },
-        { name: "GitHub", url: "https://github.com/rolandas-rimkus/FancyZones" },
+        {
+          name: "GitHub",
+          url: "https://github.com/rolandas-rimkus/FancyZones",
+        },
         { name: "code", title: "Open Source" },
         ["#tweaks"],
       ],
@@ -2970,7 +2997,10 @@ const tableData = [
           name: ["desktop_windows"],
           title: ["Windows"],
         },
-        { name: "GitHub", url: "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor" },
+        {
+          name: "GitHub",
+          url: "https://github.com/LibreHardwareMonitor/LibreHardwareMonitor",
+        },
         { name: "code", title: "Open Source" },
         ["#hardware-monitor"],
       ],
@@ -3025,7 +3055,10 @@ const tableData = [
           name: ["desktop_windows"],
           title: ["Windows"],
         },
-        { name: "Web", url: "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite" },
+        {
+          name: "Web",
+          url: "https://learn.microsoft.com/en-us/sysinternals/downloads/sysinternals-suite",
+        },
         { name: "monetization_on", title: "Freeware" },
         ["#tweaks"],
       ],
@@ -3036,7 +3069,10 @@ const tableData = [
           name: ["desktop_windows"],
           title: ["Windows"],
         },
-        { name: "Web", url: "https://www.nirsoft.net/utils/what_run_in_startup.html" },
+        {
+          name: "Web",
+          url: "https://www.nirsoft.net/utils/what_run_in_startup.html",
+        },
         { name: "monetization_on", title: "Freeware" },
         ["#tweaks"],
       ],
@@ -3135,7 +3171,9 @@ const tableData = [
         "MyMonero",
         "Wallets",
         {
-          name: ["flutter_dash desktop_mac desktop_windows android phone_iphone"],
+          name: [
+            "flutter_dash desktop_mac desktop_windows android phone_iphone",
+          ],
           title: ["Linux, macOS, Windows, Android, iOS"],
         },
         { name: "Web", url: "https://mymonero.com/" },
