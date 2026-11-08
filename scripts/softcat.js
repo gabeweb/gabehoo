@@ -617,6 +617,7 @@ const tableData = [
         { name: "code", title: "Open Source" },
         ["#editors"],
       ],
+      ],
       [
         "Pichon",
         "Graphics",
@@ -2901,6 +2902,17 @@ const tableData = [
           title: ["Linux, Windows"],
         },
         { name: "GitHub", url: "https://github.com/ozone10/7zip-Dark7zip" },
+        { name: "code", title: "Open Source" },
+        ["#file-manager"],
+      ],
+      [
+        "Double Commander",
+        "Utilities",
+        {
+          name: ["flutter_dash desktop_mac desktop_windows"],
+          title: ["Linux, macOS, Windows"],
+        },
+        { name: "GitHub", url: "https://github.com/doublecmd/doublecmd" },
         { name: "code", title: "Open Source" },
         ["#file-manager"],
       ],
